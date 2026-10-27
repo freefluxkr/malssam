@@ -15,8 +15,13 @@
 
   // ── 1. Anti-Headless & Automated Scraping Bot Detection ─────────────────────
   function detectHeadlessBrowser() {
-    // 관리자 또는 특정 페이지 접속 편의를 위한 패스
-    if (window.location && window.location.pathname && window.location.pathname.includes('admin')) {
+    // 로컬 개발 환경(file:, localhost, 127.0.0.1) 또는 관리자 페이지는 패스
+    if (window.location && (
+      window.location.protocol === 'file:' || 
+      window.location.hostname === 'localhost' || 
+      window.location.hostname === '127.0.0.1' ||
+      (window.location.pathname && window.location.pathname.includes('admin'))
+    )) {
       return;
     }
 
@@ -145,7 +150,7 @@
     if (targetTag === 'input' || targetTag === 'textarea') return;
     
     // 사전 본문/정의 카드 영역 선택 차단
-    if (e.target.closest('.word-card') || e.target.closest('.dict-detail') || e.target.closest('#dictionary-view')) {
+    if (e.target && typeof e.target.closest === 'function' && (e.target.closest('.word-card') || e.target.closest('.dict-detail') || e.target.closest('#dictionary-view'))) {
       e.preventDefault();
       return false;
     }
