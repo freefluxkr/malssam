@@ -45,8 +45,7 @@
   // 🌐 6개국어 전환
   window.setRoleplayLanguage = function (lang) {
     const metaMap = window.LANG_METADATA || {};
-    const meta = metaMap[lang] || metaMap['ko'];
-    if (!meta) return;
+    const meta = metaMap[lang] || metaMap['ko'] || {};
 
     currentLang = lang;
 
@@ -55,24 +54,35 @@
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
-    // 앞면 메타데이터 갱신
+    // 앞면 메타데이터 갱신 (undefined 방지 및 다국어 실시간 매핑)
     const badgeEl = document.getElementById('rpFrontBadge');
-    if (badgeEl) badgeEl.innerText = `${meta.flag} K-SOUL #202 · 3D 플립 카드`;
+    if (badgeEl) badgeEl.innerText = meta.badge || '💎 K-SOUL #01 · 번역불가 한국어';
 
     const titleEl = document.getElementById('rpFrontTitle');
-    if (titleEl) titleEl.innerText = meta.word;
+    if (titleEl) titleEl.innerText = meta.word || '눈치';
 
     const pronEl = document.getElementById('rpFrontPron');
-    if (pronEl) pronEl.innerText = `🗣️ ${meta.pron}`;
+    if (pronEl) pronEl.innerText = meta.altPron ? `🗣️ ${meta.altPron}` : '🗣️ [nun-chi · NOON-chee]';
 
     const descEl = document.getElementById('rpFrontDesc');
-    if (descEl) descEl.innerText = meta.desc;
+    if (descEl) descEl.innerText = meta.def || '상대방의 기분, 분위기, 눈빛을 0.1초 만에 파악해 알아서 처신하는 한국 고유의 생존 본능.';
 
     const punchEl = document.getElementById('rpFrontPunch');
-    if (punchEl) punchEl.innerText = `💡 "${meta.punchline}"`;
+    if (punchEl) punchEl.innerText = meta.punchText ? `💡 ${meta.punchText}` : '💡 “말하지 않아도 공기를 읽는 K-직장인 생존술”';
 
+    // 출연진 명칭 갱신
+    const castDemisEl = document.getElementById('rpCastNameDemis');
+    if (castDemisEl && meta.castDemis) castDemisEl.innerText = meta.castDemis;
+
+    const castCraigEl = document.getElementById('rpCastNameCraig');
+    if (castCraigEl && meta.castCraig) castCraigEl.innerText = meta.castCraig;
+
+    const castJenniferEl = document.getElementById('rpCastNameJennifer');
+    if (castJenniferEl && meta.castJennifer) castJenniferEl.innerText = meta.castJennifer;
+
+    // 뒷면 언어 오디오 Pill
     const backLangEl = document.getElementById('rpCurrentLangPill');
-    if (backLangEl) backLangEl.innerText = `${meta.flag} ${meta.name}`;
+    if (backLangEl) backLangEl.innerText = meta.pill || '🇰🇷 KO AUDIO';
 
     stopAudio();
     renderScene(currentScene);

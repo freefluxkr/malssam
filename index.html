@@ -16,7 +16,7 @@
   <script src="js/anti-scraping.js?v=20261023_shield_fix"></script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 
-  <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 & 3D 상황극 극장 -->
+  <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 & 3D 상황극 스타일 -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/roleplay.css">
 
@@ -94,8 +94,7 @@
   </script>
 </head>
 <body>
-
-  <!-- 유네스코 세종대왕 상단 헌정 배너 -->
+<!-- 유네스코 세종대왕 상단 헌정 배너 -->
   <div class="unesco-heritage-banner">
     <span class="unesco-badge">UNESCO MEMORY OF THE WORLD</span>
     <span>훈민정음 해례본(1446) 유네스코 세계기록유산 등재 헌정 — 1990s PC통신부터 2026 쇼츠 밈까지 살아 숨 쉬는 한글 주권 프로젝트</span>
@@ -107,7 +106,7 @@
       <a href="#" class="brand">
         <span class="brand-logo">📖</span>
         <span class="brand-title">말쌈 <span class="brand-sub">MALSSAM</span></span>
-        <span class="fb-live-badge" id="fbStatusBadge">🟢 실시간 DB (318)</span>
+        <span class="fb-live-badge" id="fbStatusBadge">🟢 100단어</span>
       </a>
 
       <nav class="global-lang-group" title="글로벌 현지화 전용 에디션">
@@ -121,412 +120,387 @@
       </nav>
 
       <div class="header-actions">
-        <button class="btn-kakao-request" onclick="openKakaoModal()">
-          <span>💬 판독 요청</span>
+        <button class="btn-kakao-request" onclick="openKakaoModal()" title="카톡 맥락 판독 요청">
+          <span>💬</span>
+          <span>판독 요청</span>
         </button>
-        <button class="btn-add" onclick="openAddModal()">
-          <span>+ 제보하기</span>
+        <button class="btn-add" onclick="openAddModal()" title="신조어 제보하기">
+          <span>+</span>
+          <span>제보하기</span>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="main-container">
-    
-    <!-- 히어로 섹션 -->
-    <section class="hero-section">
-      <div class="hero-badge">
-        <span>📍 세대 간 소통 단절 극복 & 3대 시대별 한국어 아카이브</span>
+  <!-- 히어로 & 검색 섹션 -->
+  <section class="hero-section">
+    <div class="hero-badge-pill">🛡️ 세대 간 소통 단절 극복 & 3대 시대별 한국어 아카이브</div>
+    <h1 class="hero-title">지금 한국인이 쓰는 <span>진짜 한글</span> 사전</h1>
+    <p class="hero-subtitle">"1990년대 삐삐·PC통신 라떼 감성부터 2026 최신 영포티·영ㅋㅋ 밈까지 세대를 잇습니다."</p>
+
+    <div class="search-box-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-input" placeholder="신조어 검색 또는 초성 입력 (예: 영포티, 영ㅋㅋ, 꼰대, 방가방가, ㅈㄲㅁ)..." oninput="handleSearch()">
+    </div>
+
+    <div class="hot-tags">
+      <span class="hot-tags-label">🔥 핫 트렌드:</span>
+      <a class="hot-tag" onclick="quickSearch('영포티')">#⚡ 영포티</a>
+      <a class="hot-tag" onclick="quickSearch('영ㅋㅋ')">#⚡ 영ㅋㅋ</a>
+      <a class="hot-tag" onclick="quickSearch('꼰대')">#📱 꼰대</a>
+      <a class="hot-tag" onclick="quickSearch('넵병')">#⚡ 넵병</a>
+      <a class="hot-tag" onclick="quickSearch('방가방가')">#📟 방가방가</a>
+      <a class="hot-tag" onclick="quickSearch('중꺾마')">#⚡ 중꺾마</a>
+      <a class="hot-tag" onclick="quickSearch('럭키비키')">#⚡ 럭키비키</a>
+      <a class="hot-tag" onclick="quickSearch('알잘딱깔센')">#⚡ 알잘딱깔센</a>
+    </div>
+  </section>
+
+  <!-- ⚔️ 바이럴 킬러 콘텐츠: 세대 공감 배틀 퀴즈 (Family & Office Battle) -->
+    <!-- 🔥 오늘의 말쌈 배틀 (LIVE BATTLE #01) -->
+  <!-- =======================================================================
+       🔥 LIVE BATTLE: 매일/접속 시마다 새로운 질문으로 교체되는 실시간 말투 밸런스 게임
+       ======================================================================= -->
+  <section class="live-battle-section">
+    <div class="live-battle-card" id="liveBattleCard">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+        <div class="live-battle-tag" id="liveBattleTag">🔥 LIVE BATTLE #01 · 실시간 말투 밸런스 게임</div>
+        <button onclick="nextRandomBattle()" style="background:rgba(244,63,94,0.12); border:1px solid rgba(244,63,94,0.35); color:#fda4af; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px; cursor:pointer; display:inline-flex; align-items:center; gap:4px; transition:all 0.2s ease;" onmouseover="this.style.background='rgba(244,63,94,0.25)'" onmouseout="this.style.background='rgba(244,63,94,0.12)'">
+          <span>🔄 다른 질문 보기</span>
+        </button>
       </div>
-      <h1 class="hero-title">지금 한국인이 쓰는 <span>진짜 한글 사전</span></h1>
-      <p class="hero-desc">"1990년대 삐삐·PC통신 라떼 감성부터 2026 최신 영포티·영ㅋㅋ 밈까지 세대를 잇습니다."</p>
+      
+      <h2 class="live-battle-q" id="liveBattleQ">팀장님 공지에 신입이 <span style="color:#facc15;">"네."</span>라고 답장했다면?</h2>
+      <p class="live-battle-desc" id="liveBattleDesc">물결(`~`)이나 느낌표(`!`) 없이 마침표만 찍힌 단답, 과연 사회생활 마이너스일까요?</p>
 
-      <!-- 통합 검색창 -->
-      <div class="search-wrap">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="신조어 검색 또는 초성 입력 (예: 영포티, 영ㅋㅋ, 꼰대, 방가방가, ㅈㄲㅁ)..." oninput="handleSearch()">
-      </div>
-
-      <!-- 핫 트렌드 추천 태그 -->
-      <div class="trending-keywords">
-        <span style="font-size: 0.8rem; color: #94a3b8; font-weight: 700;">🔥 핫 트렌드:</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='영포티'; handleSearch();"># ⚡ 영포티</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='영ㅋㅋ'; handleSearch();"># ⚡ 영ㅋㅋ</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='꼰대'; handleSearch();"># 📱 꼰대</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='넵병'; handleSearch();"># 📱 넵병</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='방가방가'; handleSearch();"># 📟 방가방가</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='중꺾마'; handleSearch();"># ⚡ 중꺾마</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='럭키비키'; handleSearch();"># ⚡ 럭키비키</span>
-        <span class="trend-tag" onclick="document.getElementById('searchInput').value='알잘딱깔센'; handleSearch();"># ⚡ 알잘딱깔센</span>
-      </div>
-    </section>
-
-    <!-- 🔥 [실시간 말투 밸런스 배틀 위젯] -->
-    <section class="live-battle-section">
-      <div class="live-battle-card">
-        <div class="live-battle-header">
-          <div class="live-battle-tag" id="liveBattleTag">🔥 LIVE BATTLE #01 · 실시간 말투 밸런스 게임</div>
-          <button class="live-battle-refresh-btn" onclick="nextRandomBattle()">🔄 다른 질문 보기</button>
-        </div>
-
-        <h3 class="live-battle-q" id="liveBattleQ">
-          팀장님 공지에 신입이 <span style="color:#facc15;">"네."</span>라고 답장했다면?
-        </h3>
-        <p class="live-battle-desc" id="liveBattleDesc">
-          물결(~)이나 느낌표(!) 없이 마침표만 찍힌 단답, 과연 사회생활 마이너스일까요?
-        </p>
-
-        <!-- A/B 투표 버튼 및 게이지 바 -->
-        <div class="live-battle-options">
-          <div class="live-battle-opt opt-a" id="liveBtnA" onclick="voteLiveBattle('A')">
-            <div class="live-opt-title" id="liveTitleA">🅰️ 마침표는 차갑고 화난 것 같다… '넵!' 또는 '네~'가 기본이다</div>
-            <div class="live-opt-row">
-              <span class="live-opt-pct" id="livePctA">76% 투표</span>
-              <span class="live-opt-label" id="liveLabelA">예의중시파</span>
+      <div class="live-battle-grid">
+        <div class="live-vote-btn" id="liveBtnA" onclick="voteLiveBattle('A')">
+          <div class="live-vote-title" id="liveTitleA">🅰️ 마침표는 차갑고 화난 것 같다… '넵!' 또는 '네~'가 기본이다</div>
+          <div>
+            <div class="live-vote-pct">
+              <span id="livePctA">76% 투표</span>
+              <span id="liveLabelA" style="color:#f43f5e; font-weight:800;">예의중시파</span>
             </div>
-            <div class="live-opt-gauge">
-              <div class="live-opt-fill fill-a" id="liveGaugeA" style="width: 76%;"></div>
-            </div>
-          </div>
-
-          <div class="live-battle-opt opt-b" id="liveBtnB" onclick="voteLiveBattle('B')">
-            <div class="live-opt-title" id="liveTitleB">🅱️ 맞춤법 맞게 대답한 건데 뭐가 문제? 마침표 과몰입 금지</div>
-            <div class="live-opt-row">
-              <span class="live-opt-pct" id="livePctB">24% 투표</span>
-              <span class="live-opt-label" id="liveLabelB">효율실용파</span>
-            </div>
-            <div class="live-opt-gauge">
-              <div class="live-opt-fill fill-b" id="liveGaugeB" style="width: 24%;"></div>
+            <div class="live-vote-gauge-wrap">
+              <div class="live-vote-gauge gauge-a" id="liveGaugeA" style="width:76%;"></div>
             </div>
           </div>
         </div>
 
-        <div class="live-vote-result-msg" id="liveVoteResultMsg">
-          ✨ 집단지성 투표 반영 완료! (현재 참여자: 1,429명) — 동료들과 링크를 공유해 의견을 나눠보세요!
+        <div class="live-vote-btn" id="liveBtnB" onclick="voteLiveBattle('B')">
+          <div class="live-vote-title" id="liveTitleB">🅱️ 맞춤법 맞게 대답한 건데 뭐가 문제? 마침표 과몰입 금지</div>
+          <div>
+            <div class="live-vote-pct">
+              <span id="livePctB">24% 투표</span>
+              <span id="liveLabelB" style="color:#38bdf8; font-weight:800;">효율실용파</span>
+            </div>
+            <div class="live-vote-gauge-wrap">
+              <div class="live-vote-gauge gauge-b" id="liveGaugeB" style="width:24%;"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- 🎬 [DMDG 3D 숏폼 상황극 극장 헌정 배너] -->
-    <section class="roleplay-theater-banner">
-      <div class="roleplay-banner-text">
-        <h3><span>🎬</span> DMDG 3D 숏폼 상황극 극장 <span style="font-size:0.75rem; background:rgba(255,0,127,0.2); color:#ff77a9; padding:2px 8px; border-radius:12px; border:1px solid rgba(255,0,127,0.4);">NEW v9.2</span></h3>
-        <p>“회식 취소 핑계는 5G 속도로!” 침묵 속의 공기를 읽는 <strong>‘눈치(Nunchi)’</strong>의 미학을 6개국어(KR/EN/JA/ES/VI/ID) 3D 플립 숏폼으로 즐겨보세요.</p>
+      <div id="liveVoteResultMsg" style="margin-top:12px; font-size:0.8rem; color:#facc15; font-weight:700; display:none; text-align:center;">
+        ✨ 집단지성 투표 반영 완료! — 카톡 단톡방에 공유하고 동료 의견도 확인해보세요!
       </div>
-      <button class="btn-open-theater" onclick="openRoleplayModal('202')">
-        <span>🎴 3D 숏폼 상황극 감상하기 (눈치 편) →</span>
-      </button>
-    </section>
+    </div>
+  </section>
 
-    <!-- ⚔️ [듀얼 세대 공감 배틀 퀴즈 배너] -->
-    <section class="battle-arena-section">
-      <div class="battle-banner-container">
-        <div class="battle-header-badge">⚔️ FAMILY & OFFICE BATTLE</div>
-        <h2 class="battle-title">부모와 자녀, 팀장님과 신입사원의 <span>언어 장벽 격파전</span></h2>
-        <p class="battle-subtitle">누가 더 상대방의 언어를 잘 이해할까요? 5문항 즉석 대결로 우리 집 & 우리 팀 소통 지수를 측정해 보세요!</p>
+  <section class="battle-banner">
+    <div class="battle-banner-inner">
+      <div class="battle-header">
+        <span class="battle-subbadge">⚔️ FAMILY & OFFICE BATTLE</span>
+        <h2 class="battle-main-title">부모와 자녀, 팀장님과 신입사원의 <span>언어 장벽 격파전</span></h2>
+        <p class="battle-subtext">누가 더 상대방의 언어를 잘 이해할까요? 5문항 즉석 대결로 우리 집 & 우리 팀 소통 지수를 측정해 보세요!</p>
+      </div>
 
-        <div class="battle-cards-grid">
-          <div class="battle-card card-parents">
+      <div class="battle-cards-grid">
+        <!-- Mode A: 부모 & 팀장님 모드 -->
+        <div class="battle-card mode-parent" onclick="startQuiz('parent')">
+          <div>
             <div class="battle-card-top">
-              <span class="battle-icon">👔</span>
-              <span class="battle-tag-role">부모님 & 팀장님 전용</span>
+              <span class="battle-card-icon">👔</span>
+              <span class="battle-card-badge">부모님 & 팀장님 전용</span>
             </div>
-            <h3 class="battle-card-h3">“당신은 자녀(MZ)의 말을 얼마나 알아듣나요?”</h3>
-            <p class="battle-card-p">쇼츠·틱톡을 점령한 2026 최신 1020 밈 5문항! 자녀와 팀원의 카톡 대화를 해독할 수 있을까요?</p>
-            <button class="btn-start-battle btn-parent-battle" onclick="startQuiz('parent')">
-              <span>🔥 Z세대 밈 배틀 도전하기 →</span>
-            </button>
+            <h3 class="battle-card-title">"당신은 자녀(MZ)의 말을 얼마나 알아듣나요?"</h3>
+            <p class="battle-card-desc">쇼츠·틱톡을 점령한 2026 최신 1020 밈 5문항! 자녀와 팀원의 카톡 대화를 해독할 수 있을까요?</p>
           </div>
+          <button class="btn-battle-action">
+            <span>🔥 Z세대 밈 배틀 도전하기</span>
+            <span>→</span>
+          </button>
+        </div>
 
-          <div class="battle-card card-retro">
+        <!-- Mode B: 자녀 & 신입사원 모드 -->
+        <div class="battle-card mode-retro" onclick="startQuiz('retro')">
+          <div>
             <div class="battle-card-top">
-              <span class="battle-icon">🎧</span>
-              <span class="battle-tag-role">자녀 & 신입사원 전용</span>
+              <span class="battle-card-icon">🎧</span>
+              <span class="battle-card-badge">자녀 & 신입사원 전용</span>
             </div>
-            <h3 class="battle-card-h3">“역주행 라떼 테스트: 요즘 애들은 90년대를 알까?”</h3>
-            <p class="battle-card-p">삐삐·PC통신·싸이월드 감성 폭발! 부모님과 팀장님이 청춘 시절 쓰던 레트로 유행어 5문항 맞히기!</p>
-            <button class="btn-start-battle btn-retro-battle" onclick="startQuiz('retro')">
-              <span>📟 라떼 레트로 배틀 도전하기 →</span>
-            </button>
+            <h3 class="battle-card-title">"역주행 라떼 테스트: 요즘 애들은 90년대를 알까?"</h3>
+            <p class="battle-card-desc">삐삐·PC통신·싸이월드 감성 폭발! 부모님과 팀장님이 청춘 시절 쓰던 레트로 유행어 5문항 맞히기!</p>
           </div>
+          <button class="btn-battle-action">
+            <span>📟 라떼 레트로 배틀 도전하기</span>
+            <span>→</span>
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 3대 시대별 탭 네비게이션 -->
-    <nav class="era-nav">
-      <button class="era-tab-btn active" id="tabAllBtn" onclick="switchEra('all')">
-        <span class="era-title">✨ 전체 보기</span>
-        <span class="era-count" id="countAll">318단어</span>
+  <!-- ⏳ 3대 시대별 시간여행 탭 스위처 -->
+  <section class="era-switcher-section">
+    <div class="era-tabs-container">
+      <button class="era-tab-btn active" onclick="switchEra('all')">
+        <span class="era-main">✨ 전체 보기</span>
+        <span class="era-sub" id="countAll">100단어</span>
       </button>
-      <button class="era-tab-btn" id="tabLatteBtn" onclick="switchEra('latte')">
-        <span class="era-title">📟 1. 라떼 추억</span>
-        <span class="era-count" id="countLatte">1990~2000s (27)</span>
+      <button class="era-tab-btn" onclick="switchEra('latte')">
+        <span class="era-main">📟 1. 라떼 추억</span>
+        <span class="era-sub" id="countLatte">1990~2000s (27)</span>
       </button>
-      <button class="era-tab-btn" id="tabSmartBtn" onclick="switchEra('smartphone')">
-        <span class="era-title">📱 2. 국민 유행어</span>
-        <span class="era-count" id="countSmartphone">2010s (31)</span>
+      <button class="era-tab-btn" onclick="switchEra('smartphone')">
+        <span class="era-main">📱 2. 국민 유행어</span>
+        <span class="era-sub" id="countSmartphone">2010s (31)</span>
       </button>
-      <button class="era-tab-btn" id="tabShortsBtn" onclick="switchEra('shorts')">
-        <span class="era-title">⚡ 3. 요즘 1020 밈</span>
-        <span class="era-count" id="countShorts">2020~2026 (142)</span>
+      <button class="era-tab-btn" onclick="switchEra('shorts')">
+        <span class="era-main">⚡ 3. 요즘 1020 밈</span>
+        <span class="era-sub" id="countShorts">2020~2026 (42)</span>
       </button>
       <button class="era-tab-btn" id="tabSoulBtn" onclick="switchEra('soul')">
-        <span class="era-title">💎 4. K-정서 (번역불가)</span>
-        <span class="era-count" id="countSoul">K-Soul (118)</span>
+        <span class="era-main">💎 4. K-정서 (번역불가)</span>
+        <span class="era-sub" id="countSoul">K-Soul 118선</span>
       </button>
       <button class="era-tab-btn" id="tabKakaoBtn" onclick="switchEra('kakao')">
-        <span class="era-title">💬 5. 카톡 판독소</span>
-        <span class="era-count" id="countKakao">BEST 10선 & 의뢰</span>
+        <span class="era-main">💬 5. 카톡 판독소</span>
+        <span class="era-sub" id="countKakao">BEST 10선 & 의뢰</span>
       </button>
-    </nav>
+    </div>
+  </section>
 
-    <!-- K-Soul 7대 감정/어휘 테마 서브 필터 & 전용 실시간 검색창 -->
-    <div id="soulSubcatSection" class="soul-subcat-section" style="display: none;">
-      <!-- 💎 K-정서 전용 인라인 실시간 검색창 -->
-      <div class="soul-search-wrap">
-        <div class="soul-search-row">
-          <span class="soul-search-icon">🔍</span>
-          <input type="text" id="soulSearchInput" class="soul-search-input" 
-                 placeholder="💎 K-정서 단어 검색 (예: 눈치, 정, 한, 답답하다, 서운, 꼬르륵, 노르스름, nunchi, jeong...)" 
-                 oninput="handleSoulSearch()">
-          <button type="button" id="soulSearchClearBtn" class="soul-search-clear-btn" onclick="clearSoulSearch()" title="검색어 지우기">✕</button>
-        </div>
-        <div class="soul-search-meta">
-          <div class="soul-quick-tags">
-            <span class="soul-quick-label">⚡ 빠른 검색:</span>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('눈치')">#눈치</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('정')">#정</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('한')">#한</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('답답하다')">#답답하다</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('서운하다')">#서운하다</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('꼬르륵')">#꼬르륵 (의성어)</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('아장아장')">#아장아장 (의태어)</button>
-            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('노르스름하다')">#노르스름하다 (색채어)</button>
-          </div>
-          <span id="soulSearchStatus" class="soul-search-status">총 133선 K-SOUL 수록</span>
-        </div>
+  <!-- 💎 K-정서 전용 7대 서브 카테고리 칩 필터 바 & 메뉴 내 전용 실시간 검색창 -->
+  <section class="soul-subcat-section" id="soulSubcatSection" style="display: none;">
+    <!-- 💎 K-정서 전용 인라인 실시간 검색창 -->
+    <div class="soul-search-wrap">
+      <div class="soul-search-row">
+        <span class="soul-search-icon">🔍</span>
+        <input type="text" id="soulSearchInput" class="soul-search-input" 
+               placeholder="💎 K-정서 단어 검색 (예: 눈치, 정, 한, 답답하다, 서운, 꼬르륵, 노르스름, nunchi, jeong...)" 
+               oninput="handleSoulSearch()">
+        <button type="button" id="soulSearchClearBtn" class="soul-search-clear-btn" onclick="clearSoulSearch()" title="검색어 지우기">✕</button>
       </div>
-
-      <!-- 테마별 탭 분류 -->
-      <div class="soul-subcat-container">
-        <button id="soulBtnAll" class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">전체보기 (133)</button>
-        <button id="soulBtnEmotion" class="soul-subcat-btn" onclick="filterSoulSubcat('emotion', event)">💭 심리·감정 (36)</button>
-        <button id="soulBtnRelationship" class="soul-subcat-btn" onclick="filterSoulSubcat('relationship', event)">🤝 관계·유대 (25)</button>
-        <button id="soulBtnBehavior" class="soul-subcat-btn" onclick="filterSoulSubcat('behavior', event)">🏃 습관·행동 (25)</button>
-        <button id="soulBtnCulture" class="soul-subcat-btn" onclick="filterSoulSubcat('culture', event)">🎎 사회·문화 (32)</button>
-        <button id="soulBtnOno" class="soul-subcat-btn" onclick="filterSoulSubcat('onomatopoeia', event)">🔊 의성어 (5)</button>
-        <button id="soulBtnMim" class="soul-subcat-btn" onclick="filterSoulSubcat('mimetic', event)">✨ 의태어 (5)</button>
-        <button id="soulBtnCol" class="soul-subcat-btn" onclick="filterSoulSubcat('color', event)">🎨 색채어 (5)</button>
+      <div class="soul-search-meta">
+        <div class="soul-quick-tags">
+          <span class="soul-quick-label">⚡ 빠른 검색:</span>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('눈치')">#눈치</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('정')">#정</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('한')">#한</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('답답하다')">#답답하다</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('서운하다')">#서운하다</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('꼬르륵')">#꼬르륵 (의성어)</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('아장아장')">#아장아장 (의태어)</button>
+          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('노르스름하다')">#노르스름하다 (색채어)</button>
+        </div>
+        <span id="soulSearchStatus" class="soul-search-status">총 133선 K-SOUL 수록</span>
       </div>
     </div>
 
-    <!-- 시대별 안내 배너 -->
-    <div class="era-info-box" id="eraInfoContent">
-      <span>✨ <strong>전체 318선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈까지 전 시대를 한눈에 탐색합니다.</span>
-      <span style="color:var(--accent-yellow); font-weight:700;">총 318개 표제어 수록</span>
+    <div class="soul-subcat-container">
+      <button id="soulBtnAll" class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">
+        <span>✨ 전체 K-Soul (133)</span>
+      </button>
+      <button id="soulBtnEmotion" class="soul-subcat-btn emotion" onclick="filterSoulSubcat('emotion', event)">
+        <span>💭 심리·감정 (36)</span>
+      </button>
+      <button id="soulBtnRelationship" class="soul-subcat-btn relationship" onclick="filterSoulSubcat('relationship', event)">
+        <span>🤝 관계·유대 (25)</span>
+      </button>
+      <button id="soulBtnBehavior" class="soul-subcat-btn behavior" onclick="filterSoulSubcat('behavior', event)">
+        <span>🏃 습관·행동 (25)</span>
+      </button>
+      <button id="soulBtnCulture" class="soul-subcat-btn culture" onclick="filterSoulSubcat('culture', event)">
+        <span>🎎 사회·문화 (32)</span>
+      </button>
+      <button id="soulBtnOno" class="soul-subcat-btn onomatopoeia" onclick="filterSoulSubcat('onomatopoeia', event)">
+        <span>🔊 의성어 (5)</span>
+      </button>
+      <button id="soulBtnMim" class="soul-subcat-btn mimetic" onclick="filterSoulSubcat('mimetic', event)">
+        <span>✨ 의태어 (5)</span>
+      </button>
+      <button id="soulBtnCol" class="soul-subcat-btn color" onclick="filterSoulSubcat('color', event)">
+        <span>🎨 색채어 (5)</span>
+      </button>
     </div>
+  </section>
 
-    <!-- 피드 헤더 & 정렬 -->
+  <!-- 선택된 시대 설명 바 -->
+  <div class="era-info-box" id="eraInfoBox">
+    <div class="era-info-content" id="eraInfoContent">
+      <span>✨ <strong>전체 100선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈까지 전 시대를 한눈에 탐색합니다.</span>
+      <span style="color:#facc15; font-weight:800; font-size:0.75rem;">총 318개 표제어 수록</span>
+    </div>
+  </div>
+
+  <!-- 메인 피드 -->
+  <main class="container">
     <div class="feed-header">
-      <div class="feed-title-wrap">
-        <span style="font-size: 1.25rem;">📖</span>
-        <h2 class="feed-title" id="feedTitleText">전체 신조어 318선</h2>
-        <span class="feed-count-badge" id="feedCountBadge">318개</span>
+      <div class="feed-title">
+        <span>📚</span>
+        <span id="feedTitleText">신조어 피드</span>
+        <span class="feed-count-badge" id="feedCountBadge">70개</span>
       </div>
-
-      <div class="filter-group">
-        <button class="filter-tab-btn active" onclick="setFilter('hot', event)">인기순</button>
-        <button class="filter-tab-btn" onclick="setFilter('new', event)">최신순</button>
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="setFilter('hot')">인기순</button>
+        <button class="filter-tab" onclick="setFilter('latest')">최신순</button>
       </div>
     </div>
 
-    <!-- 신조어 카드 그리드 컨테이너 -->
-    <div class="words-container" id="wordsContainer"></div>
-
-    <!-- 커피 한 잔 후원 & 세대소통 응원 위젯 -->
-    <section class="support-coffee-section">
-      <div class="coffee-card">
-        <div class="coffee-icon">☕</div>
-        <div class="coffee-text-area">
-          <h3>"나랏말싸미 힙해져라!" 말쌈 사전 개발팀을 응원해 주세요</h3>
-          <p>한국어의 숨은 역사와 세대 소통을 연구하는 청년 개발진에게 따뜻한 커피 한 잔(1,000원)의 에너지를 선물해 주실 수 있습니다.</p>
-        </div>
-        <div class="coffee-action-area">
-          <button class="btn-coffee-sponsor" onclick="openCoffeeSponsor()">
-            <span>☕ 1,000원 커피 후원하기</span>
-          </button>
-          <span class="coffee-sponsor-note">카카오페이 / 토스 간편결제 지원</span>
-        </div>
-      </div>
-    </section>
-
+    <!-- 단어 리스트 렌더링 영역 -->
+    <div id="wordsContainer"></div>
   </main>
 
-  <!-- ⚔️ 세대 공감 배틀 퀴즈 모달 -->
-  <div class="modal-overlay" id="quizModal">
-    <div class="modal-card" style="max-width: 600px;">
-      
-      <!-- 퀴즈 진행 뷰 -->
-      <div id="quizPlayView">
-        <div class="quiz-header">
-          <span class="quiz-mode-pill" id="quizModeBadge">👔 부모·팀장님 모드</span>
-          <span class="quiz-progress-text" id="quizStepText">Q1 / 5문항</span>
-        </div>
-
-        <div class="quiz-progress-bar-wrap">
-          <div class="quiz-progress-fill" id="quizProgressFill" style="width: 20%;"></div>
-        </div>
-
-        <div class="quiz-question-box">
-          <div class="quiz-q-label">다음 신조어의 올바른 뜻은 무엇일까요?</div>
-          <div class="quiz-q-word" id="quizWord">'영포티'</div>
-          <div class="quiz-q-example" id="quizExample">[맥락] "우리 부서 김 부장님 요즘 옷 입는 스타일 완전 영포티 그 자체야!"</div>
-        </div>
-
-        <div class="quiz-options-grid" id="quizOptionsContainer"></div>
-
-        <div class="modal-actions" style="margin-top: 15px;">
-          <button class="btn-cancel" onclick="closeQuizModal()">퀴즈 중단하기</button>
-        </div>
-      </div>
-
-      <!-- 퀴즈 결과 뷰 -->
-      <div id="quizResultView" style="display: none; text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 8px;">🎓</div>
-        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; margin-bottom: 4px;">세대 소통 공감 진단 완료!</h2>
-        
-        <div class="result-score-circle">
-          <span class="score-number" id="quizScoreText">80점</span>
-          <span class="score-label">100점 만점</span>
-        </div>
-
-        <div class="result-grade-badge" id="quizGradeText">🥇 LV.80 센스만점 트렌드 리더</div>
-        <p class="result-desc" id="quizResultDesc">대부분의 맥락을 이해하고 계시네요! 조직 내 소통에 전혀 문제없습니다.</p>
-
-        <div class="result-action-box">
-          <button class="btn-cert-download" onclick="openTierModal()">
-            <span>🏆 정식 세대소통 인증서 & 가이드북 발급</span>
-          </button>
-          <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px;">
-            <button class="btn-quiz-retry" onclick="restartCurrentQuiz()">🔄 다시 풀기</button>
-            <button class="btn-cancel" onclick="closeQuizModal()">닫기</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 결제 티어 선택 모달 -->
-  <div class="modal-overlay" id="tierModal">
-    <div class="modal-card" style="max-width: 580px; text-align: center;">
-      <h2 style="font-size: 1.45rem; font-weight: 900; color: #fff; margin-bottom: 6px;">🎓 세대 소통 공식 리포트 발급 패키지</h2>
-      <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 20px;">사내 제출 및 HR 교육 자료로 공인 활용 가능한 정식 수료증과 가이드북을 발급합니다.</p>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; text-align: left; margin-bottom: 20px;">
-        <div class="tier-card active" id="tierCard1" onclick="selectTier(1)">
-          <div style="font-size: 0.76rem; color: #38bdf8; font-weight: 800; margin-bottom: 4px;">개인 소장용</div>
-          <div style="font-size: 1.15rem; font-weight: 900; color: #fff; margin-bottom: 6px;">정식 인증 리포트</div>
-          <div style="font-size: 1.4rem; font-weight: 900; color: #facc15; margin-bottom: 10px;">1,000원 <span style="font-size:0.8rem; color:#94a3b8; font-weight:normal;">($0.99)</span></div>
-          <ul style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.6; padding-left: 14px;">
-            <li>공식 진단 점수 및 등급 기재</li>
-            <li>정식 시리얼 발급 인증서 (PDF)</li>
-            <li>세대 소통 10계명 가이드 포함</li>
-          </ul>
-        </div>
-
-        <div class="tier-card" id="tierCard2" onclick="selectTier(2)">
-          <div style="font-size: 0.76rem; color: #f43f5e; font-weight: 800; margin-bottom: 4px;">기업·팀 워크숍 전용</div>
-          <div style="font-size: 1.15rem; font-weight: 900; color: #fff; margin-bottom: 6px;">B2B 사내 지출결의서 팩</div>
-          <div style="font-size: 1.4rem; font-weight: 900; color: #f43f5e; margin-bottom: 10px;">9,900원 <span style="font-size:0.8rem; color:#94a3b8; font-weight:normal;">($7.99)</span></div>
-          <ul style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.6; padding-left: 14px;">
-            <li><strong>사내 법인 지출결의서 & 영수증</strong> 포함</li>
-            <li>318종 신조어 전수 매핑 교육 리포트</li>
-            <li>HR 부서 제출용 정식 인쇄 포맷</li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <button class="btn-submit" style="width: 100%; padding: 12px; background: #fee500; color: #000; font-weight: 800; border: none; border-radius: 8px; cursor: pointer;" onclick="requestKakaoPay()">
-          🟡 카카오페이로 1초 간편 결제
-        </button>
-        <button class="btn-submit" style="width: 100%; padding: 12px; background: #0064FF; color: #fff; font-weight: 800; border: none; border-radius: 8px; cursor: pointer;" onclick="requestTossPay()">
-          🔵 토스페이로 결제하기
-        </button>
-        <button class="btn-submit" style="width: 100%; padding: 12px; background: #1e293b; color: #38bdf8; font-weight: 800; border: 1px solid #38bdf8; border-radius: 8px; cursor: pointer;" onclick="requestPayPal()">
-          🌐 Global PayPal Checkout ($USD)
-        </button>
-        <button class="btn-cancel" style="width: 100%; padding: 10px; margin-top: 4px;" onclick="closeTierModal()">
-          닫기
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 신조어 제보 모달 -->
+  <!-- 새 단어 제보 모달 -->
   <div class="modal-overlay" id="addModal">
     <div class="modal-card">
-      <h2 class="modal-title">✨ 새로운 신조어 제보하기</h2>
-      <p class="modal-desc">당신이 알고 있는 트렌디한 신조어나 라떼 시절 단어를 등록해 집단지성에 기여하세요!</p>
+      <h2 class="modal-title">✨ 새로운 신조어 등록</h2>
+      <p class="modal-desc">우리가 쓰는 살아있는 한국어를 제보해 주세요! 집단지성으로 검증됩니다.</p>
 
       <form id="addWordForm" onsubmit="submitNewWord(event)">
         <div class="form-group">
-          <label class="form-label">단어명 (신조어) <span style="color:#f43f5e;">*</span></label>
-          <input type="text" id="newWord" class="form-control" placeholder="예: 영ㅋㅋ, 분좋카, 핑프" required>
+          <label class="form-label">표제어 (단어) <span style="color:#f43f5e;">*</span></label>
+          <input type="text" id="newWord" class="form-control" placeholder="예: 분좋카, 핑프, 억까" required>
+        </div>
+
+        <div style="display:flex; gap:10px; margin-bottom:14px;">
+          <div style="flex:1;">
+            <label class="form-label">시대 구분</label>
+            <select id="newEra" class="form-control" style="cursor:pointer;">
+              <option value="shorts" selected>3. ⚡ 요즘 1020 밈 (2020s~)</option>
+              <option value="smartphone">2. 📱 국민 유행어 (2010s)</option>
+              <option value="latte">1. 📟 라떼 추억 (1990~2000s)</option>
+            </select>
+          </div>
+          <div style="flex:1;">
+            <label class="form-label">품사</label>
+            <select id="newPos" class="form-control" style="cursor:pointer;">
+              <option value="신조어">신조어</option>
+              <option value="명사">명사</option>
+              <option value="동사">동사</option>
+              <option value="형용사">형용사</option>
+              <option value="감탄사">감탄사</option>
+            </select>
+          </div>
         </div>
 
         <div class="form-group">
-          <label class="form-label">시대 구분 <span style="color:#f43f5e;">*</span></label>
-          <select id="newEra" class="form-control" style="cursor:pointer;">
-            <option value="shorts">3. ⚡ 요즘 1020 밈 (2020~2026)</option>
-            <option value="smartphone">2. 📱 국민 유행어 (2010s)</option>
-            <option value="latte">1. 📟 라떼 추억 (1990~2000s)</option>
-          </select>
+          <label class="form-label">1줄 핵심 정의 <span style="color:#f43f5e;">*</span></label>
+          <input type="text" id="newDef" class="form-control" placeholder="단어의 의미를 명쾌하게 한 줄로 설명해 주세요." required>
         </div>
 
         <div class="form-group">
-          <label class="form-label">품사</label>
-          <select id="newPos" class="form-control" style="cursor:pointer;">
-            <option value="명사">명사</option>
-            <option value="동사">동사</option>
-            <option value="형용사">형용사</option>
-            <option value="감탄사">감탄사</option>
-            <option value="신조어">신조어/기타</option>
-          </select>
+          <label class="form-label">기성 표준어 대응어 (부모/팀장님 번역)</label>
+          <input type="text" id="newStandard" class="form-control" placeholder="예: 약 오르다, 포기하지 않는 마음, 핑거 프린세스">
         </div>
 
         <div class="form-group">
-          <label class="form-label">핵심 의미 및 뜻 <span style="color:#f43f5e;">*</span></label>
-          <textarea id="newDef" class="form-control" rows="2" placeholder="이 단어의 뉘앙스와 정확한 뜻을 설명해 주세요." required></textarea>
+          <label class="form-label">실전 대화 예문</label>
+          <textarea id="newExample" class="form-control" placeholder="A: 오늘 진짜 폼 미쳤는데?&#10;B: 인정? 어 인정!"></textarea>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">기성 표준어 대응 표현 (팀장님 소통용)</label>
-          <input type="text" id="newStandard" class="form-control" placeholder="예: 분위기 좋은 카페, 핑거 프린세스">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">실전 대화 용례 (예문)</label>
-          <textarea id="newExample" class="form-control" rows="2" placeholder="A: 주말에 성수동 갔는데 완전 분좋카더라!&#10;B: 어디야? 나도 가볼래!"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">해시태그 (쉼표로 구분)</label>
-          <input type="text" id="newTags" class="form-control" placeholder="성수, 카페, 1020, 인스타">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">제보자 닉네임</label>
-          <input type="text" id="newAuthor" class="form-control" placeholder="예: 트렌드세터">
+        <div style="display:flex; gap:10px;">
+          <div class="form-group" style="flex:2;">
+            <label class="form-label">태그 (쉼표 구분)</label>
+            <input type="text" id="newTags" class="form-control" placeholder="예: 밈, 직장생활, 일상">
+          </div>
+          <div class="form-group" style="flex:1;">
+            <label class="form-label">제보자 닉네임</label>
+            <input type="text" id="newAuthor" class="form-control" placeholder="언어술사">
+          </div>
         </div>
 
         <div class="modal-actions">
           <button type="button" class="btn-cancel" onclick="closeAddModal()">취소</button>
-          <button type="submit" class="btn-submit">제보 등록하기</button>
+          <button type="submit" class="btn-submit">사전에 등록하기</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- 퀴즈 모달 (Dual Battle Quiz & 2-Tier B2B Monetization) -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="quiz-card">
+      <!-- 퀴즈 진행 뷰 -->
+      <div id="quizPlayView">
+        <div class="quiz-progress-bar-bg">
+          <div class="quiz-progress-bar-fill" id="quizProgressFill"></div>
+        </div>
+        <div class="quiz-header">
+          <span class="quiz-mode-pill" id="quizModeBadge">👔 부모·팀장님 모드</span>
+          <button style="background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;" onclick="closeQuizModal()">✕</button>
+        </div>
+        <h3 class="quiz-question" id="quizQuestionText">질문 로딩 중...</h3>
+        <div class="quiz-options" id="quizOptionsContainer"></div>
+      </div>
+
+      <!-- 퀴즈 결과 뷰 -->
+      <div id="quizResultView" style="display:none;" class="quiz-result-box">
+        <button style="position:absolute; top:20px; right:20px; background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;" onclick="closeQuizModal()">✕</button>
+        <div class="result-score" id="quizScoreText">100점</div>
+        <div class="result-grade" id="quizGradeText">👑 LV.99 세대 소통 갓(God)</div>
+        <p class="result-desc" id="quizDescText">당신은 현대 한국어와 세대 간 언어를 자유자재로 해독하는 진정한 소통 능력자입니다!</p>
+
+        <!-- 2-Tier B2B 수익화 모델 패키지 선택 -->
+        <div style="margin-bottom:18px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="font-weight:900; font-size:0.95rem; color:#facc15;">💎 세대 소통 공식 리포트 & 패키지 발급</span>
+            <span style="font-size:0.75rem; color:#94a3b8;">원하는 패키지를 선택하세요</span>
+          </div>
+
+          <div class="tier-pricing-grid">
+            <!-- Tier 1: 개인 소장용 -->
+            <div class="tier-card selected" id="tierCard1" onclick="selectTier(1)">
+              <span class="tier-badge" style="background:rgba(250,204,21,0.2); color:#facc15;">개인 소장용</span>
+              <h4 class="tier-title">개인 트렌드 요약 리포트</h4>
+              <div class="tier-price">1,000원 <span style="font-size:0.75rem; color:#94a3b8; font-weight:normal;">/ $0.99</span></div>
+              <ul class="tier-features">
+                <li>문해력 디지털 공식 인증서</li>
+                <li>2026 필수 MZ 신조어 요약본</li>
+                <li>개인 PDF 즉시 저장 / 인쇄</li>
+              </ul>
+            </div>
+
+            <!-- Tier 2: 기업·조직 HR 패키지 -->
+            <div class="tier-card tier-b2b" id="tierCard2" onclick="selectTier(2)">
+              <span class="tier-badge" style="background:rgba(168,85,247,0.25); color:#c084fc;">🏢 기업·HR 추천</span>
+              <h4 class="tier-title">세대 소통 워크숍 패키지</h4>
+              <div class="tier-price">9,900원 <span style="font-size:0.75rem; color:#c084fc; font-weight:normal;">/ $7.99</span></div>
+              <ul class="tier-features">
+                <li><strong>3대 70종 신조어 전수 총람 사전</strong></li>
+                <li>신입사원-팀장 소통 10계명 가이드</li>
+                <li>사내 워크숍용 퀴즈 PPT 덱</li>
+                <li><strong>🧾 회사 제출용 지출결의서 & 영수증</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 결제 버튼 그룹 -->
+          <div class="pay-btn-group">
+            <button class="pay-btn pay-kakao" onclick="requestKakaoPay()">💛 카카오페이 결제</button>
+            <button class="pay-btn pay-toss" onclick="requestTossPay()">💙 토스페이 결제</button>
+            <button class="pay-btn pay-paypal" onclick="requestPayPal()">🌐 PayPal Checkout</button>
+            <button class="pay-btn pay-coffee" onclick="openCoffeeSponsor()">☕ 1,000원 후원</button>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+          <button class="btn-cancel" onclick="restartCurrentQuiz()">🔄 다시 풀기</button>
+          <button class="btn-submit" style="background:linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%); color:#fff;" onclick="shareQuizResult()">
+            <span>📢 친구 & 동료에게 내 점수 공유하기</span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -543,7 +517,7 @@
         <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">결제 수단:</span> <strong id="receiptProvider" style="color:#38bdf8;">카카오페이</strong></div>
         <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">거래 승인번호:</span> <code id="receiptTxId" style="color:#facc15;">TX-2026-OK</code></div>
         <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">결제 금액:</span> <strong id="receiptAmount" style="color:#fff;">9,900원</strong></div>
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">발급 서류:</span> <span style="color:#cbd5e1;" id="receiptDocs">318종 총람 리포트 + 사내 지출결의서</span></div>
+        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">발급 서류:</span> <span style="color:#cbd5e1;" id="receiptDocs">70종 총람 리포트 + 사내 지출결의서</span></div>
       </div>
 
       <!-- 리포트 다운로드 및 열람 액션 -->
@@ -625,6 +599,7 @@
     </div>
   </div>
 
+  
   <!-- 🎴 [스페인어 스타일 3D FLIP CARD 상황극 모달] -->
   <div class="roleplay-modal-overlay" id="roleplayModal" onclick="if(event.target===this)closeRoleplayModal()">
     <div class="roleplay-modal-inner">
