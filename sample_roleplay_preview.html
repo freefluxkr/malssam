@@ -1574,6 +1574,63 @@
       }
     }
 
+    // 🎭 캐릭터 & 언어별 최적 Voice 탐색
+    function getPreviewBestVoice(lang, actorName) {
+      if (!('speechSynthesis' in window)) return null;
+      const voices = window.speechSynthesis.getVoices() || [];
+      const targetPrefix = lang.toLowerCase();
+      const langVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith(targetPrefix));
+      if (langVoices.length === 0) return null;
+
+      const isFemale = (actorName && (actorName.includes('제니퍼') || actorName.includes('Jennifer')));
+      if (targetPrefix === 'ko') {
+        const googleKo = langVoices.find(v => v.name.includes('Google') || v.name.includes('한국의'));
+        return googleKo || langVoices[0];
+      }
+      if (targetPrefix === 'en') {
+        if (isFemale) {
+          const femaleVoice = langVoices.find(v => v.name.includes('Zira') || v.name.includes('Female'));
+          if (femaleVoice) return femaleVoice;
+        } else {
+          const maleVoice = langVoices.find(v => v.name.includes('David') || v.name.includes('Mark'));
+          if (maleVoice) return maleVoice;
+        }
+        return langVoices[0];
+      }
+      const googleVoice = langVoices.find(v => v.name.includes('Google'));
+      return googleVoice || langVoices[0];
+    }
+
+    function sanitizePreviewText(text, lang) {
+      if (!text) return '';
+      let c = String(text);
+      if (lang === 'ko') {
+        c = c.replace(/~/g, ', ')
+             .replace(/5G/gi, '파이브지')
+             .replace(/AWS/gi, '에이더블유에스')
+             .replace(/UI\/UX/gi, '유아이 유엑스')
+             .replace(/[!]{2,}/g, '!')
+             .replace(/\.\.\./g, '... ');
+      } else if (lang === 'en') {
+        c = c.replace(/~/g, ', ')
+             .replace(/5G/gi, 'five G')
+             .replace(/AWS/gi, 'A W S')
+             .replace(/UI\/UX/gi, 'U I and U X');
+      } else {
+        c = c.replace(/~/g, ', ');
+      }
+      return c.trim();
+    }
+
+    function calculatePreviewDuration(text, rate, lang) {
+      const safeRate = rate || 1.0;
+      const len = (text || '').length;
+      let charMs = (lang === 'ko') ? 175 : ((lang === 'en' || lang === 'es') ? 85 : 120);
+      return Math.max(4600, Math.round((len * charMs) / safeRate));
+    }
+
+    let previewSpeechStartTime = 0;
+
     function playCurrentSceneAudio() {
       stopAudio();
       const scriptList = DRAMA_SCRIPTS[currentLang] || DRAMA_SCRIPTS['ko'];
@@ -1584,22 +1641,41 @@
       if (sub) {
         sub.style.border = `1.5px solid ${s.color}`;
         sub.style.borderRadius = '10px';
-        sub.style.padding = '6px 10px';
-        sub.style.background = 'rgba(0,0,0,0.5)';
-        sub.style.boxShadow = `0 0 15px ${s.color}44`;
+        sub.style.padding = '8px 12px';
+        sub.style.background = 'rgba(0,0,0,0.65)';
+        sub.style.boxShadow = `0 0 20px ${s.color}55`;
+      }
+
+      const rawText = s.speechText || s.dialogue;
+      const textToSpeak = sanitizePreviewText(rawText, currentLang);
+      const voiceRate = s.voiceRate || 0.95;
+      const expectedDuration = calculatePreviewDuration(textToSpeak, voiceRate, currentLang);
+      const naturalTurnPause = 1200; // 사람 간 대화 여운 호흡
+      const totalSceneDuration = expectedDuration + naturalTurnPause;
+
+      // 상단 프로그레스 바 실시간 싱크
+      const curFill = document.getElementById(`fill-${currentScene}`);
+      if (curFill) {
+        curFill.style.transition = 'none';
+        curFill.style.width = '0%';
+        requestAnimationFrame(() => {
+          curFill.style.transition = `width ${totalSceneDuration}ms linear`;
+          curFill.style.width = '100%';
+        });
       }
 
       if (!isMuted && ('speechSynthesis' in window)) {
-        const textToSpeak = s.speechText || s.dialogue;
         const u = new SpeechSynthesisUtterance(textToSpeak);
         u.lang = meta.ttsLang;
-        u.rate = s.voiceRate;
-        u.pitch = s.pitch;
+        u.rate = voiceRate;
+        u.pitch = s.pitch || 1.0;
 
-        // 크롬 브라우저 장문 정지 방지용 전역 레퍼런스 유지
+        const bestVoice = getPreviewBestVoice(currentLang, s.actor);
+        if (bestVoice) u.voice = bestVoice;
+
+        previewSpeechStartTime = Date.now();
         window._activeUtterance = u;
 
-        // 크롬 백그라운드 침묵 방지 keep-alive 핑 (8초 주기)
         keepAliveInterval = setInterval(() => {
           if (window.speechSynthesis.speaking) {
             window.speechSynthesis.pause();
@@ -1607,34 +1683,38 @@
           } else {
             clearInterval(keepAliveInterval);
           }
-        }, 8000);
+        }, 7000);
 
-        // 🔥 핵심: 절대로 타이머로 중간에 끊지 않고, 오디오가 완전히 끝났을 때만 onend로 다음 씬 진행!
+        // 🔥 대화 짤림 방지: 조기 종료 방어 및 자연스러운 호흡 여운
         u.onend = () => {
           clearInterval(keepAliveInterval);
           if (!isPlaying) return;
-          // 발화가 완전히 끝난 뒤 0.6초간 자연스러운 정적/호흡을 두고 다음 씬으로 전환
+          const elapsed = Date.now() - previewSpeechStartTime;
+          const remaining = Math.max(0, expectedDuration - elapsed);
           fallbackTimer = setTimeout(() => {
             advanceNext();
-          }, 600);
+          }, remaining + naturalTurnPause);
         };
 
         u.onerror = (e) => {
           clearInterval(keepAliveInterval);
           console.warn("SpeechSynthesis error:", e);
           if (isPlaying) {
-            fallbackTimer = setTimeout(advanceNext, 4500);
+            fallbackTimer = setTimeout(advanceNext, totalSceneDuration);
           }
         };
+
+        const safetyTimeout = totalSceneDuration + 3000;
+        fallbackTimer = setTimeout(() => {
+          if (isPlaying) advanceNext();
+        }, safetyTimeout);
 
         window.speechSynthesis.speak(u);
 
       } else {
-        // 음소거 또는 음성 미지원 브라우저인 경우에만 넉넉한 읽기 시간 제공
-        const readTime = Math.max(4000, s.dialogue.length * 150);
         fallbackTimer = setTimeout(() => {
           if (isPlaying) advanceNext();
-        }, readTime);
+        }, totalSceneDuration);
       }
     }
 

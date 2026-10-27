@@ -1,8 +1,11 @@
 // ============================================================
-// 🎬 [말쌈 3D 숏폼 상황극 엔진: js/roleplay.js]
-// - 스페인어 스타일 3D Flip Card 회전 제어
-// - 6개국어(KR, EN, JA, ES, VI, ID) 자막 & Web Speech API 음성 더빙
-// - onend 이벤트 기반 100% 대화 싱크 (말 끊김 제로)
+// 🎬 [말쌈 3D 숏폼 상황극 엔진 v2: js/roleplay.js]
+// - 6개국어 캐릭터별 최적 자연어 Voice 자동 매핑 (Google/Natural 우선)
+// - 글자수 기반 정밀 Duration Guard & 대화 짤림 100% 방지
+// - 사람 대화 호흡 1.2초 보장 (Natural Turn-taking Pause)
+// - 특수문자 및 약어 구어체 정밀 전처리 (~, 5G, AWS, UI/UX 등)
+// - 인스타그램 숏폼 릴스 스타일 실시간 동기화 프로그레스 게이지
+// - Web Audio API 부드러운 씬 트랜지션 사운드 효과
 // ============================================================
 
 (function () {
@@ -14,6 +17,162 @@
   let isMuted = false;
   let fallbackTimer = null;
   let keepAliveInterval = null;
+  let speechStartTime = 0;
+  let cachedVoices = [];
+  let audioCtx = null;
+
+  // 🔊 Web Audio API 기반 소프트 트랜지션 사운드
+  function playSoftChime() {
+    if (isMuted) return;
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      if (!audioCtx) audioCtx = new AudioContextClass();
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      const now = audioCtx.currentTime;
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, now); // C5
+      osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.08); // G5
+
+      gain.gain.setValueAtTime(0.04, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now);
+      osc.stop(now + 0.12);
+    } catch (e) {
+      // AudioContext 정책 방어
+    }
+  }
+
+  // 🎙️ 브라우저 사용 가능 음성 로드 & 캐싱
+  function loadVoices() {
+    if ('speechSynthesis' in window) {
+      cachedVoices = window.speechSynthesis.getVoices();
+    }
+  }
+
+  if ('speechSynthesis' in window) {
+    loadVoices();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+  }
+
+  // 🎭 캐릭터 & 언어별 최적 Voice 탐색
+  function selectBestVoice(lang, actorName) {
+    if (!cachedVoices || cachedVoices.length === 0) {
+      loadVoices();
+    }
+    const voices = cachedVoices || [];
+    const targetLangPrefix = lang.toLowerCase();
+
+    // 언어 일치 음성 필터링
+    const langVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith(targetLangPrefix));
+    if (langVoices.length === 0) {
+      return null;
+    }
+
+    const isFemale = (actorName && (actorName.includes('제니퍼') || actorName.includes('Jennifer')));
+
+    // 1) 한국어
+    if (targetLangPrefix === 'ko') {
+      const googleKo = langVoices.find(v => v.name.includes('Google') || v.name.includes('한국의'));
+      if (googleKo) return googleKo;
+      return langVoices[0];
+    }
+
+    // 2) 영어
+    if (targetLangPrefix === 'en') {
+      if (isFemale) {
+        const femaleVoice = langVoices.find(v => v.name.includes('Zira') || v.name.includes('Female') || v.name.includes('Samantha') || v.name.includes('Jenny'));
+        if (femaleVoice) return femaleVoice;
+      } else {
+        const maleVoice = langVoices.find(v => v.name.includes('David') || v.name.includes('Mark') || v.name.includes('Guy') || v.name.includes('Male'));
+        if (maleVoice) return maleVoice;
+      }
+      const googleEn = langVoices.find(v => v.name.includes('Google'));
+      if (googleEn) return googleEn;
+      return langVoices[0];
+    }
+
+    // 3) 일본어
+    if (targetLangPrefix === 'ja') {
+      const googleJa = langVoices.find(v => v.name.includes('Google') || v.name.includes('日本語') || v.name.includes('Ayumi') || v.name.includes('Haruka'));
+      return googleJa || langVoices[0];
+    }
+
+    // 4) 스페인어
+    if (targetLangPrefix === 'es') {
+      const googleEs = langVoices.find(v => v.name.includes('Google') || v.name.includes('Helena') || v.name.includes('Laura'));
+      return googleEs || langVoices[0];
+    }
+
+    // 5) 인도네시아어
+    if (targetLangPrefix === 'id') {
+      const googleId = langVoices.find(v => v.name.includes('Google') || v.name.includes('Gadis') || v.name.includes('Andika'));
+      return googleId || langVoices[0];
+    }
+
+    // 6) 베트남어
+    if (targetLangPrefix === 'vi') {
+      const googleVi = langVoices.find(v => v.name.includes('Google') || v.name.includes('An'));
+      return googleVi || langVoices[0];
+    }
+
+    return langVoices[0];
+  }
+
+  // 📝 구어체 발음 전처리 (특수기호, 외래어, 약어 음성 다듬기)
+  function sanitizeSpeechText(text, lang) {
+    if (!text) return '';
+    let cleaned = String(text);
+
+    if (lang === 'ko') {
+      cleaned = cleaned
+        .replace(/~/g, ', ')                      // 물결표는 여유로운 쉼표로 발음
+        .replace(/5G/gi, '파이브지')              // 5G -> 파이브지
+        .replace(/AWS/gi, '에이더블유에스')       // AWS -> 에이더블유에스
+        .replace(/UI\/UX/gi, '유아이 유엑스')     // UI/UX -> 유아이 유엑스
+        .replace(/UX/gi, '유엑스')                // UX -> 유엑스
+        .replace(/UI/gi, '유아이')                // UI -> 유아이
+        .replace(/[!]{2,}/g, '!')                 // 연속 느낌표 정돈
+        .replace(/[?]{2,}/g, '?')                 // 연속 물음표 정돈
+        .replace(/\.\.\./g, '... ');              // 말줄임표 여운
+    } else if (lang === 'en') {
+      cleaned = cleaned
+        .replace(/~/g, ', ')
+        .replace(/5G/gi, 'five G')
+        .replace(/AWS/gi, 'A W S')
+        .replace(/UI\/UX/gi, 'U I and U X');
+    } else {
+      cleaned = cleaned.replace(/~/g, ', ');
+    }
+
+    return cleaned.trim();
+  }
+
+  // ⏱️ 대사 최소 발화 보장 시간 계산 (글자수 기반 정밀 계산)
+  function calculateExpectedDuration(text, rate, lang) {
+    const safeRate = rate || 1.0;
+    const len = (text || '').length;
+    let charMs = 175; // 한국어 한 글자당 평균 약 175ms
+
+    if (lang === 'en' || lang === 'es') charMs = 85;
+    else if (lang === 'ja') charMs = 155;
+    else if (lang === 'vi' || lang === 'id') charMs = 110;
+
+    // 최소 4.5초 보장
+    const computed = (len * charMs) / safeRate;
+    return Math.max(4600, Math.round(computed));
+  }
 
   // 🎴 모달 열기 / 닫기
   window.openRoleplayModal = function (wordId, ev) {
@@ -110,6 +269,8 @@
       window.speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(word || '눈치');
       u.lang = 'ko-KR';
+      const voice = selectBestVoice('ko', '');
+      if (voice) u.voice = voice;
       u.rate = 0.9;
       window.speechSynthesis.speak(u);
     }
@@ -179,12 +340,12 @@
       else player.classList.remove('rp-screen-shake');
     }
 
-    // 프로그레스 바 게이지
+    // 프로그레스 바 초기화 (현재 씬 이전은 100%, 이후는 0%)
     for (let i = 0; i < scripts.length; i++) {
       const fill = document.getElementById(`rpFill-${i}`);
       if (fill) {
+        fill.style.transition = 'none';
         if (i < idx) fill.style.width = '100%';
-        else if (i === idx) fill.style.width = '100%';
         else fill.style.width = '0%';
       }
     }
@@ -210,6 +371,7 @@
     }
   }
 
+  // 🎬 핵심: 오디오 재생 및 실시간 프로그레스 바 정밀 싱크
   function playCurrentSceneAudio() {
     stopAudio();
     const scripts = (window.DRAMA_SCRIPTS && window.DRAMA_SCRIPTS[currentLang]) ? window.DRAMA_SCRIPTS[currentLang] : (window.DRAMA_SCRIPTS ? window.DRAMA_SCRIPTS['ko'] : []);
@@ -218,27 +380,58 @@
     const s = scripts[currentScene];
     const metaMap = window.LANG_METADATA || {};
     const meta = metaMap[currentLang] || metaMap['ko'];
+    const targetTtsLang = meta ? meta.ttsLang : 'ko-KR';
 
+    // 씬 전환 시 가벼운 트랜지션 사운드
+    playSoftChime();
+
+    // 자막 하이라이트 펄스 연출
     const sub = document.getElementById('rpMainSubtitle');
     if (sub) {
       sub.style.border = `1.5px solid ${s.color || '#ff007f'}`;
       sub.style.borderRadius = '10px';
-      sub.style.padding = '6px 10px';
-      sub.style.background = 'rgba(0,0,0,0.5)';
-      sub.style.boxShadow = `0 0 15px ${s.color || '#ff007f'}44`;
+      sub.style.padding = '8px 12px';
+      sub.style.background = 'rgba(0,0,0,0.65)';
+      sub.style.boxShadow = `0 0 20px ${s.color || '#ff007f'}55`;
+    }
+
+    // 발화 텍스트 정밀 전처리
+    const rawText = s.speechText || s.dialogue || '';
+    const textToSpeak = sanitizeSpeechText(rawText, currentLang);
+    const voiceRate = s.voiceRate || 0.95;
+
+    // 예상 발화 시간 & 턴테이킹 호흡 간격 (1.2초)
+    const expectedDuration = calculateExpectedDuration(textToSpeak, voiceRate, currentLang);
+    const naturalTurnPause = 1200; // 사람 간 대화 여운 호흡
+    const totalSceneDuration = expectedDuration + naturalTurnPause;
+
+    // 📱 인스타그램 스토리 릴스 스타일 실시간 프로그레스 바 채우기
+    const curFill = document.getElementById(`rpFill-${currentScene}`);
+    if (curFill) {
+      curFill.style.transition = 'none';
+      curFill.style.width = '0%';
+      requestAnimationFrame(() => {
+        curFill.style.transition = `width ${totalSceneDuration}ms linear`;
+        curFill.style.width = '100%';
+      });
     }
 
     if (!isMuted && ('speechSynthesis' in window)) {
-      const textToSpeak = s.speechText || s.dialogue;
       const u = new SpeechSynthesisUtterance(textToSpeak);
-      u.lang = meta ? meta.ttsLang : 'ko-KR';
-      u.rate = s.voiceRate || 1.0;
+      u.lang = targetTtsLang;
+      u.rate = voiceRate;
       u.pitch = s.pitch || 1.0;
 
-      // 크롬 GC 수집 방지 전역 레퍼런스
+      // 캐릭터별 최적 자연어 음성 할당
+      const bestVoice = selectBestVoice(currentLang, s.actor);
+      if (bestVoice) {
+        u.voice = bestVoice;
+      }
+
+      speechStartTime = Date.now();
       window._activeUtterance = u;
 
-      // 크롬 백그라운드 침묵 방지 keep-alive 핑
+      // 크롬 브라우저 장문 침묵 버그 방지 keep-alive 핑
       keepAliveInterval = setInterval(() => {
         if (window.speechSynthesis.speaking) {
           window.speechSynthesis.pause();
@@ -246,33 +439,46 @@
         } else {
           clearInterval(keepAliveInterval);
         }
-      }, 8000);
+      }, 7000);
 
-      // 🔥 핵심: 음성이 완전히 끝난 후 0.6초간 여유 호흡을 두고 다음 씬으로 전환
+      // 🔥 대화 짤림 방지 핵심: 조기 종료 버그 방어 및 자연스러운 호흡 여운
       u.onend = () => {
         clearInterval(keepAliveInterval);
         if (!isPlaying) return;
+
+        const elapsed = Date.now() - speechStartTime;
+        // 브라우저 버그로 너무 일찍 끝났다면(예: 3초 만에 짤림), 실제 문장 끝까지 남은 시간만큼 대기!
+        const remainingSpeakTime = Math.max(0, expectedDuration - elapsed);
+
         fallbackTimer = setTimeout(() => {
           advanceNext();
-        }, 600);
+        }, remainingSpeakTime + naturalTurnPause);
       };
 
       u.onerror = (e) => {
         clearInterval(keepAliveInterval);
-        console.warn("SpeechSynthesis error:", e);
+        console.warn("SpeechSynthesis notification:", e);
         if (isPlaying) {
-          fallbackTimer = setTimeout(advanceNext, 4500);
+          // 음성 에러 시에도 자막을 편안하게 읽을 수 있도록 전체 시간 대기
+          fallbackTimer = setTimeout(advanceNext, totalSceneDuration);
         }
       };
+
+      // 안전 Fallback 타임아웃: 어떤 브라우저 버그로도 영구 멈춤 방지
+      const safetyTimeout = totalSceneDuration + 3000;
+      fallbackTimer = setTimeout(() => {
+        if (isPlaying) {
+          advanceNext();
+        }
+      }, safetyTimeout);
 
       window.speechSynthesis.speak(u);
 
     } else {
-      // 음소거 환경 넉넉한 읽기 시간
-      const readTime = Math.max(3800, (s.dialogue || '').length * 150);
+      // 음소거 상태: 자막을 충분히 읽을 수 있는 넉넉한 시간 제공
       fallbackTimer = setTimeout(() => {
         if (isPlaying) advanceNext();
-      }, readTime);
+      }, totalSceneDuration);
     }
   }
 
@@ -320,38 +526,32 @@
 
   function playShow() {
     isPlaying = true;
-    const btn = document.getElementById('rpBtnPlayPause');
-    if (btn) btn.innerHTML = `<span>⏸️ 일시정지</span>`;
+    const playBtn = document.getElementById('rpBtnPlayPause');
+    if (playBtn) playBtn.innerHTML = `<span>⏸️ 일시정지</span>`;
     renderScene(currentScene);
     playCurrentSceneAudio();
   }
 
   function pauseShow() {
     isPlaying = false;
-    const btn = document.getElementById('rpBtnPlayPause');
-    if (btn) btn.innerHTML = `<span>▶️ 재생하기</span>`;
     stopAudio();
+    const playBtn = document.getElementById('rpBtnPlayPause');
+    if (playBtn) playBtn.innerHTML = `<span>▶️ 이어보기</span>`;
   }
 
   window.toggleRoleplayMute = function () {
     isMuted = !isMuted;
-    const btn = document.getElementById('rpBtnSoundToggle');
-    if (btn) btn.innerText = isMuted ? '🔇' : '🔊';
-    if (isMuted) {
-      stopAudio();
-    } else if (isPlaying) {
-      playCurrentSceneAudio();
-    }
+    const muteBtn = document.getElementById('rpBtnSoundToggle');
+    if (muteBtn) muteBtn.innerText = isMuted ? '🔇' : '🔊';
+    if (isMuted) stopAudio();
+    else if (isPlaying) playCurrentSceneAudio();
   };
 
-  // 프로그레스 바 직접 클릭 바로가기
   window.jumpToRoleplayScene = function (idx) {
     stopAudio();
     currentScene = idx;
     renderScene(currentScene);
-    if (isPlaying) {
-      playCurrentSceneAudio();
-    }
+    if (isPlaying) playCurrentSceneAudio();
   };
 
 })();
