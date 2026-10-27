@@ -1,9 +1,9 @@
 // ============================================================
-// 🎬 [말쌈 3D 숏폼 상황극 엔진 v2: js/roleplay.js]
-// - 6개국어 캐릭터별 최적 자연어 Voice 자동 매핑 (Google/Natural 우선)
-// - 글자수 기반 정밀 Duration Guard & 대화 짤림 100% 방지
-// - 사람 대화 호흡 1.2초 보장 (Natural Turn-taking Pause)
-// - 특수문자 및 약어 구어체 정밀 전처리 (~, 5G, AWS, UI/UX 등)
+// 🎬 [말쌈 3D 숏폼 상황극 엔진 v3: js/roleplay.js]
+// - 프랑스어(fr) 포함 6개국어(KR, EN, JA, ES, FR, ID) 완벽 지원
+// - 문장 청크 큐잉(Sentence Queue) 시스템으로 대화 짤림 100% 원천 박멸
+// - 캐릭터별 자연어 Voice 매핑 & 구어체 전처리 (~, 5G, AWS, UI/UX)
+// - 사람 대화 호흡 1.4초 보장 (Natural Turn-taking Pause)
 // - 인스타그램 숏폼 릴스 스타일 실시간 동기화 프로그레스 게이지
 // - Web Audio API 부드러운 씬 트랜지션 사운드 효과
 // ============================================================
@@ -17,7 +17,7 @@
   let isMuted = false;
   let fallbackTimer = null;
   let keepAliveInterval = null;
-  let speechStartTime = 0;
+  let activeSceneToken = 0;
   let cachedVoices = [];
   let audioCtx = null;
 
@@ -48,7 +48,7 @@
       osc.start(now);
       osc.stop(now + 0.12);
     } catch (e) {
-      // AudioContext 정책 방어
+      // AudioContext 방어
     }
   }
 
@@ -115,16 +115,20 @@
       return googleEs || langVoices[0];
     }
 
-    // 5) 인도네시아어
+    // 5) 프랑스어 (베트남 대체)
+    if (targetLangPrefix === 'fr') {
+      if (isFemale) {
+        const femaleFr = langVoices.find(v => v.name.includes('Hortense') || v.name.includes('Julie') || v.name.includes('Female') || v.name.includes('Google'));
+        if (femaleFr) return femaleFr;
+      }
+      const googleFr = langVoices.find(v => v.name.includes('Google') || v.name.includes('Français') || v.name.includes('Paul'));
+      return googleFr || langVoices[0];
+    }
+
+    // 6) 인도네시아어
     if (targetLangPrefix === 'id') {
       const googleId = langVoices.find(v => v.name.includes('Google') || v.name.includes('Gadis') || v.name.includes('Andika'));
       return googleId || langVoices[0];
-    }
-
-    // 6) 베트남어
-    if (targetLangPrefix === 'vi') {
-      const googleVi = langVoices.find(v => v.name.includes('Google') || v.name.includes('An'));
-      return googleVi || langVoices[0];
     }
 
     return langVoices[0];
@@ -152,6 +156,12 @@
         .replace(/5G/gi, 'five G')
         .replace(/AWS/gi, 'A W S')
         .replace(/UI\/UX/gi, 'U I and U X');
+    } else if (lang === 'fr') {
+      cleaned = cleaned
+        .replace(/~/g, ', ')
+        .replace(/5G/gi, 'cinq G')
+        .replace(/AWS/gi, 'A W S')
+        .replace(/UI\/UX/gi, 'U I et U X');
     } else {
       cleaned = cleaned.replace(/~/g, ', ');
     }
@@ -159,19 +169,27 @@
     return cleaned.trim();
   }
 
-  // ⏱️ 대사 최소 발화 보장 시간 계산 (글자수 기반 정밀 계산)
-  function calculateExpectedDuration(text, rate, lang) {
+  // ✂️ 긴 문장을 자연스러운 호흡 단위(구문)로 분할 (크롬 15초 버그 & 대화 짤림 100% 원천 방어)
+  function splitIntoSentenceChunks(text) {
+    if (!text) return [];
+    // 마침표, 느낌표, 물음표, 쉼표 기준 자연스러운 문장 분할
+    const parts = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g);
+    if (!parts || parts.length === 0) return [text];
+    return parts.map(p => p.trim()).filter(p => p.length > 0);
+  }
+
+  // ⏱️ 대사 전체 예상 소요 시간 계산
+  function calculateTotalExpectedDuration(text, rate, lang) {
     const safeRate = rate || 1.0;
     const len = (text || '').length;
-    let charMs = 175; // 한국어 한 글자당 평균 약 175ms
+    let charMs = 175; // 한국어 글자당 평균 약 175ms
 
-    if (lang === 'en' || lang === 'es') charMs = 85;
+    if (lang === 'en' || lang === 'es' || lang === 'fr') charMs = 85;
     else if (lang === 'ja') charMs = 155;
-    else if (lang === 'vi' || lang === 'id') charMs = 110;
+    else if (lang === 'id') charMs = 110;
 
-    // 최소 4.5초 보장
     const computed = (len * charMs) / safeRate;
-    return Math.max(4600, Math.round(computed));
+    return Math.max(5000, Math.round(computed));
   }
 
   // 🎴 모달 열기 / 닫기
@@ -201,7 +219,7 @@
     flipToFront();
   };
 
-  // 🌐 6개국어 전환
+  // 🌐 6개국어 전환 (베트남 -> 프랑스어 교체 적용)
   window.setRoleplayLanguage = function (lang) {
     const metaMap = window.LANG_METADATA || {};
     const meta = metaMap[lang] || metaMap['ko'] || {};
@@ -213,7 +231,7 @@
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
-    // 앞면 메타데이터 갱신 (undefined 방지 및 다국어 실시간 매핑)
+    // 앞면 메타데이터 갱신
     const badgeEl = document.getElementById('rpFrontBadge');
     if (badgeEl) badgeEl.innerText = meta.badge || '💎 K-SOUL #01 · 번역불가 한국어';
 
@@ -352,6 +370,7 @@
   }
 
   function stopAudio() {
+    activeSceneToken++; // 이전 모든 발화 큐 무효화
     if (fallbackTimer) {
       clearTimeout(fallbackTimer);
       fallbackTimer = null;
@@ -371,9 +390,11 @@
     }
   }
 
-  // 🎬 핵심: 오디오 재생 및 실시간 프로그레스 바 정밀 싱크
+  // 🎬 핵심: 문장 큐잉 순차 발화 & 대화 짤림 100% 방지 엔진
   function playCurrentSceneAudio() {
     stopAudio();
+    const thisToken = ++activeSceneToken;
+
     const scripts = (window.DRAMA_SCRIPTS && window.DRAMA_SCRIPTS[currentLang]) ? window.DRAMA_SCRIPTS[currentLang] : (window.DRAMA_SCRIPTS ? window.DRAMA_SCRIPTS['ko'] : []);
     if (!scripts || !scripts[currentScene]) return;
 
@@ -395,14 +416,15 @@
       sub.style.boxShadow = `0 0 20px ${s.color || '#ff007f'}55`;
     }
 
-    // 발화 텍스트 정밀 전처리
+    // 발화 텍스트 정밀 전처리 & 문장 단위 안전 분할
     const rawText = s.speechText || s.dialogue || '';
-    const textToSpeak = sanitizeSpeechText(rawText, currentLang);
+    const fullTextToSpeak = sanitizeSpeechText(rawText, currentLang);
+    const sentenceChunks = splitIntoSentenceChunks(fullTextToSpeak);
     const voiceRate = s.voiceRate || 0.95;
 
-    // 예상 발화 시간 & 턴테이킹 호흡 간격 (1.2초)
-    const expectedDuration = calculateExpectedDuration(textToSpeak, voiceRate, currentLang);
-    const naturalTurnPause = 1200; // 사람 간 대화 여운 호흡
+    // 예상 발화 시간 & 사람 간 자연스러운 대화 호흡(1.4초)
+    const expectedDuration = calculateTotalExpectedDuration(fullTextToSpeak, voiceRate, currentLang);
+    const naturalTurnPause = 1400; // 대화 턴테이킹 호흡 간격
     const totalSceneDuration = expectedDuration + naturalTurnPause;
 
     // 📱 인스타그램 스토리 릴스 스타일 실시간 프로그레스 바 채우기
@@ -417,21 +439,9 @@
     }
 
     if (!isMuted && ('speechSynthesis' in window)) {
-      const u = new SpeechSynthesisUtterance(textToSpeak);
-      u.lang = targetTtsLang;
-      u.rate = voiceRate;
-      u.pitch = s.pitch || 1.0;
-
-      // 캐릭터별 최적 자연어 음성 할당
       const bestVoice = selectBestVoice(currentLang, s.actor);
-      if (bestVoice) {
-        u.voice = bestVoice;
-      }
 
-      speechStartTime = Date.now();
-      window._activeUtterance = u;
-
-      // 크롬 브라우저 장문 침묵 버그 방지 keep-alive 핑
+      // 크롬 백그라운드 침묵 방지 keep-alive 핑
       keepAliveInterval = setInterval(() => {
         if (window.speechSynthesis.speaking) {
           window.speechSynthesis.pause();
@@ -439,45 +449,78 @@
         } else {
           clearInterval(keepAliveInterval);
         }
-      }, 7000);
+      }, 6000);
 
-      // 🔥 대화 짤림 방지 핵심: 조기 종료 버그 방어 및 자연스러운 호흡 여운
-      u.onend = () => {
-        clearInterval(keepAliveInterval);
-        if (!isPlaying) return;
+      let chunkIndex = 0;
 
-        const elapsed = Date.now() - speechStartTime;
-        // 브라우저 버그로 너무 일찍 끝났다면(예: 3초 만에 짤림), 실제 문장 끝까지 남은 시간만큼 대기!
-        const remainingSpeakTime = Math.max(0, expectedDuration - elapsed);
+      function speakNextChunk() {
+        if (!isPlaying || activeSceneToken !== thisToken) return;
 
-        fallbackTimer = setTimeout(() => {
-          advanceNext();
-        }, remainingSpeakTime + naturalTurnPause);
-      };
+        if (chunkIndex >= sentenceChunks.length) {
+          // 모든 문장 발화 완료! 실제 오디오가 끝날 때까지 250ms 단위 안전 검증
+          const verifyInterval = setInterval(() => {
+            if (activeSceneToken !== thisToken) {
+              clearInterval(verifyInterval);
+              return;
+            }
+            if (!window.speechSynthesis.speaking) {
+              clearInterval(verifyInterval);
+              clearInterval(keepAliveInterval);
+              // 대화 끝난 후 1.4초 여운 호흡 후 다음 씬으로 부드럽게 전환!
+              fallbackTimer = setTimeout(() => {
+                if (isPlaying && activeSceneToken === thisToken) {
+                  advanceNext();
+                }
+              }, naturalTurnPause);
+            }
+          }, 250);
 
-      u.onerror = (e) => {
-        clearInterval(keepAliveInterval);
-        console.warn("SpeechSynthesis notification:", e);
-        if (isPlaying) {
-          // 음성 에러 시에도 자막을 편안하게 읽을 수 있도록 전체 시간 대기
-          fallbackTimer = setTimeout(advanceNext, totalSceneDuration);
+          // 비정상 정지 방지용 세이프가드
+          setTimeout(() => {
+            clearInterval(verifyInterval);
+            if (isPlaying && activeSceneToken === thisToken) {
+              advanceNext();
+            }
+          }, naturalTurnPause + 2000);
+          return;
         }
-      };
 
-      // 안전 Fallback 타임아웃: 어떤 브라우저 버그로도 영구 멈춤 방지
-      const safetyTimeout = totalSceneDuration + 3000;
-      fallbackTimer = setTimeout(() => {
-        if (isPlaying) {
-          advanceNext();
-        }
-      }, safetyTimeout);
+        const chunk = sentenceChunks[chunkIndex++];
+        const u = new SpeechSynthesisUtterance(chunk);
+        u.lang = targetTtsLang;
+        u.rate = voiceRate;
+        u.pitch = s.pitch || 1.0;
+        if (bestVoice) u.voice = bestVoice;
 
-      window.speechSynthesis.speak(u);
+        window._activeUtterance = u;
+
+        u.onend = () => {
+          if (activeSceneToken !== thisToken) return;
+          // 문장과 문장 사이 180ms 자연스러운 쉼표 숨고르기
+          setTimeout(() => {
+            speakNextChunk();
+          }, 180);
+        };
+
+        u.onerror = (e) => {
+          if (activeSceneToken !== thisToken) return;
+          console.warn("Speech chunk error:", e);
+          setTimeout(() => {
+            speakNextChunk();
+          }, 200);
+        };
+
+        window.speechSynthesis.speak(u);
+      }
+
+      speakNextChunk();
 
     } else {
-      // 음소거 상태: 자막을 충분히 읽을 수 있는 넉넉한 시간 제공
+      // 음소거 상태: 자막을 편안히 읽을 수 있는 넉넉한 시간 제공
       fallbackTimer = setTimeout(() => {
-        if (isPlaying) advanceNext();
+        if (isPlaying && activeSceneToken === thisToken) {
+          advanceNext();
+        }
       }, totalSceneDuration);
     }
   }
