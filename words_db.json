@@ -1,13 +1,13 @@
 {
   "project": "한글 어반 딕셔너리 (말쌈 / MALSSAM)",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "updated_at": "2026-10-27",
-  "total_words": 200,
+  "total_words": 215,
   "eras": [
     {
       "id": "all",
-      "label": "전체 보기 (All 200)",
-      "count": 200
+      "label": "전체 보기 (All 215)",
+      "count": 215
     },
     {
       "id": "latte",
@@ -26,6 +26,12 @@
       "label": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "period": "2020s~2026",
       "count": 142
+    },
+    {
+      "id": "soul",
+      "label": "4. 💎 K-정서 (번역불가 15선)",
+      "period": "Untranslatable Soul",
+      "count": 15
     }
   ],
   "words": [
@@ -1087,7 +1093,9 @@
         "충격",
         "멘탈붕괴",
         "국민유행어",
-        "스타크래프트"
+        "스타크래프트",
+        "K-정서",
+        "번역불가"
       ],
       "likes": 7400,
       "dislikes": 60,
@@ -1243,7 +1251,9 @@
         "설렘",
         "귀여움",
         "고양이",
-        "로맨스"
+        "로맨스",
+        "K-정서",
+        "번역불가"
       ],
       "likes": 8200,
       "dislikes": 30,
@@ -1971,7 +1981,9 @@
         "허탈",
         "현실자각",
         "멘붕",
-        "일상"
+        "일상",
+        "K-정서",
+        "번역불가"
       ],
       "likes": 8100,
       "dislikes": 40,
@@ -8345,6 +8357,516 @@
         "slang": "Geek Chic",
         "desc": "A fashion aesthetic combining nerdy elements like thick-framed glasses with sophisticated chic fashion.",
         "example": "A: Your outfit with the retro glasses is pure geek chic today!\nB: Thanks, totally into the intellectual nerd vibe!"
+      }
+    },
+    {
+      "id": 201,
+      "word": "정(情)",
+      "pronunciation": "[정 / Jeong]",
+      "part_of_speech": "명사 / 고유 정서",
+      "chosung": "ㅈ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "오랜 시간 공유한 경험과 부대낌 속에서 우러나는 깊은 정서적 유대와 무조건적인 온정. 단순한 사랑(Love)이나 호감(Attachment)을 넘어 미운 정, 고운 정까지 모두 품는 한국인의 영혼의 결.",
+      "origin": "혈연을 넘어 이웃과 밥 한 끼, 덤 하나를 나누며 세월의 풍파를 함께 견뎌온 공동체적 나눔에서 발원함. 유무형의 시간 축적과 끈끈한 연대감이 전제됨.",
+      "examples": [
+        "A: 10년 넘게 살던 동네를 떠나려니 이웃 어르신들과 정이 너무 많이 들어서 발걸음이 안 떨어져요.\nB: 그게 바로 '정'이죠. 좋은 일 힘든 일 함께 겪으며 쌓인 마음은 쉽게 지워지지 않으니까요."
+      ],
+      "tags": [
+        "정",
+        "K정서",
+        "번역불가",
+        "인간관계",
+        "따뜻함",
+        "공동체"
+      ],
+      "likes": 9850,
+      "dislikes": 12,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "시간의 축적으로 빚어낸 무조건적 유대와 온정 (단순 호감·애착을 초월)",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Jeong (Unconditional emotional bond & warm affection built through shared time)",
+        "desc": "Transcendence of mere affection or love. It is an enduring, sticky bond of warm attachment that naturally grows between people, places, or things through shared moments, struggles, and history.",
+        "example": "A: Even after moving away, I still miss my old neighbors so much.\nB: That's 'Jeong'—the deep emotional bond formed through shared life."
+      }
+    },
+    {
+      "id": 202,
+      "word": "눈치",
+      "pronunciation": "[눈치 / Nunchi]",
+      "part_of_speech": "명사 / 사회적 감각",
+      "chosung": "ㄴㅊ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "말하지 않아도 상황의 공기와 타인의 표정·침묵 속에 숨겨진 의도를 찰나에 감지하고 절묘하게 처신하는 한국인의 심리 레이더이자 초능력.",
+      "origin": "공동체의 조화와 상호 존중을 중시하는 유교 문화권에서 타인의 체면을 살리고 불필요한 마찰을 피하기 위해 발전한 고도화된 비언어적 소통 센스.",
+      "examples": [
+        "A: 부장님 기분 안 좋으신 거 같던데 오늘 회식 제안하면 안 되겠지?\nB: 눈치 진짜 빠르네! 지금 보고서 반려돼서 사무실 공기 완전 얼음판이야."
+      ],
+      "tags": [
+        "눈치",
+        "사회생활",
+        "센스",
+        "분위기파악",
+        "초능력",
+        "K정서"
+      ],
+      "likes": 9620,
+      "dislikes": 18,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "침묵 속의 맥락과 행간을 짚어내는 직관적 상황 감지력",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Nunchi (The art of reading the room and sensing unspoken social cues)",
+        "desc": "Much more than EQ or situational awareness. It is the swift, intuitive superpower to gauge others' moods, hidden intentions, and relational atmospheres without a single word being spoken.",
+        "example": "A: Did you notice the boss was upset?\nB: Yes, good thing we have quick 'nunchi'—otherwise we would have asked for a team dinner today!"
+      }
+    },
+    {
+      "id": 203,
+      "word": "한(恨)",
+      "pronunciation": "[한 / Han]",
+      "part_of_speech": "명사 / 역사적·심리적 응어리",
+      "chosung": "ㅎ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "외세 침략, 가난, 개인적 비극 등 풀지 못한 슬픔과 억울함이 가슴속에 켜켜이 쌓여 응어리진 후, 원한이나 파괴가 아닌 예술·해학·끈질긴 생명력으로 승화된 한국인의 고유 정서.",
+      "origin": "수많은 전란과 질곡의 근현대사를 버텨낸 한민족 민초들의 눈물이 아리랑, 판소리, 트로트 등의 가락 속에 녹아들며 한풀이 문화로 발전함.",
+      "examples": [
+        "A: 판소리 심청가를 듣는데 왜 가슴 깊은 곳에서 눈물이 핑 돌까요?\nB: 그 가락 속에 우리 민족 특유의 '한'과 이를 이겨내려는 생명력이 고스란히 담겨 있어서 그래요."
+      ],
+      "tags": [
+        "한",
+        "K정서",
+        "민족정서",
+        "아리랑",
+        "해원",
+        "불굴의의지"
+      ],
+      "likes": 9480,
+      "dislikes": 15,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "슬픔과 고난을 삭여 삶의 원동력과 예술로 승화시킨 깊은 응어리",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Han (Deep-seated grief, collective sorrow, and resilient sublimation)",
+        "desc": "A complex emotional state combining collective sorrow, historical trauma, and unresolved injustice, which is resiliently transformed into art, perseverance, and profound human empathy rather than vengeful hatred.",
+        "example": "A: Why does traditional Korean music feel so hauntingly emotional?\nB: It carries 'Han'—centuries of sorrow sublimated into soulful strength."
+      }
+    },
+    {
+      "id": 204,
+      "word": "서운하다",
+      "pronunciation": "[서운하다 / Seounhada]",
+      "part_of_speech": "형용사 / 애정 기반 아쉬움",
+      "chosung": "ㅅㅇㅎㄷ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "믿고 아끼는 가까운 사람이 내 기대에 미치지 못하거나 배려해주지 않았을 때 가슴 한구석에 은은하게 밀려오는 섭섭함. 화(Anger)가 아닌, '여전히 상대방을 사랑하고 아끼기 때문에' 생겨나는 미묘한 감정.",
+      "origin": "남이라면 아무렇지 않게 넘겼을 일도, 정을 깊게 나눈 사이이기에 가슴이 아릿해지는 관계적 애착의 역설.",
+      "examples": [
+        "A: 어제 내 생일이었는데 제일 친한 네가 축하 메시지 한 줄도 없어서 조금 서운했어.\nB: 정말 미안해! 야근하느라 정신이 없었어. 오늘 내가 진짜 맛있는 저녁 살게!"
+      ],
+      "tags": [
+        "서운함",
+        "섭섭함",
+        "애정",
+        "관계",
+        "인간적매력",
+        "감정어"
+      ],
+      "likes": 9320,
+      "dislikes": 10,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "사랑과 신뢰가 전제된 관계에서 느끼는 은은한 아쉬움과 섭섭함",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Seounhada (A gentle emotional disappointment rooted in deep affection)",
+        "desc": "A delicate feeling of feeling let down or neglected by someone close to you. Unlike anger or coldness, it only occurs because you genuinely care about and cherish that person.",
+        "example": "A: I felt a bit 'seounhada' when my best friend forgot my birthday.\nB: It hurts more precisely because you love them so much."
+      }
+    },
+    {
+      "id": 205,
+      "word": "답답하다",
+      "pronunciation": "[답답하다 / Dapdaphada]",
+      "part_of_speech": "형용사 / 체증·좌절감",
+      "chosung": "ㄷㄷㅎㄷ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "물 없이 고구마 100개를 삼킨 듯 가슴이 꽉 막혀 숨이 턱턱 차오르고, 일이 뜻대로 풀리지 않거나 융통성 없는 상황·사람을 마주했을 때 엄습하는 신체적·심리적 질식감.",
+      "origin": "좁고 밀폐된 공간에서 느끼는 물리적 답답함(가슴의 압박감)과 마음대로 되지 않는 심리적 체증이 유기적으로 결합된 한국어 특유의 체감 표현.",
+      "examples": [
+        "A: 상대방이 왜 내 말을 전혀 이해하지 못하고 엉뚱한 소리만 할까? 가슴이 턱 막힌다.\nB: 완전 고구마 먹은 것처럼 답답하겠다! 일단 찬물 한 잔 마시고 심호흡해."
+      ],
+      "tags": [
+        "답답함",
+        "고구마",
+        "체증",
+        "좌절감",
+        "숨막힘",
+        "속터짐"
+      ],
+      "likes": 9410,
+      "dislikes": 22,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "가슴에 묵직한 돌덩이를 얹은 듯 숨이 막혀오는 심리적 질식 상태",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Dapdaphada (Suffocating mental blockage, chest-tightening frustration)",
+        "desc": "A visceral sensation of feeling mentally choked or having a heavy weight pressing on your chest when progress is stalled, communication fails, or someone is clueless.",
+        "example": "A: Trying to explain this to someone who refuses to listen is so 'dapdaphada'!\nB: Like eating dry sweet potatoes without any water!"
+      }
+    },
+    {
+      "id": 206,
+      "word": "억울하다",
+      "pronunciation": "[억울하다 / Eogulhada]",
+      "part_of_speech": "형용사 / 부당함의 고통",
+      "chosung": "ㅇㅇㅎㄷ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "자신은 아무런 잘못이 없는데도 부당하게 누명을 쓰거나 가해자로 몰려 가슴을 쥐어뜯으며 결백을 호소하고 싶을 때 터져 나오는 분통과 고통.",
+      "origin": "조선 시대 백성들이 임금의 행차 길에 징을 쳐서 자신의 결백을 알리던 '격쟁(擊錚)'처럼, 정의와 진실이 왜곡되었을 때 솟구치는 가장 원초적인 가슴앓이.",
+      "examples": [
+        "A: 내가 깨지도 않은 화병인데 내가 깼다고 누명을 써서 혼났어. 너무 분해!\nB: 진짜 억울하겠다... CCTV 확인해서 꼭 진실을 밝혀내자."
+      ],
+      "tags": [
+        "억울함",
+        "결백",
+        "누명",
+        "정의",
+        "분통",
+        "진실"
+      ],
+      "likes": 9510,
+      "dislikes": 14,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "결백한 상태에서 부당한 처분이나 비난을 받았을 때 치솟는 고통",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Eogulhada (The burning anguish of being falsely accused or treated with injustice)",
+        "desc": "A gut-wrenching ache of acute injustice felt when you are completely blameless yet wrongly blamed, penalized, or misunderstood without a chance to defend yourself.",
+        "example": "A: I was blamed for a mistake someone else made. It feels so 'eogulhada'!\nB: We'll pull the logs and clear your name."
+      }
+    },
+    {
+      "id": 207,
+      "word": "애교",
+      "pronunciation": "[애교 / Aegyo]",
+      "part_of_speech": "명사 / 사랑스러운 제스처",
+      "chosung": "ㅇㄱ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "귀여운 말투, 콧소리, 사랑스러운 손짓과 표정으로 상대방의 얼어붙은 마음을 사르르 녹이고 호감을 이끌어내는 한국 고유의 매력 발산 문화.",
+      "origin": "엄격한 위계질서나 팽팽한 긴장감 속에서 분위기를 부드럽게 풀고 친근함을 전하기 위해 진화한 감정 조율 테크닉.",
+      "examples": [
+        "A: 오늘 야근 때문에 기분 완전 다운됐었는데, 딸아이가 문 앞에서 배꼽인사하며 애교 부리는 거 보고 피로가 싹 풀렸어.\nB: 그게 바로 애교의 기적이죠!"
+      ],
+      "tags": [
+        "애교",
+        "귀여움",
+        "매력",
+        "사랑스러움",
+        "K컬처",
+        "힐링"
+      ],
+      "likes": 9780,
+      "dislikes": 20,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "상대방의 마음을 무장해제시키는 사랑스럽고 다정한 몸짓과 말투",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Aegyo (Delightful cuteness & charming affection to melt hearts)",
+        "desc": "Acting adorably cute through baby voices, playful gestures, and facial expressions to express affection, disarm tension, or ask for favors in a sweet manner.",
+        "example": "A: His daughter did some cute 'aegyo' and melted his fatigue away.\nB: That signature Korean cuteness is unbeatable!"
+      }
+    },
+    {
+      "id": 208,
+      "word": "썸",
+      "pronunciation": "[썸 / Sseom]",
+      "part_of_speech": "명사 / 미묘한 연애 전조",
+      "chosung": "ㅆ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "영어 'Something'에서 탄생한 단어로, 친구 사이는 이미 훌쩍 넘었지만 아직 공식 연인은 아닌 두 남녀 사이의 아슬아슬하고 달콤한 핑크빛 기류.",
+      "origin": "2010년대 소유와 정기고의 메가히트곡 '썸(Some)'을 계기로 전 국민의 연애 사전 1호 어휘로 등극함. 밀당과 고백 사이의 가장 설레는 황금기.",
+      "examples": [
+        "A: 그 사람이랑 매일 밤 1시간씩 통화하고 주말마다 영화 보는데 우리 사귀는 거냐고 물어볼까?\nB: 지금 딱 '썸' 타는 중이네! 그 시절이 연애할 때 제일 심장 떨릴 때야."
+      ],
+      "tags": [
+        "썸",
+        "연애",
+        "설렘",
+        "핑크빛",
+        "심쿵",
+        "관계"
+      ],
+      "likes": 9690,
+      "dislikes": 16,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "친구와 연인 경계선에서 느껴지는 설레고 미묘한 낭만적 기류",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Some (The thrilling, ambiguous pre-dating phase between friends and lovers)",
+        "desc": "Derived from 'something going on'. That electrifying, uncommitted stage where two people mutually flirt and feel strong romantic tension before officially becoming a couple.",
+        "example": "A: We talk on the phone every night—are we dating?\nB: You are definitely in the 'some' stage! Enjoy the butterflies!"
+      }
+    },
+    {
+      "id": 209,
+      "word": "여운",
+      "pronunciation": "[여운 / Yeoun]",
+      "part_of_speech": "명사 / 잔향과 감동",
+      "chosung": "ㅇㅇ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "음악 연주가 끝나거나, 영화 크레디트가 올라가거나, 깊은 만남이 끝난 뒤에도 가슴과 귓가에 잔잔하게 맴돌며 오래도록 가시지 않는 감정의 울림.",
+      "origin": "한자 '남을 여(餘)'에 '소리 운(韻)'에서 유래하여, 소리가 끊겼음에도 공간에 감도는 울림처럼 삶의 묵직한 감동이 영혼에 남기는 자취.",
+      "examples": [
+        "A: 어제 본 영화 엔딩 장면이 하루 종일 머릿속을 떠나지 않아요.\nB: 그 영화 진짜 여운이 길죠. 불이 켜진 뒤에도 한참 동안 극장 의자에서 일어날 수 없더라고요."
+      ],
+      "tags": [
+        "여운",
+        "감동",
+        "잔향",
+        "예술",
+        "울림",
+        "깊은맛"
+      ],
+      "likes": 9380,
+      "dislikes": 8,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "사건이나 예술이 종료된 뒤에도 영혼에 은은하게 남는 감정의 파동",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Yeoun (The lingering emotional resonance and poetic aftertaste of an experience)",
+        "desc": "Literally 'lingering sound/rhyme'. The profound emotional reverberation or spiritual afterglow that stays with you long after a book ends, a song stops, or someone leaves.",
+        "example": "A: I still can't stop thinking about the movie's final scene.\nB: It leaves a breathtaking 'yeoun' that stays in your heart for days."
+      }
+    },
+    {
+      "id": 210,
+      "word": "낯가리다",
+      "pronunciation": "[낯가리다 / Natgarida]",
+      "part_of_speech": "동사 / 사회적 수줍음",
+      "chosung": "ㄴㄱㄹㄷ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "처음 보는 사람이나 낯선 환경에 놓였을 때 선뜻 다가서지 못하고 어색해하며 마음의 문을 조심스럽게 잠그는 수줍은 성향.",
+      "origin": "영유아가 생후 6개월 무렵 부모의 얼굴('낯')과 타인의 얼굴을 분별('가리다')하여 울음을 터뜨리는 발달 현상에서 성인의 내향적 성격으로 확장됨.",
+      "examples": [
+        "A: 저 사람이 처음엔 말 한마디도 안 하더니, 친해지니까 완전 개그맨이네!\nB: 원래 낯을 많이 가려서 그래. 시간 지나고 마음 열리면 진짜 다정해."
+      ],
+      "tags": [
+        "낯가림",
+        "수줍음",
+        "내향인",
+        "인간관계",
+        "진정성",
+        "MBTI"
+      ],
+      "likes": 9290,
+      "dislikes": 12,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "익숙해지기 전까지 낯선 사람 앞에서 발동하는 조심스러운 방어 심리",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Natgarida (Being shy, reserved, and cautious around unfamiliar people)",
+        "desc": "Originally describing babies distinguishing parents from strangers; refers to adults who need time and a comfortable space before they can drop their guard and open up.",
+        "example": "A: He seemed so quiet at first, but now he is so funny!\nB: He just has bad 'natgarim' around new faces until he feels safe."
+      }
+    },
+    {
+      "id": 211,
+      "word": "심쿵",
+      "pronunciation": "[심쿵 / Simkung]",
+      "part_of_speech": "명사 / 감탄사",
+      "chosung": "ㅅㅋ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "'심장이 쿵!' 하고 바닥으로 떨어지듯 요동친다는 뜻으로, 예상치 못한 치명적인 설렘, 압도적인 귀여움, 황홀한 매력을 마주했을 때의 리액션.",
+      "origin": "로맨틱 코미디의 심장 저격 대사나 앙증맞은 아기 동물 사진을 본 네티즌들이 가슴 통증(?)을 유쾌하게 호소하며 2010년대 국민 유행어로 정착함.",
+      "examples": [
+        "A: 길 가다가 강아지가 내 발목을 살포시 안더니 눈을 껌뻑거리는데 진짜 기절할 뻔했어.\nB: 으아악 완전 심쿵이다! 사진 찍어둔 거 얼른 보여줘!"
+      ],
+      "tags": [
+        "심쿵",
+        "설렘",
+        "귀여움",
+        "심장폭행",
+        "로맨스",
+        "입덕"
+      ],
+      "likes": 9890,
+      "dislikes": 19,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "심장이 쿵쾅거릴 만큼 강렬한 설렘과 사랑스러움의 충격",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Simkung (A sudden, breathless heart-flutter triggered by cuteness or charm)",
+        "desc": "An adorable onomatopoeia for 'heart thumping hard'. Used whenever someone experiences an intense rush of romantic attraction or witnesses something cutely overwhelming.",
+        "example": "A: The puppy leaned on my foot and looked up at me with round eyes.\nB: Total 'simkung'! My heart just skipped a beat!"
+      }
+    },
+    {
+      "id": 212,
+      "word": "현타",
+      "pronunciation": "[현타 / Hyeonta]",
+      "part_of_speech": "명사 / 현실 각성",
+      "chosung": "ㅎㅌ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "'현실 자각 타임'의 줄임말. 도파민과 달콤한 환상, 과몰입에 취해 있다가 불현듯 차가운 현실의 내 모습을 직시하며 찾아오는 서늘한 깨달음과 허탈감.",
+      "origin": "새벽까지 쇼핑이나 게임, 덕질에 빠져들었다가 문득 거울 속 퀭한 자신과 통장 잔고를 발견하는 찰나의 자조적 성찰에서 대중화됨.",
+      "examples": [
+        "A: 주말 내내 침대에서 숏폼만 보다가 일요일 밤 11시에 문득 시계를 보고 현타가 세게 왔어.\nB: 나도 그래... 내일부터 다시 출근이라는 현실이 뼈아프게 와닿지."
+      ],
+      "tags": [
+        "현타",
+        "현실자각",
+        "허탈감",
+        "도파민디톡스",
+        "깨달음",
+        "자조"
+      ],
+      "likes": 9670,
+      "dislikes": 25,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "달콤한 환상이 깨지며 냉혹한 현실의 좌표를 직시하는 순간",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Hyeonta (Reality check / The sudden sober realization crashing down after high dopamine)",
+        "desc": "Short for 'Reality Realization Time'. That sudden, chilling moment of clarity when the high of daydreaming or bingeing wears off and cold reality smacks you in the face.",
+        "example": "A: Spent all Sunday scrolling reels in bed, then looked at the clock at 11 PM.\nB: Major 'hyeonta' moment—welcome back to reality!"
+      }
+    },
+    {
+      "id": 213,
+      "word": "멘붕",
+      "pronunciation": "[멘붕 / Menbung]",
+      "part_of_speech": "명사 / 패닉 상태",
+      "chosung": "ㅁㅂ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "'멘털 붕괴(Mental Breakdown)'의 줄임말. 연이은 돌발 악재나 감당하기 힘든 초유의 충격으로 이성과 사고 회로가 정지되어 멍해진 공황 상태.",
+      "origin": "스타크래프트 경기 중 역전패 위기에 몰린 선수의 당혹감을 중계진이 '멘탈이 붕괴됐다'고 해설하며 촉발되어 국민 어휘로 등극함.",
+      "examples": [
+        "A: 3일 밤새워 작성한 제안서 파일이 블루스크린 뜨면서 다 날아갔어...\nB: 헐 대박... 완전 멘붕이겠다. 임시 저장 폴더라도 얼른 뒤져봐!"
+      ],
+      "tags": [
+        "멘붕",
+        "멘탈붕괴",
+        "패닉",
+        "뇌정지",
+        "공황",
+        "사고정지"
+      ],
+      "likes": 9740,
+      "dislikes": 30,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "극심한 충격으로 뇌 정지가 오고 정신이 마비된 상태",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Menbung (Mental breakdown / Brain freeze from sudden cognitive overload or shock)",
+        "desc": "Short for 'mental collapse'. Expresses total bewilderment, shock, or cognitive paralysis when disastrous events occur in rapid succession.",
+        "example": "A: My laptop crashed and erased 3 days of work on the final proposal!\nB: Total 'menbung'... take a breath, let's look for autosaves."
+      }
+    },
+    {
+      "id": 214,
+      "word": "짠하다",
+      "pronunciation": "[짠하다 / Jjanhada]",
+      "part_of_speech": "형용사 / 애틋한 연민",
+      "chosung": "ㅉㅎㄷ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "누군가의 지친 뒷모습이나 고단한 삶의 흔적을 보았을 때, 코끝이 찡해지고 가슴 한구석이 아리면서 밀려오는 애틋한 연민과 따뜻한 동병상련.",
+      "origin": "맛의 '짜다'에서 유래하여 눈물의 소금기가 눈시울을 적시듯, 상대의 아픔이 내 가슴을 찌르르 울리는 한국인 특유의 감정적 파동.",
+      "examples": [
+        "A: 비 오는 날 낡은 우산을 쓰고 폐지 손수레를 끄시는 할머니를 뵈니 가슴이 너무 짠했어요.\nB: 그런 모습을 보면 누구나 코끝이 찡해지죠. 따뜻한 음료수라도 건네드리고 싶어집니다."
+      ],
+      "tags": [
+        "짠함",
+        "연민",
+        "애틋함",
+        "코끝이찡",
+        "동병상련",
+        "인류애"
+      ],
+      "likes": 9640,
+      "dislikes": 11,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "누군가의 안쓰러운 처지에 눈시울이 붉어지며 가슴이 아려오는 연민",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Jjanhada (A bittersweet, aching empathy that makes your nose tingle and heart ache)",
+        "desc": "A deeply tender, poignant sympathy evoked when witnessing someone persevering through exhaustion or adversity. It feels like an ache in the center of your chest combined with deep affection.",
+        "example": "A: Seeing my elderly father fall asleep on the sofa with worn-out hands felt so 'jjanhada'.\nB: It's that warm, tearful compassion you feel for people who carry heavy burdens."
+      }
+    },
+    {
+      "id": 215,
+      "word": "말맛",
+      "pronunciation": "[말맛 / Malmat]",
+      "part_of_speech": "명사 / 언어적 감칠맛",
+      "chosung": "ㅁㅁ",
+      "era": "soul",
+      "era_name": "4. 💎 K-정서 (번역불가 15선)",
+      "era_period": "Untranslatable K-Soul",
+      "generation": "전 세대 & 글로벌 K-컬처",
+      "short_def": "단어의 선택, 억양, 어미의 미세한 변화에서 배어 나오는 언어의 감칠맛이자 찰진 리듬감. 번역기로는 절대 구현할 수 없는 한국어의 독보적인 어감과 맛깔스러움.",
+      "origin": "음식의 '맛'을 언어에 비유한 절묘한 개념. 훈민정음의 풍부한 의성어·의태어와 맞물려 독자와 청자의 오감을 자극하는 표현의 극치.",
+      "examples": [
+        "A: 봉준호 감독이나 박찬욱 감독 영화 대사는 왜 그렇게 귀에 쏙쏙 박힐까요?\nB: 대사 하나하나에 특유의 '말맛'이 살아있어서 그래요. 글자가 살아 움직이는 느낌이죠!"
+      ],
+      "tags": [
+        "말맛",
+        "언어의맛",
+        "감칠맛",
+        "뉘앙스",
+        "한국어미학",
+        "번역불가"
+      ],
+      "likes": 9820,
+      "dislikes": 9,
+      "toxicity_level": 0,
+      "standard_korean_mapping": "말소리와 말투의 미묘한 차이에서 우러나는 독보적 언어의 결이자 감칠맛",
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Malmat (The savory flavor, expressive cadence, and juicy texture of spoken words)",
+        "desc": "Literally 'speech taste'. It describes the delicious, rhythmic flavor and expressive nuance of well-crafted phrasing that mechanical translation can never duplicate.",
+        "example": "A: Why do K-drama dialogues feel so witty and punchy?\nB: It's all about the 'malmat'—the savory phonetic charm of the Korean language!"
       }
     }
   ]
