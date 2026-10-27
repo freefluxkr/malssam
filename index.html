@@ -969,6 +969,92 @@
     }
 
     
+    
+    /* 💎 K-정서 서브 카테고리 필터 바 */
+    .soul-subcat-section {
+      max-width: 900px;
+      margin: 10px auto 14px;
+      padding: 0 16px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .soul-subcat-container {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 6px 4px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      box-sizing: border-box;
+    }
+
+    .soul-subcat-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .soul-subcat-btn {
+      background: rgba(17, 24, 39, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .soul-subcat-btn:hover {
+      color: #f8fafc;
+      border-color: rgba(168, 85, 247, 0.4);
+      background: rgba(168, 85, 247, 0.1);
+    }
+
+    .soul-subcat-btn.active {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(236, 72, 153, 0.25) 100%);
+      color: #fff;
+      border-color: #c084fc;
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+    }
+
+    .subcat-chip {
+      font-size: 0.70rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-left: 6px;
+    }
+
+    .chip-emotion {
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+
+    .chip-relationship {
+      background: rgba(52, 211, 153, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.35);
+    }
+
+    .chip-behavior {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    .chip-culture {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border: 1px solid rgba(244, 63, 94, 0.35);
+    }
+
     .era-pill-soul {
       background: rgba(168, 85, 247, 0.18);
       color: #c084fc;
@@ -1996,7 +2082,7 @@
       </button>
       <button class="era-tab-btn" id="tabSoulBtn" onclick="switchEra('soul')">
         <span class="era-main">💎 4. K-정서 (번역불가)</span>
-        <span class="era-sub" id="countSoul">K-Soul 15선</span>
+        <span class="era-sub" id="countSoul">K-Soul 118선</span>
       </button>
       <button class="era-tab-btn" id="tabKakaoBtn" onclick="switchEra('kakao')">
         <span class="era-main">💬 5. 카톡 판독소</span>
@@ -2005,11 +2091,32 @@
     </div>
   </section>
 
+  <!-- 💎 K-정서 전용 4대 서브 카테고리 칩 필터 바 -->
+  <section class="soul-subcat-section" id="soulSubcatSection" style="display: none;">
+    <div class="soul-subcat-container">
+      <button class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">
+        <span>✨ 전체 K-Soul (118)</span>
+      </button>
+      <button class="soul-subcat-btn emotion" onclick="filterSoulSubcat('emotion', event)">
+        <span>💭 1. 심리·감정 (36)</span>
+      </button>
+      <button class="soul-subcat-btn relationship" onclick="filterSoulSubcat('relationship', event)">
+        <span>🤝 2. 관계·유대 (25)</span>
+      </button>
+      <button class="soul-subcat-btn behavior" onclick="filterSoulSubcat('behavior', event)">
+        <span>🏃 3. 습관·행동 (25)</span>
+      </button>
+      <button class="soul-subcat-btn culture" onclick="filterSoulSubcat('culture', event)">
+        <span>🎎 4. 사회·문화 (32)</span>
+      </button>
+    </div>
+  </section>
+
   <!-- 선택된 시대 설명 바 -->
   <div class="era-info-box" id="eraInfoBox">
     <div class="era-info-content" id="eraInfoContent">
       <span>✨ <strong>전체 100선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈까지 전 시대를 한눈에 탐색합니다.</span>
-      <span style="color:#facc15; font-weight:800; font-size:0.75rem;">총 215개 표제어 수록</span>
+      <span style="color:#facc15; font-weight:800; font-size:0.75rem;">총 318개 표제어 수록</span>
     </div>
   </div>
 
@@ -10911,7 +11018,8 @@ B: 그게 바로 '정'이죠. 좋은 일 힘든 일 함께 겪으며 쌓인 마�
       "desc": "Transcendence of mere affection or love. It is an enduring, sticky bond of warm attachment that naturally grows between people, places, or things through shared moments, struggles, and history.",
       "example": "A: Even after moving away, I still miss my old neighbors so much.
 B: That's 'Jeong'—the deep emotional bond formed through shared life."
-    }
+    },
+    "sub_category": "relationship"
   },
   {
     "id": 202,
@@ -10947,7 +11055,8 @@ B: 눈치 진짜 빠르네! 지금 보고서 반려돼서 사무실 공기 완�
       "desc": "Much more than EQ or situational awareness. It is the swift, intuitive superpower to gauge others' moods, hidden intentions, and relational atmospheres without a single word being spoken.",
       "example": "A: Did you notice the boss was upset?
 B: Yes, good thing we have quick 'nunchi'—otherwise we would have asked for a team dinner today!"
-    }
+    },
+    "sub_category": "relationship"
   },
   {
     "id": 203,
@@ -10983,7 +11092,8 @@ B: 그 가락 속에 우리 민족 특유의 '한'과 이를 이겨내려는 생
       "desc": "A complex emotional state combining collective sorrow, historical trauma, and unresolved injustice, which is resiliently transformed into art, perseverance, and profound human empathy rather than vengeful hatred.",
       "example": "A: Why does traditional Korean music feel so hauntingly emotional?
 B: It carries 'Han'—centuries of sorrow sublimated into soulful strength."
-    }
+    },
+    "sub_category": "culture"
   },
   {
     "id": 204,
@@ -11019,7 +11129,8 @@ B: 정말 미안해! 야근하느라 정신이 없었어. 오늘 내가 진짜 �
       "desc": "A delicate feeling of feeling let down or neglected by someone close to you. Unlike anger or coldness, it only occurs because you genuinely care about and cherish that person.",
       "example": "A: I felt a bit 'seounhada' when my best friend forgot my birthday.
 B: It hurts more precisely because you love them so much."
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 205,
@@ -11055,7 +11166,8 @@ B: 완전 고구마 먹은 것처럼 답답하겠다! 일단 찬물 한 잔 마�
       "desc": "A visceral sensation of feeling mentally choked or having a heavy weight pressing on your chest when progress is stalled, communication fails, or someone is clueless.",
       "example": "A: Trying to explain this to someone who refuses to listen is so 'dapdaphada'!
 B: Like eating dry sweet potatoes without any water!"
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 206,
@@ -11091,7 +11203,8 @@ B: 진짜 억울하겠다... CCTV 확인해서 꼭 진실을 밝혀내자."
       "desc": "A gut-wrenching ache of acute injustice felt when you are completely blameless yet wrongly blamed, penalized, or misunderstood without a chance to defend yourself.",
       "example": "A: I was blamed for a mistake someone else made. It feels so 'eogulhada'!
 B: We'll pull the logs and clear your name."
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 207,
@@ -11127,7 +11240,8 @@ B: 그게 바로 애교의 기적이죠!"
       "desc": "Acting adorably cute through baby voices, playful gestures, and facial expressions to express affection, disarm tension, or ask for favors in a sweet manner.",
       "example": "A: His daughter did some cute 'aegyo' and melted his fatigue away.
 B: That signature Korean cuteness is unbeatable!"
-    }
+    },
+    "sub_category": "relationship"
   },
   {
     "id": 208,
@@ -11163,7 +11277,8 @@ B: 지금 딱 '썸' 타는 중이네! 그 시절이 연애할 때 제일 심장 
       "desc": "Derived from 'something going on'. That electrifying, uncommitted stage where two people mutually flirt and feel strong romantic tension before officially becoming a couple.",
       "example": "A: We talk on the phone every night—are we dating?
 B: You are definitely in the 'some' stage! Enjoy the butterflies!"
-    }
+    },
+    "sub_category": "relationship"
   },
   {
     "id": 209,
@@ -11199,7 +11314,8 @@ B: 그 영화 진짜 여운이 길죠. 불이 켜진 뒤에도 한참 동안 극
       "desc": "Literally 'lingering sound/rhyme'. The profound emotional reverberation or spiritual afterglow that stays with you long after a book ends, a song stops, or someone leaves.",
       "example": "A: I still can't stop thinking about the movie's final scene.
 B: It leaves a breathtaking 'yeoun' that stays in your heart for days."
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 210,
@@ -11235,7 +11351,8 @@ B: 원래 낯을 많이 가려서 그래. 시간 지나고 마음 열리면 진�
       "desc": "Originally describing babies distinguishing parents from strangers; refers to adults who need time and a comfortable space before they can drop their guard and open up.",
       "example": "A: He seemed so quiet at first, but now he is so funny!
 B: He just has bad 'natgarim' around new faces until he feels safe."
-    }
+    },
+    "sub_category": "relationship"
   },
   {
     "id": 211,
@@ -11271,7 +11388,8 @@ B: 으아악 완전 심쿵이다! 사진 찍어둔 거 얼른 보여줘!"
       "desc": "An adorable onomatopoeia for 'heart thumping hard'. Used whenever someone experiences an intense rush of romantic attraction or witnesses something cutely overwhelming.",
       "example": "A: The puppy leaned on my foot and looked up at me with round eyes.
 B: Total 'simkung'! My heart just skipped a beat!"
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 212,
@@ -11307,7 +11425,8 @@ B: 나도 그래... 내일부터 다시 출근이라는 현실이 뼈아프게 �
       "desc": "Short for 'Reality Realization Time'. That sudden, chilling moment of clarity when the high of daydreaming or bingeing wears off and cold reality smacks you in the face.",
       "example": "A: Spent all Sunday scrolling reels in bed, then looked at the clock at 11 PM.
 B: Major 'hyeonta' moment—welcome back to reality!"
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 213,
@@ -11343,7 +11462,8 @@ B: 헐 대박... 완전 멘붕이겠다. 임시 저장 폴더라도 얼른 뒤�
       "desc": "Short for 'mental collapse'. Expresses total bewilderment, shock, or cognitive paralysis when disastrous events occur in rapid succession.",
       "example": "A: My laptop crashed and erased 3 days of work on the final proposal!
 B: Total 'menbung'... take a breath, let's look for autosaves."
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 214,
@@ -11379,7 +11499,8 @@ B: 그런 모습을 보면 누구나 코끝이 찡해지죠. 따뜻한 음료수
       "desc": "A deeply tender, poignant sympathy evoked when witnessing someone persevering through exhaustion or adversity. It feels like an ache in the center of your chest combined with deep affection.",
       "example": "A: Seeing my elderly father fall asleep on the sofa with worn-out hands felt so 'jjanhada'.
 B: It's that warm, tearful compassion you feel for people who carry heavy burdens."
-    }
+    },
+    "sub_category": "emotion"
   },
   {
     "id": 215,
@@ -11415,6 +11536,3406 @@ B: 대사 하나하나에 특유의 '말맛'이 살아있어서 그래요. 글�
       "desc": "Literally 'speech taste'. It describes the delicious, rhythmic flavor and expressive nuance of well-crafted phrasing that mechanical translation can never duplicate.",
       "example": "A: Why do K-drama dialogues feel so witty and punchy?
 B: It's all about the 'malmat'—the savory phonetic charm of the Korean language!"
+    },
+    "sub_category": "culture"
+  },
+  {
+    "id": 216,
+    "word": "섭섭하다",
+    "pronunciation": "[섭섭하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅅㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "기대했던 것보다 마음에 미치지 못해 서운하고 마음이 상한 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I felt a bit 섭섭하다 when my best friend forgot my birthday."
+    ],
+    "tags": [
+      "섭섭하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5555,
+    "dislikes": 30,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "기대했던 것보다 마음에 미치지 못해 서운하고 마음이 상한 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "섭섭하다",
+      "desc": "Feeling slight disappointment or hurt because you expected more care or attention.",
+      "example": "I felt a bit 섭섭하다 when my best friend forgot my birthday."
+    }
+  },
+  {
+    "id": 217,
+    "word": "아쉽다",
+    "pronunciation": "[아쉽다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅅㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "무엇이 부족하거나 때를 놓쳐 마음이 개운하지 않고 안타까운 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "We missed winning by just one point, which makes it so 아쉽다."
+    ],
+    "tags": [
+      "아쉽다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5592,
+    "dislikes": 33,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "무엇이 부족하거나 때를 놓쳐 마음이 개운하지 않고 안타까운 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "아쉽다",
+      "desc": "A feeling of regret, incompletes, or longing because something fell short.",
+      "example": "We missed winning by just one point, which makes it so 아쉽다."
+    }
+  },
+  {
+    "id": 218,
+    "word": "씁쓸하다",
+    "pronunciation": "[씁쓸하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅆㅆㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "달콤하지 않고 씁쓸한 맛처럼, 인생의 씁쓸함이나 뒷맛이 개운치 않은 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Seeing the old neighborhood torn down felt very 씁쓸하다."
+    ],
+    "tags": [
+      "씁쓸하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5629,
+    "dislikes": 11,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "달콤하지 않고 씁쓸한 맛처럼, 인생의 씁쓸함이나 뒷맛이 개운치 않은 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "씁쓸하다",
+      "desc": "A bittersweet or cynical feeling mixed with disappointment.",
+      "example": "Seeing the old neighborhood torn down felt very 씁쓸하다."
+    }
+  },
+  {
+    "id": 219,
+    "word": "심란하다",
+    "pronunciation": "[심란하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㄹㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음이 갈피를 잡을 수 없고 어수선하여 편안하지 않은 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "With the exam tomorrow, my mind feels so 심란하다."
+    ],
+    "tags": [
+      "심란하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5666,
+    "dislikes": 14,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음이 갈피를 잡을 수 없고 어수선하여 편안하지 않은 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "심란하다",
+      "desc": "Feeling mentally disturbed, restless, and deeply unsettled.",
+      "example": "With the exam tomorrow, my mind feels so 심란하다."
+    }
+  },
+  {
+    "id": 220,
+    "word": "싱숭생숭하다",
+    "pronunciation": "[싱숭생숭하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅅㅅㅅㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음이 들떠서 차분하지 못하고 이리저리 흔들리는 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Spring is in the air, and it makes my heart 싱숭생숭하다."
+    ],
+    "tags": [
+      "싱숭생숭하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5703,
+    "dislikes": 17,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음이 들떠서 차분하지 못하고 이리저리 흔들리는 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "싱숭생숭하다",
+      "desc": "Feeling restless, fluttery, and unable to focus due to excitement or anxiety.",
+      "example": "Spring is in the air, and it makes my heart 싱숭생숭하다."
+    }
+  },
+  {
+    "id": 221,
+    "word": "어이없다",
+    "pronunciation": "[어이없다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅇㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "너무 황당하거나 기가 막혀서 말문이 막히는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His excuse for being late was so absurd that I was 어이없다."
+    ],
+    "tags": [
+      "어이없다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5740,
+    "dislikes": 20,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "너무 황당하거나 기가 막혀서 말문이 막히는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "어이없다",
+      "desc": "Speechless and dumbfounded because something is absurd or ridiculous.",
+      "example": "His excuse for being late was so absurd that I was 어이없다."
+    }
+  },
+  {
+    "id": 222,
+    "word": "통쾌하다",
+    "pronunciation": "[통쾌하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅌㅋㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "막힌 곳이 뚫린 것처럼 시원하고 통쾌한 기분",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Watching the villain get caught in the end felt so 통쾌하다."
+    ],
+    "tags": [
+      "통쾌하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5777,
+    "dislikes": 23,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "막힌 곳이 뚫린 것처럼 시원하고 통쾌한 기분",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "통쾌하다",
+      "desc": "Feeling thoroughly gratified and vindicated by justice or payback.",
+      "example": "Watching the villain get caught in the end felt so 통쾌하다."
+    }
+  },
+  {
+    "id": 223,
+    "word": "홀조하다 (홀가분하다)",
+    "pronunciation": "[홀조하다 (홀가분하다)]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㅈㅎㄷㅎㄱㅂㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음을 짓누르던 무거운 짐이나 걱정이 사라져 가벼운 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "After submitting my resignation, I felt so 홀가분하다."
+    ],
+    "tags": [
+      "홀조하다 (홀가분하다)",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5814,
+    "dislikes": 26,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음을 짓누르던 무거운 짐이나 걱정이 사라져 가벼운 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "홀조하다 (홀가분하다)",
+      "desc": "Feeling completely relieved and unburdened after a heavy task is done.",
+      "example": "After submitting my resignation, I felt so 홀가분하다."
+    }
+  },
+  {
+    "id": 224,
+    "word": "황당하다",
+    "pronunciation": "[황당하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㄷㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "상식이나 기대를 터무니없이 벗어나 어처구니없는 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I was 황당하다 when they canceled the flight without any notice."
+    ],
+    "tags": [
+      "황당하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5851,
+    "dislikes": 29,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "상식이나 기대를 터무니없이 벗어나 어처구니없는 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "황당하다",
+      "desc": "Flabbergasted, stunned, and bewildered by something unbelievable.",
+      "example": "I was 황당하다 when they canceled the flight without any notice."
+    }
+  },
+  {
+    "id": 225,
+    "word": "울컥하다",
+    "pronunciation": "[울컥하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅋㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "감정이 치밀어 올라 눈물이나 목소리가 왈칵 터져 나올 것 같은 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I felt 울컥하다 when the crowd cheered for the underdog."
+    ],
+    "tags": [
+      "울컥하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5888,
+    "dislikes": 32,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "감정이 치밀어 올라 눈물이나 목소리가 왈칵 터져 나올 것 같은 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "울컥하다",
+      "desc": "A sudden surge of powerful emotion that brings tears to your eyes.",
+      "example": "I felt 울컥하다 when the crowd cheered for the underdog."
+    }
+  },
+  {
+    "id": 226,
+    "word": "설레다",
+    "pronunciation": "[설레다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "좋은 일이나 기대감 때문에 가슴이 두근거리고 가라앉지 않는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I am so 설레다 about going on vacation tomorrow."
+    ],
+    "tags": [
+      "설레다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5925,
+    "dislikes": 10,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "좋은 일이나 기대감 때문에 가슴이 두근거리고 가라앉지 않는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "설레다",
+      "desc": "Heart-fluttering excitement and eager anticipation.",
+      "example": "I am so 설레다 about going on vacation tomorrow."
+    }
+  },
+  {
+    "id": 227,
+    "word": "지겹다",
+    "pronunciation": "[지겹다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㄱㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "똑같은 상황이 반복되어 진저리가 나고 싫증이 나는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Eating the same instant noodles every day is getting 지겹다."
+    ],
+    "tags": [
+      "지겹다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5962,
+    "dislikes": 13,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "똑같은 상황이 반복되어 진저리가 나고 싫증이 나는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "지겹다",
+      "desc": "Sick and tired of something repetitive and monotonous.",
+      "example": "Eating the same instant noodles every day is getting 지겹다."
+    }
+  },
+  {
+    "id": 228,
+    "word": "후련하다",
+    "pronunciation": "[후련하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㄹㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "걱정거리나 맺힌 것이 말끔히 풀려 마음이 시원한 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Cleaning my messy room made me feel so 후련하다."
+    ],
+    "tags": [
+      "후련하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 5999,
+    "dislikes": 16,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "걱정거리나 맺힌 것이 말끔히 풀려 마음이 시원한 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "후련하다",
+      "desc": "Completely refreshed and unburdened, like a weight lifted.",
+      "example": "Cleaning my messy room made me feel so 후련하다."
+    }
+  },
+  {
+    "id": 229,
+    "word": "뿌듯하다",
+    "pronunciation": "[뿌듯하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅃㄷㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음에 흡족하고 자랑스러워 가득 찬 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Looking at the completed painting made me feel so 뿌듯하다."
+    ],
+    "tags": [
+      "뿌듯하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6036,
+    "dislikes": 19,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음에 흡족하고 자랑스러워 가득 찬 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "뿌듯하다",
+      "desc": "A deep sense of pride, fulfillment, and inner satisfaction.",
+      "example": "Looking at the completed painting made me feel so 뿌듯하다."
+    }
+  },
+  {
+    "id": 230,
+    "word": "애틋하다",
+    "pronunciation": "[애틋하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅌㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "사랑스럽고 안타까우며 마음에 깊이 남는 정서",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The old couple's enduring love looks so 애틋하다."
+    ],
+    "tags": [
+      "애틋하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6073,
+    "dislikes": 22,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "사랑스럽고 안타까우며 마음에 깊이 남는 정서",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "애틋하다",
+      "desc": "Tender, affectionate, and poignant with a touch of protective longing.",
+      "example": "The old couple's enduring love looks so 애틋하다."
+    }
+  },
+  {
+    "id": 231,
+    "word": "서글프다",
+    "pronunciation": "[서글프다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㄱㅍㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "왠지 쓸쓸하고 처량하여 눈물이 날 것 같은 슬픔",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Walking home alone in the rain made me feel 서글프다."
+    ],
+    "tags": [
+      "서글프다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6110,
+    "dislikes": 25,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "왠지 쓸쓸하고 처량하여 눈물이 날 것 같은 슬픔",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "서글프다",
+      "desc": "A lingering, melancholic sorrow that makes you feel lonely.",
+      "example": "Walking home alone in the rain made me feel 서글프다."
+    }
+  },
+  {
+    "id": 232,
+    "word": "개운하다",
+    "pronunciation": "[개운하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅇㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "찌든 때를 씻어냈거나 골칫거리가 해결되어 상쾌한 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "A cold shower after running makes me feel so 개운하다."
+    ],
+    "tags": [
+      "개운하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6147,
+    "dislikes": 28,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "찌든 때를 씻어냈거나 골칫거리가 해결되어 상쾌한 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "개운하다",
+      "desc": "Feeling completely refreshed and clear-headed.",
+      "example": "A cold shower after running makes me feel so 개운하다."
+    }
+  },
+  {
+    "id": 233,
+    "word": "허전하다",
+    "pronunciation": "[허전하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㅈㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음의 구멍이 뚫린 것처럼 휑하고 쓸쓸한 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "After everyone went home, the house felt empty and 허전하다."
+    ],
+    "tags": [
+      "허전하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6184,
+    "dislikes": 31,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음의 구멍이 뚫린 것처럼 휑하고 쓸쓸한 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "허전하다",
+      "desc": "A hollow, empty sensation in your heart.",
+      "example": "After everyone went home, the house felt empty and 허전하다."
+    }
+  },
+  {
+    "id": 234,
+    "word": "스산하다",
+    "pronunciation": "[스산하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅅㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "날씨나 분위기가 차갑고 쓸쓸하며 오싹한 느낌",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The abandoned alleyways at night felt very 스산하다."
+    ],
+    "tags": [
+      "스산하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6221,
+    "dislikes": 34,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "날씨나 분위기가 차갑고 쓸쓸하며 오싹한 느낌",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "스산하다",
+      "desc": "Chilly, bleak, and eerie in atmosphere.",
+      "example": "The abandoned alleyways at night felt very 스산하다."
+    }
+  },
+  {
+    "id": 235,
+    "word": "내키지 않는다",
+    "pronunciation": "[내키지 않는다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅋㅈㅇㄴㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음이 동하지 않아 마지못해 하거나 망설여지는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I went to the party, but my heart wasn't in it; it felt 내키지 않았다."
+    ],
+    "tags": [
+      "내키지 않는다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6258,
+    "dislikes": 12,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음이 동하지 않아 마지못해 하거나 망설여지는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "내키지 않는다",
+      "desc": "Reluctant, hesitant, and unwilling at heart.",
+      "example": "I went to the party, but my heart wasn't in it; it felt 내키지 않았다."
+    }
+  },
+  {
+    "id": 236,
+    "word": "살만하다",
+    "pronunciation": "[살만하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "살림이나 처지가 이전보다 나아져 살 만하다고 느껴지는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "After paying off the debt, life finally feels 살만하다."
+    ],
+    "tags": [
+      "살만하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6295,
+    "dislikes": 15,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "살림이나 처지가 이전보다 나아져 살 만하다고 느껴지는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "살만하다",
+      "desc": "Feeling comfortable and content with life's current state.",
+      "example": "After paying off the debt, life finally feels 살만하다."
+    }
+  },
+  {
+    "id": 237,
+    "word": "막막하다",
+    "pronunciation": "[막막하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅁㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "앞길이 아득하고 어떻게 해야 할지 도저히 알 수 없는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Standing in front of the huge stack of unread books felt 막막하다."
+    ],
+    "tags": [
+      "막막하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6332,
+    "dislikes": 18,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "앞길이 아득하고 어떻게 해야 할지 도저히 알 수 없는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "막막하다",
+      "desc": "Feeling helpless, clueless, and overwhelmed by a bleak outlook.",
+      "example": "Standing in front of the huge stack of unread books felt 막막하다."
+    }
+  },
+  {
+    "id": 238,
+    "word": "가슴이 먹먹하다",
+    "pronunciation": "[가슴이 먹먹하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅅㅇㅁㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "슬픔이나 충격으로 가슴이 조여들며 말이 나오지 않는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The tragic news left everyone's chest 가슴이 먹먹하다."
+    ],
+    "tags": [
+      "가슴이 먹먹하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6369,
+    "dislikes": 21,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "슬픔이나 충격으로 가슴이 조여들며 말이 나오지 않는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "가슴이 먹먹하다",
+      "desc": "Stunned and choked with deep emotion or grief.",
+      "example": "The tragic news left everyone's chest 가슴이 먹먹하다."
+    }
+  },
+  {
+    "id": 239,
+    "word": "궁상맞다",
+    "pronunciation": "[궁상맞다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅅㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "가난하고 궁색해 보여서 처량하고 볼품없는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Eating instant ramen straight out of the pot looked a bit 궁상맞다."
+    ],
+    "tags": [
+      "궁상맞다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 6406,
+    "dislikes": 24,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "가난하고 궁색해 보여서 처량하고 볼품없는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "궁상맞다",
+      "desc": "Looking shabby, petty, and miserably impoverished.",
+      "example": "Eating instant ramen straight out of the pot looked a bit 궁상맞다."
+    }
+  },
+  {
+    "id": 240,
+    "word": "효도",
+    "pronunciation": "[효도]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "부모를 공경하고 지극 정성으로 봉양하는 자식의 도리",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Booking a vacation for his parents was his way of 효도."
+    ],
+    "tags": [
+      "효도",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6443,
+    "dislikes": 27,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "부모를 공경하고 지극 정성으로 봉양하는 자식의 도리",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "효도",
+      "desc": "Filial piety and devoted care for one's parents.",
+      "example": "Booking a vacation for his parents was his way of 효도."
+    }
+  },
+  {
+    "id": 241,
+    "word": "서먹하다",
+    "pronunciation": "[서먹하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "친하지 않거나 오래 보지 않아 어색하고 거리가 느껴지는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Meeting my childhood friend after ten years felt a bit 서먹하다."
+    ],
+    "tags": [
+      "서먹하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6480,
+    "dislikes": 30,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "친하지 않거나 오래 보지 않아 어색하고 거리가 느껴지는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "서먹하다",
+      "desc": "Feeling socially awkward, estranged, and unaccustomed.",
+      "example": "Meeting my childhood friend after ten years felt a bit 서먹하다."
+    }
+  },
+  {
+    "id": 242,
+    "word": "데면데면하다",
+    "pronunciation": "[데면데면하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㅁㄷㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "서로 대하는 태도가 친밀하지 않고 무성의하거나 어색한 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "After the argument, they acted 데면데면하다."
+    ],
+    "tags": [
+      "데면데면하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6517,
+    "dislikes": 33,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "서로 대하는 태도가 친밀하지 않고 무성의하거나 어색한 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "데면데면하다",
+      "desc": "Being distant, lukewarm, and indifferent toward each other.",
+      "example": "After the argument, they acted 데면데면하다."
+    }
+  },
+  {
+    "id": 243,
+    "word": "오지랖",
+    "pronunciation": "[오지랖]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅈㄹ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "남의 일이나 사생활에 지나치게 참견하고 간섭하는 성향",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Why do you have such a big 오지랖 about my dating life?"
+    ],
+    "tags": [
+      "오지랖",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6554,
+    "dislikes": 11,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "남의 일이나 사생활에 지나치게 참견하고 간섭하는 성향",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "오지랖",
+      "desc": "Being overly nosy and sticking your nose into others' business.",
+      "example": "Why do you have such a big 오지랖 about my dating life?"
+    }
+  },
+  {
+    "id": 244,
+    "word": "쌀쌀맞다",
+    "pronunciation": "[쌀쌀맞다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅆㅆㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "태도가 매우 차갑고 매몰차서 정이 가지 않는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She seemed 쌀쌀맞다 at first, but she is actually very warm."
+    ],
+    "tags": [
+      "쌀쌀맞다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6591,
+    "dislikes": 14,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "태도가 매우 차갑고 매몰차서 정이 가지 않는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "쌀쌀맞다",
+      "desc": "Icy, cold, and unfriendly in demeanor.",
+      "example": "She seemed 쌀쌀맞다 at first, but she is actually very warm."
+    }
+  },
+  {
+    "id": 245,
+    "word": "알랑거리다",
+    "pronunciation": "[알랑거리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㄹㄱㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음에 없는 비위를 맞추며 얄밉게 아첨하는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He tried to 알랑거리다 to the boss to get a promotion."
+    ],
+    "tags": [
+      "알랑거리다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6628,
+    "dislikes": 17,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음에 없는 비위를 맞추며 얄밉게 아첨하는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "알랑거리다",
+      "desc": "Fawning, buttering up, and sucking up to someone insincerely.",
+      "example": "He tried to 알랑거리다 to the boss to get a promotion."
+    }
+  },
+  {
+    "id": 246,
+    "word": "눈엣가시",
+    "pronunciation": "[눈엣가시]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅇㄱㅅ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "눈에 들어간 가시처럼 매우 밉고 거슬리는 존재",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His constant complaints made him a 눈엣가시 in the team."
+    ],
+    "tags": [
+      "눈엣가시",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6665,
+    "dislikes": 20,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "눈에 들어간 가시처럼 매우 밉고 거슬리는 존재",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "눈엣가시",
+      "desc": "A thorn in one's side; an annoying, persistent obstacle.",
+      "example": "His constant complaints made him a 눈엣가시 in the team."
+    }
+  },
+  {
+    "id": 247,
+    "word": "깍듯하다",
+    "pronunciation": "[깍듯하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄲㄷㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "예절이 바르고 태도가 매우 정중한 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The new intern was 깍듯하다 to all senior staff."
+    ],
+    "tags": [
+      "깍듯하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6702,
+    "dislikes": 23,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "예절이 바르고 태도가 매우 정중한 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "깍듯하다",
+      "desc": "Exceptionally polite, respectful, and courteous.",
+      "example": "The new intern was 깍듯하다 to all senior staff."
+    }
+  },
+  {
+    "id": 248,
+    "word": "다정다감하다",
+    "pronunciation": "[다정다감하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㅈㄷㄱㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "정이 많고 감정이 풍부하여 따뜻하게 잘 대하는 성격",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He is 다정다감하다 and always checks on his friends."
+    ],
+    "tags": [
+      "다정다감하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6739,
+    "dislikes": 26,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "정이 많고 감정이 풍부하여 따뜻하게 잘 대하는 성격",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "다정다감하다",
+      "desc": "Warm-hearted, affectionate, and deeply sensitive to others.",
+      "example": "He is 다정다감하다 and always checks on his friends."
+    }
+  },
+  {
+    "id": 249,
+    "word": "앙숙",
+    "pronunciation": "[앙숙]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅅ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "서로 몹시 미워하여 원수처럼 지내는 관계",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The two neighboring stores have been 앙숙 for years."
+    ],
+    "tags": [
+      "앙숙",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6776,
+    "dislikes": 29,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "서로 몹시 미워하여 원수처럼 지내는 관계",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "앙숙",
+      "desc": "Bitter rivals or mortal enemies who despise each other.",
+      "example": "The two neighboring stores have been 앙숙 for years."
+    }
+  },
+  {
+    "id": 250,
+    "word": "새초롬하다",
+    "pronunciation": "[새초롬하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅊㄹㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "쌀쌀맞으면서도 은근히 새침하고 도도한 태도를 보이는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She gave a 새초롬하다 smile when complimented."
+    ],
+    "tags": [
+      "새초롬하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6813,
+    "dislikes": 32,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "쌀쌀맞으면서도 은근히 새침하고 도도한 태도를 보이는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "새초롬하다",
+      "desc": "Coy, prudish, and slightly aloof yet charming.",
+      "example": "She gave a 새초롬하다 smile when complimented."
+    }
+  },
+  {
+    "id": 251,
+    "word": "허물없다",
+    "pronunciation": "[허물없다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㅁㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "사이가 너무 가까워 예의를 따지지 않고 편하게 대하는 관계",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "We are 허물없다 friends who share everything."
+    ],
+    "tags": [
+      "허물없다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6850,
+    "dislikes": 10,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "사이가 너무 가까워 예의를 따지지 않고 편하게 대하는 관계",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "허물없다",
+      "desc": "So close and informal that formalities are unnecessary.",
+      "example": "We are 허물없다 friends who share everything."
+    }
+  },
+  {
+    "id": 252,
+    "word": "티격태격하다",
+    "pronunciation": "[티격태격하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅌㄱㅌㄱㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "사소한 일로 계속 말다툼을 하거나 부딪히는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The siblings always 티격태격하다 over TV channels."
+    ],
+    "tags": [
+      "티격태격하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6887,
+    "dislikes": 13,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "사소한 일로 계속 말다툼을 하거나 부딪히는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "티격태격하다",
+      "desc": "Bickering and squabbling constantly over trivial things.",
+      "example": "The siblings always 티격태격하다 over TV channels."
+    }
+  },
+  {
+    "id": 253,
+    "word": "시시덕거리다",
+    "pronunciation": "[시시덕거리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅅㄷㄱㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "쓸데없는 일로 웃고 떠들며 가볍게 장난치는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Stop 시시덕거리다 and focus on the lecture."
+    ],
+    "tags": [
+      "시시덕거리다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6924,
+    "dislikes": 16,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "쓸데없는 일로 웃고 떠들며 가볍게 장난치는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "시시덕거리다",
+      "desc": "Giggling and fooling around frivolously.",
+      "example": "Stop 시시덕거리다 and focus on the lecture."
+    }
+  },
+  {
+    "id": 254,
+    "word": "옥에 티",
+    "pronunciation": "[옥에 티]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅇㅌ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "훌륭하지만 한 가지 아쉬운 흠집이나 결점",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The poor acting was the only 옥에 티 in the great movie."
+    ],
+    "tags": [
+      "옥에 티",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6961,
+    "dislikes": 19,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "훌륭하지만 한 가지 아쉬운 흠집이나 결점",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "옥에 티",
+      "desc": "A flaw in an otherwise perfect work or person (A fly in the ointment).",
+      "example": "The poor acting was the only 옥에 티 in the great movie."
+    }
+  },
+  {
+    "id": 255,
+    "word": "팔이 안으로 굽는다",
+    "pronunciation": "[팔이 안으로 굽는다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅍㅇㅇㅇㄹㄱㄴㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "제 식구리나 가까운 사람을 감싸게 되는 인지상정",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Of course managers protect their own staff; 팔이 안으로 굽는 법이지."
+    ],
+    "tags": [
+      "팔이 안으로 굽는다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 6998,
+    "dislikes": 22,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "제 식구리나 가까운 사람을 감싸게 되는 인지상정",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "팔이 안으로 굽는다",
+      "desc": "Blood is thicker than water; favoring one's own people.",
+      "example": "Of course managers protect their own staff; 팔이 안으로 굽는 법이지."
+    }
+  },
+  {
+    "id": 256,
+    "word": "배알이꼴리다",
+    "pronunciation": "[배알이꼴리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅇㅇㄲㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "자존심이 상하고 시기심이나 질투로 속이 뒤틀리는 감정",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Seeing his rival succeed made his 배알이꼴리다."
+    ],
+    "tags": [
+      "배알이꼴리다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 7035,
+    "dislikes": 25,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "자존심이 상하고 시기심이나 질투로 속이 뒤틀리는 감정",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "배알이꼴리다",
+      "desc": "Feeling deeply envious, piqued, and hurt in one's pride.",
+      "example": "Seeing his rival succeed made his 배알이꼴리다."
+    }
+  },
+  {
+    "id": 257,
+    "word": "지긋지긋하다",
+    "pronunciation": "[지긋지긋하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㄱㅈㄱㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "넌더리가 날 정도로 끔찍하고 싫증이 난 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Dealing with this endless paperwork is 지긋지긋하다."
+    ],
+    "tags": [
+      "지긋지긋하다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 7072,
+    "dislikes": 28,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "넌더리가 날 정도로 끔찍하고 싫증이 난 상태",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "지긋지긋하다",
+      "desc": "Sick and tired to the point of absolute disgust.",
+      "example": "Dealing with this endless paperwork is 지긋지긋하다."
+    }
+  },
+  {
+    "id": 258,
+    "word": "꼼꼼하다",
+    "pronunciation": "[꼼꼼하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄲㄲㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "빈틈없이 아주 세심하고 정확하게 일을 처리하는 성격",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Her 꼼꼼하다 planning ensured the event went smoothly."
+    ],
+    "tags": [
+      "꼼꼼하다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7109,
+    "dislikes": 31,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "빈틈없이 아주 세심하고 정확하게 일을 처리하는 성격",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "꼼꼼하다",
+      "desc": "Meticulous, thorough, and attentive to every detail.",
+      "example": "Her 꼼꼼하다 planning ensured the event went smoothly."
+    }
+  },
+  {
+    "id": 259,
+    "word": "덜렁대다",
+    "pronunciation": "[덜렁대다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㄹㄷㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "행동이 침착하지 못하고 실수를 자주 하는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Stop 덜렁대다 and double-check your keys."
+    ],
+    "tags": [
+      "덜렁대다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7146,
+    "dislikes": 34,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "행동이 침착하지 못하고 실수를 자주 하는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "덜렁대다",
+      "desc": "Being scatterbrained, careless, and prone to blunders.",
+      "example": "Stop 덜렁대다 and double-check your keys."
+    }
+  },
+  {
+    "id": 260,
+    "word": "야무지다",
+    "pronunciation": "[야무지다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅁㅈㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "빈틈이 없고 실속 있으며 당차게 일을 해내는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The young intern is remarkably 야무지다."
+    ],
+    "tags": [
+      "야무지다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7183,
+    "dislikes": 12,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "빈틈이 없고 실속 있으며 당차게 일을 해내는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "야무지다",
+      "desc": "Neat, capable, resolute, and sharp in action.",
+      "example": "The young intern is remarkably 야무지다."
+    }
+  },
+  {
+    "id": 261,
+    "word": "밍글거리다",
+    "pronunciation": "[밍글거리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅁㄱㄱㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "할 일을 미루며 행동을 느릿느릿 빈닥거리는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Stop 밍글거리다 and get ready for school."
+    ],
+    "tags": [
+      "밍글거리다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7220,
+    "dislikes": 15,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "할 일을 미루며 행동을 느릿느릿 빈닥거리는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "밍글거리다",
+      "desc": "Dawdling, dragging one's feet, and wasting time.",
+      "example": "Stop 밍글거리다 and get ready for school."
+    }
+  },
+  {
+    "id": 262,
+    "word": "우물쭈물하다",
+    "pronunciation": "[우물쭈물하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅁㅉㅁㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "결정을 내리지 못하고 이리저리 망설이며 주저하는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Don't 우물쭈물하다; tell us your final answer."
+    ],
+    "tags": [
+      "우물쭈물하다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7257,
+    "dislikes": 18,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "결정을 내리지 못하고 이리저리 망설이며 주저하는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "우물쭈물하다",
+      "desc": "Hesitating, dilly-dallying, and unable to make up one's mind.",
+      "example": "Don't 우물쭈물하다; tell us your final answer."
+    }
+  },
+  {
+    "id": 263,
+    "word": "뭉그적거리다",
+    "pronunciation": "[뭉그적거리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅁㄱㅈㄱㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "몸을 느릿하게 움직이며 게으름을 피우는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He was 뭉그적거리다 until he missed the bus."
+    ],
+    "tags": [
+      "뭉그적거리다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7294,
+    "dislikes": 21,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "몸을 느릿하게 움직이며 게으름을 피우는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "뭉그적거리다",
+      "desc": "Lollygagging and moving sluggishly out of laziness.",
+      "example": "He was 뭉그적거리다 until he missed the bus."
+    }
+  },
+  {
+    "id": 264,
+    "word": "건성건성",
+    "pronunciation": "[건성건성]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅅㄱㅅ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음을 쏟지 않고 대충대충 성의 없이 하는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Don't read the contract 건성건성; read every line."
+    ],
+    "tags": [
+      "건성건성",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7331,
+    "dislikes": 24,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음을 쏟지 않고 대충대충 성의 없이 하는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "건성건성",
+      "desc": "Half-heartedly, perfunctorily, and going through the motions.",
+      "example": "Don't read the contract 건성건성; read every line."
+    }
+  },
+  {
+    "id": 265,
+    "word": "바가지 긁다",
+    "pronunciation": "[바가지 긁다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㄱㅈㄱㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "아내가 남편에게 잔소리를 쉴 새 없이 늘어놓는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He came home late and expected his wife to 바가지 긁다."
+    ],
+    "tags": [
+      "바가지 긁다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7368,
+    "dislikes": 27,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "아내가 남편에게 잔소리를 쉴 새 없이 늘어놓는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "바가지 긁다",
+      "desc": "Nagging one's husband incessantly (originally about household expenses).",
+      "example": "He came home late and expected his wife to 바가지 긁다."
+    }
+  },
+  {
+    "id": 266,
+    "word": "허세",
+    "pronunciation": "[허세]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㅅ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "실속은 없으면서 남에게 뽐내기 위해 거들먹거리는 태도",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His expensive watch was just a show of 허세."
+    ],
+    "tags": [
+      "허세",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7405,
+    "dislikes": 30,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "실속은 없으면서 남에게 뽐내기 위해 거들먹거리는 태도",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "허세",
+      "desc": "Bluffing, empty posturing, and putting on airs.",
+      "example": "His expensive watch was just a show of 허세."
+    }
+  },
+  {
+    "id": 267,
+    "word": "눈속임",
+    "pronunciation": "[눈속임]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅅㅇ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "남이 모르게 겉으로만 그럴듯하게 꾸며 속이는 짓",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The report was full of numerical 눈속임."
+    ],
+    "tags": [
+      "눈속임",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7442,
+    "dislikes": 33,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "남이 모르게 겉으로만 그럴듯하게 꾸며 속이는 짓",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "눈속임",
+      "desc": "Eyewash, deception, and pulling the wool over someone's eyes.",
+      "example": "The report was full of numerical 눈속임."
+    }
+  },
+  {
+    "id": 268,
+    "word": "동문서답",
+    "pronunciation": "[동문서답]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㅁㅅㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "묻는 말과 전혀 엉뚱한 대답을 하는 말버릇",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I asked about the budget, and he gave a 동문서답."
+    ],
+    "tags": [
+      "동문서답",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7479,
+    "dislikes": 11,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "묻는 말과 전혀 엉뚱한 대답을 하는 말버릇",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "동문서답",
+      "desc": "Irrelevant answers; giving an answer that misses the point entirely.",
+      "example": "I asked about the budget, and he gave a 동문서답."
+    }
+  },
+  {
+    "id": 269,
+    "word": "발 벗고 나서다",
+    "pronunciation": "[발 벗고 나서다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅂㄱㄴㅅㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "어떤 일에 적극적으로 열정을 다해 뛰어드는 태도",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She 발 벗고 나서다 to help organize the charity event."
+    ],
+    "tags": [
+      "발 벗고 나서다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7516,
+    "dislikes": 14,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "어떤 일에 적극적으로 열정을 다해 뛰어드는 태도",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "발 벗고 나서다",
+      "desc": "Rolling up one's sleeves to dive into a task actively.",
+      "example": "She 발 벗고 나서다 to help organize the charity event."
+    }
+  },
+  {
+    "id": 270,
+    "word": "애를 먹다",
+    "pronunciation": "[애를 먹다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㄹㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "곤란한 일이나 고생 때문에 크게 시달리는 상황",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "We 애를 먹다 trying to fix the broken server code."
+    ],
+    "tags": [
+      "애를 먹다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7553,
+    "dislikes": 17,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "곤란한 일이나 고생 때문에 크게 시달리는 상황",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "애를 먹다",
+      "desc": "Having a hard time, struggling, and suffering through trouble.",
+      "example": "We 애를 먹다 trying to fix the broken server code."
+    }
+  },
+  {
+    "id": 271,
+    "word": "찬물을 끼얹다",
+    "pronunciation": "[찬물을 끼얹다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅊㅁㅇㄲㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "잘되어 가던 분위기나 일에 갑자기 훼방을 놓는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His pessimistic comment 찬물을 끼얹다 on our excitement."
+    ],
+    "tags": [
+      "찬물을 끼얹다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7590,
+    "dislikes": 20,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "잘되어 가던 분위기나 일에 갑자기 훼방을 놓는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "찬물을 끼얹다",
+      "desc": "Pouring cold water on an enthusiastic mood or plan.",
+      "example": "His pessimistic comment 찬물을 끼얹다 on our excitement."
+    }
+  },
+  {
+    "id": 272,
+    "word": "뒷북치다",
+    "pronunciation": "[뒷북치다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㅂㅊㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "일이 이미 다 끝난 뒤에 뒤늦게 야단법석을 떨거나 행동하는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Complaining now is just 뒷북치다; the decision was made."
+    ],
+    "tags": [
+      "뒷북치다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7627,
+    "dislikes": 23,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "일이 이미 다 끝난 뒤에 뒤늦게 야단법석을 떨거나 행동하는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "뒷북치다",
+      "desc": "Being a Johnny-come-lately; reacting after the fact.",
+      "example": "Complaining now is just 뒷북치다; the decision was made."
+    }
+  },
+  {
+    "id": 273,
+    "word": "고개를 갸웃거리다",
+    "pronunciation": "[고개를 갸웃거리다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㄱㄹㄱㅇㄱㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "의문스럽거나 믿기지 않아 고개를 살짝 갸우뚱하는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The strange data made the scientist 고개를 갸웃거리다."
+    ],
+    "tags": [
+      "고개를 갸웃거리다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7664,
+    "dislikes": 26,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "의문스럽거나 믿기지 않아 고개를 살짝 갸우뚱하는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "고개를 갸웃거리다",
+      "desc": "Tilting one's head in doubt, skepticism, or puzzlement.",
+      "example": "The strange data made the scientist 고개를 갸웃거리다."
+    }
+  },
+  {
+    "id": 274,
+    "word": "발뺌하다",
+    "pronunciation": "[발뺌하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅃㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "불리한 상황에서 자기가 저지른 책임을 회피하는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He tried to 발뺌하다 when asked about the broken window."
+    ],
+    "tags": [
+      "발뺌하다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7701,
+    "dislikes": 29,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "불리한 상황에서 자기가 저지른 책임을 회피하는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "발뺌하다",
+      "desc": "Backing out, ducking out, and denying involvement.",
+      "example": "He tried to 발뺌하다 when asked about the broken window."
+    }
+  },
+  {
+    "id": 275,
+    "word": "입만 살다",
+    "pronunciation": "[입만 살다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅁㅅㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "행동은 하지 않고 말로만 그럴듯하게 떠벌리는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Don't trust him; he is all talk and 입만 살다."
+    ],
+    "tags": [
+      "입만 살다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7738,
+    "dislikes": 32,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "행동은 하지 않고 말로만 그럴듯하게 떠벌리는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "입만 살다",
+      "desc": "All talk and no action; big-mouthed.",
+      "example": "Don't trust him; he is all talk and 입만 살다."
+    }
+  },
+  {
+    "id": 276,
+    "word": "콧대가 높다",
+    "pronunciation": "[콧대가 높다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅋㄷㄱㄴㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "거만하고 잘난 체하며 도도하게 군는 태도",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She used to be 콧대가 높다, but she became humble."
+    ],
+    "tags": [
+      "콧대가 높다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7775,
+    "dislikes": 10,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "거만하고 잘난 체하며 도도하게 군는 태도",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "콧대가 높다",
+      "desc": "High-nosed, arrogant, and snobbish.",
+      "example": "She used to be 콧대가 높다, but she became humble."
+    }
+  },
+  {
+    "id": 277,
+    "word": "귀가 얇다",
+    "pronunciation": "[귀가 얇다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㄱㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "남의 말에 쉽게 현혹되고 팔랑귀처럼 흔들리는 성격",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He bought the overpriced gadget because he is 귀가 얇다."
+    ],
+    "tags": [
+      "귀가 얇다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7812,
+    "dislikes": 13,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "남의 말에 쉽게 현혹되고 팔랑귀처럼 흔들리는 성격",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "귀가 얇다",
+      "desc": "Having thin ears; easily gullible and influenced by others.",
+      "example": "He bought the overpriced gadget because he is 귀가 얇다."
+    }
+  },
+  {
+    "id": 278,
+    "word": "손발이 맞다",
+    "pronunciation": "[손발이 맞다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅂㅇㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "호흡이 척척 맞아 일 처리가 매끄럽게 잘 되는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Our team 손발이 맞다, so the project finished early."
+    ],
+    "tags": [
+      "손발이 맞다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7849,
+    "dislikes": 16,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "호흡이 척척 맞아 일 처리가 매끄럽게 잘 되는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "손발이 맞다",
+      "desc": "Working together seamlessly like hand and glove.",
+      "example": "Our team 손발이 맞다, so the project finished early."
+    }
+  },
+  {
+    "id": 279,
+    "word": "입에 발린 말",
+    "pronunciation": "[입에 발린 말]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅇㅂㄹㅁ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "마음에도 없는 진심 없는 아첨의 말",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I don't need your 입에 발린 말; give me honest feedback."
+    ],
+    "tags": [
+      "입에 발린 말",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7886,
+    "dislikes": 19,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "마음에도 없는 진심 없는 아첨의 말",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "입에 발린 말",
+      "desc": "Lip service; sweet talk meant to flatter without sincerity.",
+      "example": "I don't need your 입에 발린 말; give me honest feedback."
+    }
+  },
+  {
+    "id": 280,
+    "word": "죽이 잘 맞다",
+    "pronunciation": "[죽이 잘 맞다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㅇㅈㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "성격이나 취향이 아주 잘 맞아 함께 있으면 즐거운 관계",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "We met today and realized our tastes 죽이 잘 맞다."
+    ],
+    "tags": [
+      "죽이 잘 맞다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7923,
+    "dislikes": 22,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "성격이나 취향이 아주 잘 맞아 함께 있으면 즐거운 관계",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "죽이 잘 맞다",
+      "desc": "Hitting it off wonderfully; being on the exact same wavelength.",
+      "example": "We met today and realized our tastes 죽이 잘 맞다."
+    }
+  },
+  {
+    "id": 281,
+    "word": "물 먹다",
+    "pronunciation": "[물 먹다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅁㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "시험에 떨어지거나 낭패를 당하여 실패하는 상황",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He applied for the top company and got 물 먹다."
+    ],
+    "tags": [
+      "물 먹다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7960,
+    "dislikes": 25,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "시험에 떨어지거나 낭패를 당하여 실패하는 상황",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "물 먹다",
+      "desc": "Getting dumped, failing, or suffering a setback.",
+      "example": "He applied for the top company and got 물 먹다."
+    }
+  },
+  {
+    "id": 282,
+    "word": "진땀을 빼다",
+    "pronunciation": "[진땀을 빼다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㄸㅇㅃㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "곤란한 일이나 긴장되는 상황 때문에 진땀을 흘리며 고생하는 일",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I 진땀을 빼다 answering the strict interviewer's questions."
+    ],
+    "tags": [
+      "진땀을 빼다",
+      "번역불가",
+      "K정서",
+      "behavior"
+    ],
+    "likes": 7997,
+    "dislikes": 28,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "곤란한 일이나 긴장되는 상황 때문에 진땀을 흘리며 고생하는 일",
+    "trend_status": "SOUL",
+    "sub_category": "behavior",
+    "en": {
+      "slang": "진땀을 빼다",
+      "desc": "Sweating bullets; going through an intensely stressful ordeal.",
+      "example": "I 진땀을 빼다 answering the strict interviewer's questions."
+    }
+  },
+  {
+    "id": 283,
+    "word": "꼰대",
+    "pronunciation": "[꼰대]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄲㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "권위적인식을 가지고 자기 주장을 젊은 세대에게 강요하는 기성세대",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Don't act like a 꼰대; listen to the junior staff."
+    ],
+    "tags": [
+      "꼰대",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8034,
+    "dislikes": 31,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "권위적인식을 가지고 자기 주장을 젊은 세대에게 강요하는 기성세대",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "꼰대",
+      "desc": "A condescending, close-minded authority figure (boomer mentality).",
+      "example": "Don't act like a 꼰대; listen to the junior staff."
+    }
+  },
+  {
+    "id": 284,
+    "word": "텃세",
+    "pronunciation": "[텃세]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅌㅅ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "먼저 자리 잡은 집단이 새로 들어온 사람을 견제하고 은근히 괴롭히는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The veteran workers showed some 텃세 to the new recruit."
+    ],
+    "tags": [
+      "텃세",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8071,
+    "dislikes": 34,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "먼저 자리 잡은 집단이 새로 들어온 사람을 견제하고 은근히 괴롭히는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "텃세",
+      "desc": "Territorial bullying or hazing by an established group against newcomers.",
+      "example": "The veteran workers showed some 텃세 to the new recruit."
+    }
+  },
+  {
+    "id": 285,
+    "word": "덤",
+    "pronunciation": "[덤]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "정으로 값 외에 공짜로 조금 더 얹어 주는 물건이나 서비스",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Buying three apples got me two more as a 덤."
+    ],
+    "tags": [
+      "덤",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8108,
+    "dislikes": 12,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "정으로 값 외에 공짜로 조금 더 얹어 주는 물건이나 서비스",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "덤",
+      "desc": "A free extra bonus thrown in by a merchant out of goodwill.",
+      "example": "Buying three apples got me two more as a 덤."
+    }
+  },
+  {
+    "id": 286,
+    "word": "본전 생각",
+    "pronunciation": "[본전 생각]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅈㅅㄱ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "투자한 돈이나 노력에 비해 수지가 안 맞을 때 아까워하는 마음",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The movie was so boring that I had 本전 생각."
+    ],
+    "tags": [
+      "본전 생각",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8145,
+    "dislikes": 15,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "투자한 돈이나 노력에 비해 수지가 안 맞을 때 아까워하는 마음",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "본전 생각",
+      "desc": "Regretting a lack of return on investment or feeling shortchanged.",
+      "example": "The movie was so boring that I had 本전 생각."
+    }
+  },
+  {
+    "id": 287,
+    "word": "선 긋다",
+    "pronunciation": "[선 긋다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㄱㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "관계를 확실히 규정하거나 지나친 간섭을 막기 위해 경계를 두는 행위",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She 선 긋다 with her coworker to keep it professional."
+    ],
+    "tags": [
+      "선 긋다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8182,
+    "dislikes": 18,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "관계를 확실히 규정하거나 지나친 간섭을 막기 위해 경계를 두는 행위",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "선 긋다",
+      "desc": "Drawing a firm line to establish personal boundaries.",
+      "example": "She 선 긋다 with her coworker to keep it professional."
+    }
+  },
+  {
+    "id": 288,
+    "word": "눈치코치",
+    "pronunciation": "[눈치코치]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅊㅋㅊ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "상황을 눈치 빠르게 헤아리는 온갖 재치와 요령",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "You need good 눈치코치 to work in customer service."
+    ],
+    "tags": [
+      "눈치코치",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8219,
+    "dislikes": 21,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "상황을 눈치 빠르게 헤아리는 온갖 재치와 요령",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "눈치코치",
+      "desc": "Sharp wits, street smarts, and situational savvy.",
+      "example": "You need good 눈치코치 to work in customer service."
+    }
+  },
+  {
+    "id": 289,
+    "word": "고생 끝에 낙이 온다",
+    "pronunciation": "[고생 끝에 낙이 온다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅅㄲㅇㄴㅇㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "오랜 고난과 시련을 견디면 반드시 즐거운 일이 온다는 격언",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Studying hard is tough, but 고생 끝에 낙이 온다."
+    ],
+    "tags": [
+      "고생 끝에 낙이 온다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8256,
+    "dislikes": 24,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "오랜 고난과 시련을 견디면 반드시 즐거운 일이 온다는 격언",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "고생 끝에 낙이 온다",
+      "desc": "No pain, no gain; joy follows after hardship.",
+      "example": "Studying hard is tough, but 고생 끝에 낙이 온다."
+    }
+  },
+  {
+    "id": 290,
+    "word": "살림꾼",
+    "pronunciation": "[살림꾼]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㄹㄲ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "집안일을 야무지게 잘 꾸려 나가는 사람",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "My mother is a brilliant 살림꾼 who manages finances well."
+    ],
+    "tags": [
+      "살림꾼",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8293,
+    "dislikes": 27,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "집안일을 야무지게 잘 꾸려 나가는 사람",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "살림꾼",
+      "desc": "A thrifty, capable household manager or homemaker.",
+      "example": "My mother is a brilliant 살림꾼 who manages finances well."
+    }
+  },
+  {
+    "id": 291,
+    "word": "안성맞춤",
+    "pronunciation": "[안성맞춤]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅅㅁㅊ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "크기나 정도가 꼭 알맞아 마음에 쏙 드는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "This warm soup is 안성맞춤 for a rainy day."
+    ],
+    "tags": [
+      "안성맞춤",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8330,
+    "dislikes": 30,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "크기나 정도가 꼭 알맞아 마음에 쏙 드는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "안성맞춤",
+      "desc": "A tailor-made fit; perfect for the occasion.",
+      "example": "This warm soup is 안성맞춤 for a rainy day."
+    }
+  },
+  {
+    "id": 292,
+    "word": "빛좋은 개살구",
+    "pronunciation": "[빛좋은 개살구]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅈㅇㄱㅅㄱ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "겉보기에는 그럴듯하지만 실속이 전혀 없는 것",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The fancy title turned out to be 빛좋은 개살구."
+    ],
+    "tags": [
+      "빛좋은 개살구",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8367,
+    "dislikes": 33,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "겉보기에는 그럴듯하지만 실속이 전혀 없는 것",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "빛좋은 개살구",
+      "desc": "All glitters is not gold; a fair exterior with no substance.",
+      "example": "The fancy title turned out to be 빛좋은 개살구."
+    }
+  },
+  {
+    "id": 293,
+    "word": "동병상련",
+    "pronunciation": "[동병상련]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㅂㅅㄹ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "처지가 비슷한 사람끼리 서로의 슬픔을 깊이 공감함",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "As fellow freelancers, we felt a deep 동병상련."
+    ],
+    "tags": [
+      "동병상련",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8404,
+    "dislikes": 11,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "처지가 비슷한 사람끼리 서로의 슬픔을 깊이 공감함",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "동병상련",
+      "desc": "Misery loves company; mutual empathy in shared misfortune.",
+      "example": "As fellow freelancers, we felt a deep 동병상련."
+    }
+  },
+  {
+    "id": 294,
+    "word": "오월동주",
+    "pronunciation": "[오월동주]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅇㄷㅈ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "원수끼리도 위급한 상황에서는 힘을 합침",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "The rival companies formed an 동월동주 partnership."
+    ],
+    "tags": [
+      "오월동주",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8441,
+    "dislikes": 14,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "원수끼리도 위급한 상황에서는 힘을 합침",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "오월동주",
+      "desc": "Bitter enemies forced to cooperate in a crisis.",
+      "example": "The rival companies formed an 동월동주 partnership."
+    }
+  },
+  {
+    "id": 295,
+    "word": "적반하장",
+    "pronunciation": "[적반하장]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㅂㅎㅈ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "잘못한 사람이 오히려 화를 내며 상대 탓을 함",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He broke my phone and yelled at me—total 적반하장."
+    ],
+    "tags": [
+      "적반하장",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8478,
+    "dislikes": 17,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "잘못한 사람이 오히려 화를 내며 상대 탓을 함",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "적반하장",
+      "desc": "The pot calling the kettle black; turning the tables aggressively when guilty.",
+      "example": "He broke my phone and yelled at me—total 적반하장."
+    }
+  },
+  {
+    "id": 296,
+    "word": "내로남불",
+    "pronunciation": "[내로남불]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㄹㄴㅂ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "내가 하면 로맨스, 남이 하면 불륜 (내로남불)",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Politicians criticizing corruption while doing it themselves is classic 내로남불."
+    ],
+    "tags": [
+      "내로남불",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8515,
+    "dislikes": 20,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "내가 하면 로맨스, 남이 하면 불륜 (내로남불)",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "내로남불",
+      "desc": "Hypocrisy; double standards (\"If I do it, it's romance; if you do it, it's adultery\").",
+      "example": "Politicians criticizing corruption while doing it themselves is classic 내로남불."
+    }
+  },
+  {
+    "id": 297,
+    "word": "삼천포로 빠지다",
+    "pronunciation": "[삼천포로 빠지다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅊㅍㄹㅃㅈㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "이야기가 본론에서 엉뚱한 길로 새어 나감",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Let's stay focused and not 삼천포로 빠지다."
+    ],
+    "tags": [
+      "삼천포로 빠지다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8552,
+    "dislikes": 23,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "이야기가 본론에서 엉뚱한 길로 새어 나감",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "삼천포로 빠지다",
+      "desc": "Getting sidetracked and going off on a tangent.",
+      "example": "Let's stay focused and not 삼천포로 빠지다."
+    }
+  },
+  {
+    "id": 298,
+    "word": "금강산도 식후경",
+    "pronunciation": "[금강산도 식후경]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㄱㅅㄷㅅㅎㄱ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "아무리 좋은 구경도 배가 불렀을 때 해야 한다는 속담",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Let's eat first; 금강산도 식후경."
+    ],
+    "tags": [
+      "금강산도 식후경",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8589,
+    "dislikes": 26,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "아무리 좋은 구경도 배가 불렀을 때 해야 한다는 속담",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "금강산도 식후경",
+      "desc": "Eating comes first before any pleasure (The stomach rules the mind).",
+      "example": "Let's eat first; 금강산도 식후경."
+    }
+  },
+  {
+    "id": 299,
+    "word": "그 그림에 그 밥",
+    "pronunciation": "[그 그림에 그 밥]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㄱㄹㅇㄱㅂ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "그 나물에 그 밥; 도저히 나을 것이 없는 엇비슷한 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Choosing between those two mediocre plans is 그 나물에 그 밥."
+    ],
+    "tags": [
+      "그 그림에 그 밥",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8626,
+    "dislikes": 29,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "그 나물에 그 밥; 도저히 나을 것이 없는 엇비슷한 상태",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "그 그림에 그 밥",
+      "desc": "Six of one, half a dozen of the other; much of a muchness.",
+      "example": "Choosing between those two mediocre plans is 그 나물에 그 밥."
+    }
+  },
+  {
+    "id": 300,
+    "word": "뼛속까지",
+    "pronunciation": "[뼛속까지]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅃㅅㄲㅈ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "성격이나 사상이 아주 깊이 뿌리박혀 있는 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He is 뼛속까지 a programmer."
+    ],
+    "tags": [
+      "뼛속까지",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8663,
+    "dislikes": 32,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "성격이나 사상이 아주 깊이 뿌리박혀 있는 상태",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "뼛속까지",
+      "desc": "To the bone; thoroughly through and through.",
+      "example": "He is 뼛속까지 a programmer."
+    }
+  },
+  {
+    "id": 301,
+    "word": "손을 놓다",
+    "pronunciation": "[손을 놓다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅇㄴㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "하던 일을 중단하고 더 이상 관여하지 않음",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "After repeated failures, he 손을 놓다 on the project."
+    ],
+    "tags": [
+      "손을 놓다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8700,
+    "dislikes": 10,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "하던 일을 중단하고 더 이상 관여하지 않음",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "손을 놓다",
+      "desc": "Washing one's hands of something; abandoning a task.",
+      "example": "After repeated failures, he 손을 놓다 on the project."
+    }
+  },
+  {
+    "id": 302,
+    "word": "발목을 잡다",
+    "pronunciation": "[발목을 잡다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㅁㅇㅈㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "약점을 잡히거나 일이 막혀 나가지 못하게 발목이 잡힘",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His past mistake continues to 발목을 잡다 in his career."
+    ],
+    "tags": [
+      "발목을 잡다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8737,
+    "dislikes": 13,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "약점을 잡히거나 일이 막혀 나가지 못하게 발목이 잡힘",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "발목을 잡다",
+      "desc": "Being held back by an anchor or a binding weakness.",
+      "example": "His past mistake continues to 발목을 잡다 in his career."
+    }
+  },
+  {
+    "id": 303,
+    "word": "귀가 번쩍 뜨이다",
+    "pronunciation": "[귀가 번쩍 뜨이다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㄱㅂㅉㄸㅇㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "솔깃하고 유익한 정보를 들어 갑자기 정신이 번쩍 드는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Hearing about the bonus made everyone 귀가 번쩍 뜨이다."
+    ],
+    "tags": [
+      "귀가 번쩍 뜨이다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8774,
+    "dislikes": 16,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "솔깃하고 유익한 정보를 들어 갑자기 정신이 번쩍 드는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "귀가 번쩍 뜨이다",
+      "desc": "Having one's ears perk up at tempting news.",
+      "example": "Hearing about the bonus made everyone 귀가 번쩍 뜨이다."
+    }
+  },
+  {
+    "id": 304,
+    "word": "코가 납작해지다",
+    "pronunciation": "[코가 납작해지다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅋㄱㄴㅈㅎㅈㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "기가 꺾이고 몹시 무안을 당해 콧대가 꺾인 상태",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "His arrogance vanished after his failure; his 코가 납작해졌다."
+    ],
+    "tags": [
+      "코가 납작해지다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8811,
+    "dislikes": 19,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "기가 꺾이고 몹시 무안을 당해 콧대가 꺾인 상태",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "코가 납작해지다",
+      "desc": "Being humbled, brought down a peg or two.",
+      "example": "His arrogance vanished after his failure; his 코가 납작해졌다."
+    }
+  },
+  {
+    "id": 305,
+    "word": "입에 침이 마르다",
+    "pronunciation": "[입에 침이 마르다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅇㅇㅊㅇㅁㄹㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "칭찬이나 말을 쉴 새 없이 극구 늘어놓는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "She spoke with 입에 침이 마르다 about her son's achievements."
+    ],
+    "tags": [
+      "입에 침이 마르다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8848,
+    "dislikes": 22,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "칭찬이나 말을 쉴 새 없이 극구 늘어놓는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "입에 침이 마르다",
+      "desc": "Praising someone until one's mouth goes dry (Praising to the skies).",
+      "example": "She spoke with 입에 침이 마르다 about her son's achievements."
+    }
+  },
+  {
+    "id": 306,
+    "word": "속이 타다",
+    "pronunciation": "[속이 타다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅇㅌㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "애가 타거나 걱정이 극심하여 속이 타들어 가는 심정",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Waiting for the exam results left my 속이 타다."
+    ],
+    "tags": [
+      "속이 타다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8885,
+    "dislikes": 25,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "애가 타거나 걱정이 극심하여 속이 타들어 가는 심정",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "속이 타다",
+      "desc": "Eating one's heart out with burning anxiety and worry.",
+      "example": "Waiting for the exam results left my 속이 타다."
+    }
+  },
+  {
+    "id": 307,
+    "word": "눈에 불을 켜다",
+    "pronunciation": "[눈에 불을 켜다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅇㅂㅇㅋㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "욕심이나 분노로 눈이 벌개져서 악착같이 덤벼드는 모양",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He went into the negotiation with 눈에 불을 켜다."
+    ],
+    "tags": [
+      "눈에 불을 켜다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8922,
+    "dislikes": 28,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "욕심이나 분노로 눈이 벌개져서 악착같이 덤벼드는 모양",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "눈에 불을 켜다",
+      "desc": "Eyes blazing with fierce ambition, greed, or anger.",
+      "example": "He went into the negotiation with 눈에 불을 켜다."
+    }
+  },
+  {
+    "id": 308,
+    "word": "피와 살이 되다",
+    "pronunciation": "[피와 살이 되다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅍㅇㅅㅇㄷㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "몸과 마음에 진정으로 유익하고 피와 살처럼 거름이 되는 지식이나 경험",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "These hardships will all become 피와 살이 되다 for your future."
+    ],
+    "tags": [
+      "피와 살이 되다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8959,
+    "dislikes": 31,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "몸과 마음에 진정으로 유익하고 피와 살처럼 거름이 되는 지식이나 경험",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "피와 살이 되다",
+      "desc": "Invaluable experience that nourishes your mind and soul.",
+      "example": "These hardships will all become 피와 살이 되다 for your future."
+    }
+  },
+  {
+    "id": 309,
+    "word": "허리띠를 졸라매다",
+    "pronunciation": "[허리띠를 졸라매다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅎㄹㄸㄹㅈㄹㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "몹시 가난하거나 절약하기 위해 긴축 재정에 들어가는 모습",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "During the economic recession, we had to 허리띠를 졸라매다."
+    ],
+    "tags": [
+      "허리띠를 졸라매다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8996,
+    "dislikes": 34,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "몹시 가난하거나 절약하기 위해 긴축 재정에 들어가는 모습",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "허리띠를 졸라매다",
+      "desc": "Tightening one's belt; practicing strict frugality.",
+      "example": "During the economic recession, we had to 허리띠를 졸라매다."
+    }
+  },
+  {
+    "id": 310,
+    "word": "바늘 가는 데 실 간다",
+    "pronunciation": "[바늘 가는 데 실 간다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅂㄴㄱㄴㄷㅅㄱㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "늘 붙어 다니며 떼려야 뗄 수 없는 친밀한 관계",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Those two best friends are like 바늘 가는 데 실 간다."
+    ],
+    "tags": [
+      "바늘 가는 데 실 간다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 9033,
+    "dislikes": 12,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "늘 붙어 다니며 떼려야 뗄 수 없는 친밀한 관계",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "바늘 가는 데 실 간다",
+      "desc": "Where the needle goes, thread follows; inseparable companions.",
+      "example": "Those two best friends are like 바늘 가는 데 실 간다."
+    }
+  },
+  {
+    "id": 311,
+    "word": "시치미를 떼다",
+    "pronunciation": "[시치미를 떼다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅅㅊㅁㄹㄸㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "자기가 하고도 모르는 체하거나  엉뚱한 표정을 짓는 행동",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "He hid the cookies and acted innocent, completely 시치미를 떼다."
+    ],
+    "tags": [
+      "시치미를 떼다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 9070,
+    "dislikes": 15,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "자기가 하고도 모르는 체하거나  엉뚱한 표정을 짓는 행동",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "시치미를 떼다",
+      "desc": "Playing innocent and keeping a straight face after doing something.",
+      "example": "He hid the cookies and acted innocent, completely 시치미를 떼다."
+    }
+  },
+  {
+    "id": 312,
+    "word": "고소하다",
+    "pronunciation": "[고소하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄱㅅㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "남이 불행을 겪거나 얄미운 사람이 곤경에 처했을 때 마음속에서 은근히 고소하고 통쾌한 기분.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "When the rude driver got a parking ticket, I felt a little bit of 고소하다."
+    ],
+    "tags": [
+      "고소하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 8641,
+    "dislikes": 14,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "남이 불행을 겪거나 얄미운 사람이 곤경에 처했을 때 마음속에서 은근히 고소하고 통쾌한 기분.",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "고소하다",
+      "desc": "A secretly satisfying feeling when someone you dislike faces misfortune.",
+      "example": "When the rude driver got a parking ticket, I felt a little bit of 고소하다."
+    }
+  },
+  {
+    "id": 313,
+    "word": "눈치보다",
+    "pronunciation": "[눈치보다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅊㅂㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "상대방의 표정, 기분, 분위기를 살피며 내 행동이나 말의 수위를 조절하는 행위.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I had to 눈치보다 around my boss because he was in a bad mood all day."
+    ],
+    "tags": [
+      "눈치보다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 8672,
+    "dislikes": 16,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "상대방의 표정, 기분, 분위기를 살피며 내 행동이나 말의 수위를 조절하는 행위.",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "눈치보다",
+      "desc": "Constantly watching other people's faces and reading the room before you speak or act.",
+      "example": "I had to 눈치보다 around my boss because he was in a bad mood all day."
+    }
+  },
+  {
+    "id": 314,
+    "word": "든든하다",
+    "pronunciation": "[든든하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄷㄷㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "누군가 내 뒤를 든든하게 받쳐주거나 믿을 구석이 있어 마음에 안정이 찾아오는 상태.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "Having experienced older colleagues around gives me such a 든든하다 feeling at work."
+    ],
+    "tags": [
+      "든든하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 8703,
+    "dislikes": 18,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "누군가 내 뒤를 든든하게 받쳐주거나 믿을 구석이 있어 마음에 안정이 찾아오는 상태.",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "든든하다",
+      "desc": "Feeling a deep sense of security, reassurance, and confidence because someone has your back.",
+      "example": "Having experienced older colleagues around gives me such a 든든하다 feeling at work."
+    }
+  },
+  {
+    "id": 315,
+    "word": "눈탱이 맞다",
+    "pronunciation": "[눈탱이 맞다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㄴㅌㅇㅁㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "물건을 살 때나 서비스를 이용할 때 터무니없는 비싼 바가지를 쓰게 된 억울한 상황.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I didn't check the price beforehand at the tourist spot, and I totally 눈탱이 맞았다."
+    ],
+    "tags": [
+      "눈탱이 맞다",
+      "번역불가",
+      "K정서",
+      "culture"
+    ],
+    "likes": 8734,
+    "dislikes": 20,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "물건을 살 때나 서비스를 이용할 때 터무니없는 비싼 바가지를 쓰게 된 억울한 상황.",
+    "trend_status": "SOUL",
+    "sub_category": "culture",
+    "en": {
+      "slang": "눈탱이 맞다",
+      "desc": "Getting completely ripped off or overcharged because you didn't know the actual price.",
+      "example": "I didn't check the price beforehand at the tourist spot, and I totally 눈탱이 맞았다."
+    }
+  },
+  {
+    "id": 316,
+    "word": "정떨어지다",
+    "pronunciation": "[정떨어지다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅈㄸㅇㅈㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "상대방의 얄미운 행동이나 실망스러운 모습을 본 순간 호감이 단번에 차갑게 식어버리는 감정.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "When he was rude to the waiter, I instantly felt 정떨어지다."
+    ],
+    "tags": [
+      "정떨어지다",
+      "번역불가",
+      "K정서",
+      "relationship"
+    ],
+    "likes": 8765,
+    "dislikes": 22,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "상대방의 얄미운 행동이나 실망스러운 모습을 본 순간 호감이 단번에 차갑게 식어버리는 감정.",
+    "trend_status": "SOUL",
+    "sub_category": "relationship",
+    "en": {
+      "slang": "정떨어지다",
+      "desc": "Instantly losing all affection or attraction due to a sudden rude or disappointing action.",
+      "example": "When he was rude to the waiter, I instantly felt 정떨어지다."
+    }
+  },
+  {
+    "id": 317,
+    "word": "뻘쭘하다",
+    "pronunciation": "[뻘쭘하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅃㅉㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "분위기가 어색해지거나 난처한 상황에 처해 어디로 숨고 싶을 만큼 머쓱하고 쑥스러운 기분.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "I arrived way too early for the meeting and had to stand alone, feeling so 뻘쭘하다."
+    ],
+    "tags": [
+      "뻘쭘하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 8796,
+    "dislikes": 24,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "분위기가 어색해지거나 난처한 상황에 처해 어디로 숨고 싶을 만큼 머쓱하고 쑥스러운 기분.",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "뻘쭘하다",
+      "desc": "Feeling awkward, out of place, and slightly embarrassed in an uncomfortable silence.",
+      "example": "I arrived way too early for the meeting and had to stand alone, feeling so 뻘쭘하다."
+    }
+  },
+  {
+    "id": 318,
+    "word": "뭉클하다",
+    "pronunciation": "[뭉클하다]",
+    "part_of_speech": "단어 / 표현",
+    "chosung": "ㅁㅋㅎㄷ",
+    "era": "soul",
+    "era_name": "4. 💎 K-정서 (번역불가)",
+    "era_period": "Untranslatable K-Soul",
+    "generation": "전 세대 & 글로벌 K-컬처",
+    "short_def": "가슴 깊은 곳에서부터 뜨거운 감동이 복받쳐 올라와 울컥 눈물이 고일 것 같은 묵직한 감동.",
+    "origin": "한국 고유의 정서, 언어 습관 및 인간관계 문화에서 비롯되어 외국어로 1:1 직역하기 어려운 대표적 표현.",
+    "examples": [
+      "When my parents gave me a handwritten letter, I felt so 뭉클하다."
+    ],
+    "tags": [
+      "뭉클하다",
+      "번역불가",
+      "K정서",
+      "emotion"
+    ],
+    "likes": 8827,
+    "dislikes": 26,
+    "toxicity_level": 0,
+    "standard_korean_mapping": "가슴 깊은 곳에서부터 뜨거운 감동이 복받쳐 올라와 울컥 눈물이 고일 것 같은 묵직한 감동.",
+    "trend_status": "SOUL",
+    "sub_category": "emotion",
+    "en": {
+      "slang": "뭉클하다",
+      "desc": "Feeling a sudden surge of deep emotion, warmth, or touched sentiment in your chest, bringing tears.",
+      "example": "When my parents gave me a handwritten letter, I felt so 뭉클하다."
     }
   }
 ];
@@ -11438,22 +14959,36 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
     // 로컬 스토리지 V4 마이그레이션 (70단어 전수 보장)
     let words = DEFAULT_WORDS;
     try {
-      const cached = localStorage.getItem('malssam_words_v7');
+      const cached = localStorage.getItem('malssam_words_v8');
       if (cached) {
         const parsed = JSON.parse(cached);
         if (Array.isArray(parsed) && parsed.length >= DEFAULT_WORDS.length) {
           words = parsed;
         } else {
-          localStorage.setItem('malssam_words_v7', JSON.stringify(DEFAULT_WORDS));
+          localStorage.setItem('malssam_words_v8', JSON.stringify(DEFAULT_WORDS));
         }
       } else {
-        localStorage.setItem('malssam_words_v7', JSON.stringify(DEFAULT_WORDS));
+        localStorage.setItem('malssam_words_v8', JSON.stringify(DEFAULT_WORDS));
       }
     } catch(e) {
       words = DEFAULT_WORDS;
     }
 
     let currentEra = 'all';
+    let currentSoulSubcat = 'all';
+
+    function filterSoulSubcat(subcat, ev) {
+      currentSoulSubcat = subcat;
+      document.querySelectorAll('.soul-subcat-btn').forEach(b => b.classList.remove('active'));
+      if (ev && ev.currentTarget) {
+        ev.currentTarget.classList.add('active');
+      } else if (ev && ev.target) {
+        const btn = ev.target.closest('.soul-subcat-btn');
+        if (btn) btn.classList.add('active');
+      }
+      applyFilterAndRender();
+    }
+
     let currentFilter = 'hot';
     let userVotes = JSON.parse(localStorage.getItem('malssam_votes_v4')) || {};
     let selectedTier = 1; // 1: 개인용 1,000원, 2: 기업 B2B 9,900원
@@ -11476,6 +15011,17 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
 
     // 시대 전환 함수
     function switchEra(era) {
+      const subcatSec = document.getElementById('soulSubcatSection');
+      if (subcatSec) {
+        subcatSec.style.display = (era === 'soul') ? 'block' : 'none';
+      }
+      if (era === 'soul') {
+        currentSoulSubcat = 'all';
+        document.querySelectorAll('.soul-subcat-btn').forEach((b, idx) => {
+          if (idx === 0) b.classList.add('active');
+          else b.classList.remove('active');
+        });
+      }
       currentEra = era;
       document.querySelectorAll('.era-tab-btn').forEach(b => b.classList.remove('active'));
 
@@ -11578,6 +15124,7 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
             <div class="word-badges-group">
               <span class="era-pill ${eraPillClass}">${eraPillText}</span>
               <span class="word-badge ${badgeClass}">${badgeText}</span>
+              ${w.sub_category ? `<span class="subcat-chip chip-${w.sub_category}">${w.sub_category === 'emotion' ? '💭 심리·감정' : (w.sub_category === 'relationship' ? '🤝 관계·유대' : (w.sub_category === 'behavior' ? '🏃 습관·행동' : '🎎 사회·문화'))}</span>` : ''}
             </div>
           </div>
 
@@ -12332,7 +15879,11 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
     }
 
     function applyFilterAndRender() {
-      let pool = (currentEra === 'all') ? [...words] : words.filter(w => w.era === currentEra);
+      let pool = (currentEra === 'all') 
+        ? [...words] 
+        : (currentEra === 'soul' && currentSoulSubcat !== 'all')
+          ? words.filter(w => w.era === 'soul' && w.sub_category === currentSoulSubcat)
+          : words.filter(w => w.era === currentEra);
 
       if (currentFilter === 'hot') {
         pool.sort((a, b) => (b.likes || 0) - (a.likes || 0));
@@ -12369,7 +15920,7 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
 
       userVotes[id] = type;
       localStorage.setItem('malssam_votes_v4', JSON.stringify(userVotes));
-      localStorage.setItem('malssam_words_v7', JSON.stringify(words));
+      localStorage.setItem('malssam_words_v8', JSON.stringify(words));
 
       const likeEl = document.getElementById(`like-count-${id}`);
       const dislikeEl = document.getElementById(`dislike-count-${id}`);
@@ -13057,7 +16608,7 @@ B: It's all about the 'malmat'—the savory phonetic charm of the Korean languag
       };
 
       words.unshift(newObj);
-      localStorage.setItem('malssam_words_v7', JSON.stringify(words));
+      localStorage.setItem('malssam_words_v8', JSON.stringify(words));
       closeAddModal();
       showToast(`🎉 '${wordVal}' 신조어가 성공적으로 제보되었습니다!`);
       updateEraCounts();
