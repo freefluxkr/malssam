@@ -16,8 +16,9 @@
   <script src="js/anti-scraping.js?v=20261023_shield_fix"></script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 
-  <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 -->
+  <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 & 3D 상황극 극장 -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/roleplay.css">
 
   <!-- 포트원 (PortOne v2 브라우저 SDK) -->
   <script src="https://cdn.portone.io/v2/browser-sdk.js"></script>
@@ -206,6 +207,17 @@
       </div>
     </section>
 
+    <!-- 🎬 [DMDG 3D 숏폼 상황극 극장 헌정 배너] -->
+    <section class="roleplay-theater-banner">
+      <div class="roleplay-banner-text">
+        <h3><span>🎬</span> DMDG 3D 숏폼 상황극 극장 <span style="font-size:0.75rem; background:rgba(255,0,127,0.2); color:#ff77a9; padding:2px 8px; border-radius:12px; border:1px solid rgba(255,0,127,0.4);">NEW v9.2</span></h3>
+        <p>“회식 취소 핑계는 5G 속도로!” 침묵 속의 공기를 읽는 <strong>‘눈치(Nunchi)’</strong>의 미학을 6개국어(KR/EN/JA/ES/VI/ID) 3D 플립 숏폼으로 즐겨보세요.</p>
+      </div>
+      <button class="btn-open-theater" onclick="openRoleplayModal('202')">
+        <span>🎴 3D 숏폼 상황극 감상하기 (눈치 편) →</span>
+      </button>
+    </section>
+
     <!-- ⚔️ [듀얼 세대 공감 배틀 퀴즈 배너] -->
     <section class="battle-arena-section">
       <div class="battle-banner-container">
@@ -269,14 +281,44 @@
       </button>
     </nav>
 
-    <!-- K-Soul 4대 감정 테마 서브 필터 -->
-    <div id="soulSubcatSection" class="soul-subcat-bar" style="display: none;">
-      <span class="soul-subcat-label">💎 정서 테마 분류:</span>
-      <button class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">전체보기 (118)</button>
-      <button class="soul-subcat-btn" onclick="filterSoulSubcat('emotion', event)">💭 심리·감정 (36)</button>
-      <button class="soul-subcat-btn" onclick="filterSoulSubcat('relationship', event)">🤝 관계·유대 (25)</button>
-      <button class="soul-subcat-btn" onclick="filterSoulSubcat('behavior', event)">🏃 습관·행동 (25)</button>
-      <button class="soul-subcat-btn" onclick="filterSoulSubcat('culture', event)">🎎 사회·문화 (32)</button>
+    <!-- K-Soul 7대 감정/어휘 테마 서브 필터 & 전용 실시간 검색창 -->
+    <div id="soulSubcatSection" class="soul-subcat-section" style="display: none;">
+      <!-- 💎 K-정서 전용 인라인 실시간 검색창 -->
+      <div class="soul-search-wrap">
+        <div class="soul-search-row">
+          <span class="soul-search-icon">🔍</span>
+          <input type="text" id="soulSearchInput" class="soul-search-input" 
+                 placeholder="💎 K-정서 단어 검색 (예: 눈치, 정, 한, 답답하다, 서운, 꼬르륵, 노르스름, nunchi, jeong...)" 
+                 oninput="handleSoulSearch()">
+          <button type="button" id="soulSearchClearBtn" class="soul-search-clear-btn" onclick="clearSoulSearch()" title="검색어 지우기">✕</button>
+        </div>
+        <div class="soul-search-meta">
+          <div class="soul-quick-tags">
+            <span class="soul-quick-label">⚡ 빠른 검색:</span>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('눈치')">#눈치</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('정')">#정</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('한')">#한</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('답답하다')">#답답하다</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('서운하다')">#서운하다</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('꼬르륵')">#꼬르륵 (의성어)</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('아장아장')">#아장아장 (의태어)</button>
+            <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('노르스름하다')">#노르스름하다 (색채어)</button>
+          </div>
+          <span id="soulSearchStatus" class="soul-search-status">총 133선 K-SOUL 수록</span>
+        </div>
+      </div>
+
+      <!-- 테마별 탭 분류 -->
+      <div class="soul-subcat-container">
+        <button id="soulBtnAll" class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">전체보기 (133)</button>
+        <button id="soulBtnEmotion" class="soul-subcat-btn" onclick="filterSoulSubcat('emotion', event)">💭 심리·감정 (36)</button>
+        <button id="soulBtnRelationship" class="soul-subcat-btn" onclick="filterSoulSubcat('relationship', event)">🤝 관계·유대 (25)</button>
+        <button id="soulBtnBehavior" class="soul-subcat-btn" onclick="filterSoulSubcat('behavior', event)">🏃 습관·행동 (25)</button>
+        <button id="soulBtnCulture" class="soul-subcat-btn" onclick="filterSoulSubcat('culture', event)">🎎 사회·문화 (32)</button>
+        <button id="soulBtnOno" class="soul-subcat-btn" onclick="filterSoulSubcat('onomatopoeia', event)">🔊 의성어 (5)</button>
+        <button id="soulBtnMim" class="soul-subcat-btn" onclick="filterSoulSubcat('mimetic', event)">✨ 의태어 (5)</button>
+        <button id="soulBtnCol" class="soul-subcat-btn" onclick="filterSoulSubcat('color', event)">🎨 색채어 (5)</button>
+      </div>
     </div>
 
     <!-- 시대별 안내 배너 -->
@@ -583,6 +625,133 @@
     </div>
   </div>
 
+  <!-- 🎴 [스페인어 스타일 3D FLIP CARD 상황극 모달] -->
+  <div class="roleplay-modal-overlay" id="roleplayModal" onclick="if(event.target===this)closeRoleplayModal()">
+    <div class="roleplay-modal-inner">
+      <button type="button" class="roleplay-modal-close-btn" onclick="closeRoleplayModal()" title="닫기">&times;</button>
+      
+      <!-- 🌐 6개국 언어 셀렉터 바 -->
+      <div class="rp-global-lang-bar">
+        <button class="rp-lang-btn active" data-lang="ko" onclick="setRoleplayLanguage('ko')">🇰🇷 한국어</button>
+        <button class="rp-lang-btn" data-lang="en" onclick="setRoleplayLanguage('en')">🇺🇸 English</button>
+        <button class="rp-lang-btn" data-lang="ja" onclick="setRoleplayLanguage('ja')">🇯🇵 日本語</button>
+        <button class="rp-lang-btn" data-lang="es" onclick="setRoleplayLanguage('es')">🇪🇸 Español</button>
+        <button class="rp-lang-btn" data-lang="vi" onclick="setRoleplayLanguage('vi')">🇻🇳 Tiếng Việt</button>
+        <button class="rp-lang-btn" data-lang="id" onclick="setRoleplayLanguage('id')">🇮🇩 Indonesia</button>
+      </div>
+
+      <!-- 3D FLIP CARD 스테이지 -->
+      <div class="rp-flip-stage-container">
+        <div class="rp-flip-card-inner" id="rpFlipCardInner">
+          
+          <!-- [앞면: 3D 네온 단어 카드] -->
+          <div class="rp-flip-face rp-card-front" id="rpCardFront">
+            <div class="rp-front-top-row">
+              <span class="rp-k-soul-badge" id="rpFrontBadge">💎 K-SOUL #202 · 3D 플립 카드</span>
+              <span class="rp-flip-hint-badge">3D INTERACTIVE</span>
+            </div>
+
+            <div>
+              <h2 class="rp-front-word-title" id="rpFrontTitle">눈치</h2>
+              <div class="rp-front-pron-bar">
+                <span class="rp-pron-pill" id="rpFrontPron">🗣️ [nun-chi · NOON-chee]</span>
+                <span class="rp-pron-alt">명사 / 사회적 초능력</span>
+                <button class="rp-btn-quick-audio" onclick="speakQuickWord('눈치')" title="원어민 발음 듣기">🔊</button>
+              </div>
+
+              <div class="rp-front-desc-box" id="rpFrontDesc">
+                말하지 않아도 침묵 속의 공기와 타인의 표정·행간을 5G 속도로 직관 감지하여 매끄럽게 처신하는 한국인의 고유한 사회적 레이더.
+              </div>
+
+              <div class="rp-punchline-card" id="rpFrontPunch">
+                💡 "팀장님의 급발진 주말 등산 회식을 0.1초 만에 차단하는 마법!"
+              </div>
+            </div>
+
+            <!-- DMDG 어벤져스 출연진 (Rule 2: width="65" 준수) -->
+            <div class="rp-cast-preview-box">
+              <div class="rp-cast-header">
+                <span>DMDG 어벤져스 드라마 1화</span>
+                <span>15초 숏폼</span>
+              </div>
+              <div class="rp-cast-avatar-row">
+                <div class="rp-cast-avatar-item">
+                  <img src="assets/agents/demis_profile.png" width="65" class="rp-cast-avatar-img" alt="Demis">
+                  <span class="rp-cast-avatar-name" id="rpCastNameDemis">Demis (팀장)</span>
+                </div>
+                <div class="rp-cast-avatar-item">
+                  <img src="assets/agents/craig_profile.png" width="65" class="rp-cast-avatar-img" alt="Craig">
+                  <span class="rp-cast-avatar-name" id="rpCastNameCraig">Craig (풀스택)</span>
+                </div>
+                <div class="rp-cast-avatar-item">
+                  <img src="assets/agents/jennifer_profile.png" width="65" class="rp-cast-avatar-img" alt="Jennifer">
+                  <span class="rp-cast-avatar-name" id="rpCastNameJennifer">Jennifer (UX)</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="rp-btn-fiesta-flip" onclick="flipToBackAndPlay()">
+              <span>🎴 3D 회전 상황극 보기 ↺</span>
+            </button>
+          </div>
+
+          <!-- [뒷면: 3D 숏폼 비디오 시뮬레이터] -->
+          <div class="rp-flip-face rp-card-back" id="rpCardBack">
+            <!-- 인스타 스토리 5단 진행 바 -->
+            <div class="rp-story-progress-container">
+              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(0)"><div class="rp-story-progress-fill" id="rpFill-0"></div></div>
+              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(1)"><div class="rp-story-progress-fill" id="rpFill-1"></div></div>
+              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(2)"><div class="rp-story-progress-fill" id="rpFill-2"></div></div>
+              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(3)"><div class="rp-story-progress-fill" id="rpFill-3"></div></div>
+              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(4)"><div class="rp-story-progress-fill" id="rpFill-4"></div></div>
+            </div>
+
+            <!-- 백 페이스 탑 바 -->
+            <div class="rp-back-top-bar">
+              <button class="rp-btn-flip-back" onclick="flipToFront()"><span>↺ 단어로</span></button>
+              <span class="rp-current-lang-pill" id="rpCurrentLangPill">🇰🇷 한국어</span>
+              <button id="rpBtnSoundToggle" class="rp-btn-sound-toggle" onclick="toggleRoleplayMute()">🔊</button>
+            </div>
+
+            <!-- 메인 비디오 스테이지 -->
+            <div class="rp-video-stage">
+              <div class="rp-speed-lines" id="rpSpeedLines"></div>
+              <div class="rp-stage-ambient-light" id="rpAmbientLight"></div>
+
+              <div class="rp-character-stage" id="rpCharacterStage">
+                <div class="rp-character-avatar-wrapper" id="rpAvatarWrapper">
+                  <img id="rpActorAvatar" src="assets/agents/demis_profile.png" width="65" class="rp-character-avatar-img" alt="Actor">
+                  <span id="rpReactionSticker" class="rp-reaction-sticker">☕</span>
+                </div>
+                <div class="rp-actor-badge">
+                  <span id="rpActorRoleIcon">👔</span>
+                  <strong id="rpActorName">데미스</strong>
+                  <span id="rpActorTitle" class="rp-actor-title">총괄부장</span>
+                </div>
+              </div>
+
+              <div id="rpActingHint" class="rp-acting-direction-box">(따뜻한 인자한 미소로 커피를 마시며)</div>
+            </div>
+
+            <!-- 자막 영역 -->
+            <div class="rp-subtitles-container">
+              <div id="rpMainSubtitle" class="rp-main-subtitle">"얘들아! 이번 주 토요일 아침 6시에 북한산 등산하고 삼계탕에 낮술 어때?"</div>
+              <div id="rpSubtitlesTrans" class="rp-subtitles-trans">Demis: 이번 주 토요일 아침 6시 북한산 등산 어때? 삼계탕 쏜다!</div>
+            </div>
+
+            <!-- 하단 플레이어 컨트롤 -->
+            <div class="rp-bottom-controls">
+              <button class="rp-ctrl-btn" onclick="prevRoleplayScene()">⏮️ 이전</button>
+              <button id="rpBtnPlayPause" class="rp-btn-play-pause" onclick="toggleRoleplayPlayPause()"><span>⏸️ 일시정지</span></button>
+              <button class="rp-ctrl-btn" onclick="nextRoleplayScene()">⏭️ 다음</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 토스트 알림 -->
   <div class="toast" id="toast"></div>
 
@@ -595,10 +764,11 @@
   <!-- ============================================================
        📦 [클린 모듈화 시스템: 데이터 & 기능별 분리 스크립트]
        ============================================================ -->
-  <!-- 1. 데이터 모듈 (318단어, 15대 밸런스 배틀, 10대 카톡 안건) -->
+  <!-- 1. 데이터 모듈 (333단어, 15대 밸런스 배틀, 10대 카톡 안건, 3D 상황극 DB) -->
   <script src="data/words_db.js"></script>
   <script src="data/battle_questions.js"></script>
   <script src="data/kakao_cards.js"></script>
+  <script src="data/roleplay_db.js"></script>
 
   <!-- 2. 기능별 독립 JS 모듈 -->
   <script src="js/audio.js"></script>
@@ -607,6 +777,7 @@
   <script src="js/quiz.js"></script>
   <script src="js/kakao.js"></script>
   <script src="js/payments.js"></script>
+  <script src="js/roleplay.js"></script>
 
   <!-- 3. 메인 앱 초기화 모듈 -->
   <script src="js/app.js"></script>

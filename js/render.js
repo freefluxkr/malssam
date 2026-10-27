@@ -29,7 +29,7 @@ function showToast(msg) {
   }, 3000);
 }
 
-// K-Soul 4대 서브카테고리 필터링
+// K-Soul 7대 서브카테고리 필터링 (기존 4대 + 신규 의성어, 의태어, 색채어)
 function filterSoulSubcat(subcat, ev) {
   currentSoulSubcat = subcat;
   document.querySelectorAll('.soul-subcat-btn').forEach(b => b.classList.remove('active'));
@@ -39,10 +39,17 @@ function filterSoulSubcat(subcat, ev) {
     const btn = ev.target.closest('.soul-subcat-btn');
     if (btn) btn.classList.add('active');
   }
-  applyFilterAndRender();
+  
+  // 만약 K-정서 검색창에 검색어가 있다면 해당 카테고리 내에서 재검색
+  const soulInput = document.getElementById('soulSearchInput');
+  if (soulInput && soulInput.value.trim()) {
+    handleSoulSearch();
+  } else {
+    applyFilterAndRender();
+  }
 }
 
-// 시대별 단어 수 카운트 업데이트
+// 시대별 & K-정서 서브카테고리 단어 수 카운트 업데이트
 function updateEraCounts() {
   if (!window.words) return;
   const latteCount = window.words.filter(w => w.era === 'latte').length;
@@ -60,6 +67,35 @@ function updateEraCounts() {
   if (cShorts) cShorts.innerText = `2020~2026 (${shortsCount})`;
   const cSoul = document.getElementById('countSoul');
   if (cSoul) cSoul.innerText = `K-Soul (${soulCount})`;
+
+  // K-정서 7대 서브카테고리 카운트 갱신
+  const countEmotion = window.words.filter(w => w.era === 'soul' && w.sub_category === 'emotion').length;
+  const countRel = window.words.filter(w => w.era === 'soul' && w.sub_category === 'relationship').length;
+  const countBeh = window.words.filter(w => w.era === 'soul' && w.sub_category === 'behavior').length;
+  const countCul = window.words.filter(w => w.era === 'soul' && w.sub_category === 'culture').length;
+  const countOno = window.words.filter(w => w.era === 'soul' && w.sub_category === 'onomatopoeia').length;
+  const countMim = window.words.filter(w => w.era === 'soul' && w.sub_category === 'mimetic').length;
+  const countCol = window.words.filter(w => w.era === 'soul' && w.sub_category === 'color').length;
+
+  const elAll = document.getElementById('soulBtnAll');
+  if (elAll) elAll.innerText = `전체보기 (${soulCount})`;
+  const elEmo = document.getElementById('soulBtnEmotion');
+  if (elEmo) elEmo.innerText = `💭 심리·감정 (${countEmotion})`;
+  const elRel = document.getElementById('soulBtnRelationship');
+  if (elRel) elRel.innerText = `🤝 관계·유대 (${countRel})`;
+  const elBeh = document.getElementById('soulBtnBehavior');
+  if (elBeh) elBeh.innerText = `🏃 습관·행동 (${countBeh})`;
+  const elCul = document.getElementById('soulBtnCulture');
+  if (elCul) elCul.innerText = `🎎 사회·문화 (${countCul})`;
+  const elOno = document.getElementById('soulBtnOno');
+  if (elOno) elOno.innerText = `🔊 의성어 (${countOno})`;
+  const elMim = document.getElementById('soulBtnMim');
+  if (elMim) elMim.innerText = `✨ 의태어 (${countMim})`;
+  const elCol = document.getElementById('soulBtnCol');
+  if (elCol) elCol.innerText = `🎨 색채어 (${countCol})`;
+
+  const statusEl = document.getElementById('soulSearchStatus');
+  if (statusEl) statusEl.innerText = `총 ${soulCount}선 K-SOUL 수록`;
 }
 
 // 시대 탭 전환 함수
@@ -74,6 +110,11 @@ function switchEra(era) {
       if (idx === 0) b.classList.add('active');
       else b.classList.remove('active');
     });
+    // K-정서 검색창 초기화
+    const soulInput = document.getElementById('soulSearchInput');
+    if (soulInput) soulInput.value = '';
+    const clearBtn = document.getElementById('soulSearchClearBtn');
+    if (clearBtn) clearBtn.style.display = 'none';
   }
   currentEra = era;
   document.querySelectorAll('.era-tab-btn').forEach(b => b.classList.remove('active'));
@@ -93,7 +134,7 @@ function switchEra(era) {
   if (era === 'all') {
     const btn = document.getElementById('tabAllBtn');
     if (btn) btn.classList.add('active');
-    if (infoBox) infoBox.innerHTML = "<span>✨ <strong>전체 318선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈까지 전 시대를 한눈에 탐색합니다.</span><span style='color:var(--accent-yellow); font-weight:700;'>총 318개 표제어 수록</span>";
+    if (infoBox) infoBox.innerHTML = `<span>✨ <strong>전체 ${window.words.length}선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈, K-정서 및 의성·의태·색채어까지 전 시대를 한눈에 탐색합니다.</span><span style='color:var(--accent-yellow); font-weight:700;'>총 ${window.words.length}개 표제어 수록</span>`;
   } else if (era === 'latte') {
     const btn = document.getElementById('tabLatteBtn');
     if (btn) btn.classList.add('active');
@@ -109,7 +150,8 @@ function switchEra(era) {
   } else if (era === 'soul') {
     const btn = document.getElementById('tabSoulBtn');
     if (btn) btn.classList.add('active');
-    if (infoBox) infoBox.innerHTML = "<span>💎 <strong>4. K-정서 (번역불가) 118선</strong>: 외국어로 1:1 직역이 불가능한 한국 고유의 감정, 관계, 정서 어휘. 글로벌 로마자 발음과 영문 맥락 해설을 전수 제공합니다.</span><span style='color:var(--accent-purple); font-weight:700;'>총 118선 K-SOUL 표제어 수록</span>";
+    const soulCount = window.words.filter(w => w.era === 'soul').length;
+    if (infoBox) infoBox.innerHTML = `<span>💎 <strong>4. K-정서 (번역불가 118선 & 의성·의태·색채어)</strong>: 외국어로 1:1 직역이 불가능한 한국 고유의 감정, 관계, 정서 및 오감 어휘. 전용 검색창과 글로벌 로마자 발음, 영문 맥락 해설을 전수 제공합니다.</span><span style='color:var(--accent-purple); font-weight:700;'>총 ${soulCount}선 K-SOUL 표제어 수록</span>`;
   }
 
   applyFilterAndRender();
@@ -180,10 +222,20 @@ function renderWords(items) {
           eraPillText = '💎 K-정서 (번역불가)';
         }
 
+        let subcatLabel = '';
+        if (w.sub_category === 'emotion') subcatLabel = '💭 심리·감정';
+        else if (w.sub_category === 'relationship') subcatLabel = '🤝 관계·유대';
+        else if (w.sub_category === 'behavior') subcatLabel = '🏃 습관·행동';
+        else if (w.sub_category === 'culture') subcatLabel = '🎎 사회·문화';
+        else if (w.sub_category === 'onomatopoeia') subcatLabel = '🔊 의성어';
+        else if (w.sub_category === 'mimetic') subcatLabel = '✨ 의태어';
+        else if (w.sub_category === 'color') subcatLabel = '🎨 색채어';
+
         const votedState = (window.userVotes || {})[w.id];
         const safeWord = String(w.word || '').replace(/'/g, "\\'");
         const safeShortDef = String(w.short_def || '').replace(/'/g, "\\'");
         const safeEx = (w.examples && w.examples[0]) ? String(w.examples[0]).replace(/\n/g, '<br>') : '';
+        const hasRoleplay = (w.has_roleplay || w.id === 202 || w.word === '눈치');
 
         const card = document.createElement('div');
         card.className = 'word-card';
@@ -191,11 +243,12 @@ function renderWords(items) {
         card.innerHTML = `
           <div class="word-header">
             <div class="word-title-group">
-              <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                 <span class="word-title">${w.word || ''}</span>
                 <button class="btn-sound-speak" onclick="speakWord('${safeWord}', event)" title="원어민 발음 듣기 (Listen Pronunciation)">
                   <span>🔊</span>
                 </button>
+                ${hasRoleplay ? `<button class="btn-card-roleplay" onclick="openRoleplayModal('${w.id}', event)" title="DMDG 3D 숏폼 상황극 보기"><span>🎬 3D 상황극 ↺</span></button>` : ''}
               </div>
               <div class="word-phonetic-badge">
                 <span class="phonetic-rr">🗣️ [${w.romanization || w.pronunciation || ''}]</span>
@@ -206,7 +259,7 @@ function renderWords(items) {
             <div class="word-badges-group">
               <span class="era-pill ${eraPillClass}">${eraPillText}</span>
               <span class="word-badge ${badgeClass}">${badgeText}</span>
-              ${w.sub_category ? `<span class="subcat-chip chip-${w.sub_category}">${w.sub_category === 'emotion' ? '💭 심리·감정' : (w.sub_category === 'relationship' ? '🤝 관계·유대' : (w.sub_category === 'behavior' ? '🏃 습관·행동' : '🎎 사회·문화'))}</span>` : ''}
+              ${w.sub_category ? `<span class="subcat-chip chip-${w.sub_category}">${subcatLabel || w.sub_category}</span>` : ''}
             </div>
           </div>
 
@@ -280,16 +333,97 @@ function applyFilterAndRender() {
   if (currentEra === 'latte') eraLabel = "1. 📟 라떼 추억 (1990~2000s)";
   if (currentEra === 'smartphone') eraLabel = "2. 📱 국민 유행어 (2010s)";
   if (currentEra === 'shorts') eraLabel = "3. ⚡ 요즘 1020 밈 (2020s~2026)";
-  if (currentEra === 'soul') eraLabel = "4. 💎 K-정서 번역불가 118선 (Untranslatable K-Soul)";
+  if (currentEra === 'soul') {
+    const soulTotal = window.words.filter(w => w.era === 'soul').length;
+    eraLabel = `4. 💎 K-정서 (번역불가) & 의성·의태·색채 (${soulTotal}선)`;
+  }
 
   const titleEl = document.getElementById('feedTitleText');
   if (titleEl) titleEl.innerText = eraLabel;
   renderWords(pool);
 }
 
-// 초강력 다차원 검색 핸들러 (초성, 단어명, 태그, 시대 매칭)
+// 💎 K-정서 전용 인라인 실시간 검색 핸들러
+function handleSoulSearch() {
+  const input = document.getElementById('soulSearchInput');
+  if (!input) return;
+  const query = input.value.trim().toLowerCase();
+  const clearBtn = document.getElementById('soulSearchClearBtn');
+  if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
+
+  if (!query) {
+    applyFilterAndRender();
+    return;
+  }
+
+  const soulWords = window.words.filter(w => w.era === 'soul');
+  const pool = (currentSoulSubcat === 'all') 
+    ? soulWords 
+    : soulWords.filter(w => w.sub_category === currentSoulSubcat);
+
+  const filtered = pool.filter(w => {
+    const wordLower = (w.word || '').toLowerCase();
+    const chosung = (w.chosung || '').toLowerCase();
+    const defLower = (w.short_def || '').toLowerCase();
+    const tagsLower = (w.tags || []).join(' ').toLowerCase();
+    const mappingLower = (w.standard_korean_mapping || '').toLowerCase();
+    const romLower = (w.romanization || w.pronunciation || '').toLowerCase();
+    const respellLower = (w.phonetic_respelling || '').toLowerCase();
+    const enSlangLower = (w.en && w.en.slang) ? w.en.slang.toLowerCase() : '';
+    const enDescLower = (w.en && w.en.desc) ? w.en.desc.toLowerCase() : '';
+
+    return wordLower.includes(query) ||
+           chosung.includes(query) ||
+           defLower.includes(query) ||
+           tagsLower.includes(query) ||
+           mappingLower.includes(query) ||
+           romLower.includes(query) ||
+           respellLower.includes(query) ||
+           enSlangLower.includes(query) ||
+           enDescLower.includes(query);
+  });
+
+  const statusEl = document.getElementById('soulSearchStatus');
+  if (statusEl) {
+    statusEl.innerText = `${pool.length}개 중 ${filtered.length}개 검색됨`;
+  }
+
+  const titleEl = document.getElementById('feedTitleText');
+  if (titleEl) titleEl.innerText = `💎 K-정서 '${query}' 검색 결과 (${filtered.length}건)`;
+  renderWords(filtered);
+}
+
+function clearSoulSearch() {
+  const input = document.getElementById('soulSearchInput');
+  if (input) input.value = '';
+  const clearBtn = document.getElementById('soulSearchClearBtn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  const soulWords = window.words.filter(w => w.era === 'soul');
+  const statusEl = document.getElementById('soulSearchStatus');
+  if (statusEl) statusEl.innerText = `총 ${soulWords.length}선 K-SOUL 수록`;
+  applyFilterAndRender();
+}
+
+function quickSoulSearch(term) {
+  const input = document.getElementById('soulSearchInput');
+  if (!input) return;
+  input.value = term;
+  handleSoulSearch();
+}
+
+// 상단 다차원 검색 핸들러 (초성, 단어명, 태그, 시대 매칭)
 function handleSearch() {
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  
+  if (currentEra === 'soul') {
+    const soulInput = document.getElementById('soulSearchInput');
+    if (soulInput) {
+      soulInput.value = query;
+      handleSoulSearch();
+      return;
+    }
+  }
+
   if (!query) {
     applyFilterAndRender();
     return;

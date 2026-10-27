@@ -1043,6 +1043,135 @@
       border: 1px solid rgba(244, 63, 94, 0.35);
     }
 
+    .chip-onomatopoeia {
+      background: rgba(14, 165, 233, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(14, 165, 233, 0.35);
+    }
+
+    .chip-mimetic {
+      background: rgba(234, 179, 8, 0.15);
+      color: #facc15;
+      border: 1px solid rgba(234, 179, 8, 0.35);
+    }
+
+    .chip-color {
+      background: rgba(244, 63, 94, 0.15);
+      color: #f43f5e;
+      border: 1px solid rgba(244, 63, 94, 0.35);
+    }
+
+    /* 💎 K-정서 전용 인라인 실시간 검색창 스타일 */
+    .soul-search-wrap {
+      margin: 12px 0 14px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      border-radius: 16px;
+      padding: 12px 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(168, 85, 247, 0.1);
+    }
+
+    .soul-search-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+
+    .soul-search-icon {
+      font-size: 1.1rem;
+      color: #c084fc;
+    }
+
+    .soul-search-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 10px 38px 10px 14px;
+      color: #f8fafc;
+      font-size: 0.92rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .soul-search-input:focus {
+      border-color: #c084fc;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+    }
+
+    .soul-search-clear-btn {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      color: #cbd5e1;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      transition: all 0.2s;
+    }
+
+    .soul-search-clear-btn:hover {
+      background: #f43f5e;
+      color: #fff;
+    }
+
+    .soul-search-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .soul-quick-tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .soul-quick-label {
+      font-size: 0.75rem;
+      color: #a855f7;
+      font-weight: 800;
+    }
+
+    .soul-quick-chip {
+      background: rgba(168, 85, 247, 0.12);
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      color: #e9d5ff;
+      border-radius: 12px;
+      padding: 3px 8px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .soul-quick-chip:hover {
+      background: #c084fc;
+      color: #0b0f17;
+      transform: translateY(-1px);
+    }
+
+    .soul-search-status {
+      font-size: 0.75rem;
+      color: #ffd166;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
     
     /* 🔊 원클릭 원어민 음성 재생 버튼 & 발음 기호 뱃지 */
     .btn-sound-speak {
