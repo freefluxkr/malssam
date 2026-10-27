@@ -1,6 +1,6 @@
 {
   "project": "한글 어반 딕셔너리 (말쌈 / MALSSAM)",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "updated_at": "2026-10-27",
   "total_words": 318,
   "eras": [
@@ -65,7 +65,7 @@
     {
       "id": 1,
       "word": "방가방가",
-      "pronunciation": "[방가방가]",
+      "pronunciation": "[banggabangga]",
       "part_of_speech": "감탄사 / 인사말",
       "chosung": "ㅂㄱㅂㄱ",
       "era": "latte",
@@ -112,12 +112,14 @@
         "slang": "Halo semuanya / Met kenal",
         "desc": "Salam sapa legendaris era chat PC 90-an di Korea Selatan.",
         "ex": "A: Halo semuanya, baru gabung nih! B: Met kenal ya!"
-      }
+      },
+      "romanization": "banggabangga",
+      "phonetic_respelling": "BAHNG-gah-bahng-gah"
     },
     {
       "id": 2,
       "word": "하이루",
-      "pronunciation": "[하이루]",
+      "pronunciation": "[hairu]",
       "part_of_speech": "감탄사 / 인사말",
       "chosung": "ㅎㅇㄹ",
       "era": "latte",
@@ -163,12 +165,14 @@
         "slang": "Hai hai / Halo gengs",
         "desc": "Salam gaul perpaduan kata 'Hi' dengan akhiran imut era 2000-an.",
         "ex": "A: Hai hai semua! B: Halo juga!"
-      }
+      },
+      "romanization": "hairu",
+      "phonetic_respelling": "HAH-EE-ROO"
     },
     {
       "id": 3,
       "word": "즐",
-      "pronunciation": "[즐]",
+      "pronunciation": "[jeul]",
       "part_of_speech": "감탄사 / 은어",
       "chosung": "ㅈ",
       "era": "latte",
@@ -215,12 +219,14 @@
         "slang": "Ogah ah / Sana pergi",
         "desc": "Kata penolakan sinis paling populer era 2000-an di Korea.",
         "ex": "A: Boleh pinjem duit? B: Ogah banget, mimpi!"
-      }
+      },
+      "romanization": "jeul",
+      "phonetic_respelling": "JEUL"
     },
     {
       "id": 4,
       "word": "OTL",
-      "pronunciation": "[오티엘 / 엎드려좌절]",
+      "pronunciation": "[OTL]",
       "part_of_speech": "이모티콘 / 명사",
       "chosung": "ㅇㅌㄹ",
       "era": "latte",
@@ -267,12 +273,14 @@
         "slang": "Tersungkur pasrah / Nangis di pojokan",
         "desc": "Emotikon huruf legendaris menggambarkan orang bersujud frustrasi.",
         "ex": "Gagal total tes hari ini... OTL"
-      }
+      },
+      "romanization": "OTL",
+      "phonetic_respelling": "O-T-L"
     },
     {
       "id": 5,
       "word": "뷁",
-      "pronunciation": "[뷐]",
+      "pronunciation": "[bwek]",
       "part_of_speech": "감탄사 / 명사",
       "chosung": "ㅂ",
       "era": "latte",
@@ -319,12 +327,14 @@
         "slang": "Hadeeeh / Absurd banget",
         "desc": "Jeritan satu suku kata khas Korea untuk melampiaskan kekesalan luar biasa.",
         "ex": "Suruh lembur weekend? Bwehk, gak habis pikir!"
-      }
+      },
+      "romanization": "bwek",
+      "phonetic_respelling": "BWEHK"
     },
     {
       "id": 6,
       "word": "간지",
-      "pronunciation": "[간지]",
+      "pronunciation": "[ganji]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅈ",
       "era": "latte",
@@ -371,12 +381,14 @@
         "slang": "Kece badai / Keren abis",
         "desc": "Slang fashion 2000-an untuk penampilan yang luar biasa keren dan modis.",
         "ex": "Gaya jaket lu hari ini kece badai banget bro!"
-      }
+      },
+      "romanization": "ganji",
+      "phonetic_respelling": "GAHN-JEE"
     },
     {
       "id": 7,
       "word": "지못미",
-      "pronunciation": "[지몬미]",
+      "pronunciation": "[jimotmi]",
       "part_of_speech": "감탄사 / 명사",
       "chosung": "ㅈㅁㅁ",
       "era": "latte",
@@ -423,12 +435,14 @@
         "slang": "Maaf gak bisa nyelametin lu",
         "desc": "Singkatan kocak untuk menertawakan foto aib teman.",
         "ex": "Foto ijazah merem? Maaf gak bisa nyelametin lu bro wkwk."
-      }
+      },
+      "romanization": "jimotmi",
+      "phonetic_respelling": "JEE-MOHT-MEE"
     },
     {
       "id": 8,
       "word": "킹왕짱",
-      "pronunciation": "[킹왕짱]",
+      "pronunciation": "[kingwangjjang]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅋㅇㅉ",
       "era": "latte",
@@ -475,12 +489,14 @@
         "slang": "Rajanya segala raja / Terhebat sejagat",
         "desc": "Penggabungan tiga kata superlatif untuk menggambarkan hal paling hebat.",
         "ex": "Laptop baru ini beneran rajanya segala raja, kenceng banget!"
-      }
+      },
+      "romanization": "kingwangjjang",
+      "phonetic_respelling": "KEENG-WAHNG-JJAHNG"
     },
     {
       "id": 9,
       "word": "안습",
-      "pronunciation": "[안습]",
+      "pronunciation": "[anseup]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅇㅅ",
       "era": "latte",
@@ -527,12 +543,14 @@
         "slang": "Nyesek banget / Mewek kasihan",
         "desc": "Singkatan dari 'mata berembun', menggambarkan situasi pilu yang bikin terenyuh.",
         "ex": "Kencan pertama lupa dompet? Nyesek banget dengernya bro."
-      }
+      },
+      "romanization": "anseup",
+      "phonetic_respelling": "AHN-SEUP"
     },
     {
       "id": 10,
       "word": "얼짱",
-      "pronunciation": "[얼짱]",
+      "pronunciation": "[eoljjang]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅉ",
       "era": "latte",
@@ -579,12 +597,14 @@
         "slang": "Ulzzang / Bibit unggul visual",
         "desc": "Istilah legendaris Korea untuk orang-orang berwajah paling tampan atau cantik di internet.",
         "ex": "Anak baru itu dulunya Ulzzang terkenal di internet loh!"
-      }
+      },
+      "romanization": "eoljjang",
+      "phonetic_respelling": "UHL-JJAHNG"
     },
     {
       "id": 11,
       "word": "몸짱",
-      "pronunciation": "[몸짱]",
+      "pronunciation": "[momjjang]",
       "part_of_speech": "명사",
       "chosung": "ㅁㅉ",
       "era": "latte",
@@ -631,12 +651,14 @@
         "slang": "Body goals / Berotot kekar",
         "desc": "Sebutan untuk orang yang bertubuh atletis dan berotot bagus berkat gym.",
         "ex": "Rajin ngegym ya? Bodinya udah jadi kekar berotot banget!"
-      }
+      },
+      "romanization": "momjjang",
+      "phonetic_respelling": "MOHM-JJAHNG"
     },
     {
       "id": 12,
       "word": "훈남",
-      "pronunciation": "[훈남]",
+      "pronunciation": "[hunnam]",
       "part_of_speech": "명사",
       "chosung": "ㅎㄴ",
       "era": "latte",
@@ -683,12 +705,14 @@
         "slang": "Cowok manis berkarisma / Pria idaman hangat",
         "desc": "Pria berwajah manis dengan senyum ramah yang bikin hati meleleh.",
         "ex": "Senior itu auranya hangat banget, beneran tipe cowok manis idaman."
-      }
+      },
+      "romanization": "hunnam",
+      "phonetic_respelling": "HOON-NAHM"
     },
     {
       "id": 13,
       "word": "엄친아",
-      "pronunciation": "[엄치나]",
+      "pronunciation": "[eomchina]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅊㅇ",
       "era": "latte",
@@ -735,12 +759,14 @@
         "slang": "Anak tetangga sebelah / Si serba sempurna",
         "desc": "Istilah kocak untuk 'anak teman ibu' yang selalu serba pintar dan dibanding-bandingkan.",
         "ex": "Ibu hobi banget ngebandingin sama anak tetangga yang serba sempurna itu."
-      }
+      },
+      "romanization": "eomchina",
+      "phonetic_respelling": "UHM-CHEEN-AH"
     },
     {
       "id": 14,
       "word": "된장녀",
-      "pronunciation": "[된장녀]",
+      "pronunciation": "[doenjangnyeo]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅈㄴ",
       "era": "latte",
@@ -787,12 +813,14 @@
         "slang": "Cewek gengsian / Kaum FOMO pamer",
         "desc": "Slang kontroversial 2000-an untuk menyindir orang yang hobi pamer barang mewah melebihi kemampuan.",
         "ex": "Dulu sempat viral sebutan buat orang yang maksa pamer kopi mahal padahal bokek."
-      }
+      },
+      "romanization": "doenjangnyeo",
+      "phonetic_respelling": "DWEHN-JAHNG-NYUH"
     },
     {
       "id": 15,
       "word": "담다디",
-      "pronunciation": "[담다디]",
+      "pronunciation": "[damdadi]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㄷㄷㄷ",
       "era": "latte",
@@ -839,12 +867,14 @@
         "slang": "Lagu Damdadi / Lagu kebangsaan Gen X",
         "desc": "Lagu legendaris ceria simbol kebebasan dan jiwa muda Generasi X Korea.",
         "ex": "Dulu setiap festival sekolah pasti heboh nyanyi tarian Damdadi!"
-      }
+      },
+      "romanization": "damdadi",
+      "phonetic_respelling": "DAHM-DAH-DEE"
     },
     {
       "id": 16,
       "word": "8282",
-      "pronunciation": "[팔이팔이]",
+      "pronunciation": "[]",
       "part_of_speech": "수사 / 숫자 은어",
       "chosung": "ㅍㅇㅍㅇ",
       "era": "latte",
@@ -891,12 +921,14 @@
         "slang": "8282 (Buruan telpon / Kode Pager)",
         "desc": "Kode angka pager legendaris 90-an yang bermakna 'cepat-cepat' (ppalli-ppalli).",
         "ex": "Pager gue bunyi angka 8282! Cepet cari telepon umum!"
-      }
+      },
+      "romanization": "",
+      "phonetic_respelling": ""
     },
     {
       "id": 17,
       "word": "0124",
-      "pronunciation": "[영일이사]",
+      "pronunciation": "[]",
       "part_of_speech": "수사 / 숫자 은어",
       "chosung": "ㅇㅇㅇㅅ",
       "era": "latte",
@@ -943,12 +975,14 @@
         "slang": "0124 (Cinta selamanya)",
         "desc": "Kode angka pager romantis era 90-an yang berarti 'mencintaimu selamanya'.",
         "ex": "Nge-page angka 0124 ke gebetan itu romantis banget zaman dulu."
-      }
+      },
+      "romanization": "",
+      "phonetic_respelling": ""
     },
     {
       "id": 18,
       "word": "도토리",
-      "pronunciation": "[도토리]",
+      "pronunciation": "[dotori]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅌㄹ",
       "era": "latte",
@@ -995,12 +1029,14 @@
         "slang": "Dotori (Koin virtual Cyworld)",
         "desc": "Mata uang virtual legendaris Cyworld untuk beli musik latar dan kostum avatar.",
         "ex": "Kirim 5 biji dotori dong biar bisa beli lagu BGM profil gue!"
-      }
+      },
+      "romanization": "dotori",
+      "phonetic_respelling": "DOH-TOH-REE"
     },
     {
       "id": 19,
       "word": "일촌평",
-      "pronunciation": "[일촌평]",
+      "pronunciation": "[ilchonpyeong]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅊㅍ",
       "era": "latte",
@@ -1047,12 +1083,14 @@
         "slang": "Catatan satu baris sahabat",
         "desc": "Komentar satu baris eksklusif di beranda utama yang hanya bisa ditulis oleh sahabat dekat.",
         "ex": "Dulu modus naksir gebetan lewat catatan satu baris sahabat seru banget."
-      }
+      },
+      "romanization": "ilchonpyeong",
+      "phonetic_respelling": "EEL-CHOHN-PYUHNG"
     },
     {
       "id": 20,
       "word": "십라",
-      "pronunciation": "[십라]",
+      "pronunciation": "[sipra]",
       "part_of_speech": "감탄사 / 욕설 필터링 우회",
       "chosung": "ㅅㄹ",
       "era": "latte",
@@ -1099,12 +1137,14 @@
         "slang": "Anjrit / Sensor bypass",
         "desc": "Plesetan kata makian untuk mengakali sensor sensor chat game online era 2000-an.",
         "ex": "Boss sisa darah 1% malah disconnect? Anjrit kesel banget!"
-      }
+      },
+      "romanization": "sipra",
+      "phonetic_respelling": "SEEP-RAH"
     },
     {
       "id": 21,
       "word": "멘붕",
-      "pronunciation": "[멘붕]",
+      "pronunciation": "[menbung]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅁㅂ",
       "era": "smartphone",
@@ -1153,12 +1193,14 @@
         "slang": "Mental breakdown / Syok berat",
         "desc": "Singkatan dari runtuhnya mental akibat kejadian tak terduga yang bikin panik.",
         "ex": "File kerjaan kehapus belum kesave? Langsung mental breakdown!"
-      }
+      },
+      "romanization": "menbung",
+      "phonetic_respelling": "MEN-boong"
     },
     {
       "id": 22,
       "word": "꿀잼",
-      "pronunciation": "[꿀잼]",
+      "pronunciation": "[kkuljaem]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㄲㅈ",
       "era": "smartphone",
@@ -1205,12 +1247,14 @@
         "slang": "Seru parah / Menghibur banget",
         "desc": "Perpaduan kata 'madu' dan 'seru' untuk menggambarkan hal yang luar biasa seru.",
         "ex": "Udah nonton film yang baru rilis? Seru parah bro!"
-      }
+      },
+      "romanization": "kkuljaem",
+      "phonetic_respelling": "KKOOL-JEHM"
     },
     {
       "id": 23,
       "word": "노잼",
-      "pronunciation": "[노잼]",
+      "pronunciation": "[nojaem]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㄴㅈ",
       "era": "smartphone",
@@ -1257,12 +1301,14 @@
         "slang": "Garing banget / Ngebosenin",
         "desc": "Kombinasi kata 'No' dan 'seru' untuk sesuatu yang super garing dan tidak lucu.",
         "ex": "Bos ngelawak garing lagi? Beneran ngebosenin banget..."
-      }
+      },
+      "romanization": "nojaem",
+      "phonetic_respelling": "NOH-JEHM"
     },
     {
       "id": 24,
       "word": "심쿵",
-      "pronunciation": "[심쿵]",
+      "pronunciation": "[simkung]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㅅㅋ",
       "era": "smartphone",
@@ -1311,12 +1357,14 @@
         "slang": "Bikin jantungan gemas / Meleleh hatiku",
         "desc": "Reaksi ketika melihat hal yang kelewat lucu atau manis sampai bikin deg-degan.",
         "ex": "Anak kucingnya tidur di atas sepatu, ya ampun bikin jantungan gemas!"
-      }
+      },
+      "romanization": "simkung",
+      "phonetic_respelling": "SIM-koong"
     },
     {
       "id": 25,
       "word": "금수저",
-      "pronunciation": "[금수저]",
+      "pronunciation": "[geumsujeo]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅅㅈ",
       "era": "smartphone",
@@ -1363,12 +1411,14 @@
         "slang": "Sendok emas / Sultan dari lahir",
         "desc": "Istilah kasta sosial Korea untuk anak orang super kaya yang hidupnya tanpa beban finansial.",
         "ex": "Lulus kuliah langsung dibeliin apartemen mewah, sultan sendok emas sejati!"
-      }
+      },
+      "romanization": "geumsujeo",
+      "phonetic_respelling": "GEUM-SOO-JUH"
     },
     {
       "id": 26,
       "word": "흙수저",
-      "pronunciation": "[흑쑤저]",
+      "pronunciation": "[heuksujeo]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅅㅈ",
       "era": "smartphone",
@@ -1415,12 +1465,14 @@
         "slang": "Sendok tanah / Pejuang garis keras",
         "desc": "Istilah menyedihkan untuk pemuda dari keluarga miskin yang harus menanggung beban hidup sendiri.",
         "ex": "Kerja sampingan mati-matian buat bayar utang kuliah, nasib sendok tanah."
-      }
+      },
+      "romanization": "heuksujeo",
+      "phonetic_respelling": "HEUK-SOO-JUH"
     },
     {
       "id": 27,
       "word": "팩폭",
-      "pronunciation": "[팩폭]",
+      "pronunciation": "[paekpok]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅍ",
       "era": "smartphone",
@@ -1467,12 +1519,14 @@
         "slang": "Ditampar fakta / Tamparan kenyataan",
         "desc": "Singkatan dari 'Kekerasan fakta', membungkam lawan bicara dengan kebenaran telak.",
         "ex": "Jangan ditampar fakta mulu dong, nyesek banget dengernya!"
-      }
+      },
+      "romanization": "paekpok",
+      "phonetic_respelling": "PEHK-POHK"
     },
     {
       "id": 28,
       "word": "빼박캔트",
-      "pronunciation": "[빼박캔트]",
+      "pronunciation": "[ppaebakkaenteu]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅃㅂㅋㅌ",
       "era": "smartphone",
@@ -1519,12 +1573,14 @@
         "slang": "Tertangkap basah / Gak bisa ngeles lagi",
         "desc": "Perpaduan istilah Korea dan bahasa Inggris yang berarti bukti sudah jelas dan tidak bisa mengelak.",
         "ex": "Ketahuan kamera CCTV, udah gak bisa ngeles lagi lu bro!"
-      }
+      },
+      "romanization": "ppaebakkaenteu",
+      "phonetic_respelling": "PPEH-BAHK-KEHN-TEU"
     },
     {
       "id": 29,
       "word": "갓생",
-      "pronunciation": "[갇생]",
+      "pronunciation": "[gatsaeng]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㄱㅅ",
       "short_def": "'God(신)'과 '생(生, 인생)'의 합성어. 하루하루를 매우 성실하고 생산적이며 알차게 살아가는 모범적인 생활 방식.",
@@ -1571,12 +1627,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "gatsaeng",
+      "phonetic_respelling": "GAHT-SEHNG"
     },
     {
       "id": 30,
       "word": "극혐",
-      "pronunciation": "[그켬]",
+      "pronunciation": "[geukhyeom]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㄱㅎ",
       "era": "smartphone",
@@ -1623,12 +1681,14 @@
         "slang": "Bikin jijik parah / Ilfeel maksimal",
         "desc": "Singkatan dari 'sangat benci dan jijik' terhadap perilaku norak dan tidak tahu aturan.",
         "ex": "Duduk ngangkang desek orang di kereta? Ilfeel maksimal lihatnya."
-      }
+      },
+      "romanization": "geukhyeom",
+      "phonetic_respelling": "GEUK-HYUHM"
     },
     {
       "id": 31,
       "word": "츤데레",
-      "pronunciation": "[츤데레]",
+      "pronunciation": "[cheundere]",
       "part_of_speech": "명사",
       "chosung": "ㅊㄷㄹ",
       "era": "smartphone",
@@ -1675,12 +1735,14 @@
         "slang": "Tsundere / Gengsi tapi perhatian",
         "desc": "Orang yang pura-pura cuek dan galak di luar padahal diam-diam sangat perhatian.",
         "ex": "Bilangnya nemu di jalan padahal sengaja beliin sepatu idaman gue, tsundere banget!"
-      }
+      },
+      "romanization": "cheundere",
+      "phonetic_respelling": "CHEUN-DEH-REH"
     },
     {
       "id": 32,
       "word": "케미",
-      "pronunciation": "[케미]",
+      "pronunciation": "[kemi]",
       "part_of_speech": "명사",
       "chosung": "ㅋㅁ",
       "era": "smartphone",
@@ -1727,12 +1789,14 @@
         "slang": "Chemistry cocok / Nyambung banget",
         "desc": "Singkatan dari kimiawi, menggambarkan kekompakan dan kecocokan luar biasa antar dua orang.",
         "ex": "Dua pembawa acara itu chemistry-nya dapet banget, klop parah!"
-      }
+      },
+      "romanization": "kemi",
+      "phonetic_respelling": "KEH-MEE"
     },
     {
       "id": 33,
       "word": "답정너",
-      "pronunciation": "[답정너]",
+      "pronunciation": "[dapjeongneo]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅈㄴ",
       "era": "smartphone",
@@ -1779,12 +1843,14 @@
         "slang": "Pancing pujian / Pertanyaan jebakan",
         "desc": "Singkatan dari 'jawabannya udah ada lu tinggal iyain aja', orang yang nanya cuma buat minta dipuji.",
         "ex": "Ujung-ujungnya lu beli juga ngapain nanya? Cuma pancing pujian lu mah wkwk."
-      }
+      },
+      "romanization": "dapjeongneo",
+      "phonetic_respelling": "DAHP-JUHNG-NUH"
     },
     {
       "id": 34,
       "word": "낄끼빠빠",
-      "pronunciation": "[낄끼빠빠]",
+      "pronunciation": "[kkilkkippappa]",
       "part_of_speech": "명사 / 관용구",
       "chosung": "ㄲㄲㅃㅃ",
       "era": "smartphone",
@@ -1831,12 +1897,14 @@
         "slang": "Tahu diri / Sadar situasi",
         "desc": "Singkatan bermakna 'tahu kapan harus ikut campur dan kapan harus mundur teratur'.",
         "ex": "Anak magang mau nongkrong sendiri bosnya malah ikut, gak peka situasi banget dah."
-      }
+      },
+      "romanization": "kkilkkippappa",
+      "phonetic_respelling": "KKEEL-KKEE-PPAH-PPAH"
     },
     {
       "id": 35,
       "word": "안물안궁",
-      "pronunciation": "[안물안궁]",
+      "pronunciation": "[anmulangung]",
       "part_of_speech": "감탄사 / 관용구",
       "chosung": "ㅇㅁㅇㄱ",
       "era": "smartphone",
@@ -1883,12 +1951,14 @@
         "slang": "Gak nanya gak peduli / Siapa nanya",
         "desc": "Jawaban menohok untuk memotong pamer atau cerita gak penting dari teman.",
         "ex": "Pamer beli sepatu mahal? Gak ada yang nanya dan gak ada yang peduli tuh!"
-      }
+      },
+      "romanization": "anmulangung",
+      "phonetic_respelling": "AHN-MOOL-AHN-GOONG"
     },
     {
       "id": 36,
       "word": "솔까말",
-      "pronunciation": "[솔까말]",
+      "pronunciation": "[solkkamal]",
       "part_of_speech": "부사",
       "chosung": "ㅅㄲㅁ",
       "era": "smartphone",
@@ -1935,12 +2005,14 @@
         "slang": "Jujurly / Buka-bukaan aja",
         "desc": "Singkatan dari 'jujur buka-bukaan ngomong', digunakan untuk menyampaikan kritik jujur.",
         "ex": "Jujurly aja ya, proposal proyek kali ini kayaknya harus dirombak total deh."
-      }
+      },
+      "romanization": "solkkamal",
+      "phonetic_respelling": "SOHL-KKAH-MAHL"
     },
     {
       "id": 37,
       "word": "어그로",
-      "pronunciation": "[어그로]",
+      "pronunciation": "[eogeuro]",
       "part_of_speech": "명사",
       "chosung": "ㅇㄱㄹ",
       "era": "smartphone",
@@ -1987,12 +2059,14 @@
         "slang": "Cari gara-gara / Pancing amarah demi views",
         "desc": "Berasal dari istilah game, aksi memancing kemarahan netizen sengaja demi konten viral.",
         "ex": "YouTuber itu cuma mancing amarah netizen biar views naik, jangan diklik!"
-      }
+      },
+      "romanization": "eogeuro",
+      "phonetic_respelling": "UH-GEU-ROH"
     },
     {
       "id": 38,
       "word": "현타",
-      "pronunciation": "[현타]",
+      "pronunciation": "[hyeonta]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅌ",
       "era": "smartphone",
@@ -2041,12 +2115,14 @@
         "slang": "Ketampar realita / Sadar kenyataan",
         "desc": "Singkatan dari momen sadar kenyataan, rasa hampa tiba-tiba saat tersadar dari khayalan.",
         "ex": "Ngegame semalaman pas liat jam 5 subuh langsung ketampar realita dan nyesel."
-      }
+      },
+      "romanization": "hyeonta",
+      "phonetic_respelling": "HYUN-tah"
     },
     {
       "id": 39,
       "word": "이생망",
-      "pronunciation": "[이생망]",
+      "pronunciation": "[isaengmang]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㅇㅅㅁ",
       "era": "smartphone",
@@ -2093,12 +2169,14 @@
         "slang": "Hidup kali ini gagal / Reinkarnasi aja",
         "desc": "Singkatan dari 'hidup kali ini udah ambyar', ungkapan pasrah penuh tawa sarkastik.",
         "ex": "Gagal tes lagi? Ya udah hidup kali ini gagal, nunggu reinkarnasi aja wkwk."
-      }
+      },
+      "romanization": "isaengmang",
+      "phonetic_respelling": "EE-SEHNG-MAHNG"
     },
     {
       "id": 40,
       "word": "소확행",
-      "pronunciation": "[소화캥]",
+      "pronunciation": "[sohwakhaeng]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅎㅎ",
       "short_def": "'소소하지만 확실한 행복'의 줄임말. 거창한 성공이나 부가 아니더라도, 갓 구운 빵 냄새나 퇴근 후 샤워처럼 일상 속 확실하게 누릴 수 있는 작고 소박한 행복.",
@@ -2145,12 +2223,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "sohwakhaeng",
+      "phonetic_respelling": "SOH-HWAHK-HEHNG"
     },
     {
       "id": 41,
       "word": "긁히다",
-      "pronunciation": "[글키다]",
+      "pronunciation": "[geukhida]",
       "part_of_speech": "동사",
       "chosung": "ㄱㅎㄷ",
       "short_def": "상대방의 도발이나 정곡을 찌르는 팩트 폭격에 자존심이 상해 분노하거나 발끈한 상태.",
@@ -2197,12 +2277,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "geukhida",
+      "phonetic_respelling": "GEUK-HEE-DAH"
     },
     {
       "id": 42,
       "word": "중꺾마",
-      "pronunciation": "[중껑마]",
+      "pronunciation": "[jung-kkeok-ma]",
       "part_of_speech": "명사 / 관용구",
       "chosung": "ㅈㄲㅁ",
       "short_def": "'중요한 것은 꺾이지 않는 마음'의 줄임말. 어떤 역경이나 절망적인 상황에서도 포기하지 않는 강한 불굴의 의지.",
@@ -2249,12 +2331,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "jung-kkeok-ma",
+      "phonetic_respelling": "JOONG-kkuk-mah"
     },
     {
       "id": 43,
       "word": "억까",
-      "pronunciation": "[억까]",
+      "pronunciation": "[eokkka]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅇㄲ",
       "short_def": "'억지로 까기'의 줄임말. 합리적인 이유나 근거 없이 맹목적으로 비난하거나, 불운이 연속되어 일이 꼬이는 상황.",
@@ -2301,12 +2385,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "eokkka",
+      "phonetic_respelling": "UHK-KKAH"
     },
     {
       "id": 44,
       "word": "알잘딱깔센",
-      "pronunciation": "[알잘딱깔센]",
+      "pronunciation": "[aljaltakkalsen]",
       "part_of_speech": "부사 / 형용사",
       "chosung": "ㅇㅈㄸㄲㅅ",
       "short_def": "'알아서 잘 딱 깔끔하고 센스 있게'의 줄임말. 구구절절 설명하지 않아도 스스로 완벽하게 눈치껏 일이나 상황을 처리하는 태도.",
@@ -2353,12 +2439,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "aljaltakkalsen",
+      "phonetic_respelling": "AHL-jahl-tahk-kahl-sen"
     },
     {
       "id": 45,
       "word": "폼 미쳤다",
-      "pronunciation": "[폼 미첟따]",
+      "pronunciation": "[pom michyeotda]",
       "part_of_speech": "감탄사 / 관용구",
       "chosung": "ㅍㅁㅊㄷ",
       "short_def": "스포츠의 'Form(기량/컨디션)'에서 유래. 실력이나 외모, 어떤 결과물이 상상을 초월할 정도로 엄청나게 뛰어남을 극찬하는 표현.",
@@ -2405,12 +2493,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "pom michyeotda",
+      "phonetic_respelling": "POHM MEE-CHYUHT-DAH"
     },
     {
       "id": 46,
       "word": "핑프",
-      "pronunciation": "[핑프]",
+      "pronunciation": "[pingpeu]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅍ",
       "short_def": "'핑거 프린세스(Finger Princess) / 프린스'의 줄임말. 손가락 하나 까딱해서 스스로 검색해 볼 생각은 안 하고 남에게 다 떠먹여 달라고 묻는 게으른 사람.",
@@ -2457,12 +2547,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "pingpeu",
+      "phonetic_respelling": "PEENG-PEU"
     },
     {
       "id": 47,
       "word": "분좋카",
-      "pronunciation": "[분조카]",
+      "pronunciation": "[bunjotka]",
       "part_of_speech": "명사",
       "chosung": "ㅂㅈㅋ",
       "short_def": "'분위기 좋은 카페'의 줄임말. 인테리어, 채광, 음악, 뷰 등이 감성적이고 예뻐서 사진 찍기 좋은 핫플레이스 카페.",
@@ -2509,12 +2601,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "bunjotka",
+      "phonetic_respelling": "BOON-JOHT-KAH"
     },
     {
       "id": 48,
       "word": "럭키비키",
-      "pronunciation": "[너키비키]",
+      "pronunciation": "[leokki-biki]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㄹㅋㅂㅋ",
       "short_def": "어떤 역경이나 당황스러운 상황이 닥쳐도 '결국 나에게 더 좋은 일이다'라며 모든 것을 행운으로 해석하는 초긍정 마인드셋.",
@@ -2561,12 +2655,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "leokki-biki",
+      "phonetic_respelling": "LUK-kee-BEE-kee"
     },
     {
       "id": 49,
       "word": "추구미",
-      "pronunciation": "[추구미]",
+      "pronunciation": "[chugumi]",
       "part_of_speech": "명사",
       "chosung": "ㅊㄱㅁ",
       "short_def": "내가 지향하고 닮고 싶어 하는 미적(美的) 스타일, 이미지, 분위기나 감성.",
@@ -2613,12 +2709,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "chugumi",
+      "phonetic_respelling": "CHOO-GOO-MEE"
     },
     {
       "id": 50,
       "word": "오히려 좋아",
-      "pronunciation": "[오히려 조아]",
+      "pronunciation": "[ohiryeo jota]",
       "part_of_speech": "관용구",
       "chosung": "ㅇㅎㄹㅈㅇ",
       "short_def": "계획이 틀어지거나 예상치 못한 악재가 생겼을 때, 오히려 더 좋은 결과를 낳을 것이라며 긍정적으로 상황을 뒤집는 태도.",
@@ -2665,12 +2763,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "ohiryeo jota",
+      "phonetic_respelling": "OH-HEE-RYUH JOHT-AH"
     },
     {
       "id": 51,
       "word": "누칼협",
-      "pronunciation": "[누칼협]",
+      "pronunciation": "[nukalhyeop]",
       "part_of_speech": "명사 / 관용구",
       "chosung": "ㄴㅋㅎ",
       "short_def": "'누가 칼 들고 협박함?'의 줄임말. 본인이 스스로 자유의지로 선택해 놓고 결과가 나쁘자 남 탓하거나 징징댈 때 차갑게 날리는 일침.",
@@ -2717,12 +2817,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "nukalhyeop",
+      "phonetic_respelling": "NOO-KAHL-HYUHP"
     },
     {
       "id": 52,
       "word": "뇌절",
-      "pronunciation": "[뇌절]",
+      "pronunciation": "[noejeol]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㄴㅈ",
       "short_def": "1절, 2절, 3절을 넘어 적당한 선을 모르고 과하게 반복하거나 억지를 부려 분위기를 싸하게 망치는 행위.",
@@ -2769,12 +2871,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "noejeol",
+      "phonetic_respelling": "NWEH-JUHL"
     },
     {
       "id": 53,
       "word": "스불재",
-      "pronunciation": "[스불재]",
+      "pronunciation": "[seubuljae]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅂㅈ",
       "short_def": "'스스로 불러온 재앙'의 줄임말. 자신의 욕심이나 충동적인 선택으로 스스로 고생을 자초했을 때 쓰는 자조적 표현.",
@@ -2821,12 +2925,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "seubuljae",
+      "phonetic_respelling": "SEU-BOOL-JEH"
     },
     {
       "id": 54,
       "word": "킹받네",
-      "pronunciation": "[킹받네]",
+      "pronunciation": "[kingbatne]",
       "part_of_speech": "감탄사 / 동사",
       "chosung": "ㅋㅂㄴ",
       "short_def": "'열받네'의 앞에 강조 접두사 'King(킹)'을 붙여, 은근히 얄밉거나 어이없게 분통이 터지는 상태.",
@@ -2873,12 +2979,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "kingbatne",
+      "phonetic_respelling": "KEENG-BAHT-NEH"
     },
     {
       "id": 55,
       "word": "어쩔티비",
-      "pronunciation": "[어쩔티비]",
+      "pronunciation": "[eojjeoltibi]",
       "part_of_speech": "감탄사",
       "chosung": "ㅇㅉㅌㅂ",
       "short_def": "'어쩌라고 가서 티브이나 봐'의 줄임말로, 상대방의 잔소리나 공격을 유치하고 얄밉게 원천 봉쇄하는 반격 밈.",
@@ -2925,12 +3033,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "eojjeoltibi",
+      "phonetic_respelling": "UH-JJUHL-TEE-BEE"
     },
     {
       "id": 56,
       "word": "점메추",
-      "pronunciation": "[점메추]",
+      "pronunciation": "[jeommechu]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅈㅁㅊ",
       "short_def": "'점심 메뉴 추천'의 줄임말. 점심시간 직전 동료나 친구들에게 무엇을 먹을지 아이디어를 구할 때 쓰는 필수 약어.",
@@ -2977,12 +3087,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "jeommechu",
+      "phonetic_respelling": "JUHM-MEH-CHOO"
     },
     {
       "id": 57,
       "word": "군싹",
-      "pronunciation": "[군싹]",
+      "pronunciation": "[gunssak]",
       "part_of_speech": "감탄사 / 형용사",
       "chosung": "ㄱㅆ",
       "short_def": "'군침이 싹 도네'의 줄임말. 맛있는 음식을 보거나 매우 흥미진진한 상황을 마주했을 때 욕심이나 기대감이 솟아오르는 감탄사.",
@@ -3029,12 +3141,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "gunssak",
+      "phonetic_respelling": "GOON-SSAHK"
     },
     {
       "id": 58,
       "word": "캘박",
-      "pronunciation": "[캘박]",
+      "pronunciation": "[kaelbak]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅋㅂ",
       "short_def": "'캘린더 박제'의 줄임말. 중요한 일정이나 친구와의 약속이 절대 취소되지 않도록 스마트폰 캘린더에 단단히 등록해 놓는 행위.",
@@ -3081,12 +3195,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "kaelbak",
+      "phonetic_respelling": "KEHL-BAHK"
     },
     {
       "id": 59,
       "word": "디토",
-      "pronunciation": "[디토]",
+      "pronunciation": "[dito]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㄷㅌ",
       "short_def": "'Ditto(나도 동의해, 나도 그래)'에서 유래. 타인의 취향, 제품, 라이프스타일을 신뢰하고 그대로 따라 구매하거나 행동하는 트렌드(디토 소비).",
@@ -3133,12 +3249,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "dito",
+      "phonetic_respelling": "DEE-TOH"
     },
     {
       "id": 60,
       "word": "내또출",
-      "pronunciation": "[내또출]",
+      "pronunciation": "[naettochul]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㄴㄸㅊ",
       "short_def": "'내일 또 출근'의 줄임말. 일요일 저녁이나 휴일 막바지에 출근의 압박과 피로감을 자조적으로 토로하는 직장인 애환의 단어.",
@@ -3185,12 +3303,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "naettochul",
+      "phonetic_respelling": "NEH-TTOH-CHOOL"
     },
     {
       "id": 61,
       "word": "완내스",
-      "pronunciation": "[완내스]",
+      "pronunciation": "[wannaeseu]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅇㄴㅅ",
       "short_def": "'완전 내 스타일'의 줄임말. 음식, 옷, 음악, 사람의 외모나 성격 등이 자신의 취향에 100% 완벽하게 부합할 때 쓰는 찬사.",
@@ -3237,12 +3357,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "wannaeseu",
+      "phonetic_respelling": "WAHN-NEH-SEU"
     },
     {
       "id": 62,
       "word": "무물",
-      "pronunciation": "[무물]",
+      "pronunciation": "[mumul]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅁㅁ",
       "short_def": "'무엇이든 물어보세요'의 줄임말. 인스타그램 스토리의 질문 스티커나 라이브 방송에서 팔로워들과 1:1 Q&A를 나눌 때 쓰는 용어.",
@@ -3289,12 +3411,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "mumul",
+      "phonetic_respelling": "MOO-MOOL"
     },
     {
       "id": 63,
       "word": "막이래",
-      "pronunciation": "[마기래]",
+      "pronunciation": "[makirae]",
       "part_of_speech": "감탄사",
       "chosung": "ㅁㅇㄹ",
       "short_def": "자신이 방금 한 과장된 칭찬이나 능청스러운 농담 뒤에 붙여, '그냥 장난이야~'라며 멋쩍음을 유쾌하게 무마하는 추임새.",
@@ -3341,12 +3465,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "makirae",
+      "phonetic_respelling": "MAHK-EE-REH"
     },
     {
       "id": 64,
       "word": "H워얼V",
-      "pronunciation": "[사랑해]",
+      "pronunciation": "[h-wo-eol-v]",
       "part_of_speech": "감탄사 / 명사",
       "chosung": "ㅎㅇㅇㅂ",
       "short_def": "'사랑해'라는 한글 글자를 상하좌우로 뒤집어서 영어 알파벳으로 형상화한 신세대들의 위트 있는 시크릿 사랑 고백 암호.",
@@ -3393,12 +3519,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "h-wo-eol-v",
+      "phonetic_respelling": "H-WUR-UL-V"
     },
     {
       "id": 65,
       "word": "자만추",
-      "pronunciation": "[자만추]",
+      "pronunciation": "[jamanchu]",
       "part_of_speech": "명사",
       "chosung": "ㅈㅁㅊ",
       "short_def": "'자연스러운 만남 추구'의 줄임말. 소개팅이나 결정사처럼 인위적인 자리보다는 동아리, 직장, 취미 모임 등 자연스러운 관계에서 연애를 시작하고 싶어 하는 가치관.",
@@ -3445,12 +3573,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "jamanchu",
+      "phonetic_respelling": "JAH-MAHN-CHOO"
     },
     {
       "id": 66,
       "word": "사바사",
-      "pronunciation": "[사바사]",
+      "pronunciation": "[sabasa]",
       "part_of_speech": "명사 / 관용구",
       "chosung": "ㅅㅂㅅ",
       "short_def": "'사람 by 사람'의 줄임말. 상황이나 결과, 성향이 사람마다 각자 달라서 일반화할 수 없음을 나타내는 말.",
@@ -3497,12 +3627,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "sabasa",
+      "phonetic_respelling": "SAH-BAH-SAH"
     },
     {
       "id": 67,
       "word": "TMI",
-      "pronunciation": "[티엠아이]",
+      "pronunciation": "[TMI]",
       "part_of_speech": "명사",
       "chosung": "ㅌㅁㅇ",
       "short_def": "'Too Much Information'의 약어로, 굳이 묻지 않았는데 너무 과하고 사소하거나 은밀한 정보를 늘어놓을 때 쓰는 말.",
@@ -3549,12 +3681,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "TMI",
+      "phonetic_respelling": "T-M-I"
     },
     {
       "id": 68,
       "word": "반모",
-      "pronunciation": "[반모]",
+      "pronunciation": "[banmo]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅂㅁ",
       "short_def": "'반말 모드'의 줄임말. 온라인 커뮤니티, 게임, SNS에서 존댓말의 벽을 허물고 서로 편하게 말을 놓기로 합의하는 관계 형성 절차.",
@@ -3601,12 +3735,14 @@
       "era": "shorts",
       "era_name": "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
       "era_period": "2020s~2026",
-      "generation": "Z세대 & 알파세대"
+      "generation": "Z세대 & 알파세대",
+      "romanization": "banmo",
+      "phonetic_respelling": "BAHN-MOH"
     },
     {
       "id": 69,
       "word": "영포티",
-      "pronunciation": "[영포티]",
+      "pronunciation": "[young-forty]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅍㅌ",
       "era": "shorts",
@@ -3653,12 +3789,14 @@
         "slang": "Bapack-bapack sok asik / Generasi 40-an caper",
         "desc": "Istilah sarkastik untuk orang usia 40-an yang berdandan dan sok asik memakai bahasa anak muda zaman now.",
         "ex": "Pak manajer pakai celana gombrang dan sok gaul, bapack-bapack sok asik banget."
-      }
+      },
+      "romanization": "young-forty",
+      "phonetic_respelling": "YOUNG-FOR-ty"
     },
     {
       "id": 70,
       "word": "영ㅋㅋ",
-      "pronunciation": "[영크크]",
+      "pronunciation": "[young-kk]",
       "part_of_speech": "감탄사 / 밈",
       "chosung": "ㅇㅋㅋ",
       "era": "shorts",
@@ -3705,12 +3843,14 @@
         "slang": "Sok muda amat wkwk / Cringe abis gayanya",
         "desc": "Reaksi sarkastik saat bos tua memaksakan diri memakai bahasa gaul Gen Z.",
         "ex": "Si bos sok asik pakai istilah anak TikTok, sok muda amat wkwk."
-      }
+      },
+      "romanization": "young-kk",
+      "phonetic_respelling": "YOUNG-k-k"
     },
     {
       "id": 71,
       "word": "잼민이",
-      "pronunciation": "[잼미니]",
+      "pronunciation": "[jaemmini]",
       "part_of_speech": "명사",
       "chosung": "ㅈㅁㅇ",
       "era": "shorts",
@@ -3757,12 +3897,14 @@
         "slang": "Bocil kematian / Anak kecil rusuh di game",
         "desc": "Sebutan untuk anak SD yang toxic dan suka bikin onar di game online.",
         "ex": "Main game ketemu bocil kematian langsung nge-troll dan kabur."
-      }
+      },
+      "romanization": "jaemmini",
+      "phonetic_respelling": "JEHM-MEEN-EE"
     },
     {
       "id": 72,
       "word": "넵병",
-      "pronunciation": "[넵뼝]",
+      "pronunciation": "[nepbyeong]",
       "part_of_speech": "명사",
       "chosung": "ㄴㅂ",
       "era": "shorts",
@@ -3809,12 +3951,14 @@
         "slang": "Sindrom 'Siap Pak/Bu' di chat kantor",
         "desc": "Kebiasaan karyawan yang selalu membalas chat bos dengan 'Siap!' agar terdengar sopan dan sigap.",
         "ex": "Seharian di grup kantor cuma balas 'Siap pak!', kena sindrom karyawan teladan nih."
-      }
+      },
+      "romanization": "nepbyeong",
+      "phonetic_respelling": "NEHP-BYUHNG"
     },
     {
       "id": 73,
       "word": "조용한 사직",
-      "pronunciation": "[조용한 사직]",
+      "pronunciation": "[joyonghan sajik]",
       "part_of_speech": "명사",
       "chosung": "ㅈㅇㅎㅅㅈ",
       "era": "shorts",
@@ -3861,12 +4005,14 @@
         "slang": "Quiet Quitting / Kerja sesuai gaji",
         "desc": "Bekerja hanya sesuai jobdesk tanpa mau lembur berlebihan demi menjaga kesehatan mental.",
         "ex": "Gue udah mode quiet quitting, jam 5 teng langsung cabut tanpa basa-basi."
-      }
+      },
+      "romanization": "joyonghan sajik",
+      "phonetic_respelling": "JOH-YOHNG-HAHN SAH-JEEK"
     },
     {
       "id": 74,
       "word": "알빠노",
-      "pronunciation": "[알빠노]",
+      "pronunciation": "[alppano]",
       "part_of_speech": "감탄사 / 밈",
       "chosung": "ㅇㅃㄴ",
       "era": "shorts",
@@ -3913,12 +4059,14 @@
         "slang": "Bodo amat / Emang gue pikirin",
         "desc": "Ungkapan masa bodoh terhadap omongan atau kritik orang lain.",
         "ex": "Mau orang bilang apa juga bodo amat, yang penting gue hepi."
-      }
+      },
+      "romanization": "alppano",
+      "phonetic_respelling": "AHL-PPAH-NOH"
     },
     {
       "id": 75,
       "word": "할매니얼",
-      "pronunciation": "[할매니얼]",
+      "pronunciation": "[halmaenieol]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅁㄴㅇ",
       "era": "shorts",
@@ -3965,12 +4113,14 @@
         "slang": "Tren selera nenek-nenek di kalangan milenial",
         "desc": "Gabungan kata 'nenek' dan 'milenial', merujuk pada anak muda yang suka jajanan tradisional dan gaya jadul.",
         "ex": "Rela antre demi kue tradisional yakgwa, selera nenek-nenek banget nih anak."
-      }
+      },
+      "romanization": "halmaenieol",
+      "phonetic_respelling": "HAHL-MEH-NEE-UHL"
     },
     {
       "id": 76,
       "word": "퐁퐁남",
-      "pronunciation": "[퐁퐁남]",
+      "pronunciation": "[pongpongnam]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅍㄴ",
       "era": "shorts",
@@ -4017,12 +4167,14 @@
         "slang": "Suami cuci piring penjatah uang saku",
         "desc": "Sindiran untuk suami yang gajinya diserahkan semua ke istri dan harus cuci piring demi uang jajan.",
         "ex": "Gak bisa ikut nongkrong karena harus beresin cucian piring dulu biar dapet uang jajan."
-      }
+      },
+      "romanization": "pongpongnam",
+      "phonetic_respelling": "POHNG-POHNG-NAHM"
     },
     {
       "id": 77,
       "word": "오팔세대",
-      "pronunciation": "[오팔세대]",
+      "pronunciation": "[opalsedae]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅍㅅㄷ",
       "era": "shorts",
@@ -4069,12 +4221,14 @@
         "slang": "Generasi lansia aktif dan tajir",
         "desc": "Generasi pensiunan usia 50-60an yang masih sangat aktif berolahraga, traveling, dan menikmati hidup.",
         "ex": "Pensiun bukannya di rumah malah rajin traveling, gaya hidup lansia aktif banget."
-      }
+      },
+      "romanization": "opalsedae",
+      "phonetic_respelling": "OH-PAHL-SEH-DEH"
     },
     {
       "id": 78,
       "word": "쿠쿠루삥뽕",
-      "pronunciation": "[쿠쿠루삥뽕]",
+      "pronunciation": "[kukuruppingppong]",
       "part_of_speech": "감탄사 / 밈",
       "chosung": "ㅋㅋㅋㅃㅃ",
       "era": "shorts",
@@ -4121,12 +4275,14 @@
         "slang": "Tawa ngejek paling nyebelin di game",
         "desc": "Suara ejekan khas gamer Korea yang sangat bikin emosi saat lawan kalah konyol.",
         "ex": "Kalah di detik terakhir? Kukuru-bbing-bbong, rasain tuh kesel kan wkwk."
-      }
+      },
+      "romanization": "kukuruppingppong",
+      "phonetic_respelling": "KOO-KOO-ROO-PPEENG-PPOHNG"
     },
     {
       "id": 79,
       "word": "꼰대",
-      "pronunciation": "[꼰대]",
+      "pronunciation": "[kkondae]",
       "part_of_speech": "명사",
       "chosung": "ㄱㄷ",
       "era": "smartphone",
@@ -4173,12 +4329,14 @@
         "slang": "Kkondae / Bos kolot yang suka menggurui",
         "desc": "Istilah Korea yang mendunia untuk menyebut atasan tua yang gemar menceramahi dengan standar masa lalu.",
         "ex": "Mulai deh si bos mode Kkondae ceramah 'zaman saya dulu' selama dua jam."
-      }
+      },
+      "romanization": "kkondae",
+      "phonetic_respelling": "KKON-deh"
     },
     {
       "id": 80,
       "word": "월급루팡",
-      "pronunciation": "[월긍누팡]",
+      "pronunciation": "[wolgeuprupang]",
       "part_of_speech": "명사",
       "chosung": "ㅇㄱㄹㅍ",
       "era": "smartphone",
@@ -4225,12 +4383,14 @@
         "slang": "Koruptor jam kerja / Pemakan gaji buta",
         "desc": "Sebutan kocak untuk karyawan yang tidak bekerja dan sibuk santai tapi gajinya jalan terus.",
         "ex": "Kerjanya cuma ngopi sama scroll TikTok doang tapi gajian lancar, dasar pemakan gaji buta."
-      }
+      },
+      "romanization": "wolgeuprupang",
+      "phonetic_respelling": "WUHL-GEUP-ROO-PAHNG"
     },
     {
       "id": 81,
       "word": "아재체",
-      "pronunciation": "[아재체]",
+      "pronunciation": "[ajaeche]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅈㅊ",
       "era": "smartphone",
@@ -4277,12 +4437,14 @@
         "slang": "Gaya chat bapack-bapack penuh emotikon",
         "desc": "Gaya mengetik khas bapak-bapack yang penuh dengan tanda gelombang (~~) dan emotikon keringat (^^;).",
         "ex": "Chatnya penuh tanda tilde dan emotikon jadul, gaya bapack-bapack banget."
-      }
+      },
+      "romanization": "ajaeche",
+      "phonetic_respelling": "AH-JEH-CHEH"
     },
     {
       "id": 82,
       "word": "개저씨",
-      "pronunciation": "[개저씨]",
+      "pronunciation": "[gaejeossi]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅈㅆ",
       "era": "smartphone",
@@ -4329,12 +4491,14 @@
         "slang": "Om-om toxic dan tak tahu sopan santun",
         "desc": "Sebutan untuk pria paruh baya yang berkelakuan buruk, arogan, dan suka bikin onar di tempat umum.",
         "ex": "Ada om-om toxic teriak-teriak gak jelas di kereta bikin semua orang risih."
-      }
+      },
+      "romanization": "gaejeossi",
+      "phonetic_respelling": "GEH-JUH-SSEE"
     },
     {
       "id": 83,
       "word": "스라밸",
-      "pronunciation": "[스라밸]",
+      "pronunciation": "[seurabael]",
       "part_of_speech": "명사",
       "chosung": "ㅅㄹㅂ",
       "era": "smartphone",
@@ -4381,12 +4545,14 @@
         "slang": "Keseimbangan belajar dan istirahat",
         "desc": "Konsep work-life balance versi pelajar untuk mengurangi stres akibat les berlebihan.",
         "ex": "Anak sekolah juga butuh waktu main dan tidur, harus ada keseimbangan belajar."
-      }
+      },
+      "romanization": "seurabael",
+      "phonetic_respelling": "SEU-RAH-BEHL"
     },
     {
       "id": 84,
       "word": "일태기",
-      "pronunciation": "[일태기]",
+      "pronunciation": "[iltaegi]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅌㄱ",
       "era": "smartphone",
@@ -4433,12 +4599,14 @@
         "slang": "Fase jenuh kerja / Bosan sama rutinitas kantor",
         "desc": "Kondisi mirip fase jenuh pacaran tapi menimpa pekerjaan, hilang semangat sama sekali untuk ngantor.",
         "ex": "Tiap dengar alarm pagi rasanya pengen nangis, lagi kena fase jenuh kerja banget."
-      }
+      },
+      "romanization": "iltaegi",
+      "phonetic_respelling": "EEL-TEH-GEE"
     },
     {
       "id": 85,
       "word": "퇴준생",
-      "pronunciation": "[퇴준생]",
+      "pronunciation": "[toejunsaeng]",
       "part_of_speech": "명사",
       "chosung": "ㅌㅈㅅ",
       "era": "smartphone",
@@ -4485,12 +4653,14 @@
         "slang": "Karyawan siap-siap resign / Pencari kerja terselubung",
         "desc": "Karyawan yang meski baru masuk kerja tapi sudah sibuk upgrade skill diam-diam untuk pindah kantor.",
         "ex": "Baru 3 bulan kerja tapi tiap malam sibuk bikin portofolio baru buat resign tahun depan."
-      }
+      },
+      "romanization": "toejunsaeng",
+      "phonetic_respelling": "TWEH-JOON-SEHNG"
     },
     {
       "id": 86,
       "word": "내로남불",
-      "pronunciation": "[내로남불]",
+      "pronunciation": "[naeronambul]",
       "part_of_speech": "명사 / 사자성어풍",
       "chosung": "ㄴㄹㄴㅂ",
       "era": "smartphone",
@@ -4537,12 +4707,14 @@
         "slang": "Standar ganda / Giliran gue boleh, giliran lu salah",
         "desc": "Sindiran pedas untuk orang munafik yang membenarkan kesalahannya sendiri tapi menghakimi orang lain.",
         "ex": "Bos telat dianggap biasa, giliran anak buah telat 2 menit langsung dipotong gaji. Standar ganda banget."
-      }
+      },
+      "romanization": "naeronambul",
+      "phonetic_respelling": "NEH-roh-nahm-bool"
     },
     {
       "id": 87,
       "word": "가심비",
-      "pronunciation": "[가심비]",
+      "pronunciation": "[gasimbi]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅅㅂ",
       "era": "smartphone",
@@ -4589,12 +4761,14 @@
         "slang": "Kepuasan batin sebanding dengan harga",
         "desc": "Tren belanja yang lebih mementingkan kepuasan emosional dan self-reward ketimbang murahnya barang.",
         "ex": "Mahal dikit gak apa-apa, yang penting hati puas dan senang sebagai self-reward."
-      }
+      },
+      "romanization": "gasimbi",
+      "phonetic_respelling": "GAH-SEEM-BEE"
     },
     {
       "id": 88,
       "word": "주린이",
-      "pronunciation": "[주리니]",
+      "pronunciation": "[jurini]",
       "part_of_speech": "명사",
       "chosung": "ㅈㄹㅇ",
       "era": "smartphone",
@@ -4641,12 +4815,14 @@
         "slang": "Investor pemula di pasar saham",
         "desc": "Gabungan kata 'saham' dan 'anak-anak', julukan imut untuk pemula yang baru belajar trading saham.",
         "ex": "Belum ngerti istilah pasar modal, masih anak bawang di dunia saham nih."
-      }
+      },
+      "romanization": "jurini",
+      "phonetic_respelling": "JOO-REEN-EE"
     },
     {
       "id": 89,
       "word": "취존",
-      "pronunciation": "[취존]",
+      "pronunciation": "[chwijon]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㅊㅈ",
       "era": "latte",
@@ -4693,12 +4869,14 @@
         "slang": "Hargai selera orang / Jangan mencela hobi",
         "desc": "Singkatan dari 'Hormati selera orang', prinsip netizen agar tidak menghakimi hobi unik orang lain.",
         "ex": "Selama gak ngerugiin orang lain, tolong hargai selera masing-masing ya."
-      }
+      },
+      "romanization": "chwijon",
+      "phonetic_respelling": "CHWEE-JOHN"
     },
     {
       "id": 90,
       "word": "모태솔로",
-      "pronunciation": "[모태쏠로]",
+      "pronunciation": "[motaesolro]",
       "part_of_speech": "명사",
       "chosung": "ㅁㅌㅅㄹ",
       "era": "latte",
@@ -4745,12 +4923,14 @@
         "slang": "Jomblo dari lahir / Belum pernah pacaran seumur hidup",
         "desc": "Istilah kocak untuk orang yang sejak lahir sampai dewasa belum pernah merasakan pacaran.",
         "ex": "Udah 22 tahun jomblo dari lahir, sekali diajak kencan langsung panik."
-      }
+      },
+      "romanization": "motaesolro",
+      "phonetic_respelling": "MOH-TEH-SOHL-ROH"
     },
     {
       "id": 91,
       "word": "금사빠",
-      "pronunciation": "[금사빠]",
+      "pronunciation": "[geumsappa]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅅㅃ",
       "era": "latte",
@@ -4797,12 +4977,14 @@
         "slang": "Gampang baper / Baru kenal langsung jatuh cinta",
         "desc": "Sebutan untuk orang yang hatinya lemah dan sangat cepat jatuh cinta cuma karena hal sepele.",
         "ex": "Baru disenyumin dikit udah mikir doi naksir, emang dasar gampang baper."
-      }
+      },
+      "romanization": "geumsappa",
+      "phonetic_respelling": "GEUM-SAH-PPAH"
     },
     {
       "id": 92,
       "word": "아햏햏",
-      "pronunciation": "[아햏햏]",
+      "pronunciation": "[ahaethaet]",
       "part_of_speech": "감탄사",
       "chosung": "ㅇㅎㅎ",
       "era": "latte",
@@ -4849,12 +5031,14 @@
         "slang": "A-haeh-haeh / Helaan nafas pasrah era awal internet",
         "desc": "Ungkapan legendaris awal 2000-an yang menggambarkan perasaan pasrah dan ikhlas tingkat dewa saat tertimpa sial.",
         "ex": "Tugas kuliah kehapus semua tapi hati malah tenang banget... inilah tingkat kepasrahan A-haeh-haeh."
-      }
+      },
+      "romanization": "ahaethaet",
+      "phonetic_respelling": "AH-HEHT-HEHT"
     },
     {
       "id": 93,
       "word": "싱하형",
-      "pronunciation": "[싱하형]",
+      "pronunciation": "[singhahyeong]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅎㅎ",
       "era": "latte",
@@ -4901,12 +5085,14 @@
         "slang": "Bang Sing-ha / Bos preman meme era 2000-an",
         "desc": "Karakter meme legendaris berwajah Bruce Lee dengan ancaman khas: 'Gue kasih 10 detik kumpul di bawah jembatan!'",
         "ex": "Bang Sing-ha udah marah, 10 detik lu gak nongol di bawah jembatan abis lu!"
-      }
+      },
+      "romanization": "singhahyeong",
+      "phonetic_respelling": "SEENG-HAH-HYUHNG"
     },
     {
       "id": 94,
       "word": "폐인",
-      "pronunciation": "[폐인]",
+      "pronunciation": "[pyein]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅇ",
       "era": "latte",
@@ -4953,12 +5139,14 @@
         "slang": "Nolep anak warnet / Pecandu game PC 2000-an",
         "desc": "Julukan untuk anak warnet era 2000-an yang begadang main game StarCraft berhari-hari sambil makan mie instan.",
         "ex": "Ngemil mie instan sambil begadang main game di warnet seharian, bener-bener nolep sejati."
-      }
+      },
+      "romanization": "pyein",
+      "phonetic_respelling": "PYEH-EEN"
     },
     {
       "id": 95,
       "word": "따봉",
-      "pronunciation": "[따봉]",
+      "pronunciation": "[ttabong]",
       "part_of_speech": "감탄사 / 명사",
       "chosung": "ㄸㅂ",
       "era": "latte",
@@ -5005,12 +5193,14 @@
         "slang": "Dda-bong! / Mantap jempolan!",
         "desc": "Berasal dari bahasa Portugis 'Está bom' lewat iklan jadul 1989, menjadi simbol acungan jempol paling legendaris di Korea.",
         "ex": "Masakan ibu hari ini beneran Dda-bong, mantap dapat dua jempol!"
-      }
+      },
+      "romanization": "ttabong",
+      "phonetic_respelling": "TTAH-BOHNG"
     },
     {
       "id": 96,
       "word": "플렉스",
-      "pronunciation": "[플렉스]",
+      "pronunciation": "[peulrekseu]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅍㄹㅅ",
       "era": "smartphone",
@@ -5057,12 +5247,14 @@
         "slang": "Flexing / Pamer barang mewah",
         "desc": "Istilah hip-hop yang merujuk pada aksi belanja barang bermerek mahal lalu dipamerkan ke medsos.",
         "ex": "Gajian pertama langsung flexing beliin orang tua jaket branded mahal."
-      }
+      },
+      "romanization": "peulrekseu",
+      "phonetic_respelling": "PEUL-REHK-SEU"
     },
     {
       "id": 97,
       "word": "돈쭐",
-      "pronunciation": "[돈쭐]",
+      "pronunciation": "[donjjul]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㄷㅉ",
       "era": "shorts",
@@ -5109,12 +5301,14 @@
         "slang": "Beli borong untuk balas kebaikan toko",
         "desc": "Aksi memborong dagangan toko yang suka beramal agar pemiliknya untung besar sebagai bentuk apresiasi warga.",
         "ex": "Pemilik warung sering ngasih makan gratis ke anak yatim, ayo kita borong habis dagangannya!"
-      }
+      },
+      "romanization": "donjjul",
+      "phonetic_respelling": "DON-jjool"
     },
     {
       "id": 98,
       "word": "텍스트 힙",
-      "pronunciation": "[텍스트 힙]",
+      "pronunciation": "[tekseuteu hip]",
       "part_of_speech": "명사",
       "chosung": "ㅌㅅㅌㅎ",
       "era": "shorts",
@@ -5161,12 +5355,14 @@
         "slang": "Tren baca buku fisik aesthetic (Text Hip)",
         "desc": "Tren Gen Z tahun 2026 yang detox dari video pendek dan kembali membaca buku cetak sebagai gaya hidup keren.",
         "ex": "Bawa novel fisik sambil ngopi di kafe hits lagi jadi tren Text Hip paling kekinian."
-      }
+      },
+      "romanization": "tekseuteu hip",
+      "phonetic_respelling": "TEHK-SEU-TEU HEEP"
     },
     {
       "id": 99,
       "word": "워라밸",
-      "pronunciation": "[워라밸]",
+      "pronunciation": "[worabael]",
       "part_of_speech": "명사",
       "chosung": "ㅇㄹㅂ",
       "era": "smartphone",
@@ -5213,12 +5409,14 @@
         "slang": "Work-Life Balance / Keseimbangan hidup dan kerja",
         "desc": "Prioritas utama pekerja zaman now yang menolak lembur gila-gilaan demi kesehatan mental.",
         "ex": "Gaji gede tapi gak ada waktu tidur buat apa, gue pilih work-life balance."
-      }
+      },
+      "romanization": "worabael",
+      "phonetic_respelling": "WUH-RAH-BEHL"
     },
     {
       "id": 100,
       "word": "삼포세대",
-      "pronunciation": "[삼포세대]",
+      "pronunciation": "[samposedae]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅍㅅㄷ",
       "era": "smartphone",
@@ -5265,12 +5463,14 @@
         "slang": "Generasi Sampo / Menyerah pada cinta, nikah, dan anak",
         "desc": "Istilah sosiologis untuk anak muda yang terpaksa merelakan pacaran, menikah, dan punya anak karena beban ekonomi.",
         "ex": "Beban hidup yang berat bikin generasi sekarang pasrah dan menyerah untuk menikah."
-      }
+      },
+      "romanization": "samposedae",
+      "phonetic_respelling": "SAHM-POH-SEH-DEH"
     },
     {
       "id": 101,
       "word": "삐끼삐끼",
-      "pronunciation": "[삐끼삐끼]",
+      "pronunciation": "[ppiki-ppiki]",
       "part_of_speech": "명사 / 챌린지 밈",
       "chosung": "ㅃㄲㅃㄲ",
       "era": "shorts",
@@ -5298,12 +5498,14 @@
         "slang": "Pikipiki Dance / Outsong Meme",
         "desc": "A viral K-baseball cheerleader dance craze performed with a chic, poker-faced vibe to electronic beats.",
         "example": "A: Have you seen the Pikipiki dance trend on TikTok?\nB: Yes, the nonchalant vibe is super addictive!"
-      }
+      },
+      "romanization": "ppiki-ppiki",
+      "phonetic_respelling": "PEE-kee-PEE-kee"
     },
     {
       "id": 102,
       "word": "원영적 사고",
-      "pronunciation": "[원영적 사고]",
+      "pronunciation": "[wonyoungjeok sago]",
       "part_of_speech": "명사 / 마인드셋",
       "chosung": "ㅇㅇㅈㅅㄱ",
       "era": "shorts",
@@ -5331,12 +5533,14 @@
         "slang": "Wonyoung Thinking / Ultra-optimism",
         "desc": "A hyper-positive mindset popularized by idol Jang Wonyoung, reframing every misfortune into a lucky blessing.",
         "example": "A: My train got delayed!\nB: Use Wonyoung thinking: now you get 20 extra minutes to read your favorite book!"
-      }
+      },
+      "romanization": "wonyoungjeok sago",
+      "phonetic_respelling": "WON-young-juk SAH-goh"
     },
     {
       "id": 103,
       "word": "아파트 (APT)",
-      "pronunciation": "[아파트]",
+      "pronunciation": "[apateu APT]",
       "part_of_speech": "명사 / 글로벌 신드롬",
       "chosung": "ㅇㅍㅌ",
       "era": "shorts",
@@ -5364,12 +5568,14 @@
         "slang": "APT Meme / Korean Drinking Game Song",
         "desc": "A global viral hit by ROSÉ and Bruno Mars based on a classic Korean social drinking game.",
         "example": "A: Apateu, apateu! Everyone in the party is chanting Korean now!\nB: That song is undeniably infectious."
-      }
+      },
+      "romanization": "apateu APT",
+      "phonetic_respelling": "AH-PAH-TEU A-P-T"
     },
     {
       "id": 104,
       "word": "흑백요리사",
-      "pronunciation": "[흑백요리사]",
+      "pronunciation": "[heukbaekyorisa]",
       "part_of_speech": "명사 / 비유적 표현",
       "chosung": "ㅎㅂㅇㄹㅅ",
       "era": "shorts",
@@ -5397,12 +5603,14 @@
         "slang": "Culinary Class Wars / Blind Showdown",
         "desc": "A metaphor for a pure merit-based clash between renowned elites and hidden underdogs.",
         "example": "A: This hackathon is like Culinary Class Wars: juniors beating senior tech leads purely on code quality!"
-      }
+      },
+      "romanization": "heukbaekyorisa",
+      "phonetic_respelling": "HEUK-BEHK-YOH-REE-SAH"
     },
     {
       "id": 105,
       "word": "마라탕후루",
-      "pronunciation": "[마라탕후루]",
+      "pronunciation": "[maratanghuru]",
       "part_of_speech": "명사 / 숏폼 챌린지",
       "chosung": "ㅁㄹㅌㅎㄹ",
       "era": "shorts",
@@ -5430,12 +5638,14 @@
         "slang": "Malatanghulu Trend",
         "desc": "A hyper-popular teen combo of spicy hot pot followed by sugar-coated fruit skewers, driven by a viral TikTok dance song.",
         "example": "A: Let's do the Malatanghulu combo after class today!\nB: Sweet, savory, and pure dopamine!"
-      }
+      },
+      "romanization": "maratanghuru",
+      "phonetic_respelling": "MAH-RAH-TAHNG-HOO-ROO"
     },
     {
       "id": 106,
       "word": "꽁꽁 얼어붙은 한강 위로",
-      "pronunciation": "[꽁꽁 얼어붙은 한강 위로]",
+      "pronunciation": "[kkongkkong eoleobuteun hangang wiro]",
       "part_of_speech": "문장형 밈 / 댄스 챌린지",
       "chosung": "ㄲㄲㅇㅇㅂㅇㅎㄱㅇㄹ",
       "era": "shorts",
@@ -5462,12 +5672,14 @@
         "slang": "Frozen Han River Cat Walk",
         "desc": "A viral dance challenge originating from a deadpan Korean news clip reporting on a cat walking over the frozen Han River.",
         "example": "A: Even top K-pop idols did the frozen Han River cat walk challenge on Reels!"
-      }
+      },
+      "romanization": "kkongkkong eoleobuteun hangang wiro",
+      "phonetic_respelling": "KKOHNG-KKOHNG UHL-UH-BOOT-EUN HAHN-GAHNG WEE-ROH"
     },
     {
       "id": 107,
       "word": "쇠맛",
-      "pronunciation": "[쇠맏]",
+      "pronunciation": "[soemat]",
       "part_of_speech": "명사 / 스타일 수식어",
       "chosung": "ㅅㅁ",
       "era": "shorts",
@@ -5495,12 +5707,14 @@
         "slang": "Metallic Flavor / Iron Taste",
         "desc": "A distinctive K-pop aesthetic characterized by heavy, aggressive metallic synths and futuristic cyberpunk visuals.",
         "example": "A: That new release gives off pure metallic flavor vibes, love the heavy bass!"
-      }
+      },
+      "romanization": "soemat",
+      "phonetic_respelling": "SWEH-MAHT"
     },
     {
       "id": 108,
       "word": "맑눈광",
-      "pronunciation": "[망눈광]",
+      "pronunciation": "[maknungwang]",
       "part_of_speech": "명사",
       "chosung": "ㅁㄴㄱ",
       "era": "shorts",
@@ -5527,12 +5741,14 @@
         "slang": "Clear-Eyed Maniac",
         "desc": "A person who looks utterly innocent with wide, clear eyes, but harbors unexpected craziness or relentless stubbornness.",
         "example": "A: Watch out for the new intern, she's a total clear-eyed maniac who never backs down politely."
-      }
+      },
+      "romanization": "maknungwang",
+      "phonetic_respelling": "MAHK-NOON-GWAHNG"
     },
     {
       "id": 109,
       "word": "저메추",
-      "pronunciation": "[저메추]",
+      "pronunciation": "[jeomechu]",
       "part_of_speech": "명사 / 축약어",
       "chosung": "ㅈㅁㅊ",
       "era": "shorts",
@@ -5560,12 +5776,14 @@
         "slang": "Dinner Reco",
         "desc": "Abbreviation for 'Dinner Menu Recommendation' used daily in group chats and social media.",
         "example": "A: Guys, need a quick dinner reco after this crazy overtime work!"
-      }
+      },
+      "romanization": "jeomechu",
+      "phonetic_respelling": "JUH-MEH-CHOO"
     },
     {
       "id": 110,
       "word": "혼코노",
-      "pronunciation": "[혼코노]",
+      "pronunciation": "[honkono]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅋㄴ",
       "era": "shorts",
@@ -5592,12 +5810,14 @@
         "slang": "Solo Coin Karaoke",
         "desc": "Going alone to a pay-per-song coin karaoke booth to sing your heart out stress-free.",
         "example": "A: Doing solo coin karaoke after work is my ultimate therapy session."
-      }
+      },
+      "romanization": "honkono",
+      "phonetic_respelling": "HOHN-KOH-NOH"
     },
     {
       "id": 111,
       "word": "무지출 챌린지",
-      "pronunciation": "[무지출 챌린지]",
+      "pronunciation": "[mujichul chaelrinji]",
       "part_of_speech": "명사",
       "chosung": "ㅁㅈㅊㅊㄹㅈ",
       "era": "shorts",
@@ -5623,12 +5843,14 @@
         "slang": "Zero Spend Challenge",
         "desc": "Korean urban trend term for '무지출 소비 절제 운동'.",
         "example": "A: Did you hear about '무지출 챌린지' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "mujichul chaelrinji",
+      "phonetic_respelling": "MOO-JEE-CHOOL CHEHL-REEN-JEE"
     },
     {
       "id": 112,
       "word": "거지방",
-      "pronunciation": "[거지방]",
+      "pronunciation": "[geojibang]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅈㅂ",
       "era": "shorts",
@@ -5654,12 +5876,14 @@
         "slang": "Broke Chatroom",
         "desc": "Korean urban trend term for '절약 장려 익명 대화방'.",
         "example": "A: Did you hear about '거지방' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "geojibang",
+      "phonetic_respelling": "GUH-JEE-BAHNG"
     },
     {
       "id": 113,
       "word": "시성비",
-      "pronunciation": "[시성비]",
+      "pronunciation": "[siseongbi]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅅㅂ",
       "era": "shorts",
@@ -5685,12 +5909,14 @@
         "slang": "Time-Cost Ratio",
         "desc": "Korean urban trend term for '시간 효율성, 시간 대비 효용'.",
         "example": "A: Did you hear about '시성비' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "siseongbi",
+      "phonetic_respelling": "SEE-SUHNG-BEE"
     },
     {
       "id": 114,
       "word": "디토 소비",
-      "pronunciation": "[디토 소비]",
+      "pronunciation": "[dito sobi]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅌㅅㅂ",
       "era": "shorts",
@@ -5716,12 +5942,14 @@
         "slang": "Ditto Consumption",
         "desc": "Korean urban trend term for '취향 추종 구매, 동조 소비'.",
         "example": "A: Did you hear about '디토 소비' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "dito sobi",
+      "phonetic_respelling": "DEE-TOH SOH-BEE"
     },
     {
       "id": 115,
       "word": "도파민 중독",
-      "pronunciation": "[도파민 중독]",
+      "pronunciation": "[dopamin jungdok]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅍㅁㅈㄷ",
       "era": "shorts",
@@ -5747,12 +5975,14 @@
         "slang": "Dopamine Addiction",
         "desc": "Korean urban trend term for '즉각적 쾌락 추구 편향'.",
         "example": "A: Did you hear about '도파민 중독' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "dopamin jungdok",
+      "phonetic_respelling": "DOH-PAH-MEEN JOONG-DOHK"
     },
     {
       "id": 116,
       "word": "육각형 인간",
-      "pronunciation": "[육각형 인간]",
+      "pronunciation": "[yukgakhyeong ingan]",
       "part_of_speech": "명사",
       "chosung": "ㅇㄱㅎㅇㄱ",
       "era": "shorts",
@@ -5778,12 +6008,14 @@
         "slang": "Hexagonal Person",
         "desc": "Korean urban trend term for '모든 역량을 고루 갖춘 완벽한 인물'.",
         "example": "A: Did you hear about '육각형 인간' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "yukgakhyeong ingan",
+      "phonetic_respelling": "YOOK-GAHK-HYUHNG EEN-GAHN"
     },
     {
       "id": 117,
       "word": "요노족",
-      "pronunciation": "[요노족]",
+      "pronunciation": "[yonojok]",
       "part_of_speech": "명사",
       "chosung": "ㅇㄴㅈ",
       "era": "shorts",
@@ -5809,12 +6041,14 @@
         "slang": "YONO Tribe",
         "desc": "Korean urban trend term for '단순 필수 소비 지향 세대'.",
         "example": "A: Did you hear about '요노족' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "yonojok",
+      "phonetic_respelling": "YOH-NOH-JOHK"
     },
     {
       "id": 118,
       "word": "플러팅",
-      "pronunciation": "[플러팅]",
+      "pronunciation": "[peulreoting]",
       "part_of_speech": "명사",
       "chosung": "ㅍㄹㅌ",
       "era": "shorts",
@@ -5840,12 +6074,14 @@
         "slang": "Flirting",
         "desc": "Korean urban trend term for '호감 표현, 추파 던지기'.",
         "example": "A: Did you hear about '플러팅' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "peulreoting",
+      "phonetic_respelling": "PEUL-RUH-TEENG"
     },
     {
       "id": 119,
       "word": "가스라이팅",
-      "pronunciation": "[가스라이팅]",
+      "pronunciation": "[gaseuraiting]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅅㄹㅇㅌ",
       "era": "shorts",
@@ -5871,12 +6107,14 @@
         "slang": "Gaslighting",
         "desc": "Korean urban trend term for '심리적 조작 지배'.",
         "example": "A: Did you hear about '가스라이팅' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "gaseuraiting",
+      "phonetic_respelling": "GAH-SEU-RAH-EE-TEENG"
     },
     {
       "id": 120,
       "word": "뇌빼기",
-      "pronunciation": "[뇌빼기]",
+      "pronunciation": "[noeppaegi]",
       "part_of_speech": "명사",
       "chosung": "ㄴㅃㄱ",
       "era": "shorts",
@@ -5902,12 +6140,14 @@
         "slang": "Brain-off Relaxing",
         "desc": "Korean urban trend term for '생각 비우기, 무념무상 휴식'.",
         "example": "A: Did you hear about '뇌빼기' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "noeppaegi",
+      "phonetic_respelling": "NWEH-PPEH-GEE"
     },
     {
       "id": 121,
       "word": "버추얼 아이돌",
-      "pronunciation": "[버추얼 아이돌]",
+      "pronunciation": "[beochueol aidol]",
       "part_of_speech": "명사",
       "chosung": "ㅂㅊㅇㅇㅇㄷ",
       "era": "shorts",
@@ -5933,12 +6173,14 @@
         "slang": "Virtual Idol",
         "desc": "Korean urban trend term for '가상 입체 아이돌 그룹'.",
         "example": "A: Did you hear about '버추얼 아이돌' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "beochueol aidol",
+      "phonetic_respelling": "BUH-CHOO-UHL AH-EE-DOHL"
     },
     {
       "id": 122,
       "word": "딸깍충",
-      "pronunciation": "[딸깍충]",
+      "pronunciation": "[ttalkkakchung]",
       "part_of_speech": "명사 (은어)",
       "chosung": "ㄸㄲㅊ",
       "era": "shorts",
@@ -5964,12 +6206,14 @@
         "slang": "Clicker Freeloader",
         "desc": "Korean urban trend term for '원클릭 생성 편승자'.",
         "example": "A: Did you hear about '딸깍충' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ttalkkakchung",
+      "phonetic_respelling": "TTAHL-KKAHK-CHOONG"
     },
     {
       "id": 123,
       "word": "바이브 코딩",
-      "pronunciation": "[바이브 코딩]",
+      "pronunciation": "[baibeu koding]",
       "part_of_speech": "명사 / 개발 신조어",
       "chosung": "ㅂㅇㅂㅋㄷ",
       "era": "shorts",
@@ -5995,12 +6239,14 @@
         "slang": "Vibe Coding",
         "desc": "Korean urban trend term for '직관형 AI 협업 개발'.",
         "example": "A: Did you hear about '바이브 코딩' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "baibeu koding",
+      "phonetic_respelling": "BAH-EE-BEU KOH-DEENG"
     },
     {
       "id": 124,
       "word": "탈룰라",
-      "pronunciation": "[탈룰라]",
+      "pronunciation": "[talrulra]",
       "part_of_speech": "명사 / 밈",
       "chosung": "ㅌㄹㄹ",
       "era": "shorts",
@@ -6026,12 +6272,14 @@
         "slang": "Tallulah Moment",
         "desc": "Korean urban trend term for '부모 언급에 따른 즉각적 화제 수습'.",
         "example": "A: Did you hear about '탈룰라' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "talrulra",
+      "phonetic_respelling": "TAHL-ROOL-RAH"
     },
     {
       "id": 125,
       "word": "삼귀다",
-      "pronunciation": "[삼귀다]",
+      "pronunciation": "[samgwida]",
       "part_of_speech": "동사",
       "chosung": "ㅅㄱㄷ",
       "era": "shorts",
@@ -6057,12 +6305,14 @@
         "slang": "Pre-dating / Almost Dating",
         "desc": "Korean urban trend term for '사귀기 전 썸 타는 단계'.",
         "example": "A: Did you hear about '삼귀다' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "samgwida",
+      "phonetic_respelling": "SAHM-GWEE-DAH"
     },
     {
       "id": 126,
       "word": "별다줄",
-      "pronunciation": "[별다줄]",
+      "pronunciation": "[byeoldajul]",
       "part_of_speech": "축약어",
       "chosung": "ㅂㄷㅈ",
       "era": "shorts",
@@ -6088,12 +6338,14 @@
         "slang": "Shortening Everything",
         "desc": "Korean urban trend term for '지나친 약어 사용에 대한 한탄'.",
         "example": "A: Did you hear about '별다줄' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "byeoldajul",
+      "phonetic_respelling": "BYUHL-DAH-JOOL"
     },
     {
       "id": 127,
       "word": "만반잘부",
-      "pronunciation": "[만반잘부]",
+      "pronunciation": "[manbanjalbu]",
       "part_of_speech": "축약어 / 인사말",
       "chosung": "ㅁㅂㅈㅂ",
       "era": "shorts",
@@ -6119,12 +6371,14 @@
         "slang": "Nice to meet you (Abbr.)",
         "desc": "Korean urban trend term for '만나서 반갑습니다 잘 부탁드립니다'.",
         "example": "A: Did you hear about '만반잘부' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "manbanjalbu",
+      "phonetic_respelling": "MAHN-BAHN-JAHL-BOO"
     },
     {
       "id": 128,
       "word": "오뱅알",
-      "pronunciation": "[오뱅알]",
+      "pronunciation": "[obaengal]",
       "part_of_speech": "축약어",
       "chosung": "ㅇㅂㅇ",
       "era": "shorts",
@@ -6150,12 +6404,14 @@
         "slang": "Great Stream Today",
         "desc": "Korean urban trend term for '오늘 방송 대단히 유익했습니다'.",
         "example": "A: Did you hear about '오뱅알' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "obaengal",
+      "phonetic_respelling": "OH-BEHNG-AHL"
     },
     {
       "id": 129,
       "word": "오운완",
-      "pronunciation": "[오운완]",
+      "pronunciation": "[ounwan]",
       "part_of_speech": "축약어",
       "chosung": "ㅇㅇㅇ",
       "era": "shorts",
@@ -6181,12 +6437,14 @@
         "slang": "Workout Done Today",
         "desc": "Korean urban trend term for '오늘의 운동 완수'.",
         "example": "A: Did you hear about '오운완' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ounwan",
+      "phonetic_respelling": "OH-OON-WAHN"
     },
     {
       "id": 130,
       "word": "오하운",
-      "pronunciation": "[오하운]",
+      "pronunciation": "[ohaun]",
       "part_of_speech": "축약어",
       "chosung": "ㅇㅎㅇ",
       "era": "shorts",
@@ -6212,12 +6470,14 @@
         "slang": "Daily Exercise Routine",
         "desc": "Korean urban trend term for '오늘 하루의 건강 운동'.",
         "example": "A: Did you hear about '오하운' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ohaun",
+      "phonetic_respelling": "OH-HAH-OON"
     },
     {
       "id": 131,
       "word": "미라클 모닝",
-      "pronunciation": "[미라클 모닝]",
+      "pronunciation": "[mirakeul moning]",
       "part_of_speech": "명사",
       "chosung": "ㅁㄹㅋㅁㄴ",
       "era": "shorts",
@@ -6243,12 +6503,14 @@
         "slang": "Miracle Morning",
         "desc": "Korean urban trend term for '기적의 아침 자기계발'.",
         "example": "A: Did you hear about '미라클 모닝' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "mirakeul moning",
+      "phonetic_respelling": "MEE-RAH-KEUL MOH-NEENG"
     },
     {
       "id": 132,
       "word": "갓생러",
-      "pronunciation": "[갓생러]",
+      "pronunciation": "[gatsaengreo]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅅㄹ",
       "era": "shorts",
@@ -6274,12 +6536,14 @@
         "slang": "God-life Achiever",
         "desc": "Korean urban trend term for '모범적이고 성실한 삶을 사는 사람'.",
         "example": "A: Did you hear about '갓생러' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "gatsaengreo",
+      "phonetic_respelling": "GAHT-SEHNG-RUH"
     },
     {
       "id": 133,
       "word": "무물보",
-      "pronunciation": "[무물보]",
+      "pronunciation": "[mumulbo]",
       "part_of_speech": "명사 / 축약어",
       "chosung": "ㅁㅁㅂ",
       "era": "shorts",
@@ -6305,12 +6569,14 @@
         "slang": "Ask Me Anything",
         "desc": "Korean urban trend term for '무엇이든 물어보세요'.",
         "example": "A: Did you hear about '무물보' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "mumulbo",
+      "phonetic_respelling": "MOO-MOOL-BOH"
     },
     {
       "id": 134,
       "word": "좋댓구알",
-      "pronunciation": "[좋댓구알]",
+      "pronunciation": "[jotdaetgual]",
       "part_of_speech": "축약어",
       "chosung": "ㅈㄷㄱㅇ",
       "era": "shorts",
@@ -6336,12 +6602,14 @@
         "slang": "Like, Comment, Subscribe",
         "desc": "Korean urban trend term for '좋아요·댓글·구독·알림설정 요청'.",
         "example": "A: Did you hear about '좋댓구알' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jotdaetgual",
+      "phonetic_respelling": "JOHT-DEHT-GOO-AHL"
     },
     {
       "id": 135,
       "word": "졌잘싸",
-      "pronunciation": "[졌잘싸]",
+      "pronunciation": "[jyeotjalssa]",
       "part_of_speech": "축약어",
       "chosung": "ㅈㅈㅆ",
       "era": "shorts",
@@ -6367,12 +6635,14 @@
         "slang": "Lost But Fought Well",
         "desc": "Korean urban trend term for '패배했으나 훌륭한 승부였습니다'.",
         "example": "A: Did you hear about '졌잘싸' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jyeotjalssa",
+      "phonetic_respelling": "JYUHT-JAHL-SSAH"
     },
     {
       "id": 136,
       "word": "킹리적 갓심",
-      "pronunciation": "[킹리적 갓심]",
+      "pronunciation": "[kingrijeok gatsim]",
       "part_of_speech": "명사",
       "chosung": "ㅋㄹㅈㄱㅅ",
       "era": "shorts",
@@ -6398,12 +6668,14 @@
         "slang": "Totally Reasonable Suspicion",
         "desc": "Korean urban trend term for '지극히 타당하고 논리적인 의심'.",
         "example": "A: Did you hear about '킹리적 갓심' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "kingrijeok gatsim",
+      "phonetic_respelling": "KEENG-REE-JUHK GAHT-SEEM"
     },
     {
       "id": 137,
       "word": "댕댕이",
-      "pronunciation": "[댕댕이]",
+      "pronunciation": "[daengdaengi]",
       "part_of_speech": "명사 / 야민정음",
       "chosung": "ㄷㄷㅇ",
       "era": "shorts",
@@ -6429,12 +6701,14 @@
         "slang": "Puppy / Doggo",
         "desc": "Korean urban trend term for '귀여운 강아지'.",
         "example": "A: Did you hear about '댕댕이' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "daengdaengi",
+      "phonetic_respelling": "DEHNG-DEHNG-EE"
     },
     {
       "id": 138,
       "word": "떼껄룩",
-      "pronunciation": "[떼껄룩]",
+      "pronunciation": "[ttekkeolruk]",
       "part_of_speech": "명사",
       "chosung": "ㄸㄲㄹ",
       "era": "shorts",
@@ -6460,12 +6734,14 @@
         "slang": "Cat / Kitty",
         "desc": "Korean urban trend term for '사랑스러운 고양이'.",
         "example": "A: Did you hear about '떼껄룩' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ttekkeolruk",
+      "phonetic_respelling": "TTEH-KKUHL-ROOK"
     },
     {
       "id": 139,
       "word": "커엽다",
-      "pronunciation": "[커엽다]",
+      "pronunciation": "[keoyeopda]",
       "part_of_speech": "형용사 / 야민정음",
       "chosung": "ㅋㅇㄷ",
       "era": "shorts",
@@ -6491,12 +6767,14 @@
         "slang": "Super Cute",
         "desc": "Korean urban trend term for '대단히 귀엽고 사랑스럽다'.",
         "example": "A: Did you hear about '커엽다' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "keoyeopda",
+      "phonetic_respelling": "KUH-YUHP-DAH"
     },
     {
       "id": 140,
       "word": "머박",
-      "pronunciation": "[머박]",
+      "pronunciation": "[meobak]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㅁㅂ",
       "era": "shorts",
@@ -6522,12 +6800,14 @@
         "slang": "Jackpot / Awesome",
         "desc": "Korean urban trend term for '대단히 놀라운 성공이나 경사'.",
         "example": "A: Did you hear about '머박' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "meobak",
+      "phonetic_respelling": "MUH-BAHK"
     },
     {
       "id": 141,
       "word": "롬곡",
-      "pronunciation": "[롬곡]",
+      "pronunciation": "[romgok]",
       "part_of_speech": "명사 / 언어유희",
       "chosung": "ㄹㄱ",
       "era": "shorts",
@@ -6553,12 +6833,14 @@
         "slang": "Tears of Emotion",
         "desc": "Korean urban trend term for '슬픔이나 감격의 눈물'.",
         "example": "A: Did you hear about '롬곡' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "romgok",
+      "phonetic_respelling": "ROHM-GOHK"
     },
     {
       "id": 142,
       "word": "띵작",
-      "pronunciation": "[띵작]",
+      "pronunciation": "[ttingjak]",
       "part_of_speech": "명사 / 야민정음",
       "chosung": "ㄸㅈ",
       "era": "shorts",
@@ -6584,12 +6866,14 @@
         "slang": "Masterpiece",
         "desc": "Korean urban trend term for '불후의 명작, 위대한 걸작'.",
         "example": "A: Did you hear about '띵작' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ttingjak",
+      "phonetic_respelling": "TTEENG-JAHK"
     },
     {
       "id": 143,
       "word": "띵곡",
-      "pronunciation": "[띵곡]",
+      "pronunciation": "[ttinggok]",
       "part_of_speech": "명사 / 야민정음",
       "chosung": "ㄸㄱ",
       "era": "shorts",
@@ -6615,12 +6899,14 @@
         "slang": "Masterpiece Song",
         "desc": "Korean urban trend term for '아름답고 훌륭한 명곡'.",
         "example": "A: Did you hear about '띵곡' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ttinggok",
+      "phonetic_respelling": "TTEENG-GOHK"
     },
     {
       "id": 144,
       "word": "맵찔이",
-      "pronunciation": "[맵찔이]",
+      "pronunciation": "[maepjjili]",
       "part_of_speech": "명사",
       "chosung": "ㅁㅉㅇ",
       "era": "shorts",
@@ -6646,12 +6932,14 @@
         "slang": "Spicy Weakling",
         "desc": "Korean urban trend term for '매운 음식을 잘 먹지 못하는 사람'.",
         "example": "A: Did you hear about '맵찔이' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "maepjjili",
+      "phonetic_respelling": "MEHP-JJEEL-EE"
     },
     {
       "id": 145,
       "word": "맵부심",
-      "pronunciation": "[맵부심]",
+      "pronunciation": "[maepbusim]",
       "part_of_speech": "명사",
       "chosung": "ㅁㅂㅅ",
       "era": "shorts",
@@ -6677,12 +6965,14 @@
         "slang": "Spicy Pride",
         "desc": "Korean urban trend term for '매운 음식 섭취에 대한 자부심'.",
         "example": "A: Did you hear about '맵부심' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "maepbusim",
+      "phonetic_respelling": "MEHP-BOO-SEEM"
     },
     {
       "id": 146,
       "word": "순삭",
-      "pronunciation": "[순삭]",
+      "pronunciation": "[sunsak]",
       "part_of_speech": "명사 / 부사",
       "chosung": "ㅅㅅ",
       "era": "shorts",
@@ -6708,12 +6998,14 @@
         "slang": "Instant Disappearance",
         "desc": "Korean urban trend term for '눈 깜짝할 사이에 사라짐'.",
         "example": "A: Did you hear about '순삭' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "sunsak",
+      "phonetic_respelling": "SOON-SAHK"
     },
     {
       "id": 147,
       "word": "혼밥",
-      "pronunciation": "[혼밥]",
+      "pronunciation": "[honbap]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅂ",
       "era": "shorts",
@@ -6739,12 +7031,14 @@
         "slang": "Eating Alone",
         "desc": "Korean urban trend term for '혼자 하는 식사'.",
         "example": "A: Did you hear about '혼밥' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "honbap",
+      "phonetic_respelling": "HOHN-BAHP"
     },
     {
       "id": 148,
       "word": "혼술",
-      "pronunciation": "[혼술]",
+      "pronunciation": "[honsul]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅅ",
       "era": "shorts",
@@ -6770,12 +7064,14 @@
         "slang": "Drinking Alone",
         "desc": "Korean urban trend term for '홀로 마시는 술'.",
         "example": "A: Did you hear about '혼술' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "honsul",
+      "phonetic_respelling": "HOHN-SOOL"
     },
     {
       "id": 149,
       "word": "탕진잼",
-      "pronunciation": "[탕진잼]",
+      "pronunciation": "[tangjinjaem]",
       "part_of_speech": "명사",
       "chosung": "ㅌㅈㅈ",
       "era": "shorts",
@@ -6801,12 +7097,14 @@
         "slang": "Small Splurge Fun",
         "desc": "Korean urban trend term for '소소한 소비를 통한 쾌감'.",
         "example": "A: Did you hear about '탕진잼' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "tangjinjaem",
+      "phonetic_respelling": "TAHNG-JEEN-JEHM"
     },
     {
       "id": 150,
       "word": "빌드업",
-      "pronunciation": "[빌드업]",
+      "pronunciation": "[bildeueop]",
       "part_of_speech": "명사",
       "chosung": "ㅂㄷㅇ",
       "era": "shorts",
@@ -6832,12 +7130,14 @@
         "slang": "Build-up / Setup",
         "desc": "Korean urban trend term for '결과를 위한 사전 포석 및 차분한 전개'.",
         "example": "A: Did you hear about '빌드업' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bildeueop",
+      "phonetic_respelling": "BEEL-DEU-UHP"
     },
     {
       "id": 151,
       "word": "떡상",
-      "pronunciation": "[떡상]",
+      "pronunciation": "[tteoksang]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㄸㅅ",
       "era": "shorts",
@@ -6863,12 +7163,14 @@
         "slang": "Skyrocketing",
         "desc": "Korean urban trend term for '가파른 폭등, 폭발적 인기 급상승'.",
         "example": "A: Did you hear about '떡상' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "tteoksang",
+      "phonetic_respelling": "TTUHK-SAHNG"
     },
     {
       "id": 152,
       "word": "떡락",
-      "pronunciation": "[떡락]",
+      "pronunciation": "[tteokrak]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㄸㄹ",
       "era": "shorts",
@@ -6894,12 +7196,14 @@
         "slang": "Plummeting / Crashing",
         "desc": "Korean urban trend term for '가파른 폭락, 수직 추락'.",
         "example": "A: Did you hear about '떡락' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "tteokrak",
+      "phonetic_respelling": "TTUHK-RAHK"
     },
     {
       "id": 153,
       "word": "존버",
-      "pronunciation": "[존버]",
+      "pronunciation": "[jonbeo]",
       "part_of_speech": "명사 / 동사 (비속어 유래)",
       "chosung": "ㅈㅂ",
       "era": "shorts",
@@ -6925,12 +7229,14 @@
         "slang": "Hodling / Enduring",
         "desc": "Korean urban trend term for '끝까지 끈기 있게 견딤'.",
         "example": "A: Did you hear about '존버' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jonbeo",
+      "phonetic_respelling": "JOHN-BUH"
     },
     {
       "id": 154,
       "word": "영끌",
-      "pronunciation": "[영끌]",
+      "pronunciation": "[yeongkkeul]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅇㄲ",
       "era": "shorts",
@@ -6956,12 +7262,14 @@
         "slang": "Scraping Everything",
         "desc": "Korean urban trend term for '가능한 모든 자원의 총동원'.",
         "example": "A: Did you hear about '영끌' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "yeongkkeul",
+      "phonetic_respelling": "YUHNG-KKEUL"
     },
     {
       "id": 155,
       "word": "패닉바잉",
-      "pronunciation": "[패닉바잉]",
+      "pronunciation": "[paenikbaing]",
       "part_of_speech": "명사",
       "chosung": "ㅍㄴㅂㅇ",
       "era": "shorts",
@@ -6987,12 +7295,14 @@
         "slang": "Panic Buying",
         "desc": "Korean urban trend term for '공황 심리에 기인한 추격 구매'.",
         "example": "A: Did you hear about '패닉바잉' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "paenikbaing",
+      "phonetic_respelling": "PEH-NEEK-BAH-EENG"
     },
     {
       "id": 156,
       "word": "빚투",
-      "pronunciation": "[빚투]",
+      "pronunciation": "[bittu]",
       "part_of_speech": "명사",
       "chosung": "ㅂㅌ",
       "era": "shorts",
@@ -7018,12 +7328,14 @@
         "slang": "Debt-fueled Investing",
         "desc": "Korean urban trend term for '부채를 통한 레버리지 투자'.",
         "example": "A: Did you hear about '빚투' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bittu",
+      "phonetic_respelling": "BEET-TOO"
     },
     {
       "id": 157,
       "word": "벼락거지",
-      "pronunciation": "[벼락거지]",
+      "pronunciation": "[byeorakgeoji]",
       "part_of_speech": "명사",
       "chosung": "ㅂㄹㄱㅈ",
       "era": "shorts",
@@ -7049,12 +7361,14 @@
         "slang": "Sudden Pauper",
         "desc": "Korean urban trend term for '자산 격차로 인한 상대적 빈곤층'.",
         "example": "A: Did you hear about '벼락거지' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "byeorakgeoji",
+      "phonetic_respelling": "BYUH-RAHK-GUH-JEE"
     },
     {
       "id": 158,
       "word": "숏폼 피로증",
-      "pronunciation": "[숏폼 피로증]",
+      "pronunciation": "[syotpom pirojeung]",
       "part_of_speech": "명사",
       "chosung": "ㅅㅍㅍㄹㅈ",
       "era": "shorts",
@@ -7080,12 +7394,14 @@
         "slang": "Shorts Fatigue",
         "desc": "Korean urban trend term for '초단편 영상 과다 소비 피로'.",
         "example": "A: Did you hear about '숏폼 피로증' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "syotpom pirojeung",
+      "phonetic_respelling": "SYOHT-POHM PEE-ROH-JEUNG"
     },
     {
       "id": 159,
       "word": "네카라쿠배",
-      "pronunciation": "[네카라쿠배]",
+      "pronunciation": "[nekarakubae]",
       "part_of_speech": "명사 / 축약어",
       "chosung": "ㄴㅋㄹㅋㅂ",
       "era": "shorts",
@@ -7111,12 +7427,14 @@
         "slang": "Top Korean Tech 5",
         "desc": "Korean urban trend term for '국내 5대 대표 IT 혁신기업군'.",
         "example": "A: Did you hear about '네카라쿠배' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "nekarakubae",
+      "phonetic_respelling": "NEH-KAH-RAH-KOO-BEH"
     },
     {
       "id": 160,
       "word": "당토야",
-      "pronunciation": "[당토야]",
+      "pronunciation": "[dangtoya]",
       "part_of_speech": "명사 / 축약어",
       "chosung": "ㄷㅌㅇ",
       "era": "shorts",
@@ -7142,12 +7460,14 @@
         "slang": "Next Tech Trio",
         "desc": "Korean urban trend term for '차세대 3대 유니콘 플랫폼'.",
         "example": "A: Did you hear about '당토야' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "dangtoya",
+      "phonetic_respelling": "DAHNG-TOH-YAH"
     },
     {
       "id": 161,
       "word": "덕통사고",
-      "pronunciation": "[덕통사고]",
+      "pronunciation": "[deoktongsago]",
       "part_of_speech": "명사",
       "chosung": "ㄷㅌㅅㄱ",
       "era": "shorts",
@@ -7173,12 +7493,14 @@
         "slang": "Fandom Accident",
         "desc": "Korean urban trend term for '예기치 못한 운명적 팬덤 입문'.",
         "example": "A: Did you hear about '덕통사고' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "deoktongsago",
+      "phonetic_respelling": "DUHK-TOHNG-SAH-GOH"
     },
     {
       "id": 162,
       "word": "성덕",
-      "pronunciation": "[성덕]",
+      "pronunciation": "[seongdeok]",
       "part_of_speech": "명사",
       "chosung": "ㅅㄷ",
       "era": "shorts",
@@ -7204,12 +7526,14 @@
         "slang": "Successful Fan / Stan",
         "desc": "Korean urban trend term for '꿈을 이룬 열정적 마니아'.",
         "example": "A: Did you hear about '성덕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "seongdeok",
+      "phonetic_respelling": "SUHNG-DUHK"
     },
     {
       "id": 163,
       "word": "어덕행덕",
-      "pronunciation": "[어덕행덕]",
+      "pronunciation": "[eodeokhaengdeok]",
       "part_of_speech": "사자성어형 밈",
       "chosung": "ㅇㄷㅎㄷ",
       "era": "shorts",
@@ -7235,12 +7559,14 @@
         "slang": "Happy Stan Life",
         "desc": "Korean urban trend term for '행복과 긍정을 지향하는 팬 활동'.",
         "example": "A: Did you hear about '어덕행덕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "eodeokhaengdeok",
+      "phonetic_respelling": "UH-DUHK-HEHNG-DUHK"
     },
     {
       "id": 164,
       "word": "입덕",
-      "pronunciation": "[입덕]",
+      "pronunciation": "[ipdeok]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅇㄷ",
       "era": "shorts",
@@ -7266,12 +7592,14 @@
         "slang": "Becoming a Stan / Fan",
         "desc": "Korean urban trend term for '팬덤 활동의 시작'.",
         "example": "A: Did you hear about '입덕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ipdeok",
+      "phonetic_respelling": "EEP-DUHK"
     },
     {
       "id": 165,
       "word": "탈덕",
-      "pronunciation": "[탈덕]",
+      "pronunciation": "[taldeok]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅌㄷ",
       "era": "shorts",
@@ -7297,12 +7625,14 @@
         "slang": "Leaving the Fandom",
         "desc": "Korean urban trend term for '팬덤 활동의 중단 및 종료'.",
         "example": "A: Did you hear about '탈덕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "taldeok",
+      "phonetic_respelling": "TAHL-DUHK"
     },
     {
       "id": 166,
       "word": "휴덕",
-      "pronunciation": "[휴덕]",
+      "pronunciation": "[hyudeok]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅎㄷ",
       "era": "shorts",
@@ -7328,12 +7658,14 @@
         "slang": "Taking a Fan Break",
         "desc": "Korean urban trend term for '팬덤 활동의 일시적 휴식'.",
         "example": "A: Did you hear about '휴덕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "hyudeok",
+      "phonetic_respelling": "HYOO-DUHK"
     },
     {
       "id": 167,
       "word": "홈마",
-      "pronunciation": "[홈마]",
+      "pronunciation": "[homma]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅁ",
       "era": "shorts",
@@ -7359,12 +7691,14 @@
         "slang": "Fansite Master",
         "desc": "Korean urban trend term for '팬페이지 전문 운영자'.",
         "example": "A: Did you hear about '홈마' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "homma",
+      "phonetic_respelling": "HOHM-MAH"
     },
     {
       "id": 168,
       "word": "포카",
-      "pronunciation": "[포카]",
+      "pronunciation": "[poka]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅋ",
       "era": "shorts",
@@ -7390,12 +7724,14 @@
         "slang": "Photocard / PC",
         "desc": "Korean urban trend term for '소장용 미니 사진 카드'.",
         "example": "A: Did you hear about '포카' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "poka",
+      "phonetic_respelling": "POH-KAH"
     },
     {
       "id": 169,
       "word": "예절샷",
-      "pronunciation": "[예절샷]",
+      "pronunciation": "[yejeolsyat]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅈㅅ",
       "era": "shorts",
@@ -7421,12 +7757,14 @@
         "slang": "Fandom Etiquette Shot",
         "desc": "Korean urban trend term for '포토카드 동반 식사 인증 사진'.",
         "example": "A: Did you hear about '예절샷' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "yejeolsyat",
+      "phonetic_respelling": "YEH-JUHL-SYAHT"
     },
     {
       "id": 170,
       "word": "볼콕",
-      "pronunciation": "[볼콕]",
+      "pronunciation": "[bolkok]",
       "part_of_speech": "명사 / 포즈",
       "chosung": "ㅂㅋ",
       "era": "shorts",
@@ -7452,12 +7790,14 @@
         "slang": "Cheek-poke Pose",
         "desc": "Korean urban trend term for '볼 찌르기 귀여운 포즈'.",
         "example": "A: Did you hear about '볼콕' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bolkok",
+      "phonetic_respelling": "BOHL-KOHK"
     },
     {
       "id": 171,
       "word": "갸루피스",
-      "pronunciation": "[갸루피스]",
+      "pronunciation": "[gyarupiseu]",
       "part_of_speech": "명사 / 포즈 밈",
       "chosung": "ㄱㄹㅍㅅ",
       "era": "shorts",
@@ -7483,12 +7823,14 @@
         "slang": "Gyaru Peace",
         "desc": "Korean urban trend term for '뒤집은 V자 손가락 포즈'.",
         "example": "A: Did you hear about '갸루피스' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "gyarupiseu",
+      "phonetic_respelling": "GYAH-ROO-PEE-SEU"
     },
     {
       "id": 172,
       "word": "체념형 소비",
-      "pronunciation": "[체념형 소비]",
+      "pronunciation": "[chenyeomhyeong sobi]",
       "part_of_speech": "명사",
       "chosung": "ㅊㄴㅎㅅㅂ",
       "era": "shorts",
@@ -7514,12 +7856,14 @@
         "slang": "Resigned Consumption",
         "desc": "Korean urban trend term for '미래 포기형 현재 소비'.",
         "example": "A: Did you hear about '체념형 소비' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "chenyeomhyeong sobi",
+      "phonetic_respelling": "CHEH-NYUHM-HYUHNG SOH-BEE"
     },
     {
       "id": 173,
       "word": "모에모에뀽",
-      "pronunciation": "[모에모에뀽]",
+      "pronunciation": "[moemoekkyung]",
       "part_of_speech": "감탄사 / 애교 밈",
       "chosung": "ㅁㅇㅁㅇㄲ",
       "era": "shorts",
@@ -7545,12 +7889,14 @@
         "slang": "Moe Moe Kyun",
         "desc": "Korean urban trend term for '맛있어지는 사랑의 주문'.",
         "example": "A: Did you hear about '모에모에뀽' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "moemoekkyung",
+      "phonetic_respelling": "MOH-EH-MOH-EH-KKYOONG"
     },
     {
       "id": 174,
       "word": "잘파세대",
-      "pronunciation": "[잘파세대]",
+      "pronunciation": "[jalpasedae]",
       "part_of_speech": "명사 / 인구학",
       "chosung": "ㅈㅍㅅㄷ",
       "era": "shorts",
@@ -7576,12 +7922,14 @@
         "slang": "Zalpha Generation",
         "desc": "Korean urban trend term for 'Z세대 및 알파세대 융합층'.",
         "example": "A: Did you hear about '잘파세대' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jalpasedae",
+      "phonetic_respelling": "JAHL-PAH-SEH-DEH"
     },
     {
       "id": 175,
       "word": "갓기",
-      "pronunciation": "[갓기]",
+      "pronunciation": "[gatgi]",
       "part_of_speech": "명사",
       "chosung": "ㄱㄱ",
       "era": "shorts",
@@ -7607,12 +7955,14 @@
         "slang": "God-baby / Wonder Prodigy",
         "desc": "Korean urban trend term for '어리지만 완성된 실력을 갖춘 인재'.",
         "example": "A: Did you hear about '갓기' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "gatgi",
+      "phonetic_respelling": "GAHT-GEE"
     },
     {
       "id": 176,
       "word": "웅니",
-      "pronunciation": "[웅니]",
+      "pronunciation": "[ungni]",
       "part_of_speech": "명사 / 애교 호칭",
       "chosung": "ㅇㄴ",
       "era": "shorts",
@@ -7638,12 +7988,14 @@
         "slang": "My Sweet Unnie",
         "desc": "Korean urban trend term for '친근하고 사랑스러운 언니 호칭'.",
         "example": "A: Did you hear about '웅니' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "ungni",
+      "phonetic_respelling": "OONG-NEE"
     },
     {
       "id": 177,
       "word": "짱친",
-      "pronunciation": "[짱친]",
+      "pronunciation": "[jjangchin]",
       "part_of_speech": "명사",
       "chosung": "ㅉㅊ",
       "era": "shorts",
@@ -7669,12 +8021,14 @@
         "slang": "Best Friend Forever",
         "desc": "Korean urban trend term for '가장 친한 단짝 친구'.",
         "example": "A: Did you hear about '짱친' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jjangchin",
+      "phonetic_respelling": "JJAHNG-CHEEN"
     },
     {
       "id": 178,
       "word": "유잼",
-      "pronunciation": "[유잼]",
+      "pronunciation": "[yujaem]",
       "part_of_speech": "명사 / 형용사",
       "chosung": "ㅇㅈ",
       "era": "shorts",
@@ -7700,12 +8054,14 @@
         "slang": "Super Fun / Hilarious",
         "desc": "Korean urban trend term for '재미가 매우 풍부함'.",
         "example": "A: Did you hear about '유잼' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "yujaem",
+      "phonetic_respelling": "YOO-JEHM"
     },
     {
       "id": 179,
       "word": "당모치",
-      "pronunciation": "[당모치]",
+      "pronunciation": "[dangmochi]",
       "part_of_speech": "명언형 신조어",
       "chosung": "ㄷㅁㅊ",
       "era": "shorts",
@@ -7731,12 +8087,14 @@
         "slang": "All Chicken is Right",
         "desc": "Korean urban trend term for '치킨에 대한 무조건적 신뢰'.",
         "example": "A: Did you hear about '당모치' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "dangmochi",
+      "phonetic_respelling": "DAHNG-MOH-CHEE"
     },
     {
       "id": 180,
       "word": "팩트체크",
-      "pronunciation": "[팩트체크]",
+      "pronunciation": "[paekteuchekeu]",
       "part_of_speech": "명사 / 동사",
       "chosung": "ㅍㅌㅊㅋ",
       "era": "shorts",
@@ -7762,12 +8120,14 @@
         "slang": "Fact Checking",
         "desc": "Korean urban trend term for '객관적 사실관계 검증'.",
         "example": "A: Did you hear about '팩트체크' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "paekteuchekeu",
+      "phonetic_respelling": "PEHK-TEU-CHEH-KEU"
     },
     {
       "id": 181,
       "word": "귀차니즘",
-      "pronunciation": "[귀차니즘]",
+      "pronunciation": "[gwichanijeum]",
       "part_of_speech": "명사",
       "chosung": "ㄱㅊㄴㅈ",
       "era": "shorts",
@@ -7793,12 +8153,14 @@
         "slang": "Lazyism / Couch-potatoing",
         "desc": "Korean urban trend term for '매사에 의욕이 없고 귀찮아함'.",
         "example": "A: Did you hear about '귀차니즘' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "gwichanijeum",
+      "phonetic_respelling": "GWEE-CHAH-NEE-JEUM"
     },
     {
       "id": 182,
       "word": "멍때리기",
-      "pronunciation": "[멍때리기]",
+      "pronunciation": "[meongttaerigi]",
       "part_of_speech": "명사 / 힐링",
       "chosung": "ㅁㄸㄹㄱ",
       "era": "shorts",
@@ -7824,12 +8186,14 @@
         "slang": "Spacing Out / Zone-out",
         "desc": "Korean urban trend term for '아무 생각 없이 쉬는 행위'.",
         "example": "A: Did you hear about '멍때리기' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "meongttaerigi",
+      "phonetic_respelling": "MUHNG-TTEH-REE-GEE"
     },
     {
       "id": 183,
       "word": "불금",
-      "pronunciation": "[불금]",
+      "pronunciation": "[bulgeum]",
       "part_of_speech": "명사",
       "chosung": "ㅂㄱ",
       "era": "shorts",
@@ -7855,12 +8219,14 @@
         "slang": "TGIF / Fire Friday",
         "desc": "Korean urban trend term for '신나게 즐기는 금요일 밤'.",
         "example": "A: Did you hear about '불금' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bulgeum",
+      "phonetic_respelling": "BOOL-GEUM"
     },
     {
       "id": 184,
       "word": "치맥",
-      "pronunciation": "[치맥]",
+      "pronunciation": "[chimaek]",
       "part_of_speech": "명사",
       "chosung": "ㅊㅁ",
       "era": "shorts",
@@ -7886,12 +8252,14 @@
         "slang": "Chimaek (Chicken & Beer)",
         "desc": "Korean urban trend term for '치킨과 맥주의 조합'.",
         "example": "A: Did you hear about '치맥' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "chimaek",
+      "phonetic_respelling": "CHEE-MEHK"
     },
     {
       "id": 185,
       "word": "패스트 힐링",
-      "pronunciation": "[패스트 힐링]",
+      "pronunciation": "[paeseuteu hilring]",
       "part_of_speech": "명사",
       "chosung": "ㅍㅅㅌㅎㄹ",
       "era": "shorts",
@@ -7917,12 +8285,14 @@
         "slang": "Fast Healing",
         "desc": "Korean urban trend term for '단시간 집중 재충전 휴식'.",
         "example": "A: Did you hear about '패스트 힐링' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "paeseuteu hilring",
+      "phonetic_respelling": "PEH-SEU-TEU HEEL-REENG"
     },
     {
       "id": 186,
       "word": "반퇴족",
-      "pronunciation": "[반퇴족]",
+      "pronunciation": "[bantoejok]",
       "part_of_speech": "명사 / 고용",
       "chosung": "ㅂㅌㅈ",
       "era": "shorts",
@@ -7948,12 +8318,14 @@
         "slang": "Semi-retired Worker",
         "desc": "Korean urban trend term for '퇴직 후 재취업 근로자'.",
         "example": "A: Did you hear about '반퇴족' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bantoejok",
+      "phonetic_respelling": "BAHN-TWEH-JOHK"
     },
     {
       "id": 187,
       "word": "회전문 관객",
-      "pronunciation": "[회전문 관객]",
+      "pronunciation": "[hoejeonmun gwangaek]",
       "part_of_speech": "명사 / 문화",
       "chosung": "ㅎㅈㅁㄱㄱ",
       "era": "shorts",
@@ -7979,12 +8351,14 @@
         "slang": "Revolving Door Audience",
         "desc": "Korean urban trend term for '동일 공연 반복 관람 관객'.",
         "example": "A: Did you hear about '회전문 관객' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "hoejeonmun gwangaek",
+      "phonetic_respelling": "HWEH-JUHN-MOON GWAHN-GEHK"
     },
     {
       "id": 188,
       "word": "이모티콘 과소비",
-      "pronunciation": "[이모티콘 과소비]",
+      "pronunciation": "[imotikon gwasobi]",
       "part_of_speech": "명사",
       "chosung": "ㅇㅁㅌㅋㄱㅅㅂ",
       "era": "shorts",
@@ -8010,12 +8384,14 @@
         "slang": "Emoticon Overspending",
         "desc": "Korean urban trend term for '모바일 감정 스티커 과다 구매'.",
         "example": "A: Did you hear about '이모티콘 과소비' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "imotikon gwasobi",
+      "phonetic_respelling": "EE-MOH-TEE-KOHN GWAH-SOH-BEE"
     },
     {
       "id": 189,
       "word": "랜선 집사",
-      "pronunciation": "[랜선 집사]",
+      "pronunciation": "[raenseon jipsa]",
       "part_of_speech": "명사",
       "chosung": "ㄹㅅㅈㅅ",
       "era": "shorts",
@@ -8041,12 +8417,14 @@
         "slang": "Cyber Cat Butler",
         "desc": "Korean urban trend term for '온라인 반려동물 대리 애호가'.",
         "example": "A: Did you hear about '랜선 집사' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "raenseon jipsa",
+      "phonetic_respelling": "REHN-SUHN JEEP-SAH"
     },
     {
       "id": 190,
       "word": "랜선 이모",
-      "pronunciation": "[랜선 이모]",
+      "pronunciation": "[raenseon imo]",
       "part_of_speech": "명사",
       "chosung": "ㄹㅅㅇㅁ",
       "era": "shorts",
@@ -8072,12 +8450,14 @@
         "slang": "Cyber Aunt",
         "desc": "Korean urban trend term for '온라인 조카 팬덤'.",
         "example": "A: Did you hear about '랜선 이모' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "raenseon imo",
+      "phonetic_respelling": "REHN-SUHN EE-MOH"
     },
     {
       "id": 191,
       "word": "세젤귀",
-      "pronunciation": "[세젤귀]",
+      "pronunciation": "[sejelgwi]",
       "part_of_speech": "축약어",
       "chosung": "ㅅㅈㄱ",
       "era": "shorts",
@@ -8103,12 +8483,14 @@
         "slang": "Cutest in the World",
         "desc": "Korean urban trend term for '세상에서 가장 귀여움'.",
         "example": "A: Did you hear about '세젤귀' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "sejelgwi",
+      "phonetic_respelling": "SEH-JEHL-GWEE"
     },
     {
       "id": 192,
       "word": "세젤예",
-      "pronunciation": "[세젤예]",
+      "pronunciation": "[sejelye]",
       "part_of_speech": "축약어",
       "chosung": "ㅅㅈㅇ",
       "era": "shorts",
@@ -8134,12 +8516,14 @@
         "slang": "Prettiest in the World",
         "desc": "Korean urban trend term for '세상에서 가장 아름다움'.",
         "example": "A: Did you hear about '세젤예' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "sejelye",
+      "phonetic_respelling": "SEH-JEHL-YEH"
     },
     {
       "id": 193,
       "word": "할많하않",
-      "pronunciation": "[할많하않]",
+      "pronunciation": "[halmanhaan]",
       "part_of_speech": "축약어 / 관용구",
       "chosung": "ㅎㅁㅎㅇ",
       "era": "shorts",
@@ -8165,12 +8549,14 @@
         "slang": "Much to Say, Won't Say",
         "desc": "Korean urban trend term for '더 이상 언급하지 않겠다는 침묵 선언'.",
         "example": "A: Did you hear about '할많하않' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "halmanhaan",
+      "phonetic_respelling": "HAHL-MAHN-HAH-AHN"
     },
     {
       "id": 194,
       "word": "어그로꾼",
-      "pronunciation": "[어그로꾼]",
+      "pronunciation": "[eogeurokkun]",
       "part_of_speech": "명사 (은어)",
       "chosung": "ㅇㄱㄹㄲ",
       "era": "shorts",
@@ -8196,12 +8582,14 @@
         "slang": "Aggro Troll",
         "desc": "Korean urban trend term for '고의적 분란 및 관심 유발자'.",
         "example": "A: Did you hear about '어그로꾼' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "eogeurokkun",
+      "phonetic_respelling": "UH-GEU-ROH-KKOON"
     },
     {
       "id": 195,
       "word": "빛의 속도",
-      "pronunciation": "[빛의 속도]",
+      "pronunciation": "[bitui sokdo]",
       "part_of_speech": "비유적 수식어",
       "chosung": "ㅂㅇㅅㄷ",
       "era": "shorts",
@@ -8227,12 +8615,14 @@
         "slang": "Speed of Light",
         "desc": "Korean urban trend term for '극도로 신속한 처리 속도'.",
         "example": "A: Did you hear about '빛의 속도' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "bitui sokdo",
+      "phonetic_respelling": "BEET-UI SOHK-DOH"
     },
     {
       "id": 196,
       "word": "자웅동체",
-      "pronunciation": "[자웅동체]",
+      "pronunciation": "[jaungdongche]",
       "part_of_speech": "비유적 은어",
       "chosung": "ㅈㅇㄷㅊ",
       "era": "shorts",
@@ -8258,12 +8648,14 @@
         "slang": "Inseparable Duo",
         "desc": "Korean urban trend term for '항상 함께 다니는 찰떡 콤비'.",
         "example": "A: Did you hear about '자웅동체' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "jaungdongche",
+      "phonetic_respelling": "JAH-OONG-DOHNG-CHEH"
     },
     {
       "id": 197,
       "word": "현타존",
-      "pronunciation": "[현타존]",
+      "pronunciation": "[hyeontajon]",
       "part_of_speech": "명사",
       "chosung": "ㅎㅌㅈ",
       "era": "shorts",
@@ -8289,12 +8681,14 @@
         "slang": "Reality Check Zone",
         "desc": "Korean urban trend term for '현실 자각의 허탈한 순간과 장소'.",
         "example": "A: Did you hear about '현타존' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "hyeontajon",
+      "phonetic_respelling": "HYUHN-TAH-JOHN"
     },
     {
       "id": 198,
       "word": "디지털 디톡스",
-      "pronunciation": "[디지털 디톡스]",
+      "pronunciation": "[dijiteol ditokseu]",
       "part_of_speech": "명사 / 웰빙",
       "chosung": "ㄷㅈㅌㄷㅌㅅ",
       "era": "shorts",
@@ -8320,12 +8714,14 @@
         "slang": "Digital Detox",
         "desc": "Korean urban trend term for '디지털 기기 단절을 통한 심신 정화'.",
         "example": "A: Did you hear about '디지털 디톡스' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "dijiteol ditokseu",
+      "phonetic_respelling": "DEE-JEE-TUHL DEE-TOHK-SEU"
     },
     {
       "id": 199,
       "word": "AI 프롬프트 장인",
-      "pronunciation": "[AI 프롬프트 장인]",
+      "pronunciation": "[AI peurompeuteu jangin]",
       "part_of_speech": "명사 / AI 시대",
       "chosung": "ㅇㅇㅍㄹㅍㅌㅈㅇ",
       "era": "shorts",
@@ -8351,12 +8747,14 @@
         "slang": "Prompt Artisan / Master",
         "desc": "Korean urban trend term for '생성형 AI 지시어 최고 숙련자'.",
         "example": "A: Did you hear about 'AI 프롬프트 장인' recently?\nB: Yes, it's one of the hottest buzzwords in Korea right now!"
-      }
+      },
+      "romanization": "AI peurompeuteu jangin",
+      "phonetic_respelling": "A-I PEU-ROHM-PEU-TEU JAHNG-EEN"
     },
     {
       "id": 200,
       "word": "긱시크",
-      "pronunciation": "[긱시크]",
+      "pronunciation": "[giksikeu]",
       "part_of_speech": "명사 / 트렌드 스타일",
       "chosung": "ㄱㅅㅋ",
       "era": "shorts",
@@ -8384,12 +8782,14 @@
         "slang": "Geek Chic",
         "desc": "A fashion aesthetic combining nerdy elements like thick-framed glasses with sophisticated chic fashion.",
         "example": "A: Your outfit with the retro glasses is pure geek chic today!\nB: Thanks, totally into the intellectual nerd vibe!"
-      }
+      },
+      "romanization": "giksikeu",
+      "phonetic_respelling": "GEEK-SEE-KEU"
     },
     {
       "id": 201,
       "word": "정(情)",
-      "pronunciation": "[정 / Jeong]",
+      "pronunciation": "[jeong]",
       "part_of_speech": "명사 / 고유 정서",
       "chosung": "ㅈ",
       "era": "soul",
@@ -8419,12 +8819,14 @@
         "desc": "Transcendence of mere affection or love. It is an enduring, sticky bond of warm attachment that naturally grows between people, places, or things through shared moments, struggles, and history.",
         "example": "A: Even after moving away, I still miss my old neighbors so much.\nB: That's 'Jeong'—the deep emotional bond formed through shared life."
       },
-      "sub_category": "relationship"
+      "sub_category": "relationship",
+      "romanization": "jeong",
+      "phonetic_respelling": "JUNG"
     },
     {
       "id": 202,
       "word": "눈치",
-      "pronunciation": "[눈치 / Nunchi]",
+      "pronunciation": "[nunchi]",
       "part_of_speech": "명사 / 사회적 감각",
       "chosung": "ㄴㅊ",
       "era": "soul",
@@ -8454,12 +8856,14 @@
         "desc": "Much more than EQ or situational awareness. It is the swift, intuitive superpower to gauge others' moods, hidden intentions, and relational atmospheres without a single word being spoken.",
         "example": "A: Did you notice the boss was upset?\nB: Yes, good thing we have quick 'nunchi'—otherwise we would have asked for a team dinner today!"
       },
-      "sub_category": "relationship"
+      "sub_category": "relationship",
+      "romanization": "nunchi",
+      "phonetic_respelling": "NOON-chee"
     },
     {
       "id": 203,
       "word": "한(恨)",
-      "pronunciation": "[한 / Han]",
+      "pronunciation": "[han]",
       "part_of_speech": "명사 / 역사적·심리적 응어리",
       "chosung": "ㅎ",
       "era": "soul",
@@ -8489,12 +8893,14 @@
         "desc": "A complex emotional state combining collective sorrow, historical trauma, and unresolved injustice, which is resiliently transformed into art, perseverance, and profound human empathy rather than vengeful hatred.",
         "example": "A: Why does traditional Korean music feel so hauntingly emotional?\nB: It carries 'Han'—centuries of sorrow sublimated into soulful strength."
       },
-      "sub_category": "culture"
+      "sub_category": "culture",
+      "romanization": "han",
+      "phonetic_respelling": "HAHN"
     },
     {
       "id": 204,
       "word": "서운하다",
-      "pronunciation": "[서운하다 / Seounhada]",
+      "pronunciation": "[seoun-hada]",
       "part_of_speech": "형용사 / 애정 기반 아쉬움",
       "chosung": "ㅅㅇㅎㄷ",
       "era": "soul",
@@ -8524,12 +8930,14 @@
         "desc": "A delicate feeling of feeling let down or neglected by someone close to you. Unlike anger or coldness, it only occurs because you genuinely care about and cherish that person.",
         "example": "A: I felt a bit 'seounhada' when my best friend forgot my birthday.\nB: It hurts more precisely because you love them so much."
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "seoun-hada",
+      "phonetic_respelling": "SUH-oon-hah-dah"
     },
     {
       "id": 205,
       "word": "답답하다",
-      "pronunciation": "[답답하다 / Dapdaphada]",
+      "pronunciation": "[dapdaphada]",
       "part_of_speech": "형용사 / 체증·좌절감",
       "chosung": "ㄷㄷㅎㄷ",
       "era": "soul",
@@ -8559,12 +8967,14 @@
         "desc": "A visceral sensation of feeling mentally choked or having a heavy weight pressing on your chest when progress is stalled, communication fails, or someone is clueless.",
         "example": "A: Trying to explain this to someone who refuses to listen is so 'dapdaphada'!\nB: Like eating dry sweet potatoes without any water!"
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "dapdaphada",
+      "phonetic_respelling": "DAHP-dahp-hah-dah"
     },
     {
       "id": 206,
       "word": "억울하다",
-      "pronunciation": "[억울하다 / Eogulhada]",
+      "pronunciation": "[eogulhada]",
       "part_of_speech": "형용사 / 부당함의 고통",
       "chosung": "ㅇㅇㅎㄷ",
       "era": "soul",
@@ -8594,12 +9004,14 @@
         "desc": "A gut-wrenching ache of acute injustice felt when you are completely blameless yet wrongly blamed, penalized, or misunderstood without a chance to defend yourself.",
         "example": "A: I was blamed for a mistake someone else made. It feels so 'eogulhada'!\nB: We'll pull the logs and clear your name."
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "eogulhada",
+      "phonetic_respelling": "AW-gool-hah-dah"
     },
     {
       "id": 207,
       "word": "애교",
-      "pronunciation": "[애교 / Aegyo]",
+      "pronunciation": "[aegyo]",
       "part_of_speech": "명사 / 사랑스러운 제스처",
       "chosung": "ㅇㄱ",
       "era": "soul",
@@ -8629,12 +9041,14 @@
         "desc": "Acting adorably cute through baby voices, playful gestures, and facial expressions to express affection, disarm tension, or ask for favors in a sweet manner.",
         "example": "A: His daughter did some cute 'aegyo' and melted his fatigue away.\nB: That signature Korean cuteness is unbeatable!"
       },
-      "sub_category": "relationship"
+      "sub_category": "relationship",
+      "romanization": "aegyo",
+      "phonetic_respelling": "EH-gyo"
     },
     {
       "id": 208,
       "word": "썸",
-      "pronunciation": "[썸 / Sseom]",
+      "pronunciation": "[sseom]",
       "part_of_speech": "명사 / 미묘한 연애 전조",
       "chosung": "ㅆ",
       "era": "soul",
@@ -8664,12 +9078,14 @@
         "desc": "Derived from 'something going on'. That electrifying, uncommitted stage where two people mutually flirt and feel strong romantic tension before officially becoming a couple.",
         "example": "A: We talk on the phone every night—are we dating?\nB: You are definitely in the 'some' stage! Enjoy the butterflies!"
       },
-      "sub_category": "relationship"
+      "sub_category": "relationship",
+      "romanization": "sseom",
+      "phonetic_respelling": "SSUM"
     },
     {
       "id": 209,
       "word": "여운",
-      "pronunciation": "[여운 / Yeoun]",
+      "pronunciation": "[yeoun]",
       "part_of_speech": "명사 / 잔향과 감동",
       "chosung": "ㅇㅇ",
       "era": "soul",
@@ -8699,12 +9115,14 @@
         "desc": "Literally 'lingering sound/rhyme'. The profound emotional reverberation or spiritual afterglow that stays with you long after a book ends, a song stops, or someone leaves.",
         "example": "A: I still can't stop thinking about the movie's final scene.\nB: It leaves a breathtaking 'yeoun' that stays in your heart for days."
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "yeoun",
+      "phonetic_respelling": "YAW-oon"
     },
     {
       "id": 210,
       "word": "낯가리다",
-      "pronunciation": "[낯가리다 / Natgarida]",
+      "pronunciation": "[natgarida]",
       "part_of_speech": "동사 / 사회적 수줍음",
       "chosung": "ㄴㄱㄹㄷ",
       "era": "soul",
@@ -8734,12 +9152,14 @@
         "desc": "Originally describing babies distinguishing parents from strangers; refers to adults who need time and a comfortable space before they can drop their guard and open up.",
         "example": "A: He seemed so quiet at first, but now he is so funny!\nB: He just has bad 'natgarim' around new faces until he feels safe."
       },
-      "sub_category": "relationship"
+      "sub_category": "relationship",
+      "romanization": "natgarida",
+      "phonetic_respelling": "NAHT-gah-ree-dah"
     },
     {
       "id": 211,
       "word": "심쿵",
-      "pronunciation": "[심쿵 / Simkung]",
+      "pronunciation": "[simkung]",
       "part_of_speech": "명사 / 감탄사",
       "chosung": "ㅅㅋ",
       "era": "soul",
@@ -8769,12 +9189,14 @@
         "desc": "An adorable onomatopoeia for 'heart thumping hard'. Used whenever someone experiences an intense rush of romantic attraction or witnesses something cutely overwhelming.",
         "example": "A: The puppy leaned on my foot and looked up at me with round eyes.\nB: Total 'simkung'! My heart just skipped a beat!"
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "simkung",
+      "phonetic_respelling": "SIM-koong"
     },
     {
       "id": 212,
       "word": "현타",
-      "pronunciation": "[현타 / Hyeonta]",
+      "pronunciation": "[hyeonta]",
       "part_of_speech": "명사 / 현실 각성",
       "chosung": "ㅎㅌ",
       "era": "soul",
@@ -8804,12 +9226,14 @@
         "desc": "Short for 'Reality Realization Time'. That sudden, chilling moment of clarity when the high of daydreaming or bingeing wears off and cold reality smacks you in the face.",
         "example": "A: Spent all Sunday scrolling reels in bed, then looked at the clock at 11 PM.\nB: Major 'hyeonta' moment—welcome back to reality!"
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "hyeonta",
+      "phonetic_respelling": "HYUN-tah"
     },
     {
       "id": 213,
       "word": "멘붕",
-      "pronunciation": "[멘붕 / Menbung]",
+      "pronunciation": "[menbung]",
       "part_of_speech": "명사 / 패닉 상태",
       "chosung": "ㅁㅂ",
       "era": "soul",
@@ -8839,12 +9263,14 @@
         "desc": "Short for 'mental collapse'. Expresses total bewilderment, shock, or cognitive paralysis when disastrous events occur in rapid succession.",
         "example": "A: My laptop crashed and erased 3 days of work on the final proposal!\nB: Total 'menbung'... take a breath, let's look for autosaves."
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "menbung",
+      "phonetic_respelling": "MEN-boong"
     },
     {
       "id": 214,
       "word": "짠하다",
-      "pronunciation": "[짠하다 / Jjanhada]",
+      "pronunciation": "[jjanhada]",
       "part_of_speech": "형용사 / 애틋한 연민",
       "chosung": "ㅉㅎㄷ",
       "era": "soul",
@@ -8874,12 +9300,14 @@
         "desc": "A deeply tender, poignant sympathy evoked when witnessing someone persevering through exhaustion or adversity. It feels like an ache in the center of your chest combined with deep affection.",
         "example": "A: Seeing my elderly father fall asleep on the sofa with worn-out hands felt so 'jjanhada'.\nB: It's that warm, tearful compassion you feel for people who carry heavy burdens."
       },
-      "sub_category": "emotion"
+      "sub_category": "emotion",
+      "romanization": "jjanhada",
+      "phonetic_respelling": "JJAHN-hah-dah"
     },
     {
       "id": 215,
       "word": "말맛",
-      "pronunciation": "[말맛 / Malmat]",
+      "pronunciation": "[malmat]",
       "part_of_speech": "명사 / 언어적 감칠맛",
       "chosung": "ㅁㅁ",
       "era": "soul",
@@ -8909,12 +9337,14 @@
         "desc": "Literally 'speech taste'. It describes the delicious, rhythmic flavor and expressive nuance of well-crafted phrasing that mechanical translation can never duplicate.",
         "example": "A: Why do K-drama dialogues feel so witty and punchy?\nB: It's all about the 'malmat'—the savory phonetic charm of the Korean language!"
       },
-      "sub_category": "culture"
+      "sub_category": "culture",
+      "romanization": "malmat",
+      "phonetic_respelling": "MAHL-maht"
     },
     {
       "id": 216,
       "word": "섭섭하다",
-      "pronunciation": "[섭섭하다]",
+      "pronunciation": "[seopseophada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅅㅎㄷ",
       "era": "soul",
@@ -8942,12 +9372,14 @@
         "slang": "섭섭하다",
         "desc": "Feeling slight disappointment or hurt because you expected more care or attention.",
         "example": "I felt a bit 섭섭하다 when my best friend forgot my birthday."
-      }
+      },
+      "romanization": "seopseophada",
+      "phonetic_respelling": "SUHP-suhp-hah-dah"
     },
     {
       "id": 217,
       "word": "아쉽다",
-      "pronunciation": "[아쉽다]",
+      "pronunciation": "[aswipda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅅㄷ",
       "era": "soul",
@@ -8975,12 +9407,14 @@
         "slang": "아쉽다",
         "desc": "A feeling of regret, incompletes, or longing because something fell short.",
         "example": "We missed winning by just one point, which makes it so 아쉽다."
-      }
+      },
+      "romanization": "aswipda",
+      "phonetic_respelling": "AH-shweep-dah"
     },
     {
       "id": 218,
       "word": "씁쓸하다",
-      "pronunciation": "[씁쓸하다]",
+      "pronunciation": "[sseopsseolhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅆㅆㅎㄷ",
       "era": "soul",
@@ -9008,12 +9442,14 @@
         "slang": "씁쓸하다",
         "desc": "A bittersweet or cynical feeling mixed with disappointment.",
         "example": "Seeing the old neighborhood torn down felt very 씁쓸하다."
-      }
+      },
+      "romanization": "sseopsseolhada",
+      "phonetic_respelling": "SSUP-ssul-hah-dah"
     },
     {
       "id": 219,
       "word": "심란하다",
-      "pronunciation": "[심란하다]",
+      "pronunciation": "[simranhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㄹㅎㄷ",
       "era": "soul",
@@ -9041,12 +9477,14 @@
         "slang": "심란하다",
         "desc": "Feeling mentally disturbed, restless, and deeply unsettled.",
         "example": "With the exam tomorrow, my mind feels so 심란하다."
-      }
+      },
+      "romanization": "simranhada",
+      "phonetic_respelling": "SIM-rahn-hah-dah"
     },
     {
       "id": 220,
       "word": "싱숭생숭하다",
-      "pronunciation": "[싱숭생숭하다]",
+      "pronunciation": "[singsungsaengsunghada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅅㅅㅅㅎㄷ",
       "era": "soul",
@@ -9074,12 +9512,14 @@
         "slang": "싱숭생숭하다",
         "desc": "Feeling restless, fluttery, and unable to focus due to excitement or anxiety.",
         "example": "Spring is in the air, and it makes my heart 싱숭생숭하다."
-      }
+      },
+      "romanization": "singsungsaengsunghada",
+      "phonetic_respelling": "SING-soong-seng-soong-hah-dah"
     },
     {
       "id": 221,
       "word": "어이없다",
-      "pronunciation": "[어이없다]",
+      "pronunciation": "[eoieopda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅇㅇㄷ",
       "era": "soul",
@@ -9107,12 +9547,14 @@
         "slang": "어이없다",
         "desc": "Speechless and dumbfounded because something is absurd or ridiculous.",
         "example": "His excuse for being late was so absurd that I was 어이없다."
-      }
+      },
+      "romanization": "eoieopda",
+      "phonetic_respelling": "AW-ee-up-dah"
     },
     {
       "id": 222,
       "word": "통쾌하다",
-      "pronunciation": "[통쾌하다]",
+      "pronunciation": "[tongkwaehada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅌㅋㅎㄷ",
       "era": "soul",
@@ -9140,12 +9582,14 @@
         "slang": "통쾌하다",
         "desc": "Feeling thoroughly gratified and vindicated by justice or payback.",
         "example": "Watching the villain get caught in the end felt so 통쾌하다."
-      }
+      },
+      "romanization": "tongkwaehada",
+      "phonetic_respelling": "TONG-kweh-hah-dah"
     },
     {
       "id": 223,
       "word": "홀조하다 (홀가분하다)",
-      "pronunciation": "[홀조하다 (홀가분하다)]",
+      "pronunciation": "[holjohada holgabunhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㅈㅎㄷㅎㄱㅂㅎㄷ",
       "era": "soul",
@@ -9173,12 +9617,14 @@
         "slang": "홀조하다 (홀가분하다)",
         "desc": "Feeling completely relieved and unburdened after a heavy task is done.",
         "example": "After submitting my resignation, I felt so 홀가분하다."
-      }
+      },
+      "romanization": "holjohada holgabunhada",
+      "phonetic_respelling": "HOHL-JOH-HAH-DAH HOHL-GAH-BOON-HAH-DAH"
     },
     {
       "id": 224,
       "word": "황당하다",
-      "pronunciation": "[황당하다]",
+      "pronunciation": "[hwangdanghada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㄷㅎㄷ",
       "era": "soul",
@@ -9206,12 +9652,14 @@
         "slang": "황당하다",
         "desc": "Flabbergasted, stunned, and bewildered by something unbelievable.",
         "example": "I was 황당하다 when they canceled the flight without any notice."
-      }
+      },
+      "romanization": "hwangdanghada",
+      "phonetic_respelling": "HWAHNG-dahng-hah-dah"
     },
     {
       "id": 225,
       "word": "울컥하다",
-      "pronunciation": "[울컥하다]",
+      "pronunciation": "[ulkeokhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅋㅎㄷ",
       "era": "soul",
@@ -9239,12 +9687,14 @@
         "slang": "울컥하다",
         "desc": "A sudden surge of powerful emotion that brings tears to your eyes.",
         "example": "I felt 울컥하다 when the crowd cheered for the underdog."
-      }
+      },
+      "romanization": "ulkeokhada",
+      "phonetic_respelling": "OOL-kuhk-hah-dah"
     },
     {
       "id": 226,
       "word": "설레다",
-      "pronunciation": "[설레다]",
+      "pronunciation": "[seolleda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㄹㄷ",
       "era": "soul",
@@ -9272,12 +9722,14 @@
         "slang": "설레다",
         "desc": "Heart-fluttering excitement and eager anticipation.",
         "example": "I am so 설레다 about going on vacation tomorrow."
-      }
+      },
+      "romanization": "seolleda",
+      "phonetic_respelling": "SUHL-leh-dah"
     },
     {
       "id": 227,
       "word": "지겹다",
-      "pronunciation": "[지겹다]",
+      "pronunciation": "[jigyeopda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㄱㄷ",
       "era": "soul",
@@ -9305,12 +9757,14 @@
         "slang": "지겹다",
         "desc": "Sick and tired of something repetitive and monotonous.",
         "example": "Eating the same instant noodles every day is getting 지겹다."
-      }
+      },
+      "romanization": "jigyeopda",
+      "phonetic_respelling": "JEE-gyup-dah"
     },
     {
       "id": 228,
       "word": "후련하다",
-      "pronunciation": "[후련하다]",
+      "pronunciation": "[huryeonhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㄹㅎㄷ",
       "era": "soul",
@@ -9338,12 +9792,14 @@
         "slang": "후련하다",
         "desc": "Completely refreshed and unburdened, like a weight lifted.",
         "example": "Cleaning my messy room made me feel so 후련하다."
-      }
+      },
+      "romanization": "huryeonhada",
+      "phonetic_respelling": "HOO-ryun-hah-dah"
     },
     {
       "id": 229,
       "word": "뿌듯하다",
-      "pronunciation": "[뿌듯하다]",
+      "pronunciation": "[ppudeuthada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅃㄷㅎㄷ",
       "era": "soul",
@@ -9371,12 +9827,14 @@
         "slang": "뿌듯하다",
         "desc": "A deep sense of pride, fulfillment, and inner satisfaction.",
         "example": "Looking at the completed painting made me feel so 뿌듯하다."
-      }
+      },
+      "romanization": "ppudeuthada",
+      "phonetic_respelling": "PPOO-deut-hah-dah"
     },
     {
       "id": 230,
       "word": "애틋하다",
-      "pronunciation": "[애틋하다]",
+      "pronunciation": "[aeteuthada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅌㅎㄷ",
       "era": "soul",
@@ -9404,12 +9862,14 @@
         "slang": "애틋하다",
         "desc": "Tender, affectionate, and poignant with a touch of protective longing.",
         "example": "The old couple's enduring love looks so 애틋하다."
-      }
+      },
+      "romanization": "aeteuthada",
+      "phonetic_respelling": "EH-teut-hah-dah"
     },
     {
       "id": 231,
       "word": "서글프다",
-      "pronunciation": "[서글프다]",
+      "pronunciation": "[seogeulpeuda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㄱㅍㄷ",
       "era": "soul",
@@ -9437,12 +9897,14 @@
         "slang": "서글프다",
         "desc": "A lingering, melancholic sorrow that makes you feel lonely.",
         "example": "Walking home alone in the rain made me feel 서글프다."
-      }
+      },
+      "romanization": "seogeulpeuda",
+      "phonetic_respelling": "SUH-geul-peuh-dah"
     },
     {
       "id": 232,
       "word": "개운하다",
-      "pronunciation": "[개운하다]",
+      "pronunciation": "[gaeunhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅇㅎㄷ",
       "era": "soul",
@@ -9470,12 +9932,14 @@
         "slang": "개운하다",
         "desc": "Feeling completely refreshed and clear-headed.",
         "example": "A cold shower after running makes me feel so 개운하다."
-      }
+      },
+      "romanization": "gaeunhada",
+      "phonetic_respelling": "GEH-oon-hah-dah"
     },
     {
       "id": 233,
       "word": "허전하다",
-      "pronunciation": "[허전하다]",
+      "pronunciation": "[heojeonhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㅈㅎㄷ",
       "era": "soul",
@@ -9503,12 +9967,14 @@
         "slang": "허전하다",
         "desc": "A hollow, empty sensation in your heart.",
         "example": "After everyone went home, the house felt empty and 허전하다."
-      }
+      },
+      "romanization": "heojeonhada",
+      "phonetic_respelling": "HUH-jun-hah-dah"
     },
     {
       "id": 234,
       "word": "스산하다",
-      "pronunciation": "[스산하다]",
+      "pronunciation": "[seusanhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅅㅎㄷ",
       "era": "soul",
@@ -9536,12 +10002,14 @@
         "slang": "스산하다",
         "desc": "Chilly, bleak, and eerie in atmosphere.",
         "example": "The abandoned alleyways at night felt very 스산하다."
-      }
+      },
+      "romanization": "seusanhada",
+      "phonetic_respelling": "SEU-sahn-hah-dah"
     },
     {
       "id": 235,
       "word": "내키지 않는다",
-      "pronunciation": "[내키지 않는다]",
+      "pronunciation": "[naekiji anneunda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅋㅈㅇㄴㄷ",
       "era": "soul",
@@ -9569,12 +10037,14 @@
         "slang": "내키지 않는다",
         "desc": "Reluctant, hesitant, and unwilling at heart.",
         "example": "I went to the party, but my heart wasn't in it; it felt 내키지 않았다."
-      }
+      },
+      "romanization": "naekiji anneunda",
+      "phonetic_respelling": "NEH-kee-jee AHN-neun-dah"
     },
     {
       "id": 236,
       "word": "살만하다",
-      "pronunciation": "[살만하다]",
+      "pronunciation": "[salmanhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅁㅎㄷ",
       "era": "soul",
@@ -9602,12 +10072,14 @@
         "slang": "살만하다",
         "desc": "Feeling comfortable and content with life's current state.",
         "example": "After paying off the debt, life finally feels 살만하다."
-      }
+      },
+      "romanization": "salmanhada",
+      "phonetic_respelling": "SAHL-mahn-hah-dah"
     },
     {
       "id": 237,
       "word": "막막하다",
-      "pronunciation": "[막막하다]",
+      "pronunciation": "[mangmakhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅁㅁㅎㄷ",
       "era": "soul",
@@ -9635,12 +10107,14 @@
         "slang": "막막하다",
         "desc": "Feeling helpless, clueless, and overwhelmed by a bleak outlook.",
         "example": "Standing in front of the huge stack of unread books felt 막막하다."
-      }
+      },
+      "romanization": "mangmakhada",
+      "phonetic_respelling": "MAHNG-mahk-hah-dah"
     },
     {
       "id": 238,
       "word": "가슴이 먹먹하다",
-      "pronunciation": "[가슴이 먹먹하다]",
+      "pronunciation": "[gaseumi meongmeokhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅅㅇㅁㅁㅎㄷ",
       "era": "soul",
@@ -9668,12 +10142,14 @@
         "slang": "가슴이 먹먹하다",
         "desc": "Stunned and choked with deep emotion or grief.",
         "example": "The tragic news left everyone's chest 가슴이 먹먹하다."
-      }
+      },
+      "romanization": "gaseumi meongmeokhada",
+      "phonetic_respelling": "GAH-seum-ee MUNG-muck-hah-dah"
     },
     {
       "id": 239,
       "word": "궁상맞다",
-      "pronunciation": "[궁상맞다]",
+      "pronunciation": "[gungsangmatda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅅㅁㄷ",
       "era": "soul",
@@ -9701,12 +10177,14 @@
         "slang": "궁상맞다",
         "desc": "Looking shabby, petty, and miserably impoverished.",
         "example": "Eating instant ramen straight out of the pot looked a bit 궁상맞다."
-      }
+      },
+      "romanization": "gungsangmatda",
+      "phonetic_respelling": "GOONG-sahng-maht-dah"
     },
     {
       "id": 240,
       "word": "효도",
-      "pronunciation": "[효도]",
+      "pronunciation": "[hyodo]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㄷ",
       "era": "soul",
@@ -9734,12 +10212,14 @@
         "slang": "효도",
         "desc": "Filial piety and devoted care for one's parents.",
         "example": "Booking a vacation for his parents was his way of 효도."
-      }
+      },
+      "romanization": "hyodo",
+      "phonetic_respelling": "HYOH-doh"
     },
     {
       "id": 241,
       "word": "서먹하다",
-      "pronunciation": "[서먹하다]",
+      "pronunciation": "[seomeokhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅁㅎㄷ",
       "era": "soul",
@@ -9767,12 +10247,14 @@
         "slang": "서먹하다",
         "desc": "Feeling socially awkward, estranged, and unaccustomed.",
         "example": "Meeting my childhood friend after ten years felt a bit 서먹하다."
-      }
+      },
+      "romanization": "seomeokhada",
+      "phonetic_respelling": "SUH-muck-hah-dah"
     },
     {
       "id": 242,
       "word": "데면데면하다",
-      "pronunciation": "[데면데면하다]",
+      "pronunciation": "[demyeondemyeonhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㅁㄷㅁㅎㄷ",
       "era": "soul",
@@ -9800,12 +10282,14 @@
         "slang": "데면데면하다",
         "desc": "Being distant, lukewarm, and indifferent toward each other.",
         "example": "After the argument, they acted 데면데면하다."
-      }
+      },
+      "romanization": "demyeondemyeonhada",
+      "phonetic_respelling": "DEH-myun-deh-myun-hah-dah"
     },
     {
       "id": 243,
       "word": "오지랖",
-      "pronunciation": "[오지랖]",
+      "pronunciation": "[ojirap]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅈㄹ",
       "era": "soul",
@@ -9833,12 +10317,14 @@
         "slang": "오지랖",
         "desc": "Being overly nosy and sticking your nose into others' business.",
         "example": "Why do you have such a big 오지랖 about my dating life?"
-      }
+      },
+      "romanization": "ojirap",
+      "phonetic_respelling": "OH-jee-rahp"
     },
     {
       "id": 244,
       "word": "쌀쌀맞다",
-      "pronunciation": "[쌀쌀맞다]",
+      "pronunciation": "[ssalssalmatda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅆㅆㅁㄷ",
       "era": "soul",
@@ -9866,12 +10352,14 @@
         "slang": "쌀쌀맞다",
         "desc": "Icy, cold, and unfriendly in demeanor.",
         "example": "She seemed 쌀쌀맞다 at first, but she is actually very warm."
-      }
+      },
+      "romanization": "ssalssalmatda",
+      "phonetic_respelling": "SSAHL-ssahl-maht-dah"
     },
     {
       "id": 245,
       "word": "알랑거리다",
-      "pronunciation": "[알랑거리다]",
+      "pronunciation": "[allanggeorida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㄹㄱㄹㄷ",
       "era": "soul",
@@ -9899,12 +10387,14 @@
         "slang": "알랑거리다",
         "desc": "Fawning, buttering up, and sucking up to someone insincerely.",
         "example": "He tried to 알랑거리다 to the boss to get a promotion."
-      }
+      },
+      "romanization": "allanggeorida",
+      "phonetic_respelling": "AHL-lahng-guh-ree-dah"
     },
     {
       "id": 246,
       "word": "눈엣가시",
-      "pronunciation": "[눈엣가시]",
+      "pronunciation": "[nun-et-gasi]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅇㄱㅅ",
       "era": "soul",
@@ -9932,12 +10422,14 @@
         "slang": "눈엣가시",
         "desc": "A thorn in one's side; an annoying, persistent obstacle.",
         "example": "His constant complaints made him a 눈엣가시 in the team."
-      }
+      },
+      "romanization": "nun-et-gasi",
+      "phonetic_respelling": "NOON-et-GAH-shee"
     },
     {
       "id": 247,
       "word": "깍듯하다",
-      "pronunciation": "[깍듯하다]",
+      "pronunciation": "[kkakdeuthada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄲㄷㅎㄷ",
       "era": "soul",
@@ -9965,12 +10457,14 @@
         "slang": "깍듯하다",
         "desc": "Exceptionally polite, respectful, and courteous.",
         "example": "The new intern was 깍듯하다 to all senior staff."
-      }
+      },
+      "romanization": "kkakdeuthada",
+      "phonetic_respelling": "KKAHK-deut-hah-dah"
     },
     {
       "id": 248,
       "word": "다정다감하다",
-      "pronunciation": "[다정다감하다]",
+      "pronunciation": "[dajeongdagamhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㅈㄷㄱㅎㄷ",
       "era": "soul",
@@ -9998,12 +10492,14 @@
         "slang": "다정다감하다",
         "desc": "Warm-hearted, affectionate, and deeply sensitive to others.",
         "example": "He is 다정다감하다 and always checks on his friends."
-      }
+      },
+      "romanization": "dajeongdagamhada",
+      "phonetic_respelling": "DAH-jung-dah-gahm-hah-dah"
     },
     {
       "id": 249,
       "word": "앙숙",
-      "pronunciation": "[앙숙]",
+      "pronunciation": "[angsuk]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅅ",
       "era": "soul",
@@ -10031,12 +10527,14 @@
         "slang": "앙숙",
         "desc": "Bitter rivals or mortal enemies who despise each other.",
         "example": "The two neighboring stores have been 앙숙 for years."
-      }
+      },
+      "romanization": "angsuk",
+      "phonetic_respelling": "AHNG-sook"
     },
     {
       "id": 250,
       "word": "새초롬하다",
-      "pronunciation": "[새초롬하다]",
+      "pronunciation": "[saechoromhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅊㄹㅎㄷ",
       "era": "soul",
@@ -10064,12 +10562,14 @@
         "slang": "새초롬하다",
         "desc": "Coy, prudish, and slightly aloof yet charming.",
         "example": "She gave a 새초롬하다 smile when complimented."
-      }
+      },
+      "romanization": "saechoromhada",
+      "phonetic_respelling": "SEH-choh-rohm-hah-dah"
     },
     {
       "id": 251,
       "word": "허물없다",
-      "pronunciation": "[허물없다]",
+      "pronunciation": "[heomuleopda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㅁㅇㄷ",
       "era": "soul",
@@ -10097,12 +10597,14 @@
         "slang": "허물없다",
         "desc": "So close and informal that formalities are unnecessary.",
         "example": "We are 허물없다 friends who share everything."
-      }
+      },
+      "romanization": "heomuleopda",
+      "phonetic_respelling": "HUH-mool-up-dah"
     },
     {
       "id": 252,
       "word": "티격태격하다",
-      "pronunciation": "[티격태격하다]",
+      "pronunciation": "[tigyeoktaegyeokhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅌㄱㅌㄱㅎㄷ",
       "era": "soul",
@@ -10130,12 +10632,14 @@
         "slang": "티격태격하다",
         "desc": "Bickering and squabbling constantly over trivial things.",
         "example": "The siblings always 티격태격하다 over TV channels."
-      }
+      },
+      "romanization": "tigyeoktaegyeokhada",
+      "phonetic_respelling": "TEE-gyuk-teh-gyuk-hah-dah"
     },
     {
       "id": 253,
       "word": "시시덕거리다",
-      "pronunciation": "[시시덕거리다]",
+      "pronunciation": "[sisideokgeorida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅅㄷㄱㄹㄷ",
       "era": "soul",
@@ -10163,12 +10667,14 @@
         "slang": "시시덕거리다",
         "desc": "Giggling and fooling around frivolously.",
         "example": "Stop 시시덕거리다 and focus on the lecture."
-      }
+      },
+      "romanization": "sisideokgeorida",
+      "phonetic_respelling": "SHEE-shee-duck-guh-ree-dah"
     },
     {
       "id": 254,
       "word": "옥에 티",
-      "pronunciation": "[옥에 티]",
+      "pronunciation": "[og-e ti]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅇㅌ",
       "era": "soul",
@@ -10196,12 +10702,14 @@
         "slang": "옥에 티",
         "desc": "A flaw in an otherwise perfect work or person (A fly in the ointment).",
         "example": "The poor acting was the only 옥에 티 in the great movie."
-      }
+      },
+      "romanization": "og-e ti",
+      "phonetic_respelling": "OHK-eh TEE"
     },
     {
       "id": 255,
       "word": "팔이 안으로 굽는다",
-      "pronunciation": "[팔이 안으로 굽는다]",
+      "pronunciation": "[pali aneuro gubneunda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅍㅇㅇㅇㄹㄱㄴㄷ",
       "era": "soul",
@@ -10229,12 +10737,14 @@
         "slang": "팔이 안으로 굽는다",
         "desc": "Blood is thicker than water; favoring one's own people.",
         "example": "Of course managers protect their own staff; 팔이 안으로 굽는 법이지."
-      }
+      },
+      "romanization": "pali aneuro gubneunda",
+      "phonetic_respelling": "PAHL-ee AHN-eu-roh GOOB-neun-dah"
     },
     {
       "id": 256,
       "word": "배알이꼴리다",
-      "pronunciation": "[배알이꼴리다]",
+      "pronunciation": "[baealikkolrida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅇㅇㄲㄹㄷ",
       "era": "soul",
@@ -10262,12 +10772,14 @@
         "slang": "배알이꼴리다",
         "desc": "Feeling deeply envious, piqued, and hurt in one's pride.",
         "example": "Seeing his rival succeed made his 배알이꼴리다."
-      }
+      },
+      "romanization": "baealikkolrida",
+      "phonetic_respelling": "BEH-AHL-EE-KKOHL-REE-DAH"
     },
     {
       "id": 257,
       "word": "지긋지긋하다",
-      "pronunciation": "[지긋지긋하다]",
+      "pronunciation": "[jigeutjigeuthada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㄱㅈㄱㅎㄷ",
       "era": "soul",
@@ -10295,12 +10807,14 @@
         "slang": "지긋지긋하다",
         "desc": "Sick and tired to the point of absolute disgust.",
         "example": "Dealing with this endless paperwork is 지긋지긋하다."
-      }
+      },
+      "romanization": "jigeutjigeuthada",
+      "phonetic_respelling": "JEE-geut-jee-geut-hah-dah"
     },
     {
       "id": 258,
       "word": "꼼꼼하다",
-      "pronunciation": "[꼼꼼하다]",
+      "pronunciation": "[kkomkkomhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄲㄲㅎㄷ",
       "era": "soul",
@@ -10328,12 +10842,14 @@
         "slang": "꼼꼼하다",
         "desc": "Meticulous, thorough, and attentive to every detail.",
         "example": "Her 꼼꼼하다 planning ensured the event went smoothly."
-      }
+      },
+      "romanization": "kkomkkomhada",
+      "phonetic_respelling": "KKOHM-kkohm-hah-dah"
     },
     {
       "id": 259,
       "word": "덜렁대다",
-      "pronunciation": "[덜렁대다]",
+      "pronunciation": "[deolleongdaeda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㄹㄷㄷ",
       "era": "soul",
@@ -10361,12 +10877,14 @@
         "slang": "덜렁대다",
         "desc": "Being scatterbrained, careless, and prone to blunders.",
         "example": "Stop 덜렁대다 and double-check your keys."
-      }
+      },
+      "romanization": "deolleongdaeda",
+      "phonetic_respelling": "DUHL-lung-deh-dah"
     },
     {
       "id": 260,
       "word": "야무지다",
-      "pronunciation": "[야무지다]",
+      "pronunciation": "[yamujida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅁㅈㄷ",
       "era": "soul",
@@ -10394,12 +10912,14 @@
         "slang": "야무지다",
         "desc": "Neat, capable, resolute, and sharp in action.",
         "example": "The young intern is remarkably 야무지다."
-      }
+      },
+      "romanization": "yamujida",
+      "phonetic_respelling": "YAH-moo-jee-dah"
     },
     {
       "id": 261,
       "word": "밍글거리다",
-      "pronunciation": "[밍글거리다]",
+      "pronunciation": "[minggeulgeorida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅁㄱㄱㄹㄷ",
       "era": "soul",
@@ -10427,12 +10947,14 @@
         "slang": "밍글거리다",
         "desc": "Dawdling, dragging one's feet, and wasting time.",
         "example": "Stop 밍글거리다 and get ready for school."
-      }
+      },
+      "romanization": "minggeulgeorida",
+      "phonetic_respelling": "MING-geul-guh-ree-dah"
     },
     {
       "id": 262,
       "word": "우물쭈물하다",
-      "pronunciation": "[우물쭈물하다]",
+      "pronunciation": "[umuljjumulhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅁㅉㅁㅎㄷ",
       "era": "soul",
@@ -10460,12 +10982,14 @@
         "slang": "우물쭈물하다",
         "desc": "Hesitating, dilly-dallying, and unable to make up one's mind.",
         "example": "Don't 우물쭈물하다; tell us your final answer."
-      }
+      },
+      "romanization": "umuljjumulhada",
+      "phonetic_respelling": "OO-mool-jjoo-mool-hah-dah"
     },
     {
       "id": 263,
       "word": "뭉그적거리다",
-      "pronunciation": "[뭉그적거리다]",
+      "pronunciation": "[munggeujeokgeorida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅁㄱㅈㄱㄹㄷ",
       "era": "soul",
@@ -10493,12 +11017,14 @@
         "slang": "뭉그적거리다",
         "desc": "Lollygagging and moving sluggishly out of laziness.",
         "example": "He was 뭉그적거리다 until he missed the bus."
-      }
+      },
+      "romanization": "munggeujeokgeorida",
+      "phonetic_respelling": "MOONG-geu-juck-guh-ree-dah"
     },
     {
       "id": 264,
       "word": "건성건성",
-      "pronunciation": "[건성건성]",
+      "pronunciation": "[geonseonggeonseong]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅅㄱㅅ",
       "era": "soul",
@@ -10526,12 +11052,14 @@
         "slang": "건성건성",
         "desc": "Half-heartedly, perfunctorily, and going through the motions.",
         "example": "Don't read the contract 건성건성; read every line."
-      }
+      },
+      "romanization": "geonseonggeonseong",
+      "phonetic_respelling": "GUN-sung-gun-sung"
     },
     {
       "id": 265,
       "word": "바가지 긁다",
-      "pronunciation": "[바가지 긁다]",
+      "pronunciation": "[bagaji geukda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㄱㅈㄱㄷ",
       "era": "soul",
@@ -10559,12 +11087,14 @@
         "slang": "바가지 긁다",
         "desc": "Nagging one's husband incessantly (originally about household expenses).",
         "example": "He came home late and expected his wife to 바가지 긁다."
-      }
+      },
+      "romanization": "bagaji geukda",
+      "phonetic_respelling": "BAH-gah-jee GEUK-dah"
     },
     {
       "id": 266,
       "word": "허세",
-      "pronunciation": "[허세]",
+      "pronunciation": "[heose]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㅅ",
       "era": "soul",
@@ -10592,12 +11122,14 @@
         "slang": "허세",
         "desc": "Bluffing, empty posturing, and putting on airs.",
         "example": "His expensive watch was just a show of 허세."
-      }
+      },
+      "romanization": "heose",
+      "phonetic_respelling": "HUH-seh"
     },
     {
       "id": 267,
       "word": "눈속임",
-      "pronunciation": "[눈속임]",
+      "pronunciation": "[nunsogim]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅅㅇ",
       "era": "soul",
@@ -10625,12 +11157,14 @@
         "slang": "눈속임",
         "desc": "Eyewash, deception, and pulling the wool over someone's eyes.",
         "example": "The report was full of numerical 눈속임."
-      }
+      },
+      "romanization": "nunsogim",
+      "phonetic_respelling": "NOON-soh-geem"
     },
     {
       "id": 268,
       "word": "동문서답",
-      "pronunciation": "[동문서답]",
+      "pronunciation": "[dongmunseodap]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㅁㅅㄷ",
       "era": "soul",
@@ -10658,12 +11192,14 @@
         "slang": "동문서답",
         "desc": "Irrelevant answers; giving an answer that misses the point entirely.",
         "example": "I asked about the budget, and he gave a 동문서답."
-      }
+      },
+      "romanization": "dongmunseodap",
+      "phonetic_respelling": "DONG-moon-suh-dahp"
     },
     {
       "id": 269,
       "word": "발 벗고 나서다",
-      "pronunciation": "[발 벗고 나서다]",
+      "pronunciation": "[bal beotgo naseoda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅂㄱㄴㅅㄷ",
       "era": "soul",
@@ -10691,12 +11227,14 @@
         "slang": "발 벗고 나서다",
         "desc": "Rolling up one's sleeves to dive into a task actively.",
         "example": "She 발 벗고 나서다 to help organize the charity event."
-      }
+      },
+      "romanization": "bal beotgo naseoda",
+      "phonetic_respelling": "BAHL BUT-goh NAH-suh-dah"
     },
     {
       "id": 270,
       "word": "애를 먹다",
-      "pronunciation": "[애를 먹다]",
+      "pronunciation": "[aereul meokda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㄹㅁㄷ",
       "era": "soul",
@@ -10724,12 +11262,14 @@
         "slang": "애를 먹다",
         "desc": "Having a hard time, struggling, and suffering through trouble.",
         "example": "We 애를 먹다 trying to fix the broken server code."
-      }
+      },
+      "romanization": "aereul meokda",
+      "phonetic_respelling": "EH-reul MUCK-dah"
     },
     {
       "id": 271,
       "word": "찬물을 끼얹다",
-      "pronunciation": "[찬물을 끼얹다]",
+      "pronunciation": "[chanmureul kkieonjda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅊㅁㅇㄲㅇㄷ",
       "era": "soul",
@@ -10757,12 +11297,14 @@
         "slang": "찬물을 끼얹다",
         "desc": "Pouring cold water on an enthusiastic mood or plan.",
         "example": "His pessimistic comment 찬물을 끼얹다 on our excitement."
-      }
+      },
+      "romanization": "chanmureul kkieonjda",
+      "phonetic_respelling": "CHAHN-mool-eul KKEE-unj-dah"
     },
     {
       "id": 272,
       "word": "뒷북치다",
-      "pronunciation": "[뒷북치다]",
+      "pronunciation": "[dwitbukchida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㅂㅊㄷ",
       "era": "soul",
@@ -10790,12 +11332,14 @@
         "slang": "뒷북치다",
         "desc": "Being a Johnny-come-lately; reacting after the fact.",
         "example": "Complaining now is just 뒷북치다; the decision was made."
-      }
+      },
+      "romanization": "dwitbukchida",
+      "phonetic_respelling": "DWEET-book-chee-dah"
     },
     {
       "id": 273,
       "word": "고개를 갸웃거리다",
-      "pronunciation": "[고개를 갸웃거리다]",
+      "pronunciation": "[gogaereul gyautgeorida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㄱㄹㄱㅇㄱㄹㄷ",
       "era": "soul",
@@ -10823,12 +11367,14 @@
         "slang": "고개를 갸웃거리다",
         "desc": "Tilting one's head in doubt, skepticism, or puzzlement.",
         "example": "The strange data made the scientist 고개를 갸웃거리다."
-      }
+      },
+      "romanization": "gogaereul gyautgeorida",
+      "phonetic_respelling": "GOH-geh-reul GYAH-oot-guh-ree-dah"
     },
     {
       "id": 274,
       "word": "발뺌하다",
-      "pronunciation": "[발뺌하다]",
+      "pronunciation": "[balppaemhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅃㅎㄷ",
       "era": "soul",
@@ -10856,12 +11402,14 @@
         "slang": "발뺌하다",
         "desc": "Backing out, ducking out, and denying involvement.",
         "example": "He tried to 발뺌하다 when asked about the broken window."
-      }
+      },
+      "romanization": "balppaemhada",
+      "phonetic_respelling": "BAHL-ppehm-hah-dah"
     },
     {
       "id": 275,
       "word": "입만 살다",
-      "pronunciation": "[입만 살다]",
+      "pronunciation": "[ipman salda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅁㅅㄷ",
       "era": "soul",
@@ -10889,12 +11437,14 @@
         "slang": "입만 살다",
         "desc": "All talk and no action; big-mouthed.",
         "example": "Don't trust him; he is all talk and 입만 살다."
-      }
+      },
+      "romanization": "ipman salda",
+      "phonetic_respelling": "EEP-mahn SAHL-dah"
     },
     {
       "id": 276,
       "word": "콧대가 높다",
-      "pronunciation": "[콧대가 높다]",
+      "pronunciation": "[kotdaega nopda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅋㄷㄱㄴㄷ",
       "era": "soul",
@@ -10922,12 +11472,14 @@
         "slang": "콧대가 높다",
         "desc": "High-nosed, arrogant, and snobbish.",
         "example": "She used to be 콧대가 높다, but she became humble."
-      }
+      },
+      "romanization": "kotdaega nopda",
+      "phonetic_respelling": "KOHT-deh-gah NOHP-dah"
     },
     {
       "id": 277,
       "word": "귀가 얇다",
-      "pronunciation": "[귀가 얇다]",
+      "pronunciation": "[gwiga yalpda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㄱㅇㄷ",
       "era": "soul",
@@ -10955,12 +11507,14 @@
         "slang": "귀가 얇다",
         "desc": "Having thin ears; easily gullible and influenced by others.",
         "example": "He bought the overpriced gadget because he is 귀가 얇다."
-      }
+      },
+      "romanization": "gwiga yalpda",
+      "phonetic_respelling": "GWEE-gah YAHLP-dah"
     },
     {
       "id": 278,
       "word": "손발이 맞다",
-      "pronunciation": "[손발이 맞다]",
+      "pronunciation": "[sonbari matda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅂㅇㅁㄷ",
       "era": "soul",
@@ -10988,12 +11542,14 @@
         "slang": "손발이 맞다",
         "desc": "Working together seamlessly like hand and glove.",
         "example": "Our team 손발이 맞다, so the project finished early."
-      }
+      },
+      "romanization": "sonbari matda",
+      "phonetic_respelling": "SOHN-bahl-ee MAHT-dah"
     },
     {
       "id": 279,
       "word": "입에 발린 말",
-      "pronunciation": "[입에 발린 말]",
+      "pronunciation": "[ibe ballin mal]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅇㅂㄹㅁ",
       "era": "soul",
@@ -11021,12 +11577,14 @@
         "slang": "입에 발린 말",
         "desc": "Lip service; sweet talk meant to flatter without sincerity.",
         "example": "I don't need your 입에 발린 말; give me honest feedback."
-      }
+      },
+      "romanization": "ibe ballin mal",
+      "phonetic_respelling": "EEP-eh BAHL-leen MAHL"
     },
     {
       "id": 280,
       "word": "죽이 잘 맞다",
-      "pronunciation": "[죽이 잘 맞다]",
+      "pronunciation": "[jugi jal matda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㅇㅈㅁㄷ",
       "era": "soul",
@@ -11054,12 +11612,14 @@
         "slang": "죽이 잘 맞다",
         "desc": "Hitting it off wonderfully; being on the exact same wavelength.",
         "example": "We met today and realized our tastes 죽이 잘 맞다."
-      }
+      },
+      "romanization": "jugi jal matda",
+      "phonetic_respelling": "JOO-gee JAHL MAHT-dah"
     },
     {
       "id": 281,
       "word": "물 먹다",
-      "pronunciation": "[물 먹다]",
+      "pronunciation": "[mul meokda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅁㅁㄷ",
       "era": "soul",
@@ -11087,12 +11647,14 @@
         "slang": "물 먹다",
         "desc": "Getting dumped, failing, or suffering a setback.",
         "example": "He applied for the top company and got 물 먹다."
-      }
+      },
+      "romanization": "mul meokda",
+      "phonetic_respelling": "MOOL MUCK-dah"
     },
     {
       "id": 282,
       "word": "진땀을 빼다",
-      "pronunciation": "[진땀을 빼다]",
+      "pronunciation": "[jinttameul ppaeda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㄸㅇㅃㄷ",
       "era": "soul",
@@ -11120,12 +11682,14 @@
         "slang": "진땀을 빼다",
         "desc": "Sweating bullets; going through an intensely stressful ordeal.",
         "example": "I 진땀을 빼다 answering the strict interviewer's questions."
-      }
+      },
+      "romanization": "jinttameul ppaeda",
+      "phonetic_respelling": "JEEN-ttahm-eul PPEH-dah"
     },
     {
       "id": 283,
       "word": "꼰대",
-      "pronunciation": "[꼰대]",
+      "pronunciation": "[kkondae]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄲㄷ",
       "era": "soul",
@@ -11153,12 +11717,14 @@
         "slang": "꼰대",
         "desc": "A condescending, close-minded authority figure (boomer mentality).",
         "example": "Don't act like a 꼰대; listen to the junior staff."
-      }
+      },
+      "romanization": "kkondae",
+      "phonetic_respelling": "KKON-deh"
     },
     {
       "id": 284,
       "word": "텃세",
-      "pronunciation": "[텃세]",
+      "pronunciation": "[teotse]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅌㅅ",
       "era": "soul",
@@ -11186,12 +11752,14 @@
         "slang": "텃세",
         "desc": "Territorial bullying or hazing by an established group against newcomers.",
         "example": "The veteran workers showed some 텃세 to the new recruit."
-      }
+      },
+      "romanization": "teotse",
+      "phonetic_respelling": "TUHT-seh"
     },
     {
       "id": 285,
       "word": "덤",
-      "pronunciation": "[덤]",
+      "pronunciation": "[deom]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷ",
       "era": "soul",
@@ -11219,12 +11787,14 @@
         "slang": "덤",
         "desc": "A free extra bonus thrown in by a merchant out of goodwill.",
         "example": "Buying three apples got me two more as a 덤."
-      }
+      },
+      "romanization": "deom",
+      "phonetic_respelling": "DUHM"
     },
     {
       "id": 286,
       "word": "본전 생각",
-      "pronunciation": "[본전 생각]",
+      "pronunciation": "[bonjeon saenggak]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅈㅅㄱ",
       "era": "soul",
@@ -11252,12 +11822,14 @@
         "slang": "본전 생각",
         "desc": "Regretting a lack of return on investment or feeling shortchanged.",
         "example": "The movie was so boring that I had 本전 생각."
-      }
+      },
+      "romanization": "bonjeon saenggak",
+      "phonetic_respelling": "BON-jun SENG-gahk"
     },
     {
       "id": 287,
       "word": "선 긋다",
-      "pronunciation": "[선 긋다]",
+      "pronunciation": "[seon geutda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㄱㄷ",
       "era": "soul",
@@ -11285,12 +11857,14 @@
         "slang": "선 긋다",
         "desc": "Drawing a firm line to establish personal boundaries.",
         "example": "She 선 긋다 with her coworker to keep it professional."
-      }
+      },
+      "romanization": "seon geutda",
+      "phonetic_respelling": "SUN GEUT-dah"
     },
     {
       "id": 288,
       "word": "눈치코치",
-      "pronunciation": "[눈치코치]",
+      "pronunciation": "[nunchikochi]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅊㅋㅊ",
       "era": "soul",
@@ -11318,12 +11892,14 @@
         "slang": "눈치코치",
         "desc": "Sharp wits, street smarts, and situational savvy.",
         "example": "You need good 눈치코치 to work in customer service."
-      }
+      },
+      "romanization": "nunchikochi",
+      "phonetic_respelling": "NOON-chee-KOH-chee"
     },
     {
       "id": 289,
       "word": "고생 끝에 낙이 온다",
-      "pronunciation": "[고생 끝에 낙이 온다]",
+      "pronunciation": "[gosaeng kkeute nagi onda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅅㄲㅇㄴㅇㅇㄷ",
       "era": "soul",
@@ -11351,12 +11927,14 @@
         "slang": "고생 끝에 낙이 온다",
         "desc": "No pain, no gain; joy follows after hardship.",
         "example": "Studying hard is tough, but 고생 끝에 낙이 온다."
-      }
+      },
+      "romanization": "gosaeng kkeute nagi onda",
+      "phonetic_respelling": "GOH-seng KKEUT-eh NAH-gee OHN-dah"
     },
     {
       "id": 290,
       "word": "살림꾼",
-      "pronunciation": "[살림꾼]",
+      "pronunciation": "[sallimkkun]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㄹㄲ",
       "era": "soul",
@@ -11384,12 +11962,14 @@
         "slang": "살림꾼",
         "desc": "A thrifty, capable household manager or homemaker.",
         "example": "My mother is a brilliant 살림꾼 who manages finances well."
-      }
+      },
+      "romanization": "sallimkkun",
+      "phonetic_respelling": "SAHL-leem-kkoon"
     },
     {
       "id": 291,
       "word": "안성맞춤",
-      "pronunciation": "[안성맞춤]",
+      "pronunciation": "[anseongmatchum]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅅㅁㅊ",
       "era": "soul",
@@ -11417,12 +11997,14 @@
         "slang": "안성맞춤",
         "desc": "A tailor-made fit; perfect for the occasion.",
         "example": "This warm soup is 안성맞춤 for a rainy day."
-      }
+      },
+      "romanization": "anseongmatchum",
+      "phonetic_respelling": "AHN-sung-MAHT-choom"
     },
     {
       "id": 292,
       "word": "빛좋은 개살구",
-      "pronunciation": "[빛좋은 개살구]",
+      "pronunciation": "[bitjoteun gaesalgu]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅈㅇㄱㅅㄱ",
       "era": "soul",
@@ -11450,12 +12032,14 @@
         "slang": "빛좋은 개살구",
         "desc": "All glitters is not gold; a fair exterior with no substance.",
         "example": "The fancy title turned out to be 빛좋은 개살구."
-      }
+      },
+      "romanization": "bitjoteun gaesalgu",
+      "phonetic_respelling": "BEET-JOHT-EUN GEH-SAHL-GOO"
     },
     {
       "id": 293,
       "word": "동병상련",
-      "pronunciation": "[동병상련]",
+      "pronunciation": "[dongbyeongsangnyeon]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㅂㅅㄹ",
       "era": "soul",
@@ -11483,12 +12067,14 @@
         "slang": "동병상련",
         "desc": "Misery loves company; mutual empathy in shared misfortune.",
         "example": "As fellow freelancers, we felt a deep 동병상련."
-      }
+      },
+      "romanization": "dongbyeongsangnyeon",
+      "phonetic_respelling": "DONG-byung-sahng-nyun"
     },
     {
       "id": 294,
       "word": "오월동주",
-      "pronunciation": "[오월동주]",
+      "pronunciation": "[owoldongju]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅇㄷㅈ",
       "era": "soul",
@@ -11516,12 +12102,14 @@
         "slang": "오월동주",
         "desc": "Bitter enemies forced to cooperate in a crisis.",
         "example": "The rival companies formed an 동월동주 partnership."
-      }
+      },
+      "romanization": "owoldongju",
+      "phonetic_respelling": "OH-wol-DONG-joo"
     },
     {
       "id": 295,
       "word": "적반하장",
-      "pronunciation": "[적반하장]",
+      "pronunciation": "[jeokbanhajeang]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㅂㅎㅈ",
       "era": "soul",
@@ -11549,12 +12137,14 @@
         "slang": "적반하장",
         "desc": "The pot calling the kettle black; turning the tables aggressively when guilty.",
         "example": "He broke my phone and yelled at me—total 적반하장."
-      }
+      },
+      "romanization": "jeokbanhajeang",
+      "phonetic_respelling": "JUK-bahn-HAH-jahng"
     },
     {
       "id": 296,
       "word": "내로남불",
-      "pronunciation": "[내로남불]",
+      "pronunciation": "[naeronambul]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㄹㄴㅂ",
       "era": "soul",
@@ -11582,12 +12172,14 @@
         "slang": "내로남불",
         "desc": "Hypocrisy; double standards (\"If I do it, it's romance; if you do it, it's adultery\").",
         "example": "Politicians criticizing corruption while doing it themselves is classic 내로남불."
-      }
+      },
+      "romanization": "naeronambul",
+      "phonetic_respelling": "NEH-roh-nahm-bool"
     },
     {
       "id": 297,
       "word": "삼천포로 빠지다",
-      "pronunciation": "[삼천포로 빠지다]",
+      "pronunciation": "[samcheonporo ppajida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅊㅍㄹㅃㅈㄷ",
       "era": "soul",
@@ -11615,12 +12207,14 @@
         "slang": "삼천포로 빠지다",
         "desc": "Getting sidetracked and going off on a tangent.",
         "example": "Let's stay focused and not 삼천포로 빠지다."
-      }
+      },
+      "romanization": "samcheonporo ppajida",
+      "phonetic_respelling": "SAHM-chun-poh-roh PPAH-jee-dah"
     },
     {
       "id": 298,
       "word": "금강산도 식후경",
-      "pronunciation": "[금강산도 식후경]",
+      "pronunciation": "[geumgangsando sikhugyeong]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㄱㅅㄷㅅㅎㄱ",
       "era": "soul",
@@ -11648,12 +12242,14 @@
         "slang": "금강산도 식후경",
         "desc": "Eating comes first before any pleasure (The stomach rules the mind).",
         "example": "Let's eat first; 금강산도 식후경."
-      }
+      },
+      "romanization": "geumgangsando sikhugyeong",
+      "phonetic_respelling": "GEUM-gahng-sahn-doh SHEEK-hoo-gyung"
     },
     {
       "id": 299,
       "word": "그 그림에 그 밥",
-      "pronunciation": "[그 그림에 그 밥]",
+      "pronunciation": "[geu geurime geu bap]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㄱㄹㅇㄱㅂ",
       "era": "soul",
@@ -11681,12 +12277,14 @@
         "slang": "그 그림에 그 밥",
         "desc": "Six of one, half a dozen of the other; much of a muchness.",
         "example": "Choosing between those two mediocre plans is 그 나물에 그 밥."
-      }
+      },
+      "romanization": "geu geurime geu bap",
+      "phonetic_respelling": "GEU GEU-REEM-EH GEU BAHP"
     },
     {
       "id": 300,
       "word": "뼛속까지",
-      "pronunciation": "[뼛속까지]",
+      "pronunciation": "[ppyeotsokkaji]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅃㅅㄲㅈ",
       "era": "soul",
@@ -11714,12 +12312,14 @@
         "slang": "뼛속까지",
         "desc": "To the bone; thoroughly through and through.",
         "example": "He is 뼛속까지 a programmer."
-      }
+      },
+      "romanization": "ppyeotsokkaji",
+      "phonetic_respelling": "PPYUT-sohk-kkah-jee"
     },
     {
       "id": 301,
       "word": "손을 놓다",
-      "pronunciation": "[손을 놓다]",
+      "pronunciation": "[soneul nota]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅇㄴㄷ",
       "era": "soul",
@@ -11747,12 +12347,14 @@
         "slang": "손을 놓다",
         "desc": "Washing one's hands of something; abandoning a task.",
         "example": "After repeated failures, he 손을 놓다 on the project."
-      }
+      },
+      "romanization": "soneul nota",
+      "phonetic_respelling": "SOHN-eul NOH-tah"
     },
     {
       "id": 302,
       "word": "발목을 잡다",
-      "pronunciation": "[발목을 잡다]",
+      "pronunciation": "[balmogeul japda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㅁㅇㅈㄷ",
       "era": "soul",
@@ -11780,12 +12382,14 @@
         "slang": "발목을 잡다",
         "desc": "Being held back by an anchor or a binding weakness.",
         "example": "His past mistake continues to 발목을 잡다 in his career."
-      }
+      },
+      "romanization": "balmogeul japda",
+      "phonetic_respelling": "BAHL-mohk-eul JAHP-dah"
     },
     {
       "id": 303,
       "word": "귀가 번쩍 뜨이다",
-      "pronunciation": "[귀가 번쩍 뜨이다]",
+      "pronunciation": "[gwiga beonjjeok tteuida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㄱㅂㅉㄸㅇㄷ",
       "era": "soul",
@@ -11813,12 +12417,14 @@
         "slang": "귀가 번쩍 뜨이다",
         "desc": "Having one's ears perk up at tempting news.",
         "example": "Hearing about the bonus made everyone 귀가 번쩍 뜨이다."
-      }
+      },
+      "romanization": "gwiga beonjjeok tteuida",
+      "phonetic_respelling": "GWEE-gah BUN-jjuk TTEU-ee-dah"
     },
     {
       "id": 304,
       "word": "코가 납작해지다",
-      "pronunciation": "[코가 납작해지다]",
+      "pronunciation": "[koga napjakhaejida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅋㄱㄴㅈㅎㅈㄷ",
       "era": "soul",
@@ -11846,12 +12452,14 @@
         "slang": "코가 납작해지다",
         "desc": "Being humbled, brought down a peg or two.",
         "example": "His arrogance vanished after his failure; his 코가 납작해졌다."
-      }
+      },
+      "romanization": "koga napjakhaejida",
+      "phonetic_respelling": "KOH-gah NAHP-jahk-heh-jee-dah"
     },
     {
       "id": 305,
       "word": "입에 침이 마르다",
-      "pronunciation": "[입에 침이 마르다]",
+      "pronunciation": "[ibe chimi mareuda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅇㅇㅊㅇㅁㄹㄷ",
       "era": "soul",
@@ -11879,12 +12487,14 @@
         "slang": "입에 침이 마르다",
         "desc": "Praising someone until one's mouth goes dry (Praising to the skies).",
         "example": "She spoke with 입에 침이 마르다 about her son's achievements."
-      }
+      },
+      "romanization": "ibe chimi mareuda",
+      "phonetic_respelling": "EEP-eh CHEE-mee MAH-reu-dah"
     },
     {
       "id": 306,
       "word": "속이 타다",
-      "pronunciation": "[속이 타다]",
+      "pronunciation": "[sogi tada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅇㅌㄷ",
       "era": "soul",
@@ -11912,12 +12522,14 @@
         "slang": "속이 타다",
         "desc": "Eating one's heart out with burning anxiety and worry.",
         "example": "Waiting for the exam results left my 속이 타다."
-      }
+      },
+      "romanization": "sogi tada",
+      "phonetic_respelling": "SOH-gee TAH-dah"
     },
     {
       "id": 307,
       "word": "눈에 불을 켜다",
-      "pronunciation": "[눈에 불을 켜다]",
+      "pronunciation": "[nune bureul kyeoda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅇㅂㅇㅋㄷ",
       "era": "soul",
@@ -11945,12 +12557,14 @@
         "slang": "눈에 불을 켜다",
         "desc": "Eyes blazing with fierce ambition, greed, or anger.",
         "example": "He went into the negotiation with 눈에 불을 켜다."
-      }
+      },
+      "romanization": "nune bureul kyeoda",
+      "phonetic_respelling": "NOON-eh BOOR-eul KYUH-dah"
     },
     {
       "id": 308,
       "word": "피와 살이 되다",
-      "pronunciation": "[피와 살이 되다]",
+      "pronunciation": "[piwa sari doeda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅍㅇㅅㅇㄷㄷ",
       "era": "soul",
@@ -11978,12 +12592,14 @@
         "slang": "피와 살이 되다",
         "desc": "Invaluable experience that nourishes your mind and soul.",
         "example": "These hardships will all become 피와 살이 되다 for your future."
-      }
+      },
+      "romanization": "piwa sari doeda",
+      "phonetic_respelling": "PEE-wah SAH-ree DWEH-dah"
     },
     {
       "id": 309,
       "word": "허리띠를 졸라매다",
-      "pronunciation": "[허리띠를 졸라매다]",
+      "pronunciation": "[heorittireul jollamaeda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅎㄹㄸㄹㅈㄹㅁㄷ",
       "era": "soul",
@@ -12011,12 +12627,14 @@
         "slang": "허리띠를 졸라매다",
         "desc": "Tightening one's belt; practicing strict frugality.",
         "example": "During the economic recession, we had to 허리띠를 졸라매다."
-      }
+      },
+      "romanization": "heorittireul jollamaeda",
+      "phonetic_respelling": "HUH-ree-ttee-reul JOHL-lah-meh-dah"
     },
     {
       "id": 310,
       "word": "바늘 가는 데 실 간다",
-      "pronunciation": "[바늘 가는 데 실 간다]",
+      "pronunciation": "[baneul ganeun de sil ganda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅂㄴㄱㄴㄷㅅㄱㄷ",
       "era": "soul",
@@ -12044,12 +12662,14 @@
         "slang": "바늘 가는 데 실 간다",
         "desc": "Where the needle goes, thread follows; inseparable companions.",
         "example": "Those two best friends are like 바늘 가는 데 실 간다."
-      }
+      },
+      "romanization": "baneul ganeun de sil ganda",
+      "phonetic_respelling": "BAH-neul GAH-neun deh SHEEL GAHN-dah"
     },
     {
       "id": 311,
       "word": "시치미를 떼다",
-      "pronunciation": "[시치미를 떼다]",
+      "pronunciation": "[sichimireul tteda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅅㅊㅁㄹㄸㄷ",
       "era": "soul",
@@ -12077,12 +12697,14 @@
         "slang": "시치미를 떼다",
         "desc": "Playing innocent and keeping a straight face after doing something.",
         "example": "He hid the cookies and acted innocent, completely 시치미를 떼다."
-      }
+      },
+      "romanization": "sichimireul tteda",
+      "phonetic_respelling": "SHEE-chee-mee-reul TTEH-dah"
     },
     {
       "id": 312,
       "word": "고소하다",
-      "pronunciation": "[고소하다]",
+      "pronunciation": "[gosohada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄱㅅㅎㄷ",
       "era": "soul",
@@ -12110,12 +12732,14 @@
         "slang": "고소하다",
         "desc": "A secretly satisfying feeling when someone you dislike faces misfortune.",
         "example": "When the rude driver got a parking ticket, I felt a little bit of 고소하다."
-      }
+      },
+      "romanization": "gosohada",
+      "phonetic_respelling": "GOH-soh-hah-dah"
     },
     {
       "id": 313,
       "word": "눈치보다",
-      "pronunciation": "[눈치보다]",
+      "pronunciation": "[nunchiboda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅊㅂㄷ",
       "era": "soul",
@@ -12143,12 +12767,14 @@
         "slang": "눈치보다",
         "desc": "Constantly watching other people's faces and reading the room before you speak or act.",
         "example": "I had to 눈치보다 around my boss because he was in a bad mood all day."
-      }
+      },
+      "romanization": "nunchiboda",
+      "phonetic_respelling": "NOON-chee-boh-dah"
     },
     {
       "id": 314,
       "word": "든든하다",
-      "pronunciation": "[든든하다]",
+      "pronunciation": "[deundeunhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄷㄷㅎㄷ",
       "era": "soul",
@@ -12176,12 +12802,14 @@
         "slang": "든든하다",
         "desc": "Feeling a deep sense of security, reassurance, and confidence because someone has your back.",
         "example": "Having experienced older colleagues around gives me such a 든든하다 feeling at work."
-      }
+      },
+      "romanization": "deundeunhada",
+      "phonetic_respelling": "DEUN-deun-hah-dah"
     },
     {
       "id": 315,
       "word": "눈탱이 맞다",
-      "pronunciation": "[눈탱이 맞다]",
+      "pronunciation": "[nuntaengi matda]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㄴㅌㅇㅁㄷ",
       "era": "soul",
@@ -12209,12 +12837,14 @@
         "slang": "눈탱이 맞다",
         "desc": "Getting completely ripped off or overcharged because you didn't know the actual price.",
         "example": "I didn't check the price beforehand at the tourist spot, and I totally 눈탱이 맞았다."
-      }
+      },
+      "romanization": "nuntaengi matda",
+      "phonetic_respelling": "NOON-teng-ee MAHT-dah"
     },
     {
       "id": 316,
       "word": "정떨어지다",
-      "pronunciation": "[정떨어지다]",
+      "pronunciation": "[jeongtteoreojida]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅈㄸㅇㅈㄷ",
       "era": "soul",
@@ -12242,12 +12872,14 @@
         "slang": "정떨어지다",
         "desc": "Instantly losing all affection or attraction due to a sudden rude or disappointing action.",
         "example": "When he was rude to the waiter, I instantly felt 정떨어지다."
-      }
+      },
+      "romanization": "jeongtteoreojida",
+      "phonetic_respelling": "JUNG-tuh-ruh-jee-dah"
     },
     {
       "id": 317,
       "word": "뻘쭘하다",
-      "pronunciation": "[뻘쭘하다]",
+      "pronunciation": "[ppeoljjumhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅃㅉㅎㄷ",
       "era": "soul",
@@ -12275,12 +12907,14 @@
         "slang": "뻘쭘하다",
         "desc": "Feeling awkward, out of place, and slightly embarrassed in an uncomfortable silence.",
         "example": "I arrived way too early for the meeting and had to stand alone, feeling so 뻘쭘하다."
-      }
+      },
+      "romanization": "ppeoljjumhada",
+      "phonetic_respelling": "PPUHL-jjoom-hah-dah"
     },
     {
       "id": 318,
       "word": "뭉클하다",
-      "pronunciation": "[뭉클하다]",
+      "pronunciation": "[mungkeulhada]",
       "part_of_speech": "단어 / 표현",
       "chosung": "ㅁㅋㅎㄷ",
       "era": "soul",
@@ -12308,7 +12942,9 @@
         "slang": "뭉클하다",
         "desc": "Feeling a sudden surge of deep emotion, warmth, or touched sentiment in your chest, bringing tears.",
         "example": "When my parents gave me a handwritten letter, I felt so 뭉클하다."
-      }
+      },
+      "romanization": "mungkeulhada",
+      "phonetic_respelling": "MOONG-keul-hah-dah"
     }
   ]
 }
