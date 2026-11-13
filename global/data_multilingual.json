@@ -1,8 +1,691 @@
 {
   "project": "MALSSAM Global Multilingual Dataset",
-  "version": "2.0.0",
-  "total": 30,
+  "version": "9.1.0",
+  "total": 45,
   "words": [
+    {
+      "id": {
+        "slang": "Mungkin / Pantas saja / Pokoknya",
+        "desc": "Tiga kata keterangan mirip bunyi dengan fungsi berbeda: dugaan (어쩌면), baru sadar (어쩐지), dan pengalihan topik (어쨌든).",
+        "ex": "Pantas saja hari ini terasa lelah, mungkin aku masuk angin. Pokoknya aku harus tidur lebih awal."
+      },
+      "word": "어쩌면 / 어쩐지 / 어쨌든",
+      "pronunciation": "eojjeomyeon / eojjeonji / eojjaetdeun",
+      "chosung": "ㅇㅉㅁ / ㅇㅉㅈ / ㅇㅉㄷ",
+      "part_of_speech": "부사 (유사 발음 3종)",
+      "likes": 4950,
+      "dislikes": 8,
+      "tags": [
+        "부사구분",
+        "한국어문법",
+        "어쩌면",
+        "어쩐지",
+        "어쨌든",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Maybe / No wonder / Anyway",
+        "desc": "Three look-alike Korean adverbs with distinct roles: 'maybe' (어쩌면), 'no wonder' (어쩐지), and 'anyway' (어쨌든).",
+        "ex": "No wonder I felt tired today—maybe I caught a cold. Anyway, I should go to bed early."
+      },
+      "ja": {
+        "slang": "もしかしたら / どうりで / とにかく",
+        "desc": "推測(어쩌면)、納得(어쩐지)、話題転換(어쨌든)を表す、発音は似ているが意味が全く異なる3つの副詞。",
+        "ex": "どうりで今日はやけに疲れると思ったら、もしかして風邪をひいたのかも。とにかく早く寝よう。"
+      },
+      "vi": {
+        "slang": "Có lẽ / Thảo nào / Dù sao thì",
+        "desc": "Ba phó từ phát âm na ná nhau nhưng nghĩa khác hẳn: phỏng đoán (어쩌면), vỡ lẽ (어쩐지) và chuyển chủ đề (어쨌든).",
+        "ex": "Thảo nào hôm nay thấy mệt thế, có lẽ bị cảm rồi. Dù sao thì cũng phải đi ngủ sớm thôi."
+      },
+      "es": {
+        "slang": "Quizás / Con razón / De todos modos",
+        "desc": "Tres adverbios de sonido similar con funciones distintas: suposición (어쩌면), comprensión (어쩐지) y cambio de tema (어쨌든).",
+        "ex": "Con razón me sentía tan cansado hoy; quizás me resfrié. De todos modos, debería acostarme temprano."
+      },
+      "id_lang": {
+        "slang": "Mungkin / Pantas saja / Pokoknya",
+        "desc": "Tiga kata keterangan mirip bunyi dengan fungsi berbeda: dugaan (어쩌면), baru sadar (어쩐지), dan pengalihan topik (어쨌든).",
+        "ex": "Pantas saja hari ini terasa lelah, mungkin aku masuk angin. Pokoknya aku harus tidur lebih awal."
+      }
+    },
+    {
+      "id": {
+        "slang": "Justru malah / Lebih baik sekalian",
+        "desc": "'오히려' berarti justru berlawanan dari dugaan, sedangkan '차라리' berarti memilih opsi yang lebih mendingan.",
+        "ex": "Acaranya batal karena hujan, tapi justru bagus karena jadi bisa beristirahat."
+      },
+      "word": "오히려 / 차라리",
+      "pronunciation": "ohiryeo / charari",
+      "chosung": "ㅇㅎㄹ / ㅊㄹㄹ",
+      "part_of_speech": "부사 (뉘앙스 비교)",
+      "likes": 4915,
+      "dislikes": 8,
+      "tags": [
+        "오히려",
+        "차라리",
+        "뉘앙스차이",
+        "번역불가",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "On the contrary / Might as well",
+        "desc": "'오히려' means 'on the contrary' (opposite of expectation), while '차라리' means 'might as well' (choosing the lesser evil).",
+        "ex": "The event was canceled due to rain, but on the contrary, it was nice to get some rest."
+      },
+      "ja": {
+        "slang": "かえって / いっそのこと",
+        "desc": "予想と正反対の結果(오히려)と、次善策の選択(차라리)を明確に使い分ける副詞。",
+        "ex": "雨でイベントが中止になったが、かえって休めてよかった。"
+      },
+      "vi": {
+        "slang": "Trái lại / Thà rằng",
+        "desc": "'오히려' diễn tả kết quả ngược hẳn kỳ vọng, còn '차라리' dùng khi chọn phương án đỡ tệ hơn.",
+        "ex": "Trời mưa nên sự kiện bị hủy, nhưng trái lại được nghỉ ngơi nên cũng thích."
+      },
+      "es": {
+        "slang": "Al contrario / Más bien (preferir)",
+        "desc": "'오히려' indica un resultado contrario a lo esperado, mientras que '차라리' expresa elegir la opción menos mala.",
+        "ex": "El evento se canceló por la lluvia, pero al contrario, vino bien poder descansar."
+      },
+      "id_lang": {
+        "slang": "Justru malah / Lebih baik sekalian",
+        "desc": "'오히려' berarti justru berlawanan dari dugaan, sedangkan '차라리' berarti memilih opsi yang lebih mendingan.",
+        "ex": "Acaranya batal karena hujan, tapi justru bagus karena jadi bisa beristirahat."
+      }
+    },
+    {
+      "id": {
+        "slang": "Terima kasih atas kerja kerasnya",
+        "desc": "Ungkapan sopan mengapresiasi kerja keras rekan atau junior (sebaiknya dihindari kepada atasan).",
+        "ex": "Terima kasih semuanya atas kerja keras menyiapkan rapat hari ini."
+      },
+      "word": "수고하셨습니다",
+      "pronunciation": "sugohasyeotseumnida",
+      "chosung": "ㅅㄱㅎㅅㅅㄴㄷ",
+      "part_of_speech": "인사말 / 관용 표현",
+      "likes": 4880,
+      "dislikes": 8,
+      "tags": [
+        "직장예절",
+        "인사말",
+        "호칭문화",
+        "K직장",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Thanks for your hard work",
+        "desc": "A polite expression acknowledging someone's hard work toward peers or juniors (avoid using it to superiors).",
+        "ex": "Thank you everyone for all your hard work preparing for today's meeting."
+      },
+      "ja": {
+        "slang": "お疲れ様でした (目上には注意)",
+        "desc": "同僚や目下の人の労苦をねぎらう挨拶。目上の人には失礼になり得る点も日本の『ご苦労様』と似ています。",
+        "ex": "今日の会議の準備、皆さん本当にお疲れ様でした。"
+      },
+      "vi": {
+        "slang": "Bạn đã vất vả rồi",
+        "desc": "Lời chào cảm ơn sự nỗ lực của đồng nghiệp hoặc cấp dưới (tránh dùng trực tiếp với cấp trên).",
+        "ex": "Mọi người hôm nay chuẩn bị cuộc họp thật sự đã rất vất vả rồi."
+      },
+      "es": {
+        "slang": "Buen trabajo / Gracias por el esfuerzo",
+        "desc": "Expresión cortés para reconocer el esfuerzo de compañeros o subordinados (se evita con superiores).",
+        "ex": "Muchas gracias a todos por su gran esfuerzo preparando la reunión de hoy."
+      },
+      "id_lang": {
+        "slang": "Terima kasih atas kerja kerasnya",
+        "desc": "Ungkapan sopan mengapresiasi kerja keras rekan atau junior (sebaiknya dihindari kepada atasan).",
+        "ex": "Terima kasih semuanya atas kerja keras menyiapkan rapat hari ini."
+      }
+    },
+    {
+      "id": {
+        "slang": "Berbeda vs. Salah",
+        "desc": "'다르다' berarti berbeda sedangkan '틀리다' berarti salah, meski penutur asli sering mencampurnya dalam percakapan.",
+        "ex": "Itu bukan salah, cuma cara kita saja yang berbeda."
+      },
+      "word": "다르다 vs. 틀리다",
+      "pronunciation": "dareuda vs. teullida",
+      "chosung": "ㄷㄹㄷ / ㅌㄹㄷ",
+      "part_of_speech": "형용사 / 어휘 구분",
+      "likes": 4845,
+      "dislikes": 8,
+      "tags": [
+        "맞춤법",
+        "다르다",
+        "틀리다",
+        "언어습관",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Different vs. Wrong",
+        "desc": "'다르다' means 'different' while '틀리다' means 'wrong,' though native speakers often casually mix them up.",
+        "ex": "That's not wrong; our methods are just different."
+      },
+      "ja": {
+        "slang": "違う(異なる) vs. 間違っている",
+        "desc": "『異なる(다르다)』と『間違っている(틀리다)』の区別。日常会話では韓国人同士でも混用しがちです。",
+        "ex": "それは間違っているのではなく、お互いやり方が違うだけだよ。"
+      },
+      "vi": {
+        "slang": "Khác biệt vs. Sai lầm",
+        "desc": "Phân biệt giữa '다르다' (khác nhau) và '틀리다' (sai), cặp từ người Hàn cũng hay dùng lẫn trong hội thoại.",
+        "ex": "Cái đó không phải sai đâu, chỉ là cách làm của chúng ta khác nhau thôi."
+      },
+      "es": {
+        "slang": "Diferente vs. Equivocado",
+        "desc": "'다르다' significa diferente y '틀리다' significa incorrecto, aunque los nativos suelen mezclarlos al hablar.",
+        "ex": "Eso no está mal; simplemente nuestros métodos son diferentes."
+      },
+      "id_lang": {
+        "slang": "Berbeda vs. Salah",
+        "desc": "'다르다' berarti berbeda sedangkan '틀리다' berarti salah, meski penutur asli sering mencampurnya dalam percakapan.",
+        "ex": "Itu bukan salah, cuma cara kita saja yang berbeda."
+      }
+    },
+    {
+      "id": {
+        "slang": "Segar / Plong (walau panas!)",
+        "desc": "Secara harfiah berarti sejuk, tapi dipakai saat menyeruput sup panas atau sauna untuk rasa lega yang menyegarkan.",
+        "ex": "Minum semangkuk sup tauge panas membuat perut terasa plong dan segar sekali."
+      },
+      "word": "시원하다",
+      "pronunciation": "siwonhada",
+      "chosung": "ㅅㅇㅎㄷ",
+      "part_of_speech": "형용사 / 감각어",
+      "likes": 4810,
+      "dislikes": 8,
+      "tags": [
+        "감각표현",
+        "국물",
+        "해장",
+        "역설적표현",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Refreshing (even when piping hot!)",
+        "desc": "Literally 'cool,' yet uniquely used when eating hot soup or taking a hot bath to express a soothing, refreshing relief.",
+        "ex": "Drinking a bowl of hot bean sprout soup really hits the spot and feels so refreshing."
+      },
+      "ja": {
+        "slang": "さっぱりする / スッとする",
+        "desc": "『涼しい』だけでなく、熱いスープを飲んだりサウナに入った時に感じる爽快感も表す逆説的な感覚表現。",
+        "ex": "アツアツの豆もやしスープを飲んだら、お腹の中がスッと爽快になった。"
+      },
+      "vi": {
+        "slang": "Sảng khoái / Đã nư (kể cả đồ nóng)",
+        "desc": "Nghĩa gốc là mát mẻ, nhưng người Hàn dùng cả khi húp canh nóng hay xông hơi để diễn tả cảm giác nhẹ nhõm, thông thoáng.",
+        "ex": "Húp một bát canh giá nóng hổi xong thấy trong người sảng khoái hẳn."
+      },
+      "es": {
+        "slang": "Reconfortante / Refrescante",
+        "desc": "Literalmente 'fresco', pero se usa al tomar sopa caliente o sauna para expresar alivio y frescor interior.",
+        "ex": "Tomar un tazón de sopa caliente de brotes de soja te deja una sensación muy reconfortante."
+      },
+      "id_lang": {
+        "slang": "Segar / Plong (walau panas!)",
+        "desc": "Secara harfiah berarti sejuk, tapi dipakai saat menyeruput sup panas atau sauna untuk rasa lega yang menyegarkan.",
+        "ex": "Minum semangkuk sup tauge panas membuat perut terasa plong dan segar sekali."
+      }
+    },
+    {
+      "id": {
+        "slang": "Kata kerja multiarti 'Deulda'",
+        "desc": "Kata kerja dasar 'masuk' atau 'mengangkat' yang dipakai untuk menua, masuk angin, makan biaya, hingga cocok di hati.",
+        "ex": "Aku suka desain tas ini, tapi biayanya terlalu mahal."
+      },
+      "word": "들다",
+      "pronunciation": "deulda",
+      "chosung": "ㄷㄷ",
+      "part_of_speech": "동사 (핵심 다의어)",
+      "likes": 4775,
+      "dislikes": 8,
+      "tags": [
+        "다의어",
+        "관용구",
+        "한국어동사",
+        "직역불가",
+        "K정서"
+      ],
+      "trend_status": "SOUL",
+      "en": {
+        "slang": "Polysemous Verb 'Deulda'",
+        "desc": "A versatile verb meaning 'enter' or 'lift,' used in idioms like aging, catching a cold, costing money, or liking something.",
+        "ex": "I like the design of this bag, but it costs too much."
+      },
+      "ja": {
+        "slang": "多義語動詞「トゥルダ」(入る・かかる)",
+        "desc": "年を取る、風邪をひく、お金がかかる、気に入るなど数十もの慣用句を作る直訳不可能な代表的多義語。",
+        "ex": "このバッグはデザインが気に入ったけれど、お金がかかりすぎる。"
+      },
+      "vi": {
+        "slang": "Động từ đa nghĩa 'Deulda'",
+        "desc": "Động từ gốc nghĩa là vào hoặc nhấc lên, mở rộng thành hàng chục cụm từ như có tuổi, bị cảm, tốn tiền, vừa ý.",
+        "ex": "Tôi rất ưng thiết kế chiếc túi này nhưng tốn nhiều tiền quá."
+      },
+      "es": {
+        "slang": "Verbo polisémico 'Deulda'",
+        "desc": "Verbo versátil que significa entrar o levantar, usado en modismos como envejecer, resfriarse, costar dinero o gustar.",
+        "ex": "Me gusta el diseño de este bolso, pero cuesta demasiado."
+      },
+      "id_lang": {
+        "slang": "Kata kerja multiarti 'Deulda'",
+        "desc": "Kata kerja dasar 'masuk' atau 'mengangkat' yang dipakai untuk menua, masuk angin, makan biaya, hingga cocok di hati.",
+        "ex": "Aku suka desain tas ini, tapi biayanya terlalu mahal."
+      }
+    },
+    {
+      "id": {
+        "slang": "Norak / Jadul (Bamti)",
+        "desc": "Bahasa gaul Gen Z Korea 2026 yang berarti norak, kampungan, atau kurang modis.",
+        "ex": "Outfit-ku hari ini kelihatan agak norak ya, ganti baju lain saja kali ya?"
+      },
+      "word": "밤티",
+      "pronunciation": "bamti",
+      "chosung": "ㅂㅌ",
+      "part_of_speech": "명사 / 형용사형 신조어",
+      "likes": 4740,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "10대은어",
+        "패션",
+        "촌스럽다",
+        "SNS밈"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "Tacky / Cringe / Outdated",
+        "desc": "2026 Gen-Z slang meaning tacky, cringe, outdated, or unflattering in style or appearance.",
+        "ex": "My outfit today looks kind of tacky—should I wear something else?"
+      },
+      "ja": {
+        "slang": "ダサい / 野暮ったい (バムティ)",
+        "desc": "野暮ったい、ダサい、洗練されていないという意味の2026年10代・20代SNS新造語。",
+        "ex": "今日のコーデちょっとダサい気がするんだけど、別の服に着替えようかな？"
+      },
+      "vi": {
+        "slang": "Quê mùa / Phèn (Bamti)",
+        "desc": "Tiếng lóng Gen Z 2026 chỉ phong cách hoặc ngoại hình trông quê mùa, sến súa và kém thời thượng.",
+        "ex": "Bộ đồ hôm nay mặc trông hơi phèn, hay là đổi bộ khác nhỉ?"
+      },
+      "es": {
+        "slang": "Cutre / Pasado de moda (Bamti)",
+        "desc": "Jerga juvenil coreana de 2026 que significa cursi, anticuado o poco favorecedor.",
+        "ex": "Mi conjunto de hoy se ve un poco cutre, ¿me pongo otra cosa?"
+      },
+      "id_lang": {
+        "slang": "Norak / Jadul (Bamti)",
+        "desc": "Bahasa gaul Gen Z Korea 2026 yang berarti norak, kampungan, atau kurang modis.",
+        "ex": "Outfit-ku hari ini kelihatan agak norak ya, ganti baju lain saja kali ya?"
+      }
+    },
+    {
+      "id": {
+        "slang": "Asyik! / Mantap! (Yareu)",
+        "desc": "Seruan ceria saat merasa sangat senang, beruntung, atau bersemangat.",
+        "ex": "Katanya kelas terakhir hari ini diliburkan! Asyik!"
+      },
+      "word": "야르",
+      "pronunciation": "yareu",
+      "chosung": "ㅇㄹ",
+      "part_of_speech": "감탄사",
+      "likes": 4705,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "감탄사",
+        "10대유행어",
+        "릴스밈"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "Yay! / Let's go! (Yareu)",
+        "desc": "A cheerful 2026 Korean exclamation shouted when feeling super excited, lucky, or thrilled.",
+        "ex": "Last class today got canceled! Let's go!"
+      },
+      "ja": {
+        "slang": "やったー！ / よっしゃ！ (ヤル)",
+        "desc": "気分が最高に良い時や思いがけない幸運を得た時に叫ぶ軽快な感嘆詞。",
+        "ex": "今日の最後の授業が休講だって！やったー！"
+      },
+      "vi": {
+        "slang": "Tuyệt vời! / Đỉnh quá! (Yareu)",
+        "desc": "Thán từ vui tươi giới trẻ Hàn dùng khi cực kỳ phấn khích hoặc gặp may mắn bất ngờ.",
+        "ex": "Tiết cuối hôm nay được nghỉ rồi! Tuyệt vời!"
+      },
+      "es": {
+        "slang": "¡Yuju! / ¡Vamos! (Yareu)",
+        "desc": "Exclamación alegre que se grita cuando se siente mucha emoción o buena suerte inesperada.",
+        "ex": "¡Dicen que se canceló la última clase de hoy! ¡Vamos!"
+      },
+      "id_lang": {
+        "slang": "Asyik! / Mantap! (Yareu)",
+        "desc": "Seruan ceria saat merasa sangat senang, beruntung, atau bersemangat.",
+        "ex": "Katanya kelas terakhir hari ini diliburkan! Asyik!"
+      }
+    },
+    {
+      "id": {
+        "slang": "Duh, sial! (Versi halus)",
+        "desc": "Kata pengganti halus untuk umpatan saat kesal atau tidak habis pikir.",
+        "ex": "Ketinggalan kereta cuma beda 1 detik sebelum pintu tutup, sial banget."
+      },
+      "word": "샤갈 (사갈)",
+      "pronunciation": "syagal / sagal",
+      "chosung": "ㅅㄱ",
+      "part_of_speech": "감탄사 (순화 표현)",
+      "likes": 4670,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "순화표현",
+        "감탄사",
+        "숏폼밈"
+      ],
+      "trend_status": "TRENDING",
+      "en": {
+        "slang": "Dang it! / Shoot! (Minced oath)",
+        "desc": "A softened substitute for a swear word used when annoyed, frustrated, or in disbelief.",
+        "ex": "I missed the subway one second before the doors closed—dang it."
+      },
+      "ja": {
+        "slang": "ちくしょう / マジかよ (純化語)",
+        "desc": "激しいスラングを和らげ、呆れたりイライラした時に使う感嘆詞。",
+        "ex": "地下鉄のドアが閉まる1秒前に乗り遅れた、マジかよ。"
+      },
+      "vi": {
+        "slang": "Trời đất ơi / Chết tiệt nhẹ",
+        "desc": "Từ nói tránh nhẹ nhàng thay cho câu chửi thề khi bực mình hoặc cạn lời.",
+        "ex": "Trễ tàu điện ngầm đúng 1 giây trước khi cửa đóng, tức ghê."
+      },
+      "es": {
+        "slang": "¡Maldita sea! (suavizado)",
+        "desc": "Sustituto suavizado de una palabrota que se usa cuando algo molesta o frustra.",
+        "ex": "Perdí el metro un segundo antes de que cerraran las puertas, qué rabia."
+      },
+      "id_lang": {
+        "slang": "Duh, sial! (Versi halus)",
+        "desc": "Kata pengganti halus untuk umpatan saat kesal atau tidak habis pikir.",
+        "ex": "Ketinggalan kereta cuma beda 1 detik sebelum pintu tutup, sial banget."
+      }
+    },
+    {
+      "id": {
+        "slang": "Makasih banyak! (Ajaseu)",
+        "desc": "Cara santai dan lucu mengucapkan terima kasih di kalangan remaja, berasal dari singkatan gaul Jepang.",
+        "ex": "Makasih banget sudah berbagi catatan kuliah!"
+      },
+      "word": "아자스 (야자스)",
+      "pronunciation": "ajaseu / yajaseu",
+      "chosung": "ㅇㅈㅅ",
+      "part_of_speech": "감탄사 / 인사말",
+      "likes": 4635,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "감사인사",
+        "10대은어",
+        "밈"
+      ],
+      "trend_status": "TRENDING",
+      "en": {
+        "slang": "Thx! / Appreciate it! (Ajaseu)",
+        "desc": "A playful, casual way to say 'thanks' among Korean teens, derived from abbreviated Japanese slang.",
+        "ex": "Thanks a ton for sharing your lecture notes!"
+      },
+      "ja": {
+        "slang": "あざっす！ (逆輸入スラング)",
+        "desc": "日本語の『あざっす』が韓国の10代・SNSでカジュアルな感謝のミームとして定着した表現。",
+        "ex": "授業ノートを共有してくれてマジあざっす！"
+      },
+      "vi": {
+        "slang": "Cảm ơn nha! (Ajaseu)",
+        "desc": "Cách nói cảm ơn kiểu đùa vui, thân mật của giới trẻ, bắt nguồn từ tiếng lóng viết tắt.",
+        "ex": "Chia sẻ vở ghi chép cho mình, thật sự cảm ơn nha!"
+      },
+      "es": {
+        "slang": "¡Mil gracias! (informal)",
+        "desc": "Forma divertida y casual de dar las gracias derivada de la jerga japonesa abreviada.",
+        "ex": "¡Mil gracias por compartir tus apuntes de clase!"
+      },
+      "id_lang": {
+        "slang": "Makasih banyak! (Ajaseu)",
+        "desc": "Cara santai dan lucu mengucapkan terima kasih di kalangan remaja, berasal dari singkatan gaul Jepang.",
+        "ex": "Makasih banget sudah berbagi catatan kuliah!"
+      }
+    },
+    {
+      "id": {
+        "slang": "Mager mendadak pas mau berangkat",
+        "desc": "Singkatan dari 'pas mau keluar malah jadi malas', rasa mager tiba-tiba di depan pintu padahal sudah siap semua.",
+        "ex": "Sudah dandan rapi, tapi pas di depan pintu tiba-tiba kena serangan mager."
+      },
+      "word": "막나귀",
+      "pronunciation": "mangnagwi",
+      "chosung": "ㅁㄴㄱ",
+      "part_of_speech": "명사 / 줄임말",
+      "likes": 4600,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "줄임말",
+        "집순이",
+        "귀차니즘"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "Last-minute laziness before going out",
+        "desc": "Short for 'suddenly feeling too lazy to go out right when it's time to leave,' even after getting completely ready.",
+        "ex": "I already put on my makeup, and right at the front door I suddenly got too lazy to go out."
+      },
+      "ja": {
+        "slang": "出かける直前に急に面倒になる現象",
+        "desc": "『いざ出かけようとすると面倒くさい』の略。外出準備を終えた直後に急に行きたくなくなる心理。",
+        "ex": "メイクまで全部済ませたのに、玄関の前で急に面倒になってきた。"
+      },
+      "vi": {
+        "slang": "Lười đột xuất ngay trước giờ ra khỏi nhà",
+        "desc": "Viết tắt của 'đến lúc sắp đi lại thấy lười', cảm giác tụt hứng ngay trước cửa dù đã chuẩn bị xong xuôi.",
+        "ex": "Trang điểm xong xuôi hết rồi mà đứng trước cửa tự dưng lại thấy lười đi."
+      },
+      "es": {
+        "slang": "Pereza de último minuto al salir",
+        "desc": "Abreviatura de 'justo al ir a salir da pereza', ese bajón repentino cuando ya estás listo en la puerta.",
+        "ex": "Ya hasta me maquillé, pero justo frente a la puerta me dio una pereza tremenda."
+      },
+      "id_lang": {
+        "slang": "Mager mendadak pas mau berangkat",
+        "desc": "Singkatan dari 'pas mau keluar malah jadi malas', rasa mager tiba-tiba di depan pintu padahal sudah siap semua.",
+        "ex": "Sudah dandan rapi, tapi pas di depan pintu tiba-tiba kena serangan mager."
+      }
+    },
+    {
+      "id": {
+        "slang": "Anak ketergantungan AI (Jemmini)",
+        "desc": "Plesetan dari 'Gemini' dan 'jammini', menjuluki orang yang bergantung pada AI bahkan untuk keputusan sepele.",
+        "ex": "Mau makan siang apa saja tanya ke AI, benar-benar anak ketergantungan AI."
+      },
+      "word": "젬민이",
+      "pronunciation": "jemmini",
+      "chosung": "ㅈㅁㅇ",
+      "part_of_speech": "명사 / 신조어",
+      "likes": 4565,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "AI시대",
+        "제미나이",
+        "언어유희"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "AI-dependent kid (Jemmini)",
+        "desc": "A playful pun on 'Gemini' and 'jammini' (kid), describing someone who relies on generative AI for every tiny decision.",
+        "ex": "You're even asking AI what to eat for lunch—you're totally AI-dependent."
+      },
+      "ja": {
+        "slang": "AI依存っ子 (ジェムミニ)",
+        "desc": "『ジェミニ(Gemini)』と韓国の俗語を掛け合わせ、些細な決断まで全てAIに頼る人を指す新造語。",
+        "ex": "今日のランチ何食べるかまでAIに聞いてるの？完全にAI依存だね。"
+      },
+      "vi": {
+        "slang": "Người nghiện hỏi AI (Jemmini)",
+        "desc": "Cách chơi chữ giữa 'Gemini' và 'jammini', chỉ người phụ thuộc vào AI từ những quyết định nhỏ nhất.",
+        "ex": "Hôm nay ăn trưa gì cũng hỏi AI nữa, đúng là dân nghiện AI rồi."
+      },
+      "es": {
+        "slang": "Dependiente de la IA (Jemmini)",
+        "desc": "Juego de palabras con 'Gemini' para describir a quien depende de la IA hasta para las decisiones mínimas.",
+        "ex": "¿Hasta le preguntas a la IA qué comer hoy? Eres totalmente dependiente de la IA."
+      },
+      "id_lang": {
+        "slang": "Anak ketergantungan AI (Jemmini)",
+        "desc": "Plesetan dari 'Gemini' dan 'jammini', menjuluki orang yang bergantung pada AI bahkan untuk keputusan sepele.",
+        "ex": "Mau makan siang apa saja tanya ke AI, benar-benar anak ketergantungan AI."
+      }
+    },
+    {
+      "id": {
+        "slang": "Manusia Temu (Besar di kemasan)",
+        "desc": "Sindiran untuk orang yang tampak hebat di luar tapi kualitas kerjanya jauh di bawah ekspektasi.",
+        "ex": "Lihat CV-nya kupikir hebat banget, pas disuruh kerja ternyata cuma bagus di luar."
+      },
+      "word": "테무인간",
+      "pronunciation": "temu-ingan",
+      "chosung": "ㅌㅁㅇㄱ",
+      "part_of_speech": "명사 / 신조어",
+      "likes": 4530,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "직장생활",
+        "테무밈",
+        "풍자"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "Temu human (All hype, no substance)",
+        "desc": "Someone who looks impressive on the surface but lacks real skill or substance—like overly hyped online bargains.",
+        "ex": "Looking at their resume I thought they were amazing, but in real work they were all show and no substance."
+      },
+      "ja": {
+        "slang": "見掛け倒し人間 (Temu人間)",
+        "desc": "見た目は華やかでも実際の実力や中身が期待外れな人を、通販サイトのギャップに例えた新造語。",
+        "ex": "履歴書だけ見たら凄そうだと思ったのに、実際に仕事をさせたら見掛け倒しだった。"
+      },
+      "vi": {
+        "slang": "Người hàng Temu (Thùng rỗng kêu to)",
+        "desc": "Ví von người bề ngoài hào nhoáng nhưng thực lực kém xa kỳ vọng, lấy cảm hứng từ meme mua hàng online khác ảnh.",
+        "ex": "Nhìn CV tưởng giỏi lắm, ai dè lúc vào việc mới biết chỉ được cái mã."
+      },
+      "es": {
+        "slang": "Persona Temu (Pura fachada)",
+        "desc": "Alguien que luce impresionante por fuera pero carece de sustancia real, comparado con compras decepcionantes en línea.",
+        "ex": "Por su currículum parecía brillante, pero trabajando resultó ser pura fachada."
+      },
+      "id_lang": {
+        "slang": "Manusia Temu (Besar di kemasan)",
+        "desc": "Sindiran untuk orang yang tampak hebat di luar tapi kualitas kerjanya jauh di bawah ekspektasi.",
+        "ex": "Lihat CV-nya kupikir hebat banget, pas disuruh kerja ternyata cuma bagus di luar."
+      }
+    },
+    {
+      "id": {
+        "slang": "Sekali klik beres (pakai AI)",
+        "desc": "Awalnya bunyi klik mouse, kini berarti menyelesaikan pekerjaan rumit dalam hitungan detik berkat AI.",
+        "ex": "Draf presentasi kali ini kuselesaikan dalam 5 menit cuma sekali klik pakai AI."
+      },
+      "word": "딸깍",
+      "pronunciation": "ttalkkak",
+      "chosung": "ㄸㄲ",
+      "part_of_speech": "부사 / 명사형 신조어",
+      "likes": 4495,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "AI활용",
+        "의성어",
+        "직장인밈"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "One-click AI magic (Ttalkkak)",
+        "desc": "Originally the sound of a mouse click, now slang for effortlessly generating complex work in seconds using AI.",
+        "ex": "I finished the first draft of this presentation in five minutes with just a quick AI click."
+      },
+      "ja": {
+        "slang": "ワンクリック生成 (カチッ)",
+        "desc": "本来はクリック音の擬音語だが、AIツールを使い複雑な作業をワンクリックで一瞬で終わらせる意味の新造語。",
+        "ex": "今回のプレゼン資料の下書きは、AIでワンクリックして5分で終わらせた。"
+      },
+      "vi": {
+        "slang": "Một cú click là xong (Ttalkkak)",
+        "desc": "Từ tượng thanh tiếng bấm chuột, nay chỉ việc dùng AI tạo ra sản phẩm phức tạp chỉ trong vài giây.",
+        "ex": "Bản nháp bài thuyết trình lần này mình bấm AI một cái là xong trong 5 phút."
+      },
+      "es": {
+        "slang": "Hecho en un clic (con IA)",
+        "desc": "Originalmente el sonido de un clic, ahora jerga para generar trabajos complejos en segundos usando IA.",
+        "ex": "Terminé el primer borrador de esta presentación en cinco minutos con un simple clic de IA."
+      },
+      "id_lang": {
+        "slang": "Sekali klik beres (pakai AI)",
+        "desc": "Awalnya bunyi klik mouse, kini berarti menyelesaikan pekerjaan rumit dalam hitungan detik berkat AI.",
+        "ex": "Draf presentasi kali ini kuselesaikan dalam 5 menit cuma sekali klik pakai AI."
+      }
+    },
+    {
+      "id": {
+        "slang": "Kontrol ekspektasi",
+        "desc": "Singkatan dari 'kontrol ekspektasi'—sengaja menurunkan harapan sejak awal agar tidak terlalu kecewa nanti.",
+        "ex": "Kayaknya ujianku hancur, jadi aku lagi menurunkan ekspektasi orang tuaku dulu."
+      },
+      "word": "기대컨",
+      "pronunciation": "gidaekeon",
+      "chosung": "ㄱㄷㅋ",
+      "part_of_speech": "명사 / 줄임말",
+      "likes": 4460,
+      "dislikes": 8,
+      "tags": [
+        "2026신조어",
+        "줄임말",
+        "심리방어",
+        "1020밈"
+      ],
+      "trend_status": "HOT",
+      "en": {
+        "slang": "Expectation control",
+        "desc": "Short for 'expectation control'—deliberately lowering others' (or your own) expectations beforehand to soften disappointment.",
+        "ex": "I think I bombed this exam, so I'm managing my parents' expectations in advance."
+      },
+      "ja": {
+        "slang": "期待値コントロール",
+        "desc": "後の失望を減らすために、あらかじめ周囲や自分の期待値を低く抑えておくこと。",
+        "ex": "テストに失敗したっぽいから、今のうちに両親の期待値を下げておいてる。"
+      },
+      "vi": {
+        "slang": "Kiểm soát kỳ vọng",
+        "desc": "Viết tắt của 'kiểm soát kỳ vọng'—chủ động hạ thấp mong đợi trước để đỡ thất vọng về sau.",
+        "ex": "Thi có vẻ toang rồi nên mình đang hạ kỳ vọng của bố mẹ xuống trước đây."
+      },
+      "es": {
+        "slang": "Control de expectativas",
+        "desc": "Bajar deliberadamente las expectativas propias o ajenas de antemano para amortiguar una futura decepción.",
+        "ex": "Creo que reprobé el examen, así que estoy bajando las expectativas de mis padres."
+      },
+      "id_lang": {
+        "slang": "Kontrol ekspektasi",
+        "desc": "Singkatan dari 'kontrol ekspektasi'—sengaja menurunkan harapan sejak awal agar tidak terlalu kecewa nanti.",
+        "ex": "Kayaknya ujianku hancur, jadi aku lagi menurunkan ekspektasi orang tuaku dulu."
+      }
+    },
     {
       "id": {
         "slang": "Kena mental / Tersinggung berat",

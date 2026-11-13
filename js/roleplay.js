@@ -20,6 +20,8 @@
   let activeSceneToken = 0;
   let cachedVoices = [];
   let audioCtx = null;
+  const BASE_LANG_METADATA = window.LANG_METADATA;
+  const BASE_DRAMA_SCRIPTS = window.DRAMA_SCRIPTS;
 
   // 🔊 Web Audio API 기반 소프트 트랜지션 사운드
   function playSoftChime() {
@@ -198,6 +200,18 @@
     const modal = document.getElementById('roleplayModal');
     if (!modal) return;
 
+    const customRp = (window.ROLEPLAY_BY_WORD && wordId !== undefined && wordId !== null)
+      ? window.ROLEPLAY_BY_WORD[String(wordId)]
+      : null;
+    window.LANG_METADATA = customRp ? customRp.langMetadata : BASE_LANG_METADATA;
+    window.DRAMA_SCRIPTS = customRp ? customRp.dramaScripts : BASE_DRAMA_SCRIPTS;
+
+    const quickSpeakBtn = document.querySelector('#roleplayModal .btn-rp-speak, #roleplayModal [onclick*="speakQuickWord"]');
+    if (quickSpeakBtn) {
+      const targetWord = customRp ? customRp.word : '눈치';
+      quickSpeakBtn.setAttribute('onclick', `speakQuickWord('${String(targetWord).replace(/'/g, "\\'")}')`);
+    }
+
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 
@@ -358,10 +372,13 @@
       else player.classList.remove('rp-screen-shake');
     }
 
-    // 프로그레스 바 초기화 (현재 씬 이전은 100%, 이후는 0%)
-    for (let i = 0; i < scripts.length; i++) {
+    // 프로그레스 바 초기화 (현재 씬 이전은 100%, 이후는 0%, 씬 수에 맞춰 세그먼트 표시)
+    for (let i = 0; i < 5; i++) {
       const fill = document.getElementById(`rpFill-${i}`);
       if (fill) {
+        if (fill.parentElement) {
+          fill.parentElement.style.display = (i < scripts.length) ? '' : 'none';
+        }
         fill.style.transition = 'none';
         if (i < idx) fill.style.width = '100%';
         else fill.style.width = '0%';
