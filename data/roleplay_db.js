@@ -943,8 +943,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“친한 친구가 내 생일을 깜빡해서 조금 서운했다.”",
         "def": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "데미스 (Demis)",
+        "castJennifer": "하루키 (Haruki)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -955,8 +955,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -967,8 +967,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“親友が私の誕生日をうっかり忘れていて、少し寂しく感じた。”",
         "def": "親しい相手から期待していた気遣いや関心を得られなかった時に感じる微妙な寂しさ・心残り",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "デミス (Demis)",
+        "castJennifer": "ハルキ (Haruki)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -979,8 +979,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Me sentí un poco dolido porque mi mejor amigo olvidó mi cumpleaños.”",
         "def": "Sentirse ligeramente herido o decepcionado cuando alguien cercano no muestra el afecto esperado.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -991,8 +991,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'ai eu un petit pincement au cœur parce que mon ami proche a oublié mon anniversaire.”",
         "def": "Ressentir une légère peine lorsqu'un proche ne manifeste pas l'attention espérée.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -1003,23 +1003,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "데미스 (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
           "trans": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1027,15 +1027,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "하루키 (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
           "trans": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1045,15 +1045,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I'm going on a business trip to Seoul this week—want to meet up briefly?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1061,15 +1061,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "What, really? Honestly, I felt a little hurt that you didn't tell me sooner you were coming!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1079,15 +1079,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "デミス (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今週ソウルに出張で行くんだけど、少し会おうか？",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1095,15 +1095,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ハルキ (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "えっ、本当？ソウルに来るのに前もって連絡してくれなくて、正直ちょっと寂しかったよ！",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1113,15 +1113,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Voy a Seúl por trabajo esta semana, ¿nos vemos un rato?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1129,15 +1129,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¿En serio? La verdad me sentí un poco dolido de que no me avisaras antes que venías.",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1147,15 +1147,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Je vais à Séoul pour le travail cette semaine, on se voit vite fait ?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1163,15 +1163,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Quoi, vraiment ? Franchement, j'ai été un peu peiné que tu ne me préviennes pas plus tôt !",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1181,15 +1181,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Minggu ini aku ada dinas ke Seoul, mau ketemu sebentar nggak?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1197,15 +1197,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Wah, serius? Jujur aku agak kecewa kamu nggak kabarin dari awal mau ke Seoul!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1226,8 +1226,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“아무리 설명해도 이해를 못 하니까 정말 답답하다.”",
         "def": "공간이 좁거나 속이 체했을 때, 또는 소통이 안 되어 속이 터질 듯한 답답한 감정",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "사티아 (Satya)",
+        "castJennifer": "페기 (Peggy)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -1238,8 +1238,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It's so frustrating that they don't understand no matter how much I explain.”",
         "def": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -1250,8 +1250,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“いくら説明しても理解してくれないので、本当にもどかしい。”",
         "def": "空間が狭い時や胃がもたれる時、または話が通じずもどかしくてイライラする感覚",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "サティア (Satya)",
+        "castJennifer": "ペギー (Peggy)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -1262,8 +1262,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Es muy frustrante que no entiendan por más que lo explique.”",
         "def": "Sentirse frustrado, agobiado o sofocado, ya sea por un lugar cerrado o por falta de entendimiento.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -1274,8 +1274,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“C'est tellement frustrant qu'ils ne comprennent pas, peu importe mes explications.”",
         "def": "Se sentir frustré, étouffé ou bloqué, que ce soit dans une pièce fermée ou face à un dialogue de sourds.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -1286,23 +1286,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It's so frustrating that they don't understand no matter how much I explain.”",
         "def": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "사티아 (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
           "trans": "공간이 좁거나 속이 체했을 때, 또는 소통이 안 되어 속이 터질 듯한 답답한 감정",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1310,15 +1310,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "페기 (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
           "trans": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1328,15 +1328,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I called customer service three times and they just repeat the exact same thing. Ugh, so frustrating!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1344,15 +1344,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Calm down, let me send them a direct email inquiry.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1362,15 +1362,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "サティア (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "カスタマーセンターに3回も電話したのに同じことばっかり繰り返すんだよ。ああ、本当にもどかしい！",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1378,15 +1378,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ペギー (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "落ち着いて、私が直接メールで問い合わせてみるよ。",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1396,15 +1396,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Llamé tres veces al servicio al cliente y solo repiten lo mismo. ¡Qué frustración!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1412,15 +1412,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Cálmate, déjame escribirles un correo directamente.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1430,15 +1430,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai appelé le service client trois fois et ils répètent la même chose. C'est tellement frustrant !",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1446,15 +1446,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Calme-toi, je vais leur envoyer un e-mail directement.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1464,15 +1464,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Udah tiga kali telepon layanan pelanggan tapi jawabannya gitu-gitu aja. Duh, bikin frustrasi banget!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1480,15 +1480,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Tenang dulu, biar aku coba kirim pertanyaan langsung lewat email.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -1509,8 +1509,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“친한 친구가 내 생일을 깜빡해서 조금 서운했다.”",
         "def": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "무스타파 (Mustafa)",
+        "castJennifer": "김 (Kim)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -1521,8 +1521,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -1533,8 +1533,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“親友が私の誕生日をうっかり忘れていて、少し寂しく感じた。”",
         "def": "親しい相手から期待していた気遣いや関心を得られなかった時に感じる微妙な寂しさ・心残り",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ムスタファ (Mustafa)",
+        "castJennifer": "キム (Kim)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -1545,8 +1545,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Me sentí un poco dolido porque mi mejor amigo olvidó mi cumpleaños.”",
         "def": "Sentirse ligeramente herido o decepcionado cuando alguien cercano no muestra el afecto esperado.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -1557,8 +1557,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'ai eu un petit pincement au cœur parce que mon ami proche a oublié mon anniversaire.”",
         "def": "Ressentir une légère peine lorsqu'un proche ne manifeste pas l'attention espérée.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -1569,23 +1569,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "무스타파 (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
           "trans": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1593,33 +1593,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "김 (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
           "trans": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I'm going on a business trip to Seoul this week—want to meet up briefly?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1627,33 +1627,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "What, really? Honestly, I felt a little hurt that you didn't tell me sooner you were coming!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ムスタファ (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今週ソウルに出張で行くんだけど、少し会おうか？",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1661,33 +1661,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "キム (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "えっ、本当？ソウルに来るのに前もって連絡してくれなくて、正直ちょっと寂しかったよ！",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Voy a Seúl por trabajo esta semana, ¿nos vemos un rato?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1695,33 +1695,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¿En serio? La verdad me sentí un poco dolido de que no me avisaras antes que venías.",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Je vais à Séoul pour le travail cette semaine, on se voit vite fait ?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1729,33 +1729,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Quoi, vraiment ? Franchement, j'ai été un peu peiné que tu ne me préviennes pas plus tôt !",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Minggu ini aku ada dinas ke Seoul, mau ketemu sebentar nggak?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1763,20 +1763,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Wah, serius? Jujur aku agak kecewa kamu nggak kabarin dari awal mau ke Seoul!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -1792,8 +1792,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“이번 앨범 컨셉 기획자 완전 감다살이다.”",
         "def": "'감이 다 살았네'의 줄임말로, 센스 있는 드립이나 훌륭한 결과물을 칭찬할 때 쓰는 말",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "셜록 (Sherlock)",
+        "castJennifer": "유피디 (UPD)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -1804,8 +1804,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Whoever planned this album concept totally nailed the vibe.”",
         "def": "Short for 'your instincts/taste are completely alive,' used to praise someone who nailed the vibe or showed elite taste.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -1816,8 +1816,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“今回のアルバムコンセプトの企画者、マジでセンス抜群だわ。”",
         "def": "「勘が完全に冴えてるね（감이 다 살았네）」の略で、センス抜群の企画やコメントを褒める言葉",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "シャーロック (Sherlock)",
+        "castJennifer": "ユーピーディー (UPD)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -1828,8 +1828,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Quien planeó el concepto de este álbum dio totalmente en el clavo.”",
         "def": "Abreviatura de 'tus instintos están al máximo', usada para elogiar a alguien con excelente gusto o creatividad.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -1840,8 +1840,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Celui qui a imaginé le concept de cet album a vraiment assuré.”",
         "def": "Abréviation de « ton flair est au top », utilisée pour féliciter quelqu'un qui a visé juste avec beaucoup de goût.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -1852,23 +1852,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Whoever planned this album concept totally nailed the vibe.”",
         "def": "Short for 'your instincts/taste are completely alive,' used to praise someone who nailed the vibe or showed elite taste.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "셜록 (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
           "trans": "'감이 다 살았네'의 줄임말로, 센스 있는 드립이나 훌륭한 결과물을 칭찬할 때 쓰는 말",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1876,33 +1876,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "유피디 (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
           "trans": "Short for 'your instincts/taste are completely alive,' used to praise someone who nailed the vibe or showed elite taste.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "The details at this pop-up store—from the photo zone lighting to the merch—were insane.",
           "trans": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1910,33 +1910,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Totally, the brand director completely nailed the vibe this time.",
           "trans": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "シャーロック (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今回のポップアップストア、フォトゾーンの照明からグッズまでディテールが神がかってたね。",
           "trans": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1944,33 +1944,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ユーピーディー (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "わかる、ブランドディレクター今回マジでセンス抜群だったわ。",
           "trans": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Los detalles de esta tienda pop-up, desde la iluminación hasta los productos, estuvieron increíbles.",
           "trans": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -1978,33 +1978,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Totalmente, el director de marca dio en el clavo esta vez.",
           "trans": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Les détails de ce pop-up store, de l'éclairage de la zone photo aux produits dérivés, étaient dingues.",
           "trans": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2012,33 +2012,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Carrément, le directeur de marque a vraiment assuré cette fois.",
           "trans": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Detail pop-up store kali ini dari pencahayaan zona foto sampai merch-nya gila banget.",
           "trans": "이번 팝업스토어 포토존 조명부터 굿즈까지 디테일 미쳤더라.",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2046,20 +2046,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Setuju, direktur brand-nya kali ini seleranya on point banget.",
           "trans": "인정, 브랜드 디렉터가 이번에 완전 감다살이었어.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -2075,8 +2075,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“처음엔 어색했지만 같이 일하다 보니 정이 많이 들었다.”",
         "def": "오랜 시간 함께하며 쌓이는 깊은 애정, 연대감, 인간적 유대감",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "댄 (Dan)",
+        "castJennifer": "크레이그 (Craig)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -2087,8 +2087,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It was awkward at first, but we grew deeply fond of each other while working together.”",
         "def": "A deep, affectionate bond and emotional attachment built over time through shared experiences.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -2099,8 +2099,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“最初はぎこちなかったが、一緒に働くうちにすっかり情が移った。”",
         "def": "長い時間を共に過ごす中で自然と芽生える深い愛情や人間的な絆・情愛",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ダン (Dan)",
+        "castJennifer": "クレイグ (Craig)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -2111,8 +2111,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Al principio fue incómodo, pero nos encariñamos mucho trabajando juntos.”",
         "def": "Un vínculo afectivo profundo y apego emocional que se construye con el tiempo y la convivencia.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -2123,8 +2123,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“C'était gênant au début, mais nous nous sommes beaucoup attachés en travaillant ensemble.”",
         "def": "Un lien affectif profond et un attachement humain qui se tissent au fil du temps.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -2135,23 +2135,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It was awkward at first, but we grew deeply fond of each other while working together.”",
         "def": "A deep, affectionate bond and emotional attachment built over time through shared experiences.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "댄 (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
           "trans": "오랜 시간 함께하며 쌓이는 깊은 애정, 연대감, 인간적 유대감",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2159,33 +2159,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "크레이그 (Craig)",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
           "trans": "A deep, affectionate bond and emotional attachment built over time through shared experiences.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "It's so hard to leave a neighborhood I've lived in for over ten years.",
           "trans": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2193,33 +2193,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "I bet. You must have built such deep affection and attachment with your neighbors.",
           "trans": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ダン (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "10年以上住んだ街を離れるとなると、なかなか足が向きませんね。",
           "trans": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2227,33 +2227,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "クレイグ (Craig)",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "そうですよね、ご近所さんともすっかり情が移ったでしょうから本当に名残惜しいですね。",
           "trans": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Me cuesta mucho dejar un barrio en el que he vivido más de diez años.",
           "trans": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2261,33 +2261,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Claro, seguro que le tomaste muchísimo cariño a los vecinos con el tiempo.",
           "trans": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "C'est dur de quitter un quartier où j'ai vécu plus de dix ans.",
           "trans": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2295,33 +2295,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Tu m'étonnes, tu as dû tisser des liens très forts avec les voisins.",
           "trans": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Rasanya berat banget ninggalin lingkungan yang udah aku tempatin lebih dari 10 tahun.",
           "trans": "10년 넘게 살던 동네를 떠나려니까 발길이 안 떨어지네요.",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -2329,20 +2329,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Iya pasti, kamu pasti udah punya ikatan batin yang kuat sama tetangga di sini.",
           "trans": "맞아요, 이웃들이랑 고운 정 미운 정 다 들었을 텐데 정말 아쉽겠어요.",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -2358,8 +2358,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“그는 눈치가 빨라서 말하지 않아도 내 기분을 바로 알아챘다.”",
         "def": "타인의 기분과 상황의 분위기를 즉각 살피고 맞춰 행동하는 사회적 감각",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "제니퍼 (Jennifer)",
+        "castJennifer": "데미스 (Demis)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -2370,8 +2370,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“He is quick-witted at reading the room, so he noticed my mood without me saying a word.”",
         "def": "The acute social awareness and ability to read the room and gauge others' moods without being told.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -2382,8 +2382,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“彼は空気を読むのが早いので、言わなくても私の気分にすぐ気づいた。”",
         "def": "相手の気分やその場の空気を瞬時に読み取り、適切に行動する社会的感覚",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ジェニファー (Jennifer)",
+        "castJennifer": "デミス (Demis)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -2394,8 +2394,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Tiene mucha intuición social, así que notó mi estado de ánimo sin que dijera una palabra.”",
         "def": "La aguda percepción social para leer el ambiente y captar el estado de ánimo de los demás sin palabras.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -2406,8 +2406,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Il a beaucoup de flair social, il a donc deviné mon humeur sans que je dise un mot.”",
         "def": "La finesse sociale permettant de décrypter l'ambiance et l'humeur des autres sans qu'un mot soit dit.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -2418,214 +2418,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“He is quick-witted at reading the room, so he noticed my mood without me saying a word.”",
         "def": "The acute social awareness and ability to read the room and gauge others' moods without being told.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "제니퍼 (Jennifer)",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
           "trans": "타인의 기분과 상황의 분위기를 즉각 살피고 맞춰 행동하는 사회적 감각",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "데미스 (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "아, 미안. 내가 눈치가 없었네.",
           "trans": "The acute social awareness and ability to read the room and gauge others' moods without being told.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Can't you see the meeting room is totally frozen? Why do you keep joking?",
           "trans": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, sorry. I failed to read the room.",
           "trans": "아, 미안. 내가 눈치가 없었네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ジェニファー (Jennifer)",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "みんな会議の空気が凍りついてるの分からないの？なんで冗談ばっかり言うの？",
           "trans": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "デミス (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "あ、ごめん。空気読めてなかったね。",
           "trans": "아, 미안. 내가 눈치가 없었네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "¿No ves que el ambiente de la reunión está tenso? ¿Por qué sigues bromeando?",
           "trans": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, perdón. No capté la indirecta del ambiente.",
           "trans": "아, 미안. 내가 눈치가 없었네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Tu ne vois pas que l'ambiance de la réunion est glaciale ? Pourquoi tu continues de plaisanter ?",
           "trans": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, désolé. J'ai manqué de flair.",
           "trans": "아, 미안. 내가 눈치가 없었네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Kamu nggak lihat suasana rapat lagi tegang? Kenapa bercanda terus?",
           "trans": "다들 회의 분위기 얼어붙은 거 안 보여? 왜 자꾸 농담해?",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, maaf. Aku kurang peka sama situasinya.",
           "trans": "아, 미안. 내가 눈치가 없었네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -2641,8 +2641,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“아무리 설명해도 이해를 못 하니까 정말 답답하다.”",
         "def": "공간이 좁거나 속이 체했을 때, 또는 소통이 안 되어 속이 터질 듯한 답답한 감정",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "하루키 (Haruki)",
+        "castJennifer": "사티아 (Satya)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -2653,8 +2653,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It's so frustrating that they don't understand no matter how much I explain.”",
         "def": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -2665,8 +2665,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“いくら説明しても理解してくれないので、本当にもどかしい。”",
         "def": "空間が狭い時や胃がもたれる時、または話が通じずもどかしくてイライラする感覚",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ハルキ (Haruki)",
+        "castJennifer": "サティア (Satya)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -2677,8 +2677,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Es muy frustrante que no entiendan por más que lo explique.”",
         "def": "Sentirse frustrado, agobiado o sofocado, ya sea por un lugar cerrado o por falta de entendimiento.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -2689,8 +2689,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“C'est tellement frustrant qu'ils ne comprennent pas, peu importe mes explications.”",
         "def": "Se sentir frustré, étouffé ou bloqué, que ce soit dans une pièce fermée ou face à un dialogue de sourds.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -2701,214 +2701,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“It's so frustrating that they don't understand no matter how much I explain.”",
         "def": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "하루키 (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
           "trans": "공간이 좁거나 속이 체했을 때, 또는 소통이 안 되어 속이 터질 듯한 답답한 감정",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "사티아 (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
           "trans": "Feeling frustrated, suffocated, or stifled—whether from a stuffy room, indigestion, or poor communication.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I called customer service three times and they just repeat the exact same thing. Ugh, so frustrating!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Calm down, let me send them a direct email inquiry.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ハルキ (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "カスタマーセンターに3回も電話したのに同じことばっかり繰り返すんだよ。ああ、本当にもどかしい！",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "サティア (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "落ち着いて、私が直接メールで問い合わせてみるよ。",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Llamé tres veces al servicio al cliente y solo repiten lo mismo. ¡Qué frustración!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Cálmate, déjame escribirles un correo directamente.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai appelé le service client trois fois et ils répètent la même chose. C'est tellement frustrant !",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Calme-toi, je vais leur envoyer un e-mail directement.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Udah tiga kali telepon layanan pelanggan tapi jawabannya gitu-gitu aja. Duh, bikin frustrasi banget!",
           "trans": "고객센터에 세 번이나 전화했는데 똑같은 말만 반복하네. 아, 진짜 답답해!",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Tenang dulu, biar aku coba kirim pertanyaan langsung lewat email.",
           "trans": "진정해, 내가 직접 이메일로 문의글 남겨볼게.",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -2924,8 +2924,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“친한 친구가 내 생일을 깜빡해서 조금 서운했다.”",
         "def": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "페기 (Peggy)",
+        "castJennifer": "무스타파 (Mustafa)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -2936,8 +2936,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -2948,8 +2948,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“親友が私の誕生日をうっかり忘れていて、少し寂しく感じた。”",
         "def": "親しい相手から期待していた気遣いや関心を得られなかった時に感じる微妙な寂しさ・心残り",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ペギー (Peggy)",
+        "castJennifer": "ムスタファ (Mustafa)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -2960,8 +2960,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Me sentí un poco dolido porque mi mejor amigo olvidó mi cumpleaños.”",
         "def": "Sentirse ligeramente herido o decepcionado cuando alguien cercano no muestra el afecto esperado.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -2972,8 +2972,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'ai eu un petit pincement au cœur parce que mon ami proche a oublié mon anniversaire.”",
         "def": "Ressentir une légère peine lorsqu'un proche ne manifeste pas l'attention espérée.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -2984,214 +2984,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I felt a bit hurt because my close friend forgot my birthday.”",
         "def": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "페기 (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
           "trans": "친밀한 상대에게 기대했던 관심이나 배려를 받지 못했을 때 느끼는 미묘한 아쉬움",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "무스타파 (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
           "trans": "Feeling mildly hurt or let down when someone close doesn't show the care or attention you hoped for.",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I'm going on a business trip to Seoul this week—want to meet up briefly?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "What, really? Honestly, I felt a little hurt that you didn't tell me sooner you were coming!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ペギー (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今週ソウルに出張で行くんだけど、少し会おうか？",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ムスタファ (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "えっ、本当？ソウルに来るのに前もって連絡してくれなくて、正直ちょっと寂しかったよ！",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Voy a Seúl por trabajo esta semana, ¿nos vemos un rato?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¿En serio? La verdad me sentí un poco dolido de que no me avisaras antes que venías.",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Je vais à Séoul pour le travail cette semaine, on se voit vite fait ?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Quoi, vraiment ? Franchement, j'ai été un peu peiné que tu ne me préviennes pas plus tôt !",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Minggu ini aku ada dinas ke Seoul, mau ketemu sebentar nggak?",
           "trans": "나 이번 주에 서울 출장 가는데 잠깐 볼까?",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Wah, serius? Jujur aku agak kecewa kamu nggak kabarin dari awal mau ke Seoul!",
           "trans": "와, 진짜? 서울 온다면서 미리 연락 안 해줘서 솔직히 조금 서운했어!",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -3207,8 +3207,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“어쩐지 오늘따라 피곤하더라니, 어쩌면 감기에 걸렸나 봐. 어쨌든 일찍 자야겠어.”",
         "def": "추측(어쩌면), 납득(어쩐지), 화제 전환(어쨌든)을 나타내는 비슷하지만 다른 세 부사",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "김 (Kim)",
+        "castJennifer": "셜록 (Sherlock)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -3219,8 +3219,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“No wonder I felt tired today—maybe I caught a cold. Anyway, I should go to bed early.”",
         "def": "Three look-alike adverbs with distinct roles: 'maybe' (어쩌면), 'no wonder' (어쩐지), and 'anyway' (어쨌든).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -3231,8 +3231,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“どうりで今日に限って疲れると思ったら、もしかしたら風邪を引いたのかも。とにかく早く寝よう。”",
         "def": "形は似ているが意味が異なる3つの副詞：もしかしたら（어쩌면）、どうりで（어쩐지）、とにかく（어쨌든）",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "キム (Kim)",
+        "castJennifer": "シャーロック (Sherlock)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -3243,8 +3243,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Con razón me sentía cansado hoy; tal vez me resfrié. De todos modos, debería acostarme temprano.”",
         "def": "Tres adverbios similares pero distintos: 'tal vez' (어쩌면), 'con razón' (어쩐지) y 'de todos modos' (어쨌든).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -3255,8 +3255,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Pas étonnant que je sois fatigué aujourd'hui, j'ai peut-être attrapé froid. Quoi qu'il en soit, je vais me coucher tôt.”",
         "def": "Trois adverbes proches mais distincts : « peut-être » (어쩌면), « pas étonnant » (어쩐지) et « quoi qu'il en soit » (어쨌든).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -3267,23 +3267,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“No wonder I felt tired today—maybe I caught a cold. Anyway, I should go to bed early.”",
         "def": "Three look-alike adverbs with distinct roles: 'maybe' (어쩌면), 'no wonder' (어쩐지), and 'anyway' (어쨌든).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "김 (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "민수가 오늘 지각했대.",
           "trans": "추측(어쩌면), 납득(어쩐지), 화제 전환(어쨌든)을 나타내는 비슷하지만 다른 세 부사",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3291,33 +3291,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "셜록 (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
           "trans": "Three look-alike adverbs with distinct roles: 'maybe' (어쩌면), 'no wonder' (어쩐지), and 'anyway' (어쨌든).",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Minsu is running late today.",
           "trans": "민수가 오늘 지각했대.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3325,33 +3325,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "No wonder he didn't reply this morning! Maybe he overslept after working late yesterday. Anyway, let's start the meeting.",
           "trans": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "キム (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "ミンスが今日遅刻したって。",
           "trans": "민수가 오늘 지각했대.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3359,33 +3359,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "シャーロック (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "どうりで朝連絡がつかないと思った！もしかしたら昨日残業して寝坊したのかも。とにかく会議から始めよう。",
           "trans": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Dicen que Minsu llegó tarde hoy.",
           "trans": "민수가 오늘 지각했대.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3393,33 +3393,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¡Con razón no contestaba esta mañana! Tal vez se quedó dormido tras trabajar hasta tarde ayer. De todos modos, empecemos la reunión.",
           "trans": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Minsu est en retard aujourd'hui.",
           "trans": "민수가 오늘 지각했대.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3427,33 +3427,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Pas étonnant qu'il ne réponde pas ce matin ! Il a peut-être fait la grasse matinée après avoir veillé tard hier. Quoi qu'il en soit, commençons la réunion.",
           "trans": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Katanya Minsu telat hari ini.",
           "trans": "민수가 오늘 지각했대.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3461,20 +3461,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Pantesan tadi pagi nggak bisa dihubungi! Mungkin dia ketiduran karena lembur semalam. Pokoknya kita mulai rapatnya dulu aja.",
           "trans": "어쩐지 아침에 연락이 안 되더라니! 어쩌면 어제 야근해서 늦잠 잤나 봐. 어쨌든 회의부터 시작하자.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -3490,8 +3490,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“비가 와서 행사가 취소됐지만 오히려 쉴 수 있어서 좋았다.”",
         "def": "예상과 정반대의 결과(오히려)와 차선책 선택(차라리)을 구분해 쓰는 부사",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "유피디 (UPD)",
+        "castJennifer": "댄 (Dan)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -3502,8 +3502,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“The event was canceled due to rain, but on the contrary, it was nice to get some rest.”",
         "def": "'오히려' means 'on the contrary' (opposite of expectation), while '차라리' means 'might as well' (choosing the lesser evil).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -3514,8 +3514,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“雨でイベントが中止になったが、かえって休むことができて良かった。”",
         "def": "予想と正反対の結果を表す「むしろ・かえって（오히려）」と、次善策を選ぶ「いっそ（차라리）」",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ユーピーディー (UPD)",
+        "castJennifer": "ダン (Dan)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -3526,8 +3526,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“El evento se canceló por la lluvia, pero al contrario, fue bueno poder descansar.”",
         "def": "'오히려' significa 'al contrario' (opuesto a lo esperado), mientras que '차라리' significa 'mejor / preferiblemente'.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -3538,8 +3538,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“L'événement a été annulé à cause de la pluie, mais au contraire, c'était bien de pouvoir se reposer.”",
         "def": "« 오히려 » signifie « au contraire » (à l'inverse des attentes), tandis que « 차라리 » signifie « autant / plutôt » (moindre mal).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -3550,23 +3550,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“The event was canceled due to rain, but on the contrary, it was nice to get some rest.”",
         "def": "'오히려' means 'on the contrary' (opposite of expectation), while '차라리' means 'might as well' (choosing the lesser evil).",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "유피디 (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "비 때문에 캠핑 취소돼서 어떡해?",
           "trans": "예상과 정반대의 결과(오히려)와 차선책 선택(차라리)을 구분해 쓰는 부사",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3574,33 +3574,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "댄 (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
           "trans": "'오히려' means 'on the contrary' (opposite of expectation), while '차라리' means 'might as well' (choosing the lesser evil).",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "What a bummer that camping got canceled because of the rain.",
           "trans": "비 때문에 캠핑 취소돼서 어떡해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3608,33 +3608,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "It's fine—I'd rather rest at home than sleep in a damp tent. On the contrary, it worked out great!",
           "trans": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ユーピーディー (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "雨のせいでキャンプ中止になってどうしよう？",
           "trans": "비 때문에 캠핑 취소돼서 어떡해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3642,33 +3642,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ダン (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "大丈夫、ジメジメしたテントで寝るくらいならいっそ家で休む方がマシだよ。かえって良かった！",
           "trans": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Qué pena que se canceló el campamento por la lluvia.",
           "trans": "비 때문에 캠핑 취소돼서 어떡해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3676,33 +3676,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Está bien, prefiero descansar en casa antes que dormir en una tienda húmeda. ¡Al contrario, mejor así!",
           "trans": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Dommage que le camping soit annulé à cause de la pluie.",
           "trans": "비 때문에 캠핑 취소돼서 어떡해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3710,33 +3710,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Ce n'est pas grave, autant se reposer à la maison plutôt que de dormir dans une tente humide. Au contraire, c'est tant mieux !",
           "trans": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Gimana dong kemahnya batal gara-gara hujan?",
           "trans": "비 때문에 캠핑 취소돼서 어떡해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -3744,20 +3744,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Nggak apa-apa, mending istirahat di rumah daripada tidur di tenda lembap. Malah bagus!",
           "trans": "괜찮아, 꿉꿉한 텐트에서 자느니 차라리 집에서 쉬는 게 낫지. 오히려 좋아!",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -4056,8 +4056,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“그건 틀린 게 아니라 서로 방식이 다른 것뿐이야.”",
         "def": "'다르다(차이)'와 '틀리다(오류)'의 구분. 일상 회화에서 한국인들도 자주 혼용하는 표현",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "데미스 (Demis)",
+        "castJennifer": "하루키 (Haruki)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -4068,8 +4068,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“That's not wrong; our methods are just different.”",
         "def": "'다르다' means 'different' while '틀리다' means 'wrong,' though native speakers often casually mix them up.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -4080,8 +4080,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“それは間違っているのではなく、お互いのやり方が違うだけだよ。”",
         "def": "「違う・異なる（다르다）」と「間違っている（틀리다）」の区別。日常会話では韓国人もよく混同する表現",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "デミス (Demis)",
+        "castJennifer": "ハルキ (Haruki)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -4092,8 +4092,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Eso no está mal; simplemente nuestros métodos son diferentes.”",
         "def": "'다르다' significa 'diferente' y '틀리다' significa 'incorrecto', aunque los nativos suelen confundirlos al hablar.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -4104,8 +4104,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Ce n'est pas faux, nos méthodes sont simplement différentes.”",
         "def": "« 다르다 » signifie « différent » et « 틀리다 » signifie « faux », bien que les natifs les confondent souvent à l'oral.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -4116,23 +4116,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“That's not wrong; our methods are just different.”",
         "def": "'다르다' means 'different' while '틀리다' means 'wrong,' though native speakers often casually mix them up.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "데미스 (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "너는 나랑 성격이 너무 틀린 것 같아.",
           "trans": "'다르다(차이)'와 '틀리다(오류)'의 구분. 일상 회화에서 한국인들도 자주 혼용하는 표현",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4140,15 +4140,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "하루키 (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
           "trans": "'다르다' means 'different' while '틀리다' means 'wrong,' though native speakers often casually mix them up.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4158,15 +4158,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I feel like your personality is so 'wrong' (different) from mine.",
           "trans": "너는 나랑 성격이 너무 틀린 것 같아.",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4174,15 +4174,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Not 'wrong,' it's 'different'! We have to accept our differences to get along.",
           "trans": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4192,15 +4192,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "デミス (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "君は僕と性格がすごく『間違ってる（違う）』みたいだ。",
           "trans": "너는 나랑 성격이 너무 틀린 것 같아.",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4208,15 +4208,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ハルキ (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "『間違ってる』んじゃなくて『違う』んだよ！お互いの違いを認めないと仲良くなれないよ。",
           "trans": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4226,15 +4226,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Siento que tu personalidad es muy 'incorrecta' (diferente) a la mía.",
           "trans": "너는 나랑 성격이 너무 틀린 것 같아.",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4242,15 +4242,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "No es 'incorrecta', ¡es 'diferente'! Hay que aceptar las diferencias para llevarnos bien.",
           "trans": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4260,15 +4260,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai l'impression que ta personnalité est trop « fausse » (différente) de la mienne.",
           "trans": "너는 나랑 성격이 너무 틀린 것 같아.",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4276,15 +4276,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Pas « fausse », mais « différente » ! Il faut accepter nos différences pour bien s'entendre.",
           "trans": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4294,15 +4294,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Kayaknya sifat kamu sama aku 'salah' (beda) banget deh.",
           "trans": "너는 나랑 성격이 너무 틀린 것 같아.",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4310,15 +4310,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Bukan 'salah', tapi 'berbeda'! Kita harus menghargai perbedaan biar bisa akrab.",
           "trans": "'틀린' 게 아니라 '다른' 거지! 서로 다름을 인정해야 친해질 수 있어.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4339,8 +4339,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“뜨끈한 콩나물국 한 그릇 마시니까 속이 확 시원하다.”",
         "def": "온도가 차갑다는 뜻 외에, 뜨거운 국물이나 사우나에서 느끼는 개운하고 후련한 감각",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "사티아 (Satya)",
+        "castJennifer": "페기 (Peggy)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -4351,8 +4351,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Drinking a bowl of hot bean sprout soup really hits the spot and feels so refreshing.”",
         "def": "Literally 'cool,' yet uniquely used when drinking hot soup or taking a hot bath to express a soothing, refreshing relief.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -4363,8 +4363,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“熱々の豆もやしスープを一杯飲んだら、お腹がすっとスッキリした。”",
         "def": "冷たいという意味以外に、熱いスープを飲んだりサウナに入った時に感じるスッキリ・さっぱりとした感覚",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "サティア (Satya)",
+        "castJennifer": "ペギー (Peggy)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -4375,8 +4375,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Tomar un tazón de sopa caliente de brotes de soja sienta de maravilla y es muy reconfortante.”",
         "def": "Literalmente 'fresco', pero se usa al tomar sopa caliente para expresar una sensación reconfortante y revitalizante.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -4387,8 +4387,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Boire un bol de soupe chaude aux pousses de soja fait un bien fou et revigore.”",
         "def": "Littéralement « frais », mais utilisé en buvant une soupe brûlante pour exprimer un soulagement revigorant.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -4399,23 +4399,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Drinking a bowl of hot bean sprout soup really hits the spot and feels so refreshing.”",
         "def": "Literally 'cool,' yet uniquely used when drinking hot soup or taking a hot bath to express a soothing, refreshing relief.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Satya",
+        "castJennifer": "Peggy",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "사티아 (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "어제 과음했더니 속이 쓰리네.",
           "trans": "온도가 차갑다는 뜻 외에, 뜨거운 국물이나 사우나에서 느끼는 개운하고 후련한 감각",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4423,15 +4423,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "페기 (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
           "trans": "Literally 'cool,' yet uniquely used when drinking hot soup or taking a hot bath to express a soothing, refreshing relief.",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4441,15 +4441,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "My stomach is aching because I drank too much yesterday.",
           "trans": "어제 과음했더니 속이 쓰리네.",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4457,15 +4457,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Take a sip of this piping hot pollock soup. It'll soothe your stomach and feel so refreshing!",
           "trans": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4475,15 +4475,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "サティア (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "昨日飲みすぎて胃がムカムカするよ。",
           "trans": "어제 과음했더니 속이 쓰리네.",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4491,15 +4491,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ペギー (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "この熱々の干しスケトウダラのスープを一口飲んでみて。胃がすっと楽になって本当にスッキリするから！",
           "trans": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4509,15 +4509,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Me duele el estómago porque bebí demasiado ayer.",
           "trans": "어제 과음했더니 속이 쓰리네.",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4525,15 +4525,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Toma un sorbo de esta sopa caliente de abadejo. Te aliviará el estómago y se sentirá súper reconfortante.",
           "trans": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4543,15 +4543,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai mal à l'estomac parce que j'ai trop bu hier.",
           "trans": "어제 과음했더니 속이 쓰리네.",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4559,15 +4559,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Goûte cette soupe brûlante au lieu jaune. Ça va te soulager l'estomac et te faire un bien fou !",
           "trans": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4577,15 +4577,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Perutku perih gara-gara kebanyakan minum semalam.",
           "trans": "어제 과음했더니 속이 쓰리네.",
-          "color": "#38bdf8",
+          "color": "#34d399",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4593,15 +4593,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Coba seruput sup ikan panas ini. Perutmu bakal langsung lega dan rasanya seger banget!",
           "trans": "이 뜨거운 북엇국 한 입 마셔봐. 속이 확 풀리면서 진짜 시원할 거야!",
-          "color": "#f472b6",
+          "color": "#a78bfa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -4622,8 +4622,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“이 가방은 디자인이 마음에 들지만 가격이 너무 많이 든다.”",
         "def": "나이가 들다, 감기가 들다, 돈이 들다, 마음에 들다 등 수십 가지 관용구에 쓰이는 핵심 다의어",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "무스타파 (Mustafa)",
+        "castJennifer": "김 (Kim)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -4634,8 +4634,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I like the design of this bag, but it costs too much.”",
         "def": "A versatile verb meaning 'enter' or 'lift,' used in dozens of idioms like aging, catching a cold, costing money, or liking something.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -4646,8 +4646,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“このバッグはデザインは気に入っているが、お金がかかりすぎる。”",
         "def": "「入る・持つ」の他に、年を取る、風邪を引く、お金がかかる、気に入るなど無数の慣用句に使われる多義語",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ムスタファ (Mustafa)",
+        "castJennifer": "キム (Kim)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -4658,8 +4658,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Me gusta el diseño de este bolso, pero cuesta demasiado dinero.”",
         "def": "Verbo polisémico ('entrar/levantar') usado en docenas de modismos como envejecer, resfriarse, costar dinero o gustar.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -4670,8 +4670,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'aime bien le design de ce sac, mais il coûte trop cher.”",
         "def": "Verbe polysémique (« entrer/lever ») présent dans des dizaines d'expressions : vieillir, attraper froid, coûter ou plaire.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -4682,23 +4682,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I like the design of this bag, but it costs too much.”",
         "def": "A versatile verb meaning 'enter' or 'lift,' used in dozens of idioms like aging, catching a cold, costing money, or liking something.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Mustafa",
+        "castJennifer": "Kim",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "무스타파 (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
           "trans": "나이가 들다, 감기가 들다, 돈이 들다, 마음에 들다 등 수십 가지 관용구에 쓰이는 핵심 다의어",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4706,33 +4706,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "김 (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
           "trans": "A versatile verb meaning 'enter' or 'lift,' used in dozens of idioms like aging, catching a cold, costing money, or liking something.",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I really like the design of this coat, but it costs too much money.",
           "trans": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4740,33 +4740,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "As you get older, you need at least one good coat, so let's splurge and buy it!",
           "trans": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ムスタファ (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "このコート、デザインはすごく気に入ったんだけどお金がかかりすぎるなあ。",
           "trans": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4774,33 +4774,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "キム (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "年を取るにつれて良い服が一着は必要になるから、思い切って買おうよ！",
           "trans": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Me encanta el diseño de este abrigo, pero cuesta demasiado dinero.",
           "trans": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4808,33 +4808,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "A medida que uno envejece necesita al menos una buena prenda, ¡así que anímate y cómpralo!",
           "trans": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Le design de ce manteau me plaît vraiment, mais il coûte trop cher.",
           "trans": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4842,33 +4842,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "En vieillissant, il faut au moins un beau vêtement, alors fais-toi plaisir et achète-le !",
           "trans": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Desain mantel ini pas banget di hati, tapi harganya mahal banget.",
           "trans": "이 코트 디자인은 딱 마음에 드는데 가격이 너무 많이 드네.",
-          "color": "#38bdf8",
+          "color": "#2dd4bf",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4876,20 +4876,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Makin bertambah usia, kita butuh minimal satu baju bagus, jadi gas beli aja!",
           "trans": "나이가 들수록 좋은 옷 하나쯤은 필요하니까 큰마음 먹고 사자!",
-          "color": "#f472b6",
+          "color": "#fbbf24",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -4905,8 +4905,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“오늘 입은 코디 약간 밤티 나는데 다른 옷 입을까?”",
         "def": "촌스럽다, 구리다, 세련되지 못하고 못생겼다는 뜻의 10대·20대 신조어",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "셜록 (Sherlock)",
+        "castJennifer": "유피디 (UPD)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -4917,8 +4917,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“My outfit today looks kind of tacky—should I wear something else?”",
         "def": "Gen-Z slang meaning tacky, cringe, outdated, or unflattering in style or appearance.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -4929,8 +4929,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“今日のコーデちょっとダサい気がするけど、他の服に着替えようかな？”",
         "def": "ダサい、垢抜けない、イケてないという意味の若者言葉・新造語",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "シャーロック (Sherlock)",
+        "castJennifer": "ユーピーディー (UPD)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -4941,8 +4941,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Mi atuendo de hoy se ve un poco pasado de moda, ¿me pongo otra cosa?”",
         "def": "Jerga juvenil que significa cursi, pasado de moda, poco favorecedor o de mal gusto.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -4953,8 +4953,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Ma tenue d'aujourd'hui fait un peu ringarde, je devrais mettre autre chose ?”",
         "def": "Argot des jeunes signifiant ringard, de mauvais goût, démodé ou peu flatteur.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -4965,23 +4965,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“My outfit today looks kind of tacky—should I wear something else?”",
         "def": "Gen-Z slang meaning tacky, cringe, outdated, or unflattering in style or appearance.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Sherlock",
+        "castJennifer": "UPD",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "셜록 (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
           "trans": "촌스럽다, 구리다, 세련되지 못하고 못생겼다는 뜻의 10대·20대 신조어",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -4989,33 +4989,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "유피디 (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "야, 당장 풀어! 그거 완전 밤티 나.",
           "trans": "Gen-Z slang meaning tacky, cringe, outdated, or unflattering in style or appearance.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I'm going on a blind date—how does this neon tie look?",
           "trans": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5023,33 +5023,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Dude, take it off right now! That looks super tacky.",
           "trans": "야, 당장 풀어! 그거 완전 밤티 나.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "シャーロック (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "これから合コンなんだけど、この蛍光色のネクタイどう？",
           "trans": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5057,33 +5057,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ユーピーディー (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "おい、今すぐ外せ！それマジでダサすぎるって。",
           "trans": "야, 당장 풀어! 그거 완전 밤티 나.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Voy a una cita a ciegas, ¿qué tal me queda esta corbata neón?",
           "trans": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5091,33 +5091,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¡Quítatela ahora mismo! Se ve súper cursi y pasada de moda.",
           "trans": "야, 당장 풀어! 그거 완전 밤티 나.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Je vais à un rendez-vous galant, comment tu trouves cette cravate fluo ?",
           "trans": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5125,33 +5125,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Enlève ça tout de suite ! Ça fait vraiment ringard.",
           "trans": "야, 당장 풀어! 그거 완전 밤티 나.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Aku mau pergi kencan buta nih, dasi warna neon ini gimana?",
           "trans": "나 소개팅 나가는데 이 형광색 넥타이 어때?",
-          "color": "#38bdf8",
+          "color": "#818cf8",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5159,20 +5159,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Woy, lepas sekarang juga! Itu kelihatan norak banget.",
           "trans": "야, 당장 풀어! 그거 완전 밤티 나.",
-          "color": "#f472b6",
+          "color": "#f87171",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -5188,8 +5188,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“오늘 마지막 수업 휴강이래! 야르~”",
         "def": "기분이 매우 좋거나 신날 때, 뜻밖의 행운을 얻었을 때 내뱉는 경쾌한 감탄사",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "댄 (Dan)",
+        "castJennifer": "크레이그 (Craig)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -5200,8 +5200,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Last class today got canceled! Let's go!”",
         "def": "A cheerful exclamation shouted when feeling super excited, lucky, or thrilled—similar to 'Yay!' or 'Let's go!'",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -5212,8 +5212,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“今日の最後の授業、休講だって！やったー！”",
         "def": "とても気分が良い時や嬉しい時、思わぬ幸運に恵まれた時に発する軽快な感嘆詞「やったー！」",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ダン (Dan)",
+        "castJennifer": "クレイグ (Craig)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -5224,8 +5224,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“¡Se canceló la última clase de hoy! ¡Genial!”",
         "def": "Exclamación alegre que se dice al sentirse muy emocionado o con suerte, similar a '¡Genial!' o '¡Vamos!'.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -5236,8 +5236,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Le dernier cours d'aujourd'hui est annulé ! Trop bien !”",
         "def": "Exclamation joyeuse poussée lorsqu'on est ravi ou chanceux, équivalente à « Youpi ! » ou « Trop bien ! ».",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -5248,23 +5248,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Last class today got canceled! Let's go!”",
         "def": "A cheerful exclamation shouted when feeling super excited, lucky, or thrilled—similar to 'Yay!' or 'Let's go!'",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Dan",
+        "castJennifer": "Craig",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "댄 (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
           "trans": "기분이 매우 좋거나 신날 때, 뜻밖의 행운을 얻었을 때 내뱉는 경쾌한 감탄사",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5272,33 +5272,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "크레이그 (Craig)",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "헐, 대박! 오늘 공강 됐다, 야르~!",
           "trans": "A cheerful exclamation shouted when feeling super excited, lucky, or thrilled—similar to 'Yay!' or 'Let's go!'",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "An announcement just went up—the professor is at a conference today, so class is canceled!",
           "trans": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5306,33 +5306,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "No way, awesome! Free day today, let's go!",
           "trans": "헐, 대박! 오늘 공강 됐다, 야르~!",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ダン (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今お知らせが出たんだけど、今日教授が学会に行くから休講だって！",
           "trans": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5340,33 +5340,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "クレイグ (Craig)",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "えっ、最高！今日全休になった、やったー！",
           "trans": "헐, 대박! 오늘 공강 됐다, 야르~!",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Acaba de salir un aviso: ¡el profesor fue a un congreso hoy, así que se cancela la clase!",
           "trans": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5374,33 +5374,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¡Qué genial! Tengo el día libre, ¡vamos!",
           "trans": "헐, 대박! 오늘 공강 됐다, 야르~!",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Une annonce vient de tomber : le prof est en conférence aujourd'hui, donc le cours est annulé !",
           "trans": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5408,33 +5408,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Trop bien ! Journée libre aujourd'hui, youpi !",
           "trans": "헐, 대박! 오늘 공강 됐다, 야르~!",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Baru aja ada pengumuman, hari ini dosennya ke konferensi jadi kelas diliburkan!",
           "trans": "방금 공지 떴는데 오늘 교수님 학회 가셔서 휴강이래!",
-          "color": "#38bdf8",
+          "color": "#c084fc",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -5442,20 +5442,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Craig",
+          "avatar": "assets/agents/craig_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Wah, gokil! Hari ini bebas kuliah, asik~!",
           "trans": "헐, 대박! 오늘 공강 됐다, 야르~!",
-          "color": "#f472b6",
+          "color": "#38bdf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -5471,8 +5471,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“지하철 문 닫히기 1초 전에 놓쳤어, 진짜 샤갈이네.”",
         "def": "거친 욕설을 순화하여 어이가 없거나 짜증 날 때 쓰는 감탄사",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "제니퍼 (Jennifer)",
+        "castJennifer": "데미스 (Demis)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -5483,8 +5483,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I missed the subway one second before the doors closed—dang it.”",
         "def": "A softened substitute for a swear word used when annoyed, frustrated, or in disbelief—like 'Dang it!' or 'Shoot!'",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -5495,8 +5495,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“地下鉄のドアが閉まる1秒前に乗り遅れた、マジ最悪だわ。”",
         "def": "激しい悪口をマイルドに言い換えた言葉で、呆れたりイラッとした時に使う感嘆詞「ちくしょう・最悪」",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ジェニファー (Jennifer)",
+        "castJennifer": "デミス (Demis)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -5507,8 +5507,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Perdí el metro un segundo antes de que cerraran las puertas, qué rabia.”",
         "def": "Eufemismo suave de una palabrota usado cuando algo molesta o frustra, como '¡Maldición!' o '¡Rayos!'.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -5519,8 +5519,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'ai raté le métro une seconde avant la fermeture des portes, quelle poisse.”",
         "def": "Euphémisme atténuant un gros mot utilisé en cas d'agacement ou de frustration, comme « Purée ! » ou « Mince ! ».",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -5531,214 +5531,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I missed the subway one second before the doors closed—dang it.”",
         "def": "A softened substitute for a swear word used when annoyed, frustrated, or in disbelief—like 'Dang it!' or 'Shoot!'",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Jennifer",
+        "castJennifer": "Demis",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "제니퍼 (Jennifer)",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
           "trans": "거친 욕설을 순화하여 어이가 없거나 짜증 날 때 쓰는 감탄사",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "데미스 (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "안 챙겼는데... 하, 진짜 샤갈이네.",
           "trans": "A softened substitute for a swear word used when annoyed, frustrated, or in disbelief—like 'Dang it!' or 'Shoot!'",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Did you bring an umbrella? It suddenly started pouring outside.",
           "trans": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "I didn't... ugh, dang it.",
           "trans": "안 챙겼는데... 하, 진짜 샤갈이네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ジェニファー (Jennifer)",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "傘持ってきた？外急に土砂降りになったけど。",
           "trans": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "デミス (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "持ってきてない…はぁ、マジ最悪だわ。",
           "trans": "안 챙겼는데... 하, 진짜 샤갈이네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "¿Trajiste paraguas? Empezó a llover a cántaros de repente.",
           "trans": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "No traje... ay, qué rabia.",
           "trans": "안 챙겼는데... 하, 진짜 샤갈이네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Tu as pris un parapluie ? Il s'est mis à pleuvoir des cordes dehors.",
           "trans": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Non, je n'en ai pas pris... purée, quelle poisse.",
           "trans": "안 챙겼는데... 하, 진짜 샤갈이네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Jennifer",
+          "avatar": "assets/agents/jennifer_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Kamu bawa payung nggak? Di luar tiba-tiba hujan deras nih.",
           "trans": "너 우산 챙겼어? 밖에 갑자기 소나기 쏟아지는데.",
-          "color": "#38bdf8",
+          "color": "#f472b6",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Nggak bawa lagi... haduh, sial banget dah.",
           "trans": "안 챙겼는데... 하, 진짜 샤갈이네.",
-          "color": "#f472b6",
+          "color": "#60a5fa",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -5754,8 +5754,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“필기 노트 공유해 줘서 진짜 아자스!”",
         "def": "일본어 '아리가토 고자이마스'의 줄임말에서 유래한 장난스럽고 캐주얼한 감사 인사",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "하루키 (Haruki)",
+        "castJennifer": "사티아 (Satya)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -5766,8 +5766,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Thanks a ton for sharing your lecture notes!”",
         "def": "A playful, casual way to say 'thanks' derived from abbreviated Japanese slang ('azassu').",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -5778,8 +5778,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“授業のノート共有してくれてマジあざっす！”",
         "def": "日本語の「あざっす（ありがとうございます）」に由来する、カジュアルで冗談めかした感謝の挨拶",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ハルキ (Haruki)",
+        "castJennifer": "サティア (Satya)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -5790,8 +5790,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“¡Mil gracias por compartir tus apuntes de clase!”",
         "def": "Una forma juguetona y casual de decir 'gracias', derivada de una abreviatura japonesa.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -5802,8 +5802,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Trop merci d'avoir partagé tes notes de cours !”",
         "def": "Une façon décontractée et amusante de dire « merci », inspirée d'une abréviation japonaise.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -5814,214 +5814,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Thanks a ton for sharing your lecture notes!”",
         "def": "A playful, casual way to say 'thanks' derived from abbreviated Japanese slang ('azassu').",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Haruki",
+        "castJennifer": "Satya",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "하루키 (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
           "trans": "일본어 '아리가토 고자이마스'의 줄임말에서 유래한 장난스럽고 캐주얼한 감사 인사",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "사티아 (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "오, 역시 내 친구밖에 없네! 아자스!",
           "trans": "A playful, casual way to say 'thanks' derived from abbreviated Japanese slang ('azassu').",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I bought the coffee you asked for earlier and left it on your desk.",
           "trans": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, you're the best friend ever! Thanks a ton!",
           "trans": "오, 역시 내 친구밖에 없네! 아자스!",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ハルキ (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "さっき頼まれてたコーヒー買ってきたよ、机の上に置いたから。",
           "trans": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "サティア (Satya)",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "おお、やっぱり頼りになる親友だわ！あざっす！",
           "trans": "오, 역시 내 친구밖에 없네! 아자스!",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Compré el café que me pediste antes y lo dejé en tu escritorio.",
           "trans": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¡Oh, eres el mejor amigo del mundo! ¡Mil gracias!",
           "trans": "오, 역시 내 친구밖에 없네! 아자스!",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai acheté le café que tu m'avais demandé tout à l'heure, je l'ai posé sur ton bureau.",
           "trans": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Oh, tu es vraiment le meilleur ! Trop merci !",
           "trans": "오, 역시 내 친구밖에 없네! 아자스!",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Kopi yang kamu titip tadi udah aku beliin, aku taruh di meja ya.",
           "trans": "아까 네가 부탁한 커피 사 왔어, 책상 위에 뒀다.",
-          "color": "#38bdf8",
+          "color": "#fb923c",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Satya",
+          "avatar": "assets/agents/satya_profile.jpeg",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Wah, emang cuma kamu sahabat terbaikku! Makasih banyak!",
           "trans": "오, 역시 내 친구밖에 없네! 아자스!",
-          "color": "#f472b6",
+          "color": "#34d399",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -6037,8 +6037,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“화장까지 다 했는데 현관 앞에서 갑자기 막나귀 왔어.”",
         "def": "'막상 나가려니 귀찮다'의 줄임말로, 외출 직전 갑자기 귀찮음이 몰려오는 심리 상태",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "페기 (Peggy)",
+        "castJennifer": "무스타파 (Mustafa)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -6049,8 +6049,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I already put on my makeup, and right at the front door I suddenly got too lazy to go out.”",
         "def": "Short for 'suddenly feeling too lazy to go out right when it's time to leave,' even after getting completely ready.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -6061,8 +6061,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“メイクまで全部終わったのに、玄関の前で急に外出が面倒になった。”",
         "def": "「いざ出かけようとすると面倒くさい」の略で、外出直前に急に億劫になる心理状態",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ペギー (Peggy)",
+        "castJennifer": "ムスタファ (Mustafa)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -6073,8 +6073,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Ya me había maquillado y, justo frente a la puerta, me dio una pereza repentina de salir.”",
         "def": "Abreviatura de 'pereza repentina justo al salir', cuando ya estás listo pero pierdes las ganas de salir de casa.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -6085,8 +6085,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“J'avais fini de me maquiller et, juste devant la porte, j'ai eu une flemme soudaine de sortir.”",
         "def": "Abréviation de « la flemme soudaine juste au moment de sortir », alors qu'on est déjà prêt.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -6097,214 +6097,214 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I already put on my makeup, and right at the front door I suddenly got too lazy to go out.”",
         "def": "Short for 'suddenly feeling too lazy to go out right when it's time to leave,' even after getting completely ready.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Peggy",
+        "castJennifer": "Mustafa",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "페기 (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
           "trans": "'막상 나가려니 귀찮다'의 줄임말로, 외출 직전 갑자기 귀찮음이 몰려오는 심리 상태",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "무스타파 (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
           "trans": "Short for 'suddenly feeling too lazy to go out right when it's time to leave,' even after getting completely ready.",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "We're meeting at 7—did you leave yet? I'm already at the cafe.",
           "trans": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Sorry, I showered and got dressed, then suddenly got hit with last-minute couch lock and lay back down...",
           "trans": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ペギー (Peggy)",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "7時の約束だけどもう出た？私もうカフェに着いたよ。",
           "trans": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ムスタファ (Mustafa)",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "ごめん、お風呂も入って服まで着替えたのに急に外出が面倒になってベッドに寝転んじゃった…",
           "trans": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Quedamos a las 7, ¿ya saliste? Ya llegué a la cafetería.",
           "trans": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Perdón, ya me había duchado y vestido, pero de repente me dio una pereza horrible de salir y me tiré en la cama...",
           "trans": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "On se retrouve à 19h, tu es parti ? Je suis déjà au café.",
           "trans": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Désolé, j'étais douché et habillé, et puis j'ai eu une flemme soudaine de sortir et je me suis recouché...",
           "trans": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Peggy",
+          "avatar": "assets/agents/peggy_profile.jpeg",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Janjian jam 7 nih, udah berangkat belum? Aku udah nyampe kafe.",
           "trans": "7시 약속인데 출발했어? 나 이미 카페 도착했어.",
-          "color": "#38bdf8",
+          "color": "#a78bfa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
           "voiceRate": 1.0,
-          "pitch": 0.96
+          "pitch": 1.12
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Mustafa",
+          "avatar": "assets/agents/mustafa_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Maaf, padahal udah mandi dan ganti baju, tapi tiba-tiba mager banget keluar rumah jadi rebahan lagi di kasur...",
           "trans": "미안, 다 씻고 옷까지 입었는데 갑자기 막나귀 와서 침대에 누워버렸어...",
-          "color": "#f472b6",
+          "color": "#2dd4bf",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -6320,8 +6320,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“오늘 점심 뭐 먹을지도 AI한테 물어보네, 완전 젬민이야.”",
         "def": "'제미나이(Gemini)' 등 생성형 AI에 사소한 결정까지 모두 의존하는 사람을 부르는 신조어",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "김 (Kim)",
+        "castJennifer": "셜록 (Sherlock)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -6332,8 +6332,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“You're even asking AI what to eat for lunch—you're totally AI-dependent.”",
         "def": "A playful pun on 'Gemini' and 'jammini' (kid), describing someone who relies on generative AI for every tiny life decision.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -6344,8 +6344,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“今日のランチ何食べるかまでAIに聞いてるの？完全にAI依存だね。”",
         "def": "「Gemini」と若者言葉の「ジェンミニ（子供）」を掛けた造語で、些細な決断まで全て生成AIに頼る人のこと",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "キム (Kim)",
+        "castJennifer": "シャーロック (Sherlock)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -6356,8 +6356,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Hasta le preguntas a la IA qué comer hoy, eres totalmente dependiente de la IA.”",
         "def": "Juego de palabras con 'Gemini' para describir a alguien que depende de la IA generativa hasta para las decisiones más pequeñas.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -6368,8 +6368,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Tu demandes même à l'IA quoi manger à midi, tu es complètement accro à l'IA.”",
         "def": "Jeu de mots avec « Gemini » désignant une personne qui dépend de l'IA générative pour la moindre décision du quotidien.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -6380,23 +6380,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“You're even asking AI what to eat for lunch—you're totally AI-dependent.”",
         "def": "A playful pun on 'Gemini' and 'jammini' (kid), describing someone who relies on generative AI for every tiny life decision.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Kim",
+        "castJennifer": "Sherlock",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "김 (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
           "trans": "'제미나이(Gemini)' 등 생성형 AI에 사소한 결정까지 모두 의존하는 사람을 부르는 신조어",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6404,33 +6404,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "셜록 (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
           "trans": "A playful pun on 'Gemini' and 'jammini' (kid), describing someone who relies on generative AI for every tiny life decision.",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "What are you doing? Weren't you thinking of a name for your cat?",
           "trans": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6438,33 +6438,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Yeah, I'm asking Gemini to analyze its personality and recommend 10 names!",
           "trans": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "キム (Kim)",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今何してるの？猫の名前考えてたんでしょ。",
           "trans": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6472,33 +6472,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "シャーロック (Sherlock)",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "うん、Geminiに性格を分析させて名前を10個おすすめしてもらってるところ！",
           "trans": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "¿Qué haces? ¿No estabas pensando un nombre para tu gato?",
           "trans": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6506,33 +6506,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "¡Sí, le estoy pidiendo a Gemini que analice su personalidad y me recomiende 10 nombres!",
           "trans": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Qu'est-ce que tu fais ? Tu ne cherchais pas un nom pour ton chat ?",
           "trans": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6540,33 +6540,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Si, je demande à Gemini d'analyser sa personnalité et de me proposer 10 noms !",
           "trans": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Kim",
+          "avatar": "assets/agents/kim.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Lagi ngapain? Katanya lagi mikirin nama buat kucingmu.",
           "trans": "너 지금 뭐 해? 고양이 이름 짓는 거 고민 중이었잖아.",
-          "color": "#38bdf8",
+          "color": "#fbbf24",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6574,20 +6574,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Sherlock",
+          "avatar": "assets/agents/sherlock_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Iya, lagi nanya Gemini buat analisis sifatnya terus minta rekomendasi 10 nama!",
           "trans": "어, 제미나이한테 사주랑 성격 분석해서 이름 10개만 추천해 달라고 물어보는 중!",
-          "color": "#f472b6",
+          "color": "#818cf8",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -6603,8 +6603,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“이력서만 보면 대단한 줄 알았는데 막상 일 시켜보니까 테무인간이더라.”",
         "def": "겉보기에는 화려해 보이지만 실제 실력이나 내실이 기대에 못 미치는 사람을 비유하는 말",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "유피디 (UPD)",
+        "castJennifer": "댄 (Dan)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -6615,8 +6615,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Looking at their resume I thought they were amazing, but once they started working, they were all show and no substance.”",
         "def": "Someone who looks impressive on the surface but lacks real substance or skill—compared to overly hyped online bargains.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -6627,8 +6627,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“履歴書だけ見たらすごい人かと思ったのに、実際仕事をさせてみたら見掛け倒しだった。”",
         "def": "見た目は華やかで立派に見えるが、実際の能力や中身が伴っていない人を例えた新造語",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "ユーピーディー (UPD)",
+        "castJennifer": "ダン (Dan)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -6639,8 +6639,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Al ver su currículum pensé que era increíble, pero al trabajar resultó ser pura apariencia.”",
         "def": "Alguien que parece impresionante por fuera pero carece de sustancia o habilidad real, como una compra decepcionante por internet.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -6651,8 +6651,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“À voir son CV je le pensais brillant, mais au travail ce n'était que de la poudre aux yeux.”",
         "def": "Quelqu'un qui paraît impressionnant en apparence mais manque de substance ou de compétences réelles.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -6663,23 +6663,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Looking at their resume I thought they were amazing, but once they started working, they were all show and no substance.”",
         "def": "Someone who looks impressive on the surface but lacks real substance or skill—compared to overly hyped online bargains.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "UPD",
+        "castJennifer": "Dan",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "유피디 (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
           "trans": "겉보기에는 화려해 보이지만 실제 실력이나 내실이 기대에 못 미치는 사람을 비유하는 말",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6687,33 +6687,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "댄 (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
           "trans": "Someone who looks impressive on the surface but lacks real substance or skill—compared to overly hyped online bargains.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "The new experienced hire had a super flashy portfolio—are they good at their job?",
           "trans": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6721,33 +6721,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Don't even get me started, they can't even use basic Excel formulas—total all show and no substance.",
           "trans": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "ユーピーディー (UPD)",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "新しく入った中途採用の人、ポートフォリオはすごく華やかだったけど仕事できる？",
           "trans": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6755,33 +6755,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ダン (Dan)",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "言うなよ、エクセルの基本関数すら使えない完全な見掛け倒しだったよ。",
           "trans": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "El nuevo empleado tenía un portafolio súper llamativo, ¿trabaja bien?",
           "trans": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6789,33 +6789,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Ni me hables, no sabe ni usar fórmulas básicas de Excel; es pura apariencia.",
           "trans": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "La nouvelle recrue avait un portfolio ultra impressionnant, il bosse bien ?",
           "trans": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6823,33 +6823,33 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "M'en parle pas, il ne sait même pas utiliser les formules de base sur Excel, c'est juste de la poudre aux yeux.",
           "trans": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "UPD",
+          "avatar": "assets/agents/upd_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Karyawan baru yang berpengalaman itu portofolionya mentereng banget, kerjanya bagus nggak?",
           "trans": "새로 온 경력직 사원, 포트폴리오는 엄청 화려하던데 일 잘해?",
-          "color": "#38bdf8",
+          "color": "#f87171",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -6857,20 +6857,20 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Dan",
+          "avatar": "assets/agents/dan.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Jangan ditanya, rumus dasar Excel aja nggak bisa—beneran cuma bagus di luar doang.",
           "trans": "말도 마, 엑셀 기본 함수도 못 쓰는 완전 테무인간이야.",
-          "color": "#f472b6",
+          "color": "#c084fc",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
           "voiceRate": 1.02,
-          "pitch": 1.12
+          "pitch": 0.96
         }
       ]
     }
@@ -7169,8 +7169,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“시험 망친 것 같아서 부모님께 미리 기대컨 중이야.”",
         "def": "'기대 컨트롤'의 줄임말로, 나중에 겪을 실망을 줄이기 위해 사전에 기대치를 낮춰 놓는 태도",
         "castDemis": "Demis",
-        "castCraig": "크레이그 (Craig)",
-        "castJennifer": "제니퍼 (Jennifer)",
+        "castCraig": "데미스 (Demis)",
+        "castJennifer": "하루키 (Haruki)",
         "ttsLang": "ko-KR"
       },
       "en": {
@@ -7181,8 +7181,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I think I bombed this exam, so I'm managing my parents' expectations in advance.”",
         "def": "Short for 'expectation control'—deliberately lowering others' (or your own) expectations beforehand to soften future disappointment.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "en-US"
       },
       "ja": {
@@ -7193,8 +7193,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“テストに失敗したっぽいから、両親に前もって期待値を下げさせておいてるんだ。”",
         "def": "「期待コントロール」の略で、後でがっかりしないよう事前に期待値を下げておくこと",
         "castDemis": "Demis",
-        "castCraig": "クレイグ (Craig)",
-        "castJennifer": "ジェニファー (Jennifer)",
+        "castCraig": "デミス (Demis)",
+        "castJennifer": "ハルキ (Haruki)",
         "ttsLang": "ja-JP"
       },
       "es": {
@@ -7205,8 +7205,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Creo que reprobé este examen, así que estoy bajando las expectativas de mis padres por adelantado.”",
         "def": "Abreviatura de 'control de expectativas': bajar deliberadamente las expectativas de antemano para evitar decepciones.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "es-ES"
       },
       "fr": {
@@ -7217,8 +7217,8 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“Je crois que j'ai raté cet examen, alors je tempère les attentes de mes parents à l'avance.”",
         "def": "Abréviation de « contrôle des attentes » : baisser volontairement les attentes à l'avance pour limiter la déception.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "fr-FR"
       },
       "id": {
@@ -7229,23 +7229,23 @@ window.ROLEPLAY_BY_WORD = {
         "punchText": "“I think I bombed this exam, so I'm managing my parents' expectations in advance.”",
         "def": "Short for 'expectation control'—deliberately lowering others' (or your own) expectations beforehand to soften future disappointment.",
         "castDemis": "Demis",
-        "castCraig": "Craig",
-        "castJennifer": "Jennifer",
+        "castCraig": "Demis",
+        "castJennifer": "Haruki",
         "ttsLang": "id-ID"
       }
     },
     "dramaScripts": {
       "ko": [
         {
-          "actor": "크레이그 (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "데미스 (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
           "trans": "'기대 컨트롤'의 줄임말로, 나중에 겪을 실망을 줄이기 위해 사전에 기대치를 낮춰 놓는 태도",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7253,15 +7253,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "제니퍼 (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "하루키 (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
           "trans": "Short for 'expectation control'—deliberately lowering others' (or your own) expectations beforehand to soften future disappointment.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -7271,15 +7271,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "en": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "I heard you're doing your first street performance this weekend! I'll come watch!",
           "trans": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7287,15 +7287,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Ah, I haven't practiced much so it might be a disaster—please lower your expectations in advance.",
           "trans": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -7305,15 +7305,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "ja": [
         {
-          "actor": "クレイグ (Craig)",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "デミス (Demis)",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "今週末に初めての路上ライブやるんだって？見に行くよ！",
           "trans": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7321,15 +7321,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "ジェニファー (Jennifer)",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "ハルキ (Haruki)",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "ああ、あまり練習できてなくて大失敗しそうだから、前もって期待値を下げておいてね。",
           "trans": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -7339,15 +7339,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "es": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Escuché que harás tu primera presentación callejera este fin de semana. ¡Iré a verte!",
           "trans": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7355,15 +7355,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Ay, no pude practicar mucho y seguro sale mal, así que ve bajando tus expectativas de antemano.",
           "trans": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -7373,15 +7373,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "fr": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "J'ai entendu dire que tu faisais ton premier concert de rue ce week-end ! Je viendrai te voir !",
           "trans": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7389,15 +7389,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Ah, je n'ai pas beaucoup répété donc ça risque d'être catastrophique, tempère tes attentes à l'avance.",
           "trans": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,
@@ -7407,15 +7407,15 @@ window.ROLEPLAY_BY_WORD = {
       ],
       "id": [
         {
-          "actor": "Craig",
-          "avatar": "assets/agents/craig_profile.png",
+          "actor": "Demis",
+          "avatar": "assets/agents/demis_profile.png",
           "title": "Scene 1 · 상황 제시 (A)",
           "roleIcon": "🗣️",
           "sticker": "💬",
           "acting": "실제 대화 톤으로 자연스럽게 말하기",
           "dialogue": "Katanya akhir pekan ini kamu mau tampil ngamen pertama kali ya? Aku datang nonton ya!",
           "trans": "너 이번 주말에 첫 버스킹 공연한다며? 보러 갈게!",
-          "color": "#38bdf8",
+          "color": "#60a5fa",
           "zoom": 1.03,
           "speedLines": false,
           "shake": false,
@@ -7423,15 +7423,15 @@ window.ROLEPLAY_BY_WORD = {
           "pitch": 0.96
         },
         {
-          "actor": "Jennifer",
-          "avatar": "assets/agents/jennifer_profile.png",
+          "actor": "Haruki",
+          "avatar": "assets/agents/haruki_profile.png",
           "title": "Scene 2 · 핵심 응답 (B)",
           "roleIcon": "💡",
           "sticker": "✨",
           "acting": "핵심 표현을 살려 뉘앙스 전달하기",
           "dialogue": "Aduh, aku belum banyak latihan jadi kayaknya bakal kacau, tolong turunin ekspektasimu dari sekarang ya.",
           "trans": "아, 연습 많이 못 해서 완전 망할 것 같으니까 미리 기대컨 좀 해줘.",
-          "color": "#f472b6",
+          "color": "#fb923c",
           "zoom": 1.06,
           "speedLines": true,
           "shake": false,

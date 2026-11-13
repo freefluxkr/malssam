@@ -82,7 +82,7 @@
       return null;
     }
 
-    const isFemale = (actorName && (actorName.includes('제니퍼') || actorName.includes('Jennifer')));
+    const isFemale = (actorName && /제니퍼|Jennifer|ジェニファー|페기|Peggy|ペギー|하루키|Haruki|ハルキ/i.test(actorName));
 
     // 1) 한국어
     if (targetLangPrefix === 'ko') {
