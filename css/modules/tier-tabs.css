@@ -1,0 +1,222 @@
+/* ==========================================================================
+   MALSSAM 3-TIER MODULAR CSS
+   - Tab 1: [🔍 사전 & 3D극장]
+   - Tab 2: [⚔️ 세대배틀 & 판독소]
+   - Tab 3: [🏢 기업 HR 워크숍 키트]
+   ========================================================================== */
+
+/* ── 3-Tier Tab Navigation Bar ── */
+.malssam-tier-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 60px;
+  z-index: 90;
+}
+
+.tier-tab-btn {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94A3B8;
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+
+.tier-tab-btn:hover {
+  color: #F8FAFC;
+  background: rgba(51, 65, 85, 0.8);
+  border-color: rgba(250, 204, 21, 0.4);
+}
+
+.tier-tab-btn.active {
+  background: linear-gradient(135deg, #FACC15, #EAB308);
+  color: #0F172A;
+  border-color: #FACC15;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+  transform: scale(1.03);
+}
+
+/* ── Tab Views ── */
+.tier-view-section {
+  display: none;
+  animation: fadeInTier 0.3s ease-out;
+}
+
+.tier-view-section.active {
+  display: block;
+}
+
+@keyframes fadeInTier {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Above the Fold: 2-Column Split (Left 55% / Right 45%) ── */
+.malssam-split-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+  align-items: stretch;
+}
+
+@media (max-width: 960px) {
+  .malssam-split-hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.split-hero-left {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.85));
+  border: 1px solid rgba(250, 204, 21, 0.2);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.split-hero-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.split-hero-right .live-battle-card {
+  height: 100%;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ── Tab 3: B2B HR Kit Section ── */
+.hr-kit-container {
+  max-width: 1100px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+}
+
+.hr-kit-header-banner {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(99, 102, 241, 0.15));
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  border-radius: 24px;
+  padding: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hr-kit-slides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 24px 0;
+}
+
+@media (max-width: 800px) {
+  .hr-kit-slides-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hr-slide-card {
+  background: #1E293B;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.hr-slide-card:hover {
+  border-color: #38BDF8;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.2);
+}
+
+.hr-slide-num {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.hr-slide-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #F8FAFC;
+}
+
+.hr-slide-desc {
+  font-size: 0.85rem;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+.hr-cta-box {
+  background: linear-gradient(135deg, #1E293B, #0F172A);
+  border: 2px solid #FACC15;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 12px 36px rgba(250, 204, 21, 0.15);
+}
+
+.btn-sample-pdf {
+  background: transparent;
+  border: 1.5px solid #38BDF8;
+  color: #38BDF8;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-sample-pdf:hover {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.btn-buy-hr-kit {
+  background: linear-gradient(135deg, #FACC15, #EAB308);
+  color: #0F172A;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(250, 204, 21, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-buy-hr-kit:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}

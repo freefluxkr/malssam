@@ -40,6 +40,26 @@ function filterSoulSubcat(subcat, ev) {
     if (btn) btn.classList.add('active');
   }
   
+  // 서브카테고리별 서브헤더 정보 텍스트 동적 동기화
+  const infoBox = document.getElementById('eraInfoContent');
+  if (infoBox && window.words) {
+    const subcatMap = {
+      all: { label: "전체 K-Soul (133선)", desc: "외국어로 1:1 직역이 불가능한 한국 고유의 감정, 관계, 정서 및 오감 어휘. 전용 검색창과 3D 플립 상황극 지원." },
+      emotion: { label: "심리·감정 (36선)", desc: "눈치, 정, 한, 서운하다, 섭섭하다 등 가슴속 깊은 심리적 상태와 마음의 결." },
+      relationship: { label: "관계·유대 (25선)", desc: "눈치, 썸, 챙기다, 덤, 깍두기 등 사람과 사람 사이의 끈끈하고 미묘한 연결고리." },
+      behavior: { label: "습관·행동 (25선)", desc: "뒹굴뒹굴, 멍때리다, 깝죽거리다 등 한국인의 일상과 행동 패턴." },
+      culture: { label: "사회·문화 (32선)", desc: "꼰대, 갑질, 회식, 라떼는 말이야 등 한국 사회 특유의 조직 및 세대 문화." },
+      onomatopoeia: { label: "의성어 (5선)", desc: "꼬르륵, 두근두근, 철렁, 찰랑찰랑, 쿵쾅쿵쾅 등 마음과 신체가 울리는 소리 표현." },
+      mimetic: { label: "의태어 (5선)", desc: "살금살금, 아장아장, 말랑말랑, 반짝반짝, 뒤뚱뒤뚱 등 생동감 넘치는 동작 묘사." },
+      color: { label: "색채어 (5선)", desc: "노르스름하다, 파르스름하다, 싯누렇다, 푸르뎅뎅하다, 발그레하다 등 섬세한 오감 색채." }
+    };
+    const meta = subcatMap[subcat] || subcatMap.all;
+    const count = (subcat === 'all') 
+      ? window.words.filter(w => w.era === 'soul').length 
+      : window.words.filter(w => w.era === 'soul' && w.sub_category === subcat).length;
+    infoBox.innerHTML = `<span>💎 <strong>4. K-정서 > ${meta.label}</strong>: ${meta.desc}</span><span style='color:var(--accent-purple); font-weight:700;'>${count}개 표제어 표시 중</span>`;
+  }
+
   // 만약 K-정서 검색창에 검색어가 있다면 해당 카테고리 내에서 재검색
   const soulInput = document.getElementById('soulSearchInput');
   if (soulInput && soulInput.value.trim()) {
@@ -334,8 +354,18 @@ function applyFilterAndRender() {
   if (currentEra === 'smartphone') eraLabel = "2. 📱 국민 유행어 (2010s)";
   if (currentEra === 'shorts') eraLabel = "3. ⚡ 요즘 1020 밈 (2020s~2026)";
   if (currentEra === 'soul') {
-    const soulTotal = window.words.filter(w => w.era === 'soul').length;
-    eraLabel = `4. 💎 K-정서 (번역불가) & 의성·의태·색채 (${soulTotal}선)`;
+    const subcatTitles = {
+      all: "전체 K-Soul",
+      emotion: "심리·감정",
+      relationship: "관계·유대",
+      behavior: "습관·행동",
+      culture: "사회·문화",
+      onomatopoeia: "의성어",
+      mimetic: "의태어",
+      color: "색채어"
+    };
+    const subName = subcatTitles[currentSoulSubcat] || "전체";
+    eraLabel = `4. 💎 K-정서 > ${subName} (${pool.length}선)`;
   }
 
   const titleEl = document.getElementById('feedTitleText');

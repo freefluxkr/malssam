@@ -1,27 +1,37 @@
 // ============================================================
-// 💳 [후원 및 결제, 정식 리포트 & PDF 발급 엔진]
+// 💳 [포트원 (PortOne v2) 상용 결제 & 글로벌 PayPal & 지출결의서 엔진]
 // ============================================================
 
-// 1) 🟡 카카오페이 실전 연동
+// 🔑 포트원 공식 상점 식별자 (Store ID - Frontend 공개용)
+const PORTONE_STORE_ID = "store-e66b704c-bdd0-4e99-9ec1-a7602b3b6d56";
+
+// 1) 🟡 카카오페이 실전 연동 (PortOne v2)
 async function requestKakaoPay() {
   closeTierModal();
   const info = getTierInfo();
-  const paymentId = 'kakao_' + Date.now();
+  const paymentId = 'MALSSAM_KP_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
 
-  if (window.PortOne) {
+  if (window.PortOne && typeof window.PortOne.requestPayment === 'function') {
     try {
       const response = await window.PortOne.requestPayment({
-        storeId: 'store-d0b81c4e-5882-4f36-96b6-d249d32fb1cf',
-        channelKey: 'channel-key-kakaopay-live',
+        storeId: PORTONE_STORE_ID,
         paymentId: paymentId,
         orderName: info.name,
         totalAmount: info.amount,
-        currency: 'KRW',
+        currency: 'CURRENCY_KRW',
         payMethod: 'EASY_PAY',
-        easyPay: { provider: 'KAKAOPAY' },
+        easyPay: {
+          easyPayProvider: 'EASY_PAY_PROVIDER_KAKAOPAY'
+        },
         customer: {
           fullName: '말쌈 후원자',
-          email: 'support@malssam.com'
+          email: 'support@malssam.com',
+          phoneNumber: '010-0000-0000'
+        },
+        redirectUrl: window.location.href,
+        windowType: {
+          pc: 'IFRAME',
+          mobile: 'REDIRECTION'
         }
       });
 
@@ -35,11 +45,11 @@ async function requestKakaoPay() {
         return;
       }
     } catch (e) {
-      console.warn("PortOne v2 호출 fallback 진행:", e);
+      console.warn("PortOne v2 카카오페이 호출 fallback 진행:", e);
     }
   }
 
-  // Fallback: IMP v1
+  // Fallback: IMP v1 호환
   if (typeof IMP !== 'undefined') {
     IMP.init('imp00000000');
     IMP.request_pay({
@@ -62,26 +72,33 @@ async function requestKakaoPay() {
   }
 }
 
-// 2) 🔵 토스페이 실전 연동
+// 2) 🔵 토스페이 실전 연동 (PortOne v2)
 async function requestTossPay() {
   closeTierModal();
   const info = getTierInfo();
-  const paymentId = 'toss_' + Date.now();
+  const paymentId = 'MALSSAM_TP_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
 
-  if (window.PortOne) {
+  if (window.PortOne && typeof window.PortOne.requestPayment === 'function') {
     try {
       const response = await window.PortOne.requestPayment({
-        storeId: 'store-d0b81c4e-5882-4f36-96b6-d249d32fb1cf',
-        channelKey: 'channel-key-tosspay-live',
+        storeId: PORTONE_STORE_ID,
         paymentId: paymentId,
         orderName: info.name,
         totalAmount: info.amount,
-        currency: 'KRW',
+        currency: 'CURRENCY_KRW',
         payMethod: 'EASY_PAY',
-        easyPay: { provider: 'TOSSPAY' },
+        easyPay: {
+          easyPayProvider: 'EASY_PAY_PROVIDER_TOSSPAY'
+        },
         customer: {
           fullName: '말쌈 후원자',
-          email: 'support@malssam.com'
+          email: 'support@malssam.com',
+          phoneNumber: '010-0000-0000'
+        },
+        redirectUrl: window.location.href,
+        windowType: {
+          pc: 'IFRAME',
+          mobile: 'REDIRECTION'
         }
       });
 
@@ -95,11 +112,11 @@ async function requestTossPay() {
         return;
       }
     } catch (e) {
-      console.warn("PortOne v2 호출 fallback 진행:", e);
+      console.warn("PortOne v2 토스페이 호출 fallback 진행:", e);
     }
   }
 
-  // Fallback: IMP v1
+  // Fallback: IMP v1 호환
   if (typeof IMP !== 'undefined') {
     IMP.init('imp00000000');
     IMP.request_pay({
@@ -113,6 +130,137 @@ async function requestTossPay() {
     }, function (rsp) {
       if (rsp.success) {
         executePaymentComplete('토스페이', rsp.imp_uid || paymentId, info.amountText);
+      } else {
+        showToast(`❌ 결제 취소 또는 오류: ${rsp.error_msg}`);
+      }
+    });
+  } else {
+    alert("결제 모듈을 로드 중입니다. 잠시 후 다시 시도해 주세요.");
+  }
+}
+
+// 3) 💚 네이버페이 실전 연동 (PortOne v2)
+async function requestNaverPay() {
+  closeTierModal();
+  const info = getTierInfo();
+  const paymentId = 'MALSSAM_NP_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+
+  if (window.PortOne && typeof window.PortOne.requestPayment === 'function') {
+    try {
+      const response = await window.PortOne.requestPayment({
+        storeId: PORTONE_STORE_ID,
+        paymentId: paymentId,
+        orderName: info.name,
+        totalAmount: info.amount,
+        currency: 'CURRENCY_KRW',
+        payMethod: 'EASY_PAY',
+        easyPay: {
+          easyPayProvider: 'EASY_PAY_PROVIDER_NAVERPAY'
+        },
+        customer: {
+          fullName: '말쌈 후원자',
+          email: 'support@malssam.com',
+          phoneNumber: '010-0000-0000'
+        },
+        redirectUrl: window.location.href,
+        windowType: {
+          pc: 'IFRAME',
+          mobile: 'REDIRECTION'
+        }
+      });
+
+      if (response && response.code) {
+        showToast(`❌ 네이버페이 취소/오류: ${response.message || response.code}`);
+        return;
+      }
+
+      if (response && (response.paymentId || !response.code)) {
+        executePaymentComplete('네이버페이', response.paymentId || paymentId, info.amountText);
+        return;
+      }
+    } catch (e) {
+      console.warn("PortOne v2 네이버페이 호출 fallback 진행:", e);
+    }
+  }
+
+  // Fallback: IMP v1 호환
+  if (typeof IMP !== 'undefined') {
+    IMP.init('imp00000000');
+    IMP.request_pay({
+      pg: 'naverpay',
+      pay_method: 'card',
+      merchant_uid: paymentId,
+      name: info.name,
+      amount: info.amount,
+      buyer_email: 'support@malssam.com',
+      buyer_name: '말쌈 후원자'
+    }, function (rsp) {
+      if (rsp.success) {
+        executePaymentComplete('네이버페이', rsp.imp_uid || paymentId, info.amountText);
+      } else {
+        showToast(`❌ 결제 취소 또는 오류: ${rsp.error_msg}`);
+      }
+    });
+  } else {
+    alert("결제 모듈을 로드 중입니다. 잠시 후 다시 시도해 주세요.");
+  }
+}
+
+// 4) 💳 신용/체크카드 실전 연동 (PortOne v2 통합 결제)
+async function requestCardPay() {
+  closeTierModal();
+  const info = getTierInfo();
+  const paymentId = 'MALSSAM_CARD_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+
+  if (window.PortOne && typeof window.PortOne.requestPayment === 'function') {
+    try {
+      const response = await window.PortOne.requestPayment({
+        storeId: PORTONE_STORE_ID,
+        paymentId: paymentId,
+        orderName: info.name,
+        totalAmount: info.amount,
+        currency: 'CURRENCY_KRW',
+        payMethod: 'CARD',
+        customer: {
+          fullName: '말쌈 후원자',
+          email: 'support@malssam.com',
+          phoneNumber: '010-0000-0000'
+        },
+        redirectUrl: window.location.href,
+        windowType: {
+          pc: 'IFRAME',
+          mobile: 'REDIRECTION'
+        }
+      });
+
+      if (response && response.code) {
+        showToast(`❌ 카드결제 취소/오류: ${response.message || response.code}`);
+        return;
+      }
+
+      if (response && (response.paymentId || !response.code)) {
+        executePaymentComplete('신용/체크카드', response.paymentId || paymentId, info.amountText);
+        return;
+      }
+    } catch (e) {
+      console.warn("PortOne v2 카드결제 호출 fallback 진행:", e);
+    }
+  }
+
+  // Fallback: IMP v1 호환 (KG이니시스 / 나이스페이 등 기본 카드창)
+  if (typeof IMP !== 'undefined') {
+    IMP.init('imp00000000');
+    IMP.request_pay({
+      pg: 'html5_inicis',
+      pay_method: 'card',
+      merchant_uid: paymentId,
+      name: info.name,
+      amount: info.amount,
+      buyer_email: 'support@malssam.com',
+      buyer_name: '말쌈 후원자'
+    }, function (rsp) {
+      if (rsp.success) {
+        executePaymentComplete('신용/체크카드', rsp.imp_uid || paymentId, info.amountText);
       } else {
         showToast(`❌ 결제 취소 또는 오류: ${rsp.error_msg}`);
       }
@@ -176,14 +324,43 @@ function openCoffeeSponsor() {
 
 // 결제 완료 승인 및 리포트 발급
 function executePaymentComplete(provider, txId, amountText) {
-  closeQuizModal();
+  if (typeof closeQuizModal === 'function') closeQuizModal();
+  if (typeof closeTierModal === 'function') closeTierModal();
   const info = getTierInfo();
-  document.getElementById('receiptPackageName').innerText = info.name;
-  document.getElementById('receiptProvider').innerText = provider;
-  document.getElementById('receiptTxId').innerText = txId;
-  document.getElementById('receiptAmount').innerText = amountText;
-  document.getElementById('receiptDocs').innerText = info.docs;
-  document.getElementById('reportModal').classList.add('active');
+  
+  const pkgEl = document.getElementById('receiptPackageName');
+  if (pkgEl) pkgEl.innerText = info.name;
+  const provEl = document.getElementById('receiptProvider');
+  if (provEl) provEl.innerText = provider;
+  const txEl = document.getElementById('receiptTxId');
+  if (txEl) txEl.innerText = txId;
+  const amtEl = document.getElementById('receiptAmount');
+  if (amtEl) amtEl.innerText = amountText;
+  const docsEl = document.getElementById('receiptDocs');
+  if (docsEl) docsEl.innerText = info.docs;
+
+  const rm = document.getElementById('reportModal');
+  if (rm) rm.classList.add('active');
+
+  // Firestore에 결제 내역 안전 기록 (Admin 콘솔 연동)
+  try {
+    if (window.firestoreDb) {
+      window.firestoreDb.collection('orders').add({
+        orderId: txId,
+        provider: provider,
+        service: 'malssam',
+        packageName: info.name,
+        amount: info.amount,
+        amountText: amountText,
+        currency: 'KRW',
+        status: 'PAID',
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      });
+    }
+  } catch (err) {
+    console.warn("Firestore order log error:", err);
+  }
+
   showToast(`🎉 [${provider}] 결제 완료! 정식 리포트가 발급되었습니다!`);
 }
 
@@ -337,7 +514,7 @@ function downloadRealReportPDF() {
     ${expenseResolutionHtml}
 
     <div style="margin-top:40px; text-align:center; border-top:1px solid #e2e8f0; padding-top:20px; font-size:12px; color:#94a3b8;">
-      발행처: <strong>당목담글(DMDG) 스튜디오 연구 본부</strong> | 공식 도메인: https://malssam.com/
+      발행처: <strong>DMDG(당목담글) 스튜디오 연구 본부</strong> | 공식 도메인: https://malssam.com/
     </div>
   </div>
 </body>

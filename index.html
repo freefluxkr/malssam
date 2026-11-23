@@ -1,806 +1,455 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>말쌈 (MALSSAM) - 3대 세대별 한국어 신조어 사전 & 세대 공감 배틀</title>
-  
-  <!-- SEO & 메타 태그 -->
-  <meta name="description" content="1990년대 PC통신 라떼 감성부터 2026 최신 영포티·영ㅋㅋ 밈, K-정서 118선까지 전 세대를 잇는 실시간 한국어 신조어 아카이브">
-  <meta name="keywords" content="신조어, 한국어유행어, 라떼신조어, 2026밈, 영포티, 영ㅋㅋ, 꼰대, 럭키비키, 중꺾마, 알잘딱깔센, 번역불가한국어">
-  <meta property="og:title" content="말쌈 (MALSSAM) - 세대 간 소통 단절 극복 프로젝트">
-  <meta property="og:description" content="부모와 자녀, 팀장님과 신입사원이 함께 즐기는 세대공감 퀴즈 & 318선 신조어 사전">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://malssam.com/">
-  
-  <script src="js/anti-scraping.js?v=20261023_shield_fix"></script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말쌈 (malssam) - 사전 & 3D 상황극 스튜디오 | DMDG(당목담글)</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- DMDG Framework Design Tokens, Header & Footer -->
+    <link rel="stylesheet" href="../dmdg_framework/css/dmdg-tokens.css">
+    <script src="../dmdg_framework/js/dmdg-core.js"></script>
+    <script src="../dmdg_framework/js/dmdg-header.js"></script>
+    <script src="../dmdg_framework/js/dmdg-footer.js"></script>
 
-  <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 & 3D 상황극 스타일 -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/roleplay.css">
-
-  <!-- 포트원 (PortOne v2 브라우저 SDK) -->
-  <script src="https://cdn.portone.io/v2/browser-sdk.js"></script>
-  <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
-  <!-- PayPal SDK (등록된 라이브 Client ID) -->
-  <script src="https://www.paypal.com/sdk/js?client-id=AaYtg54hxqwI7fn87ym2M28kTDOl7NQ1RZJUjdX0tIutj048JX2TovDkCWytSy8K-B9lIpcf7_IHDA-c&currency=USD"></script>
-  
-  <!-- Firebase Firestore 클라우드 실시간 DB -->
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      projectId: "dmdg-live",
-      appId: "1:357433220336:web:1a8914811da09123a0f635",
-      storageBucket: "dmdg-live.firebasestorage.app",
-      apiKey: "AIzaSyBcS8aS5yHk2KFNYPImXslsFkSyoBwYrKI",
-      authDomain: "dmdg-live.firebaseapp.com",
-      messagingSenderId: "357433220336"
-    };
-
-    let firestoreDb = null;
-    let isFirebaseReady = false;
-
-    try {
-      if (typeof firebase !== 'undefined') {
-        if (!firebase.apps.length) {
-          firebase.initializeApp(firebaseConfig);
+    <style>
+        :root {
+            --primary-malssam: #3A907C;
         }
-        firestoreDb = firebase.firestore();
-        isFirebaseReady = true;
-        console.log("🔥 Firebase Firestore connected successfully (asia-northeast3 / dmdg-live)");
-      }
-    } catch (e) {
-      console.warn("Firebase initialization warning:", e);
-    }
-
-    window.loadFirestoreWords = async function() {
-      if (!isFirebaseReady || !firestoreDb) return [];
-      try {
-        const snapshot = await firestoreDb.collection("malssam_words").get();
-        const fbWords = [];
-        snapshot.forEach(doc => {
-          const d = doc.data();
-          fbWords.push({
-            id: 'fb_' + doc.id,
-            docId: doc.id,
-            isFirestore: true,
-            word: d.word,
-            pronunciation: d.pronunciation || ('[' + d.word + ']'),
-            part_of_speech: d.part_of_speech || "신조어",
-            chosung: d.chosung || "",
-            era: d.era || "shorts",
-            era_name: d.era_name || "3. ⚡ 요즘 1020 밈 (쇼츠/릴스/틱톡)",
-            generation: d.generation || "사용자 제보 세대",
-            short_def: d.short_def || "",
-            origin: d.origin || "사용자 실시간 등록",
-            examples: d.examples || [d.example || ""],
-            tags: d.tags || ["실시간커뮤니티"],
-            likes: Number(d.likes) || 1,
-            dislikes: Number(d.dislikes) || 0,
-            author: d.author || "익명",
-            toxicity_level: d.toxicity_level || 1,
-            standard_korean_mapping: d.standard_korean_mapping || "실시간 등록어",
-            trend_status: "HOT"
-          });
-        });
-        return fbWords;
-      } catch (err) {
-        console.warn("Firestore fetch error:", err);
-        return [];
-      }
-    };
-  </script>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FAF9F5;
+            color: #0F172A;
+            overflow-x: hidden;
+        }
+        #threeCanvasContainer canvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+            border-radius: 1rem;
+        }
+    </style>
 </head>
-<body>
-<!-- 유네스코 세종대왕 상단 헌정 배너 -->
-  <div class="unesco-heritage-banner">
-    <span class="unesco-badge">UNESCO MEMORY OF THE WORLD</span>
-    <span>훈민정음 해례본(1446) 유네스코 세계기록유산 등재 헌정 — 1990s PC통신부터 2026 쇼츠 밈까지 살아 숨 쉬는 한글 주권 프로젝트</span>
-  </div>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#3A907C] selection:text-white">
 
-  <!-- 헤더 -->
-  <header>
-    <div class="header-inner">
-      <a href="#" class="brand">
-        <span class="brand-logo">📖</span>
-        <span class="brand-title">말쌈 <span class="brand-sub">MALSSAM</span></span>
-        <span class="fb-live-badge" id="fbStatusBadge">🟢 100단어</span>
-      </a>
+    <!-- ================= 1. DMDG 공식 아이덴티티 상단 헤더 (<dmdg-header> site="malssam", 주색상 #3A907C) ================= -->
+    <dmdg-header id="mainHeader" site="malssam" show-search="true" show-lang="true" show-wave="true"></dmdg-header>
 
-      <nav class="global-lang-group" title="글로벌 현지화 전용 에디션">
-        <span class="lang-tag">GLOBAL:</span>
-        <a href="#" class="lang-pill active">🇰🇷 KR</a>
-        <a href="global/en.html" class="lang-pill" title="English Edition">🇺🇸 EN</a>
-        <a href="global/ja.html" class="lang-pill" title="Japanese Edition">🇯🇵 JA</a>
-        <a href="global/fr.html" class="lang-pill" title="French Edition">🇫🇷 FR</a>
-        <a href="global/id.html" class="lang-pill" title="Indonesian Edition">🇮🇩 ID</a>
-        <a href="global/es.html" class="lang-pill" title="Spanish Edition">🇪🇸 ES</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="btn-kakao-request" onclick="openKakaoModal()" title="카톡 맥락 판독 요청">
-          <span>💬</span>
-          <span>판독 요청</span>
-        </button>
-        <button class="btn-add" onclick="openAddModal()" title="신조어 제보하기">
-          <span>+</span>
-          <span>제보하기</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- 히어로 & 검색 섹션 -->
-  <section class="hero-section">
-    <div class="hero-badge-pill">🛡️ 세대 간 소통 단절 극복 & 3대 시대별 한국어 아카이브</div>
-    <h1 class="hero-title">지금 한국인이 쓰는 <span>진짜 한글</span> 사전</h1>
-    <p class="hero-subtitle">"1990년대 삐삐·PC통신 라떼 감성부터 2026 최신 영포티·영ㅋㅋ 밈까지 세대를 잇습니다."</p>
-
-    <div class="search-box-wrapper">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" class="search-input" placeholder="신조어 검색 또는 초성 입력 (예: 영포티, 영ㅋㅋ, 꼰대, 방가방가, ㅈㄲㅁ)..." oninput="handleSearch()">
-    </div>
-
-    <div class="hot-tags">
-      <span class="hot-tags-label">🔥 핫 트렌드:</span>
-      <a class="hot-tag" onclick="quickSearch('영포티')">#⚡ 영포티</a>
-      <a class="hot-tag" onclick="quickSearch('영ㅋㅋ')">#⚡ 영ㅋㅋ</a>
-      <a class="hot-tag" onclick="quickSearch('꼰대')">#📱 꼰대</a>
-      <a class="hot-tag" onclick="quickSearch('넵병')">#⚡ 넵병</a>
-      <a class="hot-tag" onclick="quickSearch('방가방가')">#📟 방가방가</a>
-      <a class="hot-tag" onclick="quickSearch('중꺾마')">#⚡ 중꺾마</a>
-      <a class="hot-tag" onclick="quickSearch('럭키비키')">#⚡ 럭키비키</a>
-      <a class="hot-tag" onclick="quickSearch('알잘딱깔센')">#⚡ 알잘딱깔센</a>
-    </div>
-  </section>
-
-  <!-- ⚔️ 바이럴 킬러 콘텐츠: 세대 공감 배틀 퀴즈 (Family & Office Battle) -->
-    <!-- 🔥 오늘의 말쌈 배틀 (LIVE BATTLE #01) -->
-  <!-- =======================================================================
-       🔥 LIVE BATTLE: 매일/접속 시마다 새로운 질문으로 교체되는 실시간 말투 밸런스 게임
-       ======================================================================= -->
-  <section class="live-battle-section">
-    <div class="live-battle-card" id="liveBattleCard">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
-        <div class="live-battle-tag" id="liveBattleTag">🔥 LIVE BATTLE #01 · 실시간 말투 밸런스 게임</div>
-        <button onclick="nextRandomBattle()" style="background:rgba(244,63,94,0.12); border:1px solid rgba(244,63,94,0.35); color:#fda4af; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px; cursor:pointer; display:inline-flex; align-items:center; gap:4px; transition:all 0.2s ease;" onmouseover="this.style.background='rgba(244,63,94,0.25)'" onmouseout="this.style.background='rgba(244,63,94,0.12)'">
-          <span>🔄 다른 질문 보기</span>
-        </button>
-      </div>
-      
-      <h2 class="live-battle-q" id="liveBattleQ">팀장님 공지에 신입이 <span style="color:#facc15;">"네."</span>라고 답장했다면?</h2>
-      <p class="live-battle-desc" id="liveBattleDesc">물결(`~`)이나 느낌표(`!`) 없이 마침표만 찍힌 단답, 과연 사회생활 마이너스일까요?</p>
-
-      <div class="live-battle-grid">
-        <div class="live-vote-btn" id="liveBtnA" onclick="voteLiveBattle('A')">
-          <div class="live-vote-title" id="liveTitleA">🅰️ 마침표는 차갑고 화난 것 같다… '넵!' 또는 '네~'가 기본이다</div>
-          <div>
-            <div class="live-vote-pct">
-              <span id="livePctA">76% 투표</span>
-              <span id="liveLabelA" style="color:#f43f5e; font-weight:800;">예의중시파</span>
-            </div>
-            <div class="live-vote-gauge-wrap">
-              <div class="live-vote-gauge gauge-a" id="liveGaugeA" style="width:76%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="live-vote-btn" id="liveBtnB" onclick="voteLiveBattle('B')">
-          <div class="live-vote-title" id="liveTitleB">🅱️ 맞춤법 맞게 대답한 건데 뭐가 문제? 마침표 과몰입 금지</div>
-          <div>
-            <div class="live-vote-pct">
-              <span id="livePctB">24% 투표</span>
-              <span id="liveLabelB" style="color:#38bdf8; font-weight:800;">효율실용파</span>
-            </div>
-            <div class="live-vote-gauge-wrap">
-              <div class="live-vote-gauge gauge-b" id="liveGaugeB" style="width:24%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="liveVoteResultMsg" style="margin-top:12px; font-size:0.8rem; color:#facc15; font-weight:700; display:none; text-align:center;">
-        ✨ 집단지성 투표 반영 완료! — 카톡 단톡방에 공유하고 동료 의견도 확인해보세요!
-      </div>
-    </div>
-  </section>
-
-  <section class="battle-banner">
-    <div class="battle-banner-inner">
-      <div class="battle-header">
-        <span class="battle-subbadge">⚔️ FAMILY & OFFICE BATTLE</span>
-        <h2 class="battle-main-title">부모와 자녀, 팀장님과 신입사원의 <span>언어 장벽 격파전</span></h2>
-        <p class="battle-subtext">누가 더 상대방의 언어를 잘 이해할까요? 5문항 즉석 대결로 우리 집 & 우리 팀 소통 지수를 측정해 보세요!</p>
-      </div>
-
-      <div class="battle-cards-grid">
-        <!-- Mode A: 부모 & 팀장님 모드 -->
-        <div class="battle-card mode-parent" onclick="startQuiz('parent')">
-          <div>
-            <div class="battle-card-top">
-              <span class="battle-card-icon">👔</span>
-              <span class="battle-card-badge">부모님 & 팀장님 전용</span>
-            </div>
-            <h3 class="battle-card-title">"당신은 자녀(MZ)의 말을 얼마나 알아듣나요?"</h3>
-            <p class="battle-card-desc">쇼츠·틱톡을 점령한 2026 최신 1020 밈 5문항! 자녀와 팀원의 카톡 대화를 해독할 수 있을까요?</p>
-          </div>
-          <button class="btn-battle-action">
-            <span>🔥 Z세대 밈 배틀 도전하기</span>
-            <span>→</span>
-          </button>
-        </div>
-
-        <!-- Mode B: 자녀 & 신입사원 모드 -->
-        <div class="battle-card mode-retro" onclick="startQuiz('retro')">
-          <div>
-            <div class="battle-card-top">
-              <span class="battle-card-icon">🎧</span>
-              <span class="battle-card-badge">자녀 & 신입사원 전용</span>
-            </div>
-            <h3 class="battle-card-title">"역주행 라떼 테스트: 요즘 애들은 90년대를 알까?"</h3>
-            <p class="battle-card-desc">삐삐·PC통신·싸이월드 감성 폭발! 부모님과 팀장님이 청춘 시절 쓰던 레트로 유행어 5문항 맞히기!</p>
-          </div>
-          <button class="btn-battle-action">
-            <span>📟 라떼 레트로 배틀 도전하기</span>
-            <span>→</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ⏳ 3대 시대별 시간여행 탭 스위처 -->
-  <section class="era-switcher-section">
-    <div class="era-tabs-container">
-      <button class="era-tab-btn active" onclick="switchEra('all')">
-        <span class="era-main">✨ 전체 보기</span>
-        <span class="era-sub" id="countAll">100단어</span>
-      </button>
-      <button class="era-tab-btn" onclick="switchEra('latte')">
-        <span class="era-main">📟 1. 라떼 추억</span>
-        <span class="era-sub" id="countLatte">1990~2000s (27)</span>
-      </button>
-      <button class="era-tab-btn" onclick="switchEra('smartphone')">
-        <span class="era-main">📱 2. 국민 유행어</span>
-        <span class="era-sub" id="countSmartphone">2010s (31)</span>
-      </button>
-      <button class="era-tab-btn" onclick="switchEra('shorts')">
-        <span class="era-main">⚡ 3. 요즘 1020 밈</span>
-        <span class="era-sub" id="countShorts">2020~2026 (42)</span>
-      </button>
-      <button class="era-tab-btn" id="tabSoulBtn" onclick="switchEra('soul')">
-        <span class="tab-highlight-badge pulse-badge">🔥 NEW 3D 상황극</span>
-        <span class="era-main">💎 4. K-정서 (번역불가)</span>
-        <span class="era-sub" id="countSoul">K-Soul 133선</span>
-      </button>
-      <button class="era-tab-btn" id="tabKakaoBtn" onclick="switchEra('kakao')">
-        <span class="tab-highlight-badge hot-badge">⚡ HOT 판독</span>
-        <span class="era-main">💬 5. 카톡 판독소</span>
-        <span class="era-sub" id="countKakao">BEST 10선 & 의뢰</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- 💎 K-정서 전용 7대 서브 카테고리 칩 필터 바 & 메뉴 내 전용 실시간 검색창 -->
-  <section class="soul-subcat-section" id="soulSubcatSection" style="display: none;">
-    <!-- 💎 K-정서 전용 인라인 실시간 검색창 -->
-    <div class="soul-search-wrap">
-      <div class="soul-search-row">
-        <span class="soul-search-icon">🔍</span>
-        <input type="text" id="soulSearchInput" class="soul-search-input" 
-               placeholder="💎 K-정서 단어 검색 (예: 눈치, 정, 한, 답답하다, 서운, 꼬르륵, 노르스름, nunchi, jeong...)" 
-               oninput="handleSoulSearch()">
-        <button type="button" id="soulSearchClearBtn" class="soul-search-clear-btn" onclick="clearSoulSearch()" title="검색어 지우기">✕</button>
-      </div>
-      <div class="soul-search-meta">
-        <div class="soul-quick-tags">
-          <span class="soul-quick-label">⚡ 빠른 검색:</span>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('눈치')">#눈치</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('정')">#정</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('한')">#한</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('답답하다')">#답답하다</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('서운하다')">#서운하다</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('꼬르륵')">#꼬르륵 (의성어)</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('아장아장')">#아장아장 (의태어)</button>
-          <button type="button" class="soul-quick-chip" onclick="quickSoulSearch('노르스름하다')">#노르스름하다 (색채어)</button>
-        </div>
-        <span id="soulSearchStatus" class="soul-search-status">총 133선 K-SOUL 수록</span>
-      </div>
-    </div>
-
-    <div class="soul-subcat-container">
-      <button id="soulBtnAll" class="soul-subcat-btn active" onclick="filterSoulSubcat('all', event)">
-        <span>✨ 전체 K-Soul (133)</span>
-      </button>
-      <button id="soulBtnEmotion" class="soul-subcat-btn emotion" onclick="filterSoulSubcat('emotion', event)">
-        <span>💭 심리·감정 (36)</span>
-      </button>
-      <button id="soulBtnRelationship" class="soul-subcat-btn relationship" onclick="filterSoulSubcat('relationship', event)">
-        <span>🤝 관계·유대 (25)</span>
-      </button>
-      <button id="soulBtnBehavior" class="soul-subcat-btn behavior" onclick="filterSoulSubcat('behavior', event)">
-        <span>🏃 습관·행동 (25)</span>
-      </button>
-      <button id="soulBtnCulture" class="soul-subcat-btn culture" onclick="filterSoulSubcat('culture', event)">
-        <span>🎎 사회·문화 (32)</span>
-      </button>
-      <button id="soulBtnOno" class="soul-subcat-btn onomatopoeia" onclick="filterSoulSubcat('onomatopoeia', event)">
-        <span>🔊 의성어 (5)</span>
-      </button>
-      <button id="soulBtnMim" class="soul-subcat-btn mimetic" onclick="filterSoulSubcat('mimetic', event)">
-        <span>✨ 의태어 (5)</span>
-      </button>
-      <button id="soulBtnCol" class="soul-subcat-btn color" onclick="filterSoulSubcat('color', event)">
-        <span>🎨 색채어 (5)</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- 선택된 시대 설명 바 -->
-  <div class="era-info-box" id="eraInfoBox">
-    <div class="era-info-content" id="eraInfoContent">
-      <span>✨ <strong>전체 100선 아카이브</strong>: 1990년대 PC통신부터 2026년 최신 영포티·영ㅋㅋ 밈까지 전 시대를 한눈에 탐색합니다.</span>
-      <span style="color:#facc15; font-weight:800; font-size:0.75rem;">총 318개 표제어 수록</span>
-    </div>
-  </div>
-
-  <!-- 메인 피드 -->
-  <main class="container">
-    <div class="feed-header">
-      <div class="feed-title">
-        <span>📚</span>
-        <span id="feedTitleText">신조어 피드</span>
-        <span class="feed-count-badge" id="feedCountBadge">70개</span>
-      </div>
-      <div class="filter-tabs">
-        <button class="filter-tab active" onclick="setFilter('hot')">인기순</button>
-        <button class="filter-tab" onclick="setFilter('latest')">최신순</button>
-      </div>
-    </div>
-
-    <!-- 단어 리스트 렌더링 영역 -->
-    <div id="wordsContainer"></div>
-  </main>
-
-  <!-- 새 단어 제보 모달 -->
-  <div class="modal-overlay" id="addModal">
-    <div class="modal-card">
-      <h2 class="modal-title">✨ 새로운 신조어 등록</h2>
-      <p class="modal-desc">우리가 쓰는 살아있는 한국어를 제보해 주세요! 집단지성으로 검증됩니다.</p>
-
-      <form id="addWordForm" onsubmit="submitNewWord(event)">
-        <div class="form-group">
-          <label class="form-label">표제어 (단어) <span style="color:#f43f5e;">*</span></label>
-          <input type="text" id="newWord" class="form-control" placeholder="예: 분좋카, 핑프, 억까" required>
-        </div>
-
-        <div style="display:flex; gap:10px; margin-bottom:14px;">
-          <div style="flex:1;">
-            <label class="form-label">시대 구분</label>
-            <select id="newEra" class="form-control" style="cursor:pointer;">
-              <option value="shorts" selected>3. ⚡ 요즘 1020 밈 (2020s~)</option>
-              <option value="smartphone">2. 📱 국민 유행어 (2010s)</option>
-              <option value="latte">1. 📟 라떼 추억 (1990~2000s)</option>
-            </select>
-          </div>
-          <div style="flex:1;">
-            <label class="form-label">품사</label>
-            <select id="newPos" class="form-control" style="cursor:pointer;">
-              <option value="신조어">신조어</option>
-              <option value="명사">명사</option>
-              <option value="동사">동사</option>
-              <option value="형용사">형용사</option>
-              <option value="감탄사">감탄사</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">1줄 핵심 정의 <span style="color:#f43f5e;">*</span></label>
-          <input type="text" id="newDef" class="form-control" placeholder="단어의 의미를 명쾌하게 한 줄로 설명해 주세요." required>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">기성 표준어 대응어 (부모/팀장님 번역)</label>
-          <input type="text" id="newStandard" class="form-control" placeholder="예: 약 오르다, 포기하지 않는 마음, 핑거 프린세스">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">실전 대화 예문</label>
-          <textarea id="newExample" class="form-control" placeholder="A: 오늘 진짜 폼 미쳤는데?&#10;B: 인정? 어 인정!"></textarea>
-        </div>
-
-        <div style="display:flex; gap:10px;">
-          <div class="form-group" style="flex:2;">
-            <label class="form-label">태그 (쉼표 구분)</label>
-            <input type="text" id="newTags" class="form-control" placeholder="예: 밈, 직장생활, 일상">
-          </div>
-          <div class="form-group" style="flex:1;">
-            <label class="form-label">제보자 닉네임</label>
-            <input type="text" id="newAuthor" class="form-control" placeholder="언어술사">
-          </div>
-        </div>
-
-        <div class="modal-actions">
-          <button type="button" class="btn-cancel" onclick="closeAddModal()">취소</button>
-          <button type="submit" class="btn-submit">사전에 등록하기</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- 퀴즈 모달 (Dual Battle Quiz & 2-Tier B2B Monetization) -->
-  <div class="modal-overlay" id="quizModal">
-    <div class="quiz-card">
-      <!-- 퀴즈 진행 뷰 -->
-      <div id="quizPlayView">
-        <div class="quiz-progress-bar-bg">
-          <div class="quiz-progress-bar-fill" id="quizProgressFill"></div>
-        </div>
-        <div class="quiz-header">
-          <span class="quiz-mode-pill" id="quizModeBadge">👔 부모·팀장님 모드</span>
-          <button style="background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;" onclick="closeQuizModal()">✕</button>
-        </div>
-        <h3 class="quiz-question" id="quizQuestionText">질문 로딩 중...</h3>
-        <div class="quiz-options" id="quizOptionsContainer"></div>
-      </div>
-
-      <!-- 퀴즈 결과 뷰 -->
-      <div id="quizResultView" style="display:none;" class="quiz-result-box">
-        <button style="position:absolute; top:20px; right:20px; background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;" onclick="closeQuizModal()">✕</button>
-        <div class="result-score" id="quizScoreText">100점</div>
-        <div class="result-grade" id="quizGradeText">👑 LV.99 세대 소통 갓(God)</div>
-        <p class="result-desc" id="quizDescText">당신은 현대 한국어와 세대 간 언어를 자유자재로 해독하는 진정한 소통 능력자입니다!</p>
-
-        <!-- 2-Tier B2B 수익화 모델 패키지 선택 -->
-        <div style="margin-bottom:18px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-            <span style="font-weight:900; font-size:0.95rem; color:#facc15;">💎 세대 소통 공식 리포트 & 패키지 발급</span>
-            <span style="font-size:0.75rem; color:#94a3b8;">원하는 패키지를 선택하세요</span>
-          </div>
-
-          <div class="tier-pricing-grid">
-            <!-- Tier 1: 개인 소장용 -->
-            <div class="tier-card selected" id="tierCard1" onclick="selectTier(1)">
-              <span class="tier-badge" style="background:rgba(250,204,21,0.2); color:#facc15;">개인 소장용</span>
-              <h4 class="tier-title">개인 트렌드 요약 리포트</h4>
-              <div class="tier-price">1,000원 <span style="font-size:0.75rem; color:#94a3b8; font-weight:normal;">/ $0.99</span></div>
-              <ul class="tier-features">
-                <li>문해력 디지털 공식 인증서</li>
-                <li>2026 필수 MZ 신조어 요약본</li>
-                <li>개인 PDF 즉시 저장 / 인쇄</li>
-              </ul>
+    <!-- 서브 헤더 네비게이션 바 -->
+    <div class="bg-white/95 border-b border-teal-200 sticky top-0 z-20 backdrop-blur-md px-4 sm:px-8 py-2.5">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-teal-500 animate-ping"></span>
+                <span class="font-black text-sm text-[#0B1938]">🗣️ 말쌈 (MALSSAM) · 3D 상황극 &amp; 8도 방언 사전</span>
+                <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-900 font-extrabold border border-teal-300">K-SOUL 3D 아카이브</span>
             </div>
 
-            <!-- Tier 2: 기업·조직 HR 패키지 -->
-            <div class="tier-card tier-b2b" id="tierCard2" onclick="selectTier(2)">
-              <span class="tier-badge" style="background:rgba(168,85,247,0.25); color:#c084fc;">🏢 기업·HR 추천</span>
-              <h4 class="tier-title">세대 소통 워크숍 패키지</h4>
-              <div class="tier-price">9,900원 <span style="font-size:0.75rem; color:#c084fc; font-weight:normal;">/ $7.99</span></div>
-              <ul class="tier-features">
-                <li><strong>3대 70종 신조어 전수 총람 사전</strong></li>
-                <li>신입사원-팀장 소통 10계명 가이드</li>
-                <li>사내 워크숍용 퀴즈 PPT 덱</li>
-                <li><strong>🧾 회사 제출용 지출결의서 & 영수증</strong></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- 결제 버튼 그룹 -->
-          <div class="pay-btn-group">
-            <button class="pay-btn pay-kakao" onclick="requestKakaoPay()">💛 카카오페이 결제</button>
-            <button class="pay-btn pay-toss" onclick="requestTossPay()">💙 토스페이 결제</button>
-            <button class="pay-btn pay-paypal" onclick="requestPayPal()">🌐 PayPal Checkout</button>
-            <button class="pay-btn pay-coffee" onclick="openCoffeeSponsor()">☕ 1,000원 후원</button>
-          </div>
-        </div>
-
-        <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
-          <button class="btn-cancel" onclick="restartCurrentQuiz()">🔄 다시 풀기</button>
-          <button class="btn-submit" style="background:linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%); color:#fff;" onclick="shareQuizResult()">
-            <span>📢 친구 & 동료에게 내 점수 공유하기</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 결제 완료 리포트 및 지출결의서 모달 -->
-  <div class="modal-overlay" id="reportModal">
-    <div class="modal-card" style="max-width: 580px; text-align: center; border: 2px solid #facc15; box-shadow: 0 0 40px rgba(250, 204, 21, 0.3);">
-      <div style="font-size: 3rem; margin-bottom: 6px;">🎉</div>
-      <h2 style="font-size: 1.5rem; color: #facc15; margin-bottom: 6px;" id="reportModalTitle">결제가 성공적으로 승인되었습니다!</h2>
-      <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 18px;" id="reportModalSub">말쌈 (MALSSAM) 세대 소통 아카이브 프로젝트를 후원해 주셔서 감사합니다.</p>
-      
-      <!-- 디지털 영수증 -->
-      <div style="background: rgba(0,0,0,0.5); border-radius: 12px; padding: 16px; text-align: left; font-size: 0.88rem; line-height: 1.8; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.1);">
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">신청 패키지:</span> <strong id="receiptPackageName" style="color:#facc15;">[기업 HR 패키지] 세대 소통 워크숍 가이드북</strong></div>
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">결제 수단:</span> <strong id="receiptProvider" style="color:#38bdf8;">카카오페이</strong></div>
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">거래 승인번호:</span> <code id="receiptTxId" style="color:#facc15;">TX-2026-OK</code></div>
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">결제 금액:</span> <strong id="receiptAmount" style="color:#fff;">9,900원</strong></div>
-        <div style="display:flex; justify-content:space-between;"><span style="color:#94a3b8;">발급 서류:</span> <span style="color:#cbd5e1;" id="receiptDocs">70종 총람 리포트 + 사내 지출결의서</span></div>
-      </div>
-
-      <!-- 리포트 다운로드 및 열람 액션 -->
-      <div style="display:flex; flex-direction:column; gap:10px;">
-        <button class="btn-submit" style="width:100%; padding:14px; font-size:1.05rem;" onclick="downloadRealReportPDF()">
-          📥 정식 리포트 & 지출결의서 (인쇄/PDF) 열기
-        </button>
-        <button class="btn-cancel" style="width:100%; padding:10px;" onclick="closeReportModal()">
-          닫기
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- PayPal 결제 모달 -->
-  <div class="modal-overlay" id="paypalModal">
-    <div class="modal-card" style="max-width: 440px; text-align: center;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-        <h3 style="color:#facc15; font-size:1.2rem;">🌐 PayPal Global Checkout</h3>
-        <button style="background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;" onclick="closePayPalModal()">✕</button>
-      </div>
-      <p style="color:#cbd5e1; font-size:0.92rem; margin-bottom:18px;" id="paypalModalDesc">
-        MALSSAM Generational Slang Guide & Official Certificate (PDF)<br>
-        <strong id="paypalAmountText" style="font-size:1.3rem; color:#facc15;">Amount: $0.99 USD</strong>
-      </p>
-      <div id="paypal-button-container" style="min-height: 150px;"></div>
-    </div>
-  </div>
-
-  <!-- 💬 내 카톡 맥락 판독 의뢰 모달 -->
-  <div class="modal-overlay" id="kakaoModal">
-    <div class="modal-card" style="max-width: 520px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <h2 class="modal-title" style="color:#f43f5e; font-size:1.3rem; margin:0;">💬 내 카톡 맥락 판독 의뢰</h2>
-        <button type="button" onclick="closeKakaoModal()" style="background:transparent; border:none; color:#94a3b8; font-size:1.6rem; cursor:pointer; line-height:1; padding:0 4px;">&times;</button>
-      </div>
-      <p class="modal-desc" style="margin-bottom:16px;">"이 답장, 호감인가요 오타인가요?" 애매한 답장의 속뜻을 집단지성 투표로 10초 만에 판독해 드립니다.</p>
-
-      <form id="kakaoRequestForm" onsubmit="submitKakaoRequest(event)">
-        <div class="form-group">
-          <label class="form-label">상황 카테고리 <span style="color:#f43f5e;">*</span></label>
-          <select id="kakaoCat" class="form-control" style="cursor:pointer;">
-            <option value="썸 / 연애">💖 썸 / 연애 (답장의 속뜻과 그린라이트 검증)</option>
-            <option value="직장 / 비즈니스">👔 직장 / 비즈니스 (팀장·선배의 완곡어법 해독)</option>
-            <option value="친구 / 일상">☕ 친구 / 일상 (단순 오타 vs 돌려까기 판독)</option>
-            <option value="중고거래 / 당근">🥕 중고거래 / 당근 (네고 요구 대처 및 거절 화법)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">상황 요약 (제목) <span style="color:#f43f5e;">*</span></label>
-          <input type="text" id="kakaoTitle" class="form-control" placeholder="예: 약속 시간 물어봤는데 '영ㅋㅋ'라고 답장 왔어요..." required>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">상대방의 실제 카톡 문장 <span style="color:#f43f5e;">*</span></label>
-          <textarea id="kakaoText" class="form-control" rows="3" placeholder="상대방이 보낸 실제 문구를 적어주세요. (예: 영ㅋㅋ)" required></textarea>
-          <div style="font-size:0.75rem; color:#94a3b8; margin-top:4px;">
-            🛡️ <strong>개인정보 안심 보호</strong>: 실명, 전화번호, 상호 등은 자동으로 마스킹 처리됩니다.
-          </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;" class="form-group">
-          <div>
-            <label class="form-label">투표 선택지 🅰️</label>
-            <input type="text" id="kakaoOptA" class="form-control" placeholder="예: 단순 오타다" required>
-          </div>
-          <div>
-            <label class="form-label">투표 선택지 🅱️</label>
-            <input type="text" id="kakaoOptB" class="form-control" placeholder="예: 돌려까기 거절이다" required>
-          </div>
-        </div>
-
-        <div class="modal-actions" style="margin-top:20px;">
-          <button type="button" class="btn-cancel" onclick="closeKakaoModal()">취소</button>
-          <button type="submit" class="btn-submit" style="background:linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); color:#fff; font-weight:800;">🚀 판독 의뢰 등록하기</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  
-  <!-- 🎴 [스페인어 스타일 3D FLIP CARD 상황극 모달] -->
-  <div class="roleplay-modal-overlay" id="roleplayModal" onclick="if(event.target===this)closeRoleplayModal()">
-    <div class="roleplay-modal-inner">
-      <button type="button" class="roleplay-modal-close-btn" onclick="closeRoleplayModal()" title="닫기">&times;</button>
-      
-      <!-- 🌐 6개국 언어 셀렉터 바 -->
-      <div class="rp-global-lang-bar">
-        <button class="rp-lang-btn active" data-lang="ko" onclick="setRoleplayLanguage('ko')">🇰🇷 한국어</button>
-        <button class="rp-lang-btn" data-lang="en" onclick="setRoleplayLanguage('en')">🇺🇸 English</button>
-        <button class="rp-lang-btn" data-lang="ja" onclick="setRoleplayLanguage('ja')">🇯🇵 日本語</button>
-        <button class="rp-lang-btn" data-lang="es" onclick="setRoleplayLanguage('es')">🇪🇸 Español</button>
-        <button class="rp-lang-btn" data-lang="fr" onclick="setRoleplayLanguage('fr')">🇫🇷 Français</button>
-        <button class="rp-lang-btn" data-lang="id" onclick="setRoleplayLanguage('id')">🇮🇩 Indonesia</button>
-      </div>
-
-      <!-- 3D FLIP CARD 스테이지 -->
-      <div class="rp-flip-stage-container">
-        <div class="rp-flip-card-inner" id="rpFlipCardInner">
-          
-          <!-- [앞면: 3D 네온 단어 카드] -->
-          <div class="rp-flip-face rp-card-front" id="rpCardFront">
-            <div class="rp-front-top-row">
-              <span class="rp-k-soul-badge" id="rpFrontBadge">💎 K-SOUL #202 · 3D 플립 카드</span>
-              <span class="rp-flip-hint-badge">3D INTERACTIVE</span>
+            <!-- 중앙: 표제어 선택기 -->
+            <div class="flex-1 max-w-md mx-auto w-full">
+                <select id="idiomSelector" onchange="changeIdiom(this.value)" class="w-full px-4 py-1.5 rounded-full bg-slate-50 border border-teal-300 text-xs sm:text-sm font-bold text-slate-800 shadow-sm focus:outline-none">
+                    <option value="0">표제어 #1: 김칫국부터 마시다 (비즈니스 설레발 상황극)</option>
+                    <option value="1">표제어 #2: 비행기 태우다 (칭찬과 아부의 경계 상황극)</option>
+                    <option value="2">표제어 #3: 바가지를 긁다 / 쓰다 (일상 경제 대화 상황극)</option>
+                </select>
             </div>
 
+            <!-- 우측 모드 토글 -->
+            <div class="flex items-center gap-2">
+                <button onclick="toggle3DMode()" id="mode3DBtn" class="px-3.5 py-1.5 rounded-full bg-[#0A1936] text-teal-300 font-bold text-xs shadow-md flex items-center gap-1.5">
+                    <span>⚡</span> 3D WebGL 모드: ON
+                </button>
+                <a href="../books_app/index.html" class="px-3 py-1.5 rounded-full bg-white text-[#0B1938] border border-slate-300 font-bold text-xs shadow-sm hover:bg-teal-50">
+                    📖 DMDG 서재
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 2. 고정 아이덴티티 슬로건 미니 리본 ================= -->
+    <section class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-3 pb-2">
+        <div class="bg-white/90 border border-teal-200 rounded-2xl px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 shadow-sm text-xs">
+            <div class="font-bold text-[#0A1936]">
+                🧡 사람과 마음을 연결하는 세상에서 가장 따뜻한 이어읽기 플랫폼 — <span class="text-[#3A907C]">당신의 목소리로 다음글을 읽어주세요 (DMDG)</span>
+            </div>
+            <div class="text-slate-600 font-medium">
+                <span class="font-extrabold text-teal-700">[DMDG(당목담글) 자율 에이전트 엔지니어링 스튜디오]</span> 인간과 AI의 아름다운 공존
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. 말쌈 3-Step 입체 학습 워크스페이스 ================= -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-8 pb-16 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- [STEP 1] 좌측 5컬럼: 입체 말쌈 사전 카드 -->
+        <section class="lg:col-span-5 bg-white rounded-3xl p-6 shadow-md border-2 border-teal-100 flex flex-col justify-between">
             <div>
-              <h2 class="rp-front-word-title" id="rpFrontTitle">눈치</h2>
-              <div class="rp-front-pron-bar">
-                <span class="rp-pron-pill" id="rpFrontPron">🗣️ [nun-chi · NOON-chee]</span>
-                <span class="rp-pron-alt">명사 / 사회적 초능력</span>
-                <button class="rp-btn-quick-audio" onclick="speakQuickWord('눈치')" title="원어민 발음 듣기">🔊</button>
-              </div>
-
-              <div class="rp-front-desc-box" id="rpFrontDesc">
-                말하지 않아도 침묵 속의 공기와 타인의 표정·행간을 5G 속도로 직관 감지하여 매끄럽게 처신하는 한국인의 고유한 사회적 레이더.
-              </div>
-
-              <div class="rp-punchline-card" id="rpFrontPunch">
-                💡 "팀장님의 급발진 주말 등산 회식을 0.1초 만에 차단하는 마법!"
-              </div>
-            </div>
-
-            <!-- DMDG 어벤져스 출연진 (Rule 2: width="65" 준수) -->
-            <div class="rp-cast-preview-box">
-              <div class="rp-cast-header">
-                <span>DMDG 어벤져스 드라마 1화</span>
-                <span>15초 숏폼</span>
-              </div>
-              <div class="rp-cast-avatar-row">
-                <div class="rp-cast-avatar-item">
-                  <img src="assets/agents/demis_profile.png" width="65" class="rp-cast-avatar-img" alt="Demis">
-                  <span class="rp-cast-avatar-name" id="rpCastNameDemis">Demis (팀장)</span>
+                <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 rounded-full bg-teal-100 text-teal-900 font-extrabold text-xs">STEP 1 · 입체 말쌈 사전</span>
+                    <span id="idiomLevel" class="text-xs font-bold text-[#3A907C]">실전 활용도 ★★★★★</span>
                 </div>
-                <div class="rp-cast-avatar-item">
-                  <img src="assets/agents/craig_profile.png" width="65" class="rp-cast-avatar-img" alt="Craig">
-                  <span class="rp-cast-avatar-name" id="rpCastNameCraig">Craig (풀스택)</span>
+
+                <h1 id="dictTitle" class="text-2xl font-black text-[#0B1938] mb-1">김칫국부터 마시다</h1>
+                <p id="dictEng" class="text-xs font-bold text-[#3A907C] mb-4">Don't count your chickens before they hatch. (Lit: Drink kimchi soup first)</p>
+
+                <div class="space-y-3 text-xs sm:text-sm">
+                    <div class="p-3.5 rounded-2xl bg-[#FAF6F0] border border-orange-200/70">
+                        <div class="font-extrabold text-orange-800 mb-1">💡 핵심 뉘앙스 &amp; 문화적 맥락</div>
+                        <p id="dictDesc" class="text-slate-700 leading-relaxed">
+                            떡 줄 사람은 생각지도 않는데 미리 김칫국(동치미 국물)부터 마신다는 뜻으로, 일이 성사되기도 전에 지레짐작하여 설레발을 칠 때 사용하는 대표 관용구입니다.
+                        </p>
+                    </div>
+
+                    <div class="p-3.5 rounded-2xl bg-teal-50/70 border border-teal-200">
+                        <div class="font-extrabold text-teal-900 mb-1">⚠️ 실전 대화 주의보 (TPO 가이드)</div>
+                        <p id="dictWarning" class="text-slate-700 leading-relaxed">
+                            동료끼리 가벼운 농담이나 겸손 표현("아직 김칫국 마시긴 일러요")으로 쓰면 좋지만, 윗사람의 기대에 대놓고 "김칫국 마시지 마세요"라고 하면 무례한 표현이 됩니다.
+                        </p>
+                    </div>
                 </div>
-                <div class="rp-cast-avatar-item">
-                  <img src="assets/agents/jennifer_profile.png" width="65" class="rp-cast-avatar-img" alt="Jennifer">
-                  <span class="rp-cast-avatar-name" id="rpCastNameJennifer">Jennifer (UX)</span>
+            </div>
+
+            <!-- 음성 발음 & 링크 -->
+            <div class="pt-4 mt-4 border-t border-gray-100 flex items-center justify-between gap-2">
+                <button onclick="speakDictWord()" class="flex-1 py-2.5 rounded-xl bg-[#3A907C] hover:bg-teal-700 text-white font-bold text-xs transition">
+                    🔊 원어민 표준 억양 듣기
+                </button>
+                <button onclick="copyClipShare()" class="px-4 py-2.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-[#3A907C] border border-teal-300 font-bold text-xs transition">
+                    🔗 클립 링크 복사
+                </button>
+            </div>
+        </section>
+
+        <!-- [STEP 2] 우측 7컬럼: 3D 상황극 시뮬레이터 + 선택지 분기 -->
+        <section class="lg:col-span-7 bg-white rounded-3xl p-6 shadow-md border-2 border-teal-200 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-3">
+                    <span class="px-3 py-1 rounded-full bg-[#0A1936] text-teal-300 font-extrabold text-xs">STEP 2 · 3D 인터랙티브 상황극 시뮬레이터</span>
+                    <span class="text-xs text-slate-500 font-medium">🖱️ 마우스 드래그로 3D 아바타 회전 가능</span>
                 </div>
-              </div>
-            </div>
 
-            <button class="rp-btn-fiesta-flip" onclick="flipToBackAndPlay()">
-              <span>🎴 3D 회전 상황극 보기 ↺</span>
-            </button>
-          </div>
+                <!-- 3D WebGL 캔버스 영역 -->
+                <div class="relative w-full h-64 sm:h-72 bg-gradient-to-b from-[#0A1936] via-[#112A46] to-[#1D7864] rounded-2xl overflow-hidden shadow-inner mb-4">
+                    <div id="threeCanvasContainer" class="w-full h-full"></div>
 
-          <!-- [뒷면: 3D 숏폼 비디오 시뮬레이터] -->
-          <div class="rp-flip-face rp-card-back" id="rpCardBack">
-            <!-- 인스타 스토리 5단 진행 바 -->
-            <div class="rp-story-progress-container">
-              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(0)"><div class="rp-story-progress-fill" id="rpFill-0"></div></div>
-              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(1)"><div class="rp-story-progress-fill" id="rpFill-1"></div></div>
-              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(2)"><div class="rp-story-progress-fill" id="rpFill-2"></div></div>
-              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(3)"><div class="rp-story-progress-fill" id="rpFill-3"></div></div>
-              <div class="rp-story-progress-segment" onclick="jumpToRoleplayScene(4)"><div class="rp-story-progress-fill" id="rpFill-4"></div></div>
-            </div>
+                    <!-- Lite 모드 대체 레이어 -->
+                    <div id="liteModeOverlay" class="hidden absolute inset-0 bg-gradient-to-br from-[#0A1936] to-[#1D7864] p-6 flex flex-col items-center justify-center text-white text-center">
+                        <div class="flex items-center gap-8 mb-3">
+                            <div class="w-16 h-16 rounded-2xl bg-teal-600 flex items-center justify-center text-3xl shadow-lg">👔</div>
+                            <div class="text-teal-300 font-black text-lg">VS</div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-600 flex items-center justify-center text-3xl shadow-lg">🙋‍♂️</div>
+                        </div>
+                        <p class="text-xs text-teal-200 font-bold">⚡ 배터리 절약형 2D 라디오 Lite 모드가 활성화되었습니다.</p>
+                    </div>
 
-            <!-- 백 페이스 탑 바 -->
-            <div class="rp-back-top-bar">
-              <button class="rp-btn-flip-back" onclick="flipToFront()"><span>↺ 단어로</span></button>
-              <span class="rp-current-lang-pill" id="rpCurrentLangPill">🇰🇷 한국어</span>
-              <button id="rpBtnSoundToggle" class="rp-btn-sound-toggle" onclick="toggleRoleplayMute()">🔊</button>
-            </div>
+                    <!-- 상단 상대방 대사 말풍선 오버레이 -->
+                    <div class="absolute top-3 left-3 right-3 bg-white/95 backdrop-blur px-4 py-2.5 rounded-2xl shadow-lg border-l-4 border-[#3A907C]">
+                        <div class="text-[11px] font-extrabold text-[#3A907C]">👔 AI 박 팀장 (상황 부여)</div>
+                        <p id="npcDialogue" class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">
+                            "이번 프로젝트 클라이언트 반응이 꽤 좋던데! 인센티브 나오면 한 턱 크게 쏘는 거 아니야?"
+                        </p>
+                    </div>
 
-            <!-- 메인 비디오 스테이지 -->
-            <div class="rp-video-stage">
-              <div class="rp-speed-lines" id="rpSpeedLines"></div>
-              <div class="rp-stage-ambient-light" id="rpAmbientLight"></div>
-
-              <div class="rp-character-stage" id="rpCharacterStage">
-                <div class="rp-character-avatar-wrapper" id="rpAvatarWrapper">
-                  <img id="rpActorAvatar" src="assets/agents/demis_profile.png" width="65" class="rp-character-avatar-img" alt="Actor">
-                  <span id="rpReactionSticker" class="rp-reaction-sticker">☕</span>
+                    <!-- 아바타 감정 피드백 뱃지 -->
+                    <div id="emotionBadge" class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-black/60 text-teal-300 text-xs font-bold">
+                        🙂 상대방 호감도: 70% (대화 대기 중)
+                    </div>
                 </div>
-                <div class="rp-actor-badge">
-                  <span id="rpActorRoleIcon">👔</span>
-                  <strong id="rpActorName">데미스</strong>
-                  <span id="rpActorTitle" class="rp-actor-title">총괄부장</span>
+
+                <!-- 유저 인터랙티브 응답 선택지 -->
+                <div class="space-y-2">
+                    <div class="text-xs font-extrabold text-[#0B1938] mb-1">💬 이 상황에서 당신의 대답을 선택하세요 (3D 모션이 반응합니다):</div>
+                    <button onclick="selectChoice(0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:border-teal-500 hover:bg-teal-50/60 transition flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800">
+                        <span id="choiceBtn0">① "하하, 아직 최종 계약 전이라 벌써 김칫국부터 마시진 않으려고요!" (센스 있는 겸손)</span>
+                        <span class="text-[#3A907C] text-xs">선택 →</span>
+                    </button>
+                    <button onclick="selectChoice(1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:border-rose-500 hover:bg-rose-50/60 transition flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800">
+                        <span id="choiceBtn1">② "팀장님 지금 김칫국 마시는 거니까 그런 말씀 하지 마세요." (TPO 부적절 직설)</span>
+                        <span class="text-rose-600 text-xs">선택 →</span>
+                    </button>
                 </div>
-              </div>
 
-              <div id="rpActingHint" class="rp-acting-direction-box">(따뜻한 인자한 미소로 커피를 마시며)</div>
+                <!-- 선택 결과 코칭 피드백 -->
+                <div id="choiceFeedbackBox" class="mt-3 p-3 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium">
+                    👆 위 선택지 중 하나를 클릭해 실전 맥락 피드백을 확인해 보세요.
+                </div>
             </div>
+        </section>
 
-            <!-- 자막 영역 -->
-            <div class="rp-subtitles-container">
-              <div id="rpMainSubtitle" class="rp-main-subtitle">"얘들아! 이번 주 토요일 아침 6시에 북한산 등산하고 삼계탕에 낮술 어때?"</div>
-              <div id="rpSubtitlesTrans" class="rp-subtitles-trans">Demis: 이번 주 토요일 아침 6시 북한산 등산 어때? 삼계탕 쏜다!</div>
+        <!-- [STEP 3] 하단 전체 12컬럼: AI 지식 팟캐스트 플레이어 바 -->
+        <section class="lg:col-span-12 bg-[#0A1936] text-white rounded-3xl p-5 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 border border-teal-500/30">
+            <div class="flex items-center gap-4">
+                <button onclick="togglePodcast()" id="podcastPlayBtn" class="w-12 h-12 rounded-2xl bg-[#3A907C] hover:bg-teal-600 text-white font-black text-lg flex items-center justify-center shadow-lg transition flex-shrink-0">
+                    ▶
+                </button>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="px-2.5 py-0.5 rounded-full bg-teal-500/20 text-teal-300 text-[10px] font-bold">STEP 3 · AI 딥다이브 팟캐스트</span>
+                        <span id="podcastTimer" class="text-xs font-mono text-teal-300">00:00 / 02:15</span>
+                    </div>
+                    <h3 id="podcastTitle" class="text-sm sm:text-base font-extrabold mt-0.5">
+                        🎙️ [말쌈 라디오 EP.14] 왜 하필 동치미 국물인데 '김칫국'이라고 불렀을까?
+                    </h3>
+                    <p id="podcastScriptLine" class="text-xs text-slate-300 mt-0.5">
+                        호스트 민지 &amp; 준호의 티키타카 어원 수다를 오디오로 바로 들어보세요.
+                    </p>
+                </div>
             </div>
-
-            <!-- 하단 플레이어 컨트롤 -->
-            <div class="rp-bottom-controls">
-              <button class="rp-ctrl-btn" onclick="prevRoleplayScene()">⏮️ 이전</button>
-              <button id="rpBtnPlayPause" class="rp-btn-play-pause" onclick="toggleRoleplayPlayPause()"><span>⏸️ 일시정지</span></button>
-              <button class="rp-ctrl-btn" onclick="nextRoleplayScene()">⏭️ 다음</button>
+            <div class="flex items-center gap-2 self-end md:self-center">
+                <span id="copyNotice" class="text-xs text-teal-300 font-bold hidden">✅ 클립 링크가 복사되었습니다!</span>
             </div>
-          </div>
+        </section>
 
-        </div>
-      </div>
-    </div>
-  </div>
+    </main>
 
-  <!-- 🎬 [신규 컨텐츠 프로모션 인터랙티브 플로팅 팝업 카드] -->
-  <div class="new-content-promo-card" id="newContentPromoCard">
-    <button type="button" class="promo-close-btn" onclick="closeNewContentPromo()" title="닫기">&times;</button>
-    <div class="promo-header">
-      <span class="promo-badge">🎬 2026 NEW 컨텐츠 개봉</span>
-      <span class="promo-sub">6개국어 더빙 지원</span>
-    </div>
-    <h4 class="promo-title">💎 K-정서 133선 & 3D 숏폼 상황극 극장</h4>
-    <p class="promo-desc">
-      한국인의 6감 생존술 '눈치'의 15초 오피스 상황극과 133개 번역불가 감정 어휘를 3D 인터랙티브 카드로 체험해보세요!
-    </p>
-    <div class="promo-actions">
-      <button type="button" class="btn-promo-play" onclick="openRoleplayModal('202')">
-        <span>🎬 3D 상황극 재생 ↺</span>
-      </button>
-      <button type="button" class="btn-promo-explore" onclick="switchEra('soul'); document.getElementById('soulSubcatSection').scrollIntoView({behavior:'smooth'});">
-        <span>💎 K-정서 둘러보기</span>
-      </button>
-    </div>
-  </div>
+    <!-- ================= DMDG 공식 아이덴티티 하단 푸터 (<dmdg-footer> site="malssam") ================= -->
+    <dmdg-footer id="mainFooter" site="malssam"></dmdg-footer>
 
-  <!-- 🎬 신규 컨텐츠 다시 열기 플로팅 런처 -->
-  <button type="button" class="promo-floating-launcher" id="promoFloatingLauncher" onclick="openNewContentPromo()" title="신규 3D 상황극 & K-정서 보기">
-    <span>🎬 3D 상황극 NEW</span>
-  </button>
+    <script>
+        const idioms = [
+            {
+                title: "김칫국부터 마시다",
+                eng: "Don't count your chickens before they hatch.",
+                desc: "떡 줄 사람은 생각지도 않는데 미리 김칫국부터 마신다는 뜻으로, 일이 성사되기도 전에 지레짐작하여 설레발을 칠 때 사용하는 대표 관용구입니다.",
+                warn: "자신을 낮추는 유머('제가 김칫국 마셨네요')로 쓰면 센스 있지만, 타인에게 직접 지적하면 무례하게 들릴 수 있습니다.",
+                npc: "\"이번 프로젝트 클라이언트 반응이 꽤 좋던데! 인센티브 나오면 한 턱 크게 쏘는 거 아니야?\"",
+                c0: "① \"하하, 아직 최종 계약 전이라 벌써 김칫국부터 마시진 않으려고요!\" (센스 있는 겸손)",
+                c1: "② \"팀장님 지금 김칫국 마시는 거니까 그런 말씀 하지 마세요.\" (TPO 부적절 직설)",
+                podTitle: "🎙️ [말쌈 라디오 EP.14] 왜 하필 동치미 국물인데 '김칫국'이라고 불렀을까?"
+            },
+            {
+                title: "비행기 태우다",
+                eng: "Flatter someone excessively / Butter someone up.",
+                desc: "상대방을 지나치게 치켜세워 기분을 들뜨게 만들 때 쓰는 관용구입니다.",
+                warn: "칭찬을 받고 겸손하게 받아칠 때 '아이구, 너무 비행기 태우지 마세요~'라고 쓰면 화기애애한 분위기가 됩니다.",
+                npc: "\"김 대리, 자네는 정말 천재야! 이번 기획안은 애플 디자인팀도 울고 갈 수준이던데?\"",
+                c0: "① \"팀장님, 비행기 너무 태우시면 저 어지러워서 일 못 합니다! 하하!\" (센스 있는 유머)",
+                c1: "② \"제가 천재인 건 맞지만 그렇게 노골적으로 비행기 태우진 마세요.\" (자기과시 역효과)",
+                podTitle: "🎙️ [말쌈 라디오 EP.15] 비행기가 처음 조선에 들어왔을 때 생긴 신조어 비화"
+            },
+            {
+                title: "바가지를 긁다 / 쓰다",
+                eng: "Nag persistently / Get ripped off or overcharged.",
+                desc: "바가지를 긁다는 잔소리를 심하게 한다는 뜻이고, 바가지를 쓰다는 터무니없이 비싼 값을 치렀을 때 씁니다.",
+                warn: "콜로케이션(연어)에 주의하세요: '내가 바가지를 썼다(피해)' vs '아내가 바가지를 긁었다(잔소리)'.",
+                npc: "\"주말에 동대문 시장 갔다가 관광객이라고 티셔츠 한 장을 5만 원이나 주고 샀지 뭐야.\"",
+                c0: "① \"아이고, 제대로 바가지 쓰셨네요! 다음엔 제가 정찰제 가게 알려드릴게요.\" (공감과 대안)",
+                c1: "② \"바가지 긁히셨네요. 왜 그런 걸 사셨어요?\" (단어 오용: 긁다와 쓰다 혼동)",
+                podTitle: "🎙️ [말쌈 라디오 EP.16] 전염병을 쫓던 바가지 소리가 어떻게 '잔소리'가 되었을까?"
+            }
+        ];
 
-  <script>
-    function closeNewContentPromo() {
-      const card = document.getElementById('newContentPromoCard');
-      const launcher = document.getElementById('promoFloatingLauncher');
-      if (card) card.style.display = 'none';
-      if (launcher) launcher.style.display = 'inline-flex';
-    }
-    function openNewContentPromo() {
-      const card = document.getElementById('newContentPromoCard');
-      const launcher = document.getElementById('promoFloatingLauncher');
-      if (card) {
-        card.style.display = 'block';
-        card.style.animation = 'promoSlideUp 0.35s ease forwards';
-      }
-      if (launcher) launcher.style.display = 'none';
-    }
-  </script>
+        let currentIdiomIdx = 0;
 
-  <!-- 토스트 알림 -->
-  <div class="toast" id="toast"></div>
+        function changeIdiom(idx) {
+            currentIdiomIdx = parseInt(idx);
+            const d = idioms[currentIdiomIdx];
+            document.getElementById('dictTitle').textContent = d.title;
+            document.getElementById('dictEng').textContent = d.eng;
+            document.getElementById('dictDesc').textContent = d.desc;
+            document.getElementById('dictWarning').textContent = d.warn;
+            document.getElementById('npcDialogue').textContent = d.npc;
+            document.getElementById('choiceBtn0').textContent = d.c0;
+            document.getElementById('choiceBtn1').textContent = d.c1;
+            document.getElementById('podcastTitle').textContent = d.podTitle;
+            document.getElementById('choiceFeedbackBox').innerHTML = '👆 위 선택지 중 하나를 클릭해 실전 맥락 피드백을 확인해 보세요.';
+            document.getElementById('emotionBadge').textContent = '🙂 상대방 호감도: 70% (대화 대기 중)';
 
-  <!-- 푸터 -->
-  <footer>
-    <p><strong>말쌈 (MALSSAM Project)</strong> | 당목담글(DMDG) 스튜디오 자율 에이전트 본부</p>
-    <p style="margin-top: 6px; font-size: 0.8rem; color: #64748b;">나랏말싸미 힙해져라! 1990s 삐삐부터 2026 숏폼까지 세대를 잇는 언어 문화 주권 프로젝트</p>
-  </footer>
+            if (avatarMesh) {
+                avatarMesh.rotation.y = 0;
+            }
+        }
 
-  <!-- ============================================================
-       📦 [클린 모듈화 시스템: 데이터 & 기능별 분리 스크립트]
-       ============================================================ -->
-  <!-- 1. 데이터 모듈 (333단어, 15대 밸런스 배틀, 10대 카톡 안건, 3D 상황극 DB) -->
-  <script src="data/words_db.js?v=20261030_v2"></script>
-  <script src="data/battle_questions.js"></script>
-  <script src="data/kakao_cards.js"></script>
-  <script src="data/roleplay_db.js"></script>
+        function selectChoice(choiceIdx) {
+            const fb = document.getElementById('choiceFeedbackBox');
+            const em = document.getElementById('emotionBadge');
 
-  <!-- 2. 기능별 독립 JS 모듈 -->
-  <script src="js/audio.js"></script>
-  <script src="js/render.js"></script>
-  <script src="js/battle.js"></script>
-  <script src="js/quiz.js"></script>
-  <script src="js/kakao.js"></script>
-  <script src="js/payments.js"></script>
-  <script src="js/roleplay.js"></script>
+            if (choiceIdx === 0) {
+                fb.innerHTML = '<span class="text-emerald-700 font-bold">🎉 완벽한 한국어 TPO!</span> 상대방의 칭찬이나 설레발을 센스 있게 받아치며 겸손을 지켰습니다. 관계 호감도가 대폭 상승합니다.';
+                fb.className = 'mt-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-xs font-medium text-emerald-900';
+                em.textContent = '😄 상대방 호감도: 95% (센스 있는 동료)';
+                em.className = 'absolute bottom-3 right-3 px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold';
+                triggerAvatarAnimation('nod');
+            } else {
+                fb.innerHTML = '<span class="text-rose-700 font-bold">⚠️ TPO 주의!</span> 이 표현은 윗사람이나 대화 상대에게 직접 사용하면 훈계조로 들려 분위기가 경직될 수 있습니다.';
+                fb.className = 'mt-3 p-3 rounded-xl bg-rose-50 border border-rose-200 text-xs font-medium text-rose-900';
+                em.textContent = '😰 상대방 호감도: 35% (당황함)';
+                em.className = 'absolute bottom-3 right-3 px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-bold';
+                triggerAvatarAnimation('shake');
+            }
+        }
 
-  <!-- 3. 메인 앱 초기화 모듈 -->
-  <script src="js/app.js"></script>
+        // Three.js 3D 아바타 초기화
+        let scene, camera, renderer, avatarMesh;
+        let is3DMode = true;
+
+        function initThreeJS() {
+            const container = document.getElementById('threeCanvasContainer');
+            if (!container) return;
+
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+            camera.position.set(0, 0, 4.5);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            container.appendChild(renderer.domElement);
+
+            // 조명
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
+            scene.add(ambientLight);
+            const dirLight = new THREE.DirectionalLight(0x3A907C, 1.2);
+            dirLight.position.set(5, 5, 5);
+            scene.add(dirLight);
+
+            // 로봇형 3D 아바타 그룹 생성
+            const group = new THREE.Group();
+
+            // 머리
+            const headGeo = new THREE.BoxGeometry(0.85, 0.75, 0.75);
+            const headMat = new THREE.MeshStandardMaterial({ color: 0x3A907C, roughness: 0.3, metalness: 0.2 });
+            const head = new THREE.Mesh(headGeo, headMat);
+            head.position.y = 0.55;
+            group.add(head);
+
+            // 눈 (LED 스타일)
+            const eyeGeo = new THREE.BoxGeometry(0.2, 0.1, 0.05);
+            const eyeMat = new THREE.MeshBasicMaterial({ color: 0x2DD4BF });
+            const leftEye = new THREE.Mesh(eyeGeo, eyeMat);
+            leftEye.position.set(-0.22, 0.62, 0.4);
+            const rightEye = new THREE.Mesh(eyeGeo, eyeMat);
+            rightEye.position.set(0.22, 0.62, 0.4);
+            group.add(leftEye);
+            group.add(rightEye);
+
+            // 몸체
+            const bodyGeo = new THREE.CylinderGeometry(0.5, 0.6, 1.1, 16);
+            const bodyMat = new THREE.MeshStandardMaterial({ color: 0x0D254C, roughness: 0.4 });
+            const body = new THREE.Mesh(bodyGeo, bodyMat);
+            body.position.y = -0.45;
+            group.add(body);
+
+            avatarMesh = group;
+            scene.add(avatarMesh);
+
+            // 마우스 드래그 인터랙션
+            let isDragging = false;
+            let prevMouseX = 0;
+
+            container.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                prevMouseX = e.clientX;
+            });
+            window.addEventListener('mouseup', () => { isDragging = false; });
+            window.addEventListener('mousemove', (e) => {
+                if (isDragging && avatarMesh) {
+                    const delta = e.clientX - prevMouseX;
+                    avatarMesh.rotation.y += delta * 0.01;
+                    prevMouseX = e.clientX;
+                }
+            });
+
+            // 렌더 루프
+            function animate() {
+                requestAnimationFrame(animate);
+                if (avatarMesh && !isDragging) {
+                    avatarMesh.rotation.y += 0.003;
+                }
+                renderer.render(scene, camera);
+            }
+            animate();
+        }
+
+        function triggerAvatarAnimation(type) {
+            if (!avatarMesh) return;
+            if (type === 'nod') {
+                let count = 0;
+                const nodInterval = setInterval(() => {
+                    avatarMesh.rotation.x = Math.sin(count * 0.4) * 0.2;
+                    count++;
+                    if (count > 16) {
+                        clearInterval(nodInterval);
+                        avatarMesh.rotation.x = 0;
+                    }
+                }, 40);
+            } else if (type === 'shake') {
+                let count = 0;
+                const shakeInterval = setInterval(() => {
+                    avatarMesh.rotation.z = Math.sin(count * 0.5) * 0.2;
+                    count++;
+                    if (count > 16) {
+                        clearInterval(shakeInterval);
+                        avatarMesh.rotation.z = 0;
+                    }
+                }, 40);
+            }
+        }
+
+        function toggle3DMode() {
+            is3DMode = !is3DMode;
+            const container = document.getElementById('threeCanvasContainer');
+            const lite = document.getElementById('liteModeOverlay');
+            const btn = document.getElementById('mode3DBtn');
+
+            if (is3DMode) {
+                container.classList.remove('hidden');
+                lite.classList.add('hidden');
+                btn.innerHTML = '<span>⚡</span> 3D WebGL 모드: ON';
+                btn.className = 'px-3.5 py-1.5 rounded-full bg-[#0A1936] text-teal-300 font-bold text-xs shadow-md flex items-center gap-1.5';
+            } else {
+                container.classList.add('hidden');
+                lite.classList.remove('hidden');
+                btn.innerHTML = '<span>🌱</span> 2D 라디오 Lite 모드';
+                btn.className = 'px-3.5 py-1.5 rounded-full bg-slate-200 text-slate-700 font-bold text-xs shadow-md flex items-center gap-1.5';
+            }
+        }
+
+        function speakDictWord() {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const word = idioms[currentIdiomIdx].title;
+                const u = new SpeechSynthesisUtterance(word);
+                u.lang = 'ko-KR';
+                u.rate = 0.85;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        function copyClipShare() {
+            const notice = document.getElementById('copyNotice');
+            notice.classList.remove('hidden');
+            setTimeout(() => { notice.classList.add('hidden'); }, 2000);
+        }
+
+        let isPodcastPlaying = false;
+        function togglePodcast() {
+            const btn = document.getElementById('podcastPlayBtn');
+            if (!isPodcastPlaying) {
+                isPodcastPlaying = true;
+                btn.textContent = '⏸';
+                btn.classList.replace('bg-[#3A907C]', 'bg-slate-700');
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                    const text = idioms[currentIdiomIdx].podTitle + ". " + idioms[currentIdiomIdx].desc;
+                    const u = new SpeechSynthesisUtterance(text);
+                    u.lang = 'ko-KR';
+                    window.speechSynthesis.speak(u);
+                }
+            } else {
+                isPodcastPlaying = false;
+                btn.textContent = '▶';
+                btn.classList.replace('bg-slate-700', 'bg-[#3A907C]');
+                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+            }
+        }
+
+        window.addEventListener('load', () => {
+            initThreeJS();
+        });
+    </script>
 </body>
 </html>

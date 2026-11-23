@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>말쌈 MALSSAM - Premium 3D K-Culture &amp; Neologism Interactive Studio</title>
+<!-- Google Fonts: Inter, Space Grotesk, Playfair Display -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration with Design System Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#38c0ad",
+            "primary": "#42dfb5",
+            "error": "#ffb4ab",
+            "tertiary-fixed-dim": "#59dbc7",
+            "on-tertiary": "#003731",
+            "on-secondary-fixed-variant": "#5e4100",
+            "error-container": "#93000a",
+            "on-primary-fixed-variant": "#00513e",
+            "surface-tint": "#40deb3",
+            "inverse-surface": "#dae2ff",
+            "on-tertiary-fixed-variant": "#005047",
+            "on-secondary": "#422c00",
+            "on-surface-variant": "#bbcac2",
+            "secondary": "#ffd795",
+            "on-primary-container": "#004a39",
+            "on-primary-fixed": "#002117",
+            "primary-container": "#02c39a",
+            "tertiary": "#5bdcc8",
+            "secondary-container": "#fbb400",
+            "on-primary": "#00382a",
+            "tertiary-fixed": "#79f7e3",
+            "background": "#021134",
+            "surface": "#021134",
+            "surface-container": "#0f1e40",
+            "secondary-fixed-dim": "#ffba27",
+            "inverse-primary": "#006b54",
+            "surface-variant": "#253457",
+            "on-background": "#dae2ff",
+            "surface-container-lowest": "#000c2b",
+            "on-tertiary-fixed": "#00201c",
+            "inverse-on-surface": "#212f52",
+            "surface-container-highest": "#253457",
+            "primary-fixed": "#65fbcf",
+            "on-error": "#690005",
+            "on-secondary-container": "#694900",
+            "surface-dim": "#021134",
+            "primary-fixed-dim": "#40deb3",
+            "on-secondary-fixed": "#271900",
+            "surface-container-low": "#0a1a3c",
+            "on-error-container": "#ffdad6",
+            "surface-container-high": "#1a294b",
+            "on-surface": "#dae2ff",
+            "outline": "#85948d",
+            "on-tertiary-container": "#004941",
+            "surface-bright": "#2a385b",
+            "outline-variant": "#3c4a44",
+            "secondary-fixed": "#ffdea9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "3rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["Space Grotesk"],
+            "label-md": ["Space Grotesk"],
+            "headline-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-md": ["Inter"],
+            "display-hero": ["Playfair Display"],
+            "label-lg": ["Space Grotesk"],
+            "headline-md": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle bioluminescent ambient sheen */
+    .bioglow-teal {
+      box-shadow: 0 0 35px -8px rgba(2, 195, 154, 0.35), inset 0 0 20px 0 rgba(2, 195, 154, 0.1);
+    }
+    .bioglow-amber {
+      box-shadow: 0 0 30px -6px rgba(251, 180, 0, 0.3), inset 0 0 15px 0 rgba(251, 180, 0, 0.08);
+    }
+    .holo-border {
+      background: linear-gradient(135deg, rgba(66, 223, 181, 0.4) 0%, rgba(255, 215, 149, 0.2) 50%, rgba(37, 52, 87, 0.4) 100%);
+      padding: 1px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen selection:bg-primary selection:text-on-primary font-body-md text-body-md overflow-x-hidden antialiased relative">
+<!-- Ambient Radial Underglows (Neo-Joseon Bioluminescent Noir) -->
+<div class="fixed top-0 left-1/4 w-[650px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="fixed top-1/3 right-0 w-[550px] h-[550px] bg-secondary-container/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+<div class="fixed bottom-0 left-1/3 w-[800px] h-[450px] bg-surface-container/60 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<!-- ========================================== -->
+<!-- TOP APP BAR (Source of Truth Executed)     -->
+<!-- ========================================== -->
+<header class="bg-surface-container-lowest/80 dark:bg-surface-container-lowest/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-2xl shadow-surface-container-lowest/90 border-b border-outline-variant/30">
+<div class="w-full px-space-xl py-space-sm flex items-center justify-between gap-space-lg backdrop-blur-2xl">
+<!-- Brand & Imperial Seal Anchor -->
+<div class="flex items-center gap-space-lg">
+<a class="text-headline-md font-headline-lg font-bold tracking-tight text-primary dark:text-primary flex items-center gap-2 group" href="#">
+<!-- Imperial Jade Royal Seal Glyph -->
+<span class="relative flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-high border border-primary/40 shadow-inner group-hover:border-primary transition-all">
+<span class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 rounded-lg"></span>
+<span class="text-secondary font-headline-lg text-headline-sm font-bold drop-shadow-[0_0_8px_rgba(255,215,149,0.7)]">말</span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-error border border-surface-container-lowest shadow-[0_0_6px_#ffb4ab]"></span>
+</span>
+<span class="flex flex-col">
+<span class="font-headline-lg text-headline-sm text-primary tracking-normal">말쌈 MALSSAM</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant tracking-widest text-[9px] -mt-1 opacity-70">NEO-JOSEON ATELIER</span>
+</span>
+</a>
+<!-- Search Bar with Hangul Radical & Trending Pills -->
+<div class="hidden lg:flex items-center gap-space-sm bg-surface-container-low/90 border border-outline-variant/50 rounded-xl px-3 py-1.5 focus-within:border-primary/80 transition-all w-[360px] shadow-inner">
+<span class="text-primary font-label-md font-bold px-1.5 py-0.5 rounded bg-surface-container-high border border-primary/30">ㄱ</span>
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="bg-transparent border-none text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:ring-0 w-full p-0" placeholder="Search neologism, radar profile, or K-slang..." type="text"/>
+<div class="flex items-center gap-1">
+<span class="text-label-sm font-label-sm text-primary hover:text-secondary-fixed transition-colors cursor-pointer bg-surface-container-high px-1.5 py-0.5 rounded border border-outline-variant/30">#알잘딱깔센</span>
+</div>
+</div>
+</div>
+<!-- Navigation Links (Mode Selector) -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center gap-space-lg">
+<!-- 3D Roleplay Theater (Active) -->
+<a class="text-primary dark:text-primary border-b-2 border-primary font-label-lg font-bold pb-1 drop-shadow-[0_0_8px_rgba(2,195,154,0.4)] flex items-center gap-1.5" href="#roleplay">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+<span>3D Roleplay Theater</span>
+</a>
+<!-- Office Battle & Dialect Lab (Inactive) -->
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-label-lg flex items-center gap-1.5" href="#office">
+<span class="material-symbols-outlined text-[18px]">swords</span>
+<span>Office Battle &amp; Dialect Lab</span>
+</a>
+<!-- B2B HR Kit (Inactive) -->
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-label-lg flex items-center gap-1.5" href="#b2b">
+<span class="material-symbols-outlined text-[18px]">business_center</span>
+<span>B2B HR Kit</span>
+</a>
+</nav>
+<!-- Trailing Controls: Language Switcher, Notifications, Token & VIP CTA -->
+<div class="flex items-center gap-space-md">
+<!-- 6-Flag Language Selector -->
+<div class="relative group">
+<button class="flex items-center gap-1.5 bg-surface-container-high/60 hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg border border-outline-variant/40 text-on-surface text-label-md font-label-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px] text-primary">language</span>
+<span>KR (한국어)</span>
+<span class="text-secondary text-[10px]">🇰🇷</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<!-- Dropdown Language Panel -->
+<div class="absolute right-0 mt-2 w-44 bg-surface-container-lowest/95 backdrop-blur-2xl border border-outline-variant/60 rounded-xl p-1.5 shadow-2xl opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all z-50">
+<div class="text-[10px] uppercase tracking-wider text-outline px-2 py-1 font-label-sm">Select Matrix</div>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg bg-surface-container-high text-primary text-label-md font-label-md" href="#"><span>한국어</span> <span>🇰🇷 KR</span></a>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant text-label-md font-label-md" href="#"><span>English</span> <span>🇺🇸 US</span></a>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant text-label-md font-label-md" href="#"><span>日本語</span> <span>🇯🇵 JP</span></a>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant text-label-md font-label-md" href="#"><span>中文</span> <span>🇨🇳 CN</span></a>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant text-label-md font-label-md" href="#"><span>Français</span> <span>🇫🇷 FR</span></a>
+<a class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant text-label-md font-label-md" href="#"><span>Deutsch</span> <span>🇩🇪 DE</span></a>
+</div>
+</div>
+<!-- Token Balance -->
+<div class="hidden sm:flex items-center gap-1.5 bg-surface-container-high/40 px-2.5 py-1.5 rounded-lg border border-secondary-container/30 text-secondary text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">token</span>
+<span>1,850 엽전</span>
+</div>
+<!-- Notifications -->
+<button aria-label="Notifications" class="w-9 h-9 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-high flex items-center justify-center border border-outline-variant/40 text-on-surface relative active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_6px_#42dfb5]"></span>
+</button>
+<!-- VIP Crown CTA -->
+<button class="flex items-center gap-2 bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-lg font-bold px-3.5 py-1.5 rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(2,195,154,0.4)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">crown</span>
+<span>VIP Atelier Access</span>
+</button>
+<!-- User Profile Avatar Seal -->
+<div class="w-9 h-9 rounded-full ring-2 ring-primary/40 bg-surface-container overflow-hidden p-0.5 flex-shrink-0 cursor-pointer">
+<img class="w-full h-full object-cover rounded-full" data-alt="A macro portrait of an imperial jade signet seal carved with cybernetic circuitry and red cinnabar lacquer, glowing with ambient emerald bioluminescent backlighting in an obsidian tech sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMe2ZMWdCeXGIxbHI1oM6FcOChR51bnhBvZK_CuJhR4wP4r4i3dUgMR7jfT5vekQGYdd1DZjSzoihhby-FtwJhdGG-USPUQ0cFEDEz6_GrCxUjlNAIbFW5xuoIL28tzwYQc0Km0vF7MXlfqDttmP46cQn1ZkktE0g9pnanOdwXoQry7Ts9eNJWXqR8ZPgE4YpstYkuCoVTc-iBWYm847BUJuOWtQ0PmRzuX4-nSTKZC2SBh0ykAa09rUvguS1W7dXxpCbc9QtL7Bg"/>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- MAIN ATELIER CANVAS                        -->
+<!-- ========================================== -->
+<main class="w-full max-w-[1536px] mx-auto px-4 md:px-8 lg:px-12 py-space-lg space-y-space-xl">
+<!-- SUB-NAV / TRENDING HASHTAG QUICK STRIP -->
+<div class="flex items-center justify-between gap-4 overflow-x-auto pb-1 border-b border-outline-variant/20 scrollbar-none">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-outline uppercase tracking-wider flex-shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_up</span>
+<span>Real-time Joseon Trends</span>
+</div>
+<div class="flex items-center gap-2 flex-nowrap">
+<a class="px-3 py-1 rounded-full bg-surface-container-high/80 border border-primary/40 text-primary font-label-sm text-label-sm hover:border-primary hover:bioglow-teal transition-all flex items-center gap-1.5 whitespace-nowrap" href="#item1">
+<span>#알잘딱깔센</span>
+<span class="text-[9px] text-secondary bg-surface-container px-1 rounded font-bold">+98% Velocity</span>
+</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-low/70 border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:border-secondary transition-all flex items-center gap-1.5 whitespace-nowrap" href="#item2">
+<span>#중꺾마</span>
+<span class="text-[9px] text-outline">Esports Soul</span>
+</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-low/70 border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:border-secondary transition-all flex items-center gap-1.5 whitespace-nowrap" href="#item3">
+<span>#캘박</span>
+<span class="text-[9px] text-outline">Office MZ</span>
+</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-low/70 border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:border-secondary transition-all flex items-center gap-1.5 whitespace-nowrap" href="#item4">
+<span>#분좋카</span>
+<span class="text-[9px] text-outline">Seoul Vibes</span>
+</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-low/70 border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:border-secondary transition-all flex items-center gap-1.5 whitespace-nowrap" href="#item5">
+<span>#갓생</span>
+<span class="text-[9px] text-outline">Hyper-Prod</span>
+</a>
+</div>
+<div class="hidden xl:flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="text-primary font-bold">28,490</span> learners in Seoul session
+      </div>
+</div>
+<!-- ========================================== -->
+<!-- HERO SECTION: 3D HOLOGRAPHIC SPOTLIGHT     -->
+<!-- ========================================== -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Primary Hologram Card (8 Cols) -->
+<div class="lg:col-span-8 rounded-2xl bg-surface-container-low/70 backdrop-blur-2xl border border-primary/30 p-6 md:p-8 bioglow-teal relative overflow-hidden flex flex-col justify-between">
+<!-- Ambient Watermark & Circuit Accents -->
+<div class="absolute -right-12 -top-12 text-[180px] font-headline-lg font-bold text-surface-container-highest/20 pointer-events-none select-none">
+          센
+        </div>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-60"></div>
+<!-- Top Badging & Tag Row -->
+<div class="flex flex-wrap items-center justify-between gap-3 mb-6 relative z-10">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-primary/15 border border-primary text-primary font-label-sm text-label-sm tracking-widest font-bold">
+              TODAY'S ARTIFACT NO. 042
+            </span>
+<span class="px-2.5 py-1 rounded bg-secondary/15 border border-secondary text-secondary font-label-sm text-label-sm tracking-wide">
+              LEVEL 4 · MZ CORPORATE CANON
+            </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container-high/70 hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all active:scale-95" title="Bookmark term">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high/70 hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all active:scale-95" title="Share Artifact">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</div>
+<!-- Center Neologism Title & Gloss -->
+<div class="relative z-10 mb-6 space-y-2">
+<div class="flex flex-wrap items-baseline gap-4">
+<h1 class="text-headline-lg font-headline-lg font-bold text-on-surface tracking-tight text-white drop-shadow-[0_2px_12px_rgba(66,223,181,0.3)]">
+              알잘딱깔센
+            </h1>
+<span class="text-label-lg font-label-lg text-primary tracking-wider">
+              [Al · Jal · Ttak · Kkal · Ssen]
+            </span>
+</div>
+<p class="text-body-lg font-body-lg text-secondary font-medium">
+            “Knowing what to do, doing it well, cleanly, and sensibly without being told.”
+          </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-2xl leading-relaxed pt-1">
+            Compound portmanteau of: <span class="text-on-surface font-semibold">알</span>아서(autonomously) + <span class="text-on-surface font-semibold">잘</span>(excellently) + <span class="text-on-surface font-semibold">딱</span>(precisely) + <span class="text-on-surface font-semibold">깔</span>끔하게(cleanly) + <span class="text-on-surface font-semibold">센</span>스있게(sensibly). Originated by gaming icon Woowakgood, now an indisputable standard in Seoul creative agencies.
+          </p>
+</div>
+<!-- Interactive Audio Waveform & Multi-Axis Radar Visualization -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 pt-4 border-t border-outline-variant/30 relative z-10">
+<!-- Audio Waveform Player (7 Cols) -->
+<div class="md:col-span-7 space-y-3 bg-surface-container/60 p-4 rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<span class="text-label-md font-label-md text-on-surface">Native Frequency &amp; Articulation</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-mono">00:03.4 / 44.1kHz</span>
+</div>
+<!-- Waveform Bar Simulator -->
+<div class="flex items-end gap-1 h-14 w-full px-2 py-1 bg-surface-container-lowest/80 rounded-lg overflow-hidden relative">
+<!-- Visual Playhead Cursor -->
+<div class="absolute top-0 bottom-0 left-[48%] w-0.5 bg-secondary shadow-[0_0_8px_#ffd795] z-20"></div>
+<!-- Frequency Bars (Emerald to Amber Gradient) -->
+<div class="w-1.5 h-[30%] bg-primary rounded-t"></div>
+<div class="w-1.5 h-[55%] bg-primary rounded-t"></div>
+<div class="w-1.5 h-[40%] bg-primary rounded-t"></div>
+<div class="w-1.5 h-[80%] bg-primary rounded-t shadow-[0_0_6px_#42dfb5]"></div>
+<div class="w-1.5 h-[65%] bg-primary rounded-t"></div>
+<div class="w-1.5 h-[95%] bg-primary rounded-t shadow-[0_0_8px_#42dfb5]"></div>
+<div class="w-1.5 h-[70%] bg-primary rounded-t"></div>
+<div class="w-1.5 h-[85%] bg-secondary rounded-t"></div>
+<div class="w-1.5 h-[100%] bg-secondary rounded-t shadow-[0_0_10px_#ffd795]"></div>
+<div class="w-1.5 h-[75%] bg-secondary rounded-t"></div>
+<div class="w-1.5 h-[45%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[60%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[35%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[80%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[50%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[30%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[20%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[40%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[15%] bg-surface-variant rounded-t"></div>
+<div class="w-1.5 h-[25%] bg-surface-variant rounded-t"></div>
+</div>
+<!-- Waveform Controls -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center hover:shadow-[0_0_14px_#42dfb5] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container-high text-label-sm font-label-sm text-on-surface hover:text-primary transition-all">
+                  Accent: Gangnam MZ
+                </button>
+</div>
+<!-- Speed Selector Pill -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-0.5 rounded-lg border border-outline-variant/30 text-label-sm font-label-sm">
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-white transition-colors">0.8x</button>
+<button class="px-2 py-0.5 rounded bg-primary text-on-primary font-bold">1.0x</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-white transition-colors">1.2x</button>
+</div>
+</div>
+</div>
+<!-- Radar Chart (5 Cols) -->
+<div class="md:col-span-5 flex flex-col items-center justify-center bg-surface-container/60 p-3 rounded-xl border border-outline-variant/30 relative">
+<span class="text-label-sm font-label-sm text-outline tracking-wider uppercase mb-1">
+              Nuance Dynamics Radar
+            </span>
+<!-- SVG Spider Radar Chart -->
+<svg class="w-44 h-44 drop-shadow-[0_0_12px_rgba(66,223,181,0.25)]" viewbox="0 0 200 200">
+<!-- Concentric Rings -->
+<polygon fill="none" points="100,20 176,75 147,165 53,165 24,75" stroke="#253457" stroke-width="1"></polygon>
+<polygon fill="none" points="100,45 152,83 133,145 67,145 48,83" stroke="#253457" stroke-width="1"></polygon>
+<polygon fill="none" points="100,70 126,90 117,125 83,125 74,90" stroke="#253457" stroke-width="1"></polygon>
+<!-- Axes Lines -->
+<line stroke="#3c4a44" stroke-width="1" x1="100" x2="100" y1="100" y2="20"></line>
+<line stroke="#3c4a44" stroke-width="1" x1="100" x2="176" y1="100" y2="75"></line>
+<line stroke="#3c4a44" stroke-width="1" x1="100" x2="147" y1="100" y2="165"></line>
+<line stroke="#3c4a44" stroke-width="1" x1="100" x2="53" y1="100" y2="165"></line>
+<line stroke="#3c4a44" stroke-width="1" x1="100" x2="24" y1="100" y2="75"></line>
+<!-- Data Polygon: Trend(98), Daily Utility(92), Politeness(40), Irony(85), Corp Safety(65) -->
+<polygon fill="rgba(2, 195, 154, 0.25)" points="100,23 170,78 138,154 75,138 38,82" stroke="#42dfb5" stroke-width="2"></polygon>
+<!-- Vertex Points -->
+<circle class="animate-pulse" cx="100" cy="23" fill="#ffd795" r="3.5"></circle>
+<circle cx="170" cy="78" fill="#42dfb5" r="3"></circle>
+<circle cx="138" cy="154" fill="#42dfb5" r="3"></circle>
+<circle cx="75" cy="138" fill="#42dfb5" r="3"></circle>
+<circle cx="38" cy="82" fill="#42dfb5" r="3"></circle>
+<!-- Labels inside SVG -->
+<text fill="#ffd795" font-family="Space Grotesk" font-size="9" text-anchor="middle" x="100" y="14">Trend 98%</text>
+<text fill="#bbcac2" font-family="Space Grotesk" font-size="8" text-anchor="start" x="180" y="78">Corp 65%</text>
+<text fill="#bbcac2" font-family="Space Grotesk" font-size="8" text-anchor="middle" x="150" y="178">Irony 85%</text>
+<text fill="#bbcac2" font-family="Space Grotesk" font-size="8" text-anchor="middle" x="50" y="178">Polite 40%</text>
+<text fill="#42dfb5" font-family="Space Grotesk" font-size="8" text-anchor="end" x="20" y="78">Utility 92%</text>
+</svg>
+</div>
+</div>
+<!-- Accordion Cultural Backstory -->
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between text-label-md font-label-md">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">history_edu</span>
+<span>Etymology: Starcraft &amp; Twitch streamers (2018) → Kakao Corp Boardrooms (2024)</span>
+</div>
+<button class="text-primary hover:text-white flex items-center gap-1 transition-colors">
+<span>Read 3-min Cultural Dossier</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Joseon Streak & AI Pronunciation Engine (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Daily Streak & Level Card -->
+<div class="rounded-2xl bg-surface-container-low/70 backdrop-blur-2xl border border-secondary-container/30 p-6 bioglow-amber flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-label-lg font-label-lg text-secondary font-bold">조선 갓생 Streak</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary/20 text-secondary text-label-sm font-label-sm font-bold">TOP 3%</span>
+</div>
+<!-- Streak Metric -->
+<div class="space-y-1 mb-4">
+<div class="flex items-baseline gap-2">
+<span class="text-display-hero-mobile font-display-hero-mobile text-white font-bold">14</span>
+<span class="text-headline-sm font-headline-sm text-on-surface-variant">Days Consecutive</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline">You are outperforming 97% of global Korean cultural cohorts this month.</p>
+</div>
+<!-- 7-Day Matrix tracker -->
+<div class="grid grid-cols-7 gap-1.5 py-3 border-t border-b border-outline-variant/30 my-2">
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">M</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">T</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">W</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">T</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">F</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-outline font-label-sm">S</span>
+<div class="w-full h-8 rounded bg-primary/20 border border-primary flex items-center justify-center text-primary text-[12px]">✓</div>
+</div>
+<div class="text-center space-y-1">
+<span class="text-[10px] text-secondary font-bold font-label-sm">SUN</span>
+<div class="w-full h-8 rounded bg-secondary-container/40 border border-secondary flex items-center justify-center text-secondary text-[12px] font-bold animate-pulse">★</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span>Next Reward: 200 엽전</span>
+<span class="text-secondary">Tomorrow at 00:00 KST</span>
+</div>
+</div>
+<!-- Pronunciation Accuracy Card -->
+<div class="rounded-2xl bg-surface-container-low/70 backdrop-blur-2xl border border-primary/20 p-6 flex flex-col justify-between relative overflow-hidden flex-1">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">mic</span>
+              AI Neural Accent Mirror
+            </span>
+<span class="text-label-sm font-label-sm text-primary font-bold">LIVE STT-V3</span>
+</div>
+<!-- Score Gauge Ring -->
+<div class="flex items-center gap-4 my-2">
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-white leading-none">94%</span>
+<span class="text-[8px] text-outline uppercase">Match</span>
+</div>
+</div>
+<div class="space-y-1">
+<p class="text-body-sm font-body-sm text-on-surface font-semibold">Tension &amp; Intonation Sharp</p>
+<p class="text-label-sm font-label-sm text-outline">Double-consonant stress on '딱(Ttak)' &amp; '센(Ssen)' executed cleanly.</p>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-md font-bold flex items-center justify-center gap-2 hover:shadow-[0_0_18px_#42dfb5] active:scale-95 transition-all mt-2">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+<span>Record Voice Challenge Now</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- BENTO GRID: 3 DISTINCT PILLARS             -->
+<!-- ========================================== -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- COLUMN 1: TRENDING K-SOUL & SLANG FEED (4 Cols) -->
+<div class="lg:col-span-4 rounded-2xl bg-surface-container-low/60 backdrop-blur-xl border border-outline-variant/30 p-6 flex flex-col justify-between space-y-4">
+<!-- Header -->
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">bolt</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Trending K-Soul Feed</h2>
+</div>
+<span class="text-label-sm font-label-sm text-primary bg-primary/10 border border-primary/30 px-2 py-0.5 rounded-full">
+            REALTIME MZ
+          </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant -mt-2">
+          Curated viral neologisms updated hourly across Korean social engines, streams, and office Slack channels.
+        </p>
+<!-- Feed Cards Stack -->
+<div class="space-y-3 flex-1">
+<!-- Card 1: #중꺾마 -->
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/60 hover:bg-surface-container-high/60 transition-all group cursor-pointer">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-headline-sm font-headline-sm text-white group-hover:text-primary transition-colors">#중꺾마</span>
+<span class="px-2 py-0.2 rounded bg-secondary/15 border border-secondary text-secondary font-label-sm text-[10px]">Lv.2 Popular</span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">[Jung-Kkeok-Ma]</div>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold bg-surface-container-lowest px-2 py-0.5 rounded border border-primary/20">+412%</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
+              “중요한 것은 꺾이지 않는 마음” — The essential thing is an unbroken will. Born from League of Legends Worlds 2022.
+            </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volume_up</span> “이번 프로젝트 중꺾마다!”
+              </span>
+<span class="text-outline">Resilience</span>
+</div>
+</div>
+<!-- Card 2: #캘박 -->
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/60 hover:bg-surface-container-high/60 transition-all group cursor-pointer">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-headline-sm font-headline-sm text-white group-hover:text-primary transition-colors">#캘박</span>
+<span class="px-2 py-0.2 rounded bg-primary/15 border border-primary text-primary font-label-sm text-[10px]">Lv.1 Essential</span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">[Kael-Bak]</div>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold bg-surface-container-lowest px-2 py-0.5 rounded border border-primary/20">+188%</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
+              “캘린더 박제” — Pinning/locking a schedule permanently into Google/Kakao Calendar. Absolute corporate law.
+            </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volume_up</span> “다음 주 회식 날짜 캘박해주세요.”
+              </span>
+<span class="text-outline">Scheduling</span>
+</div>
+</div>
+<!-- Card 3: #갓생 -->
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/60 hover:bg-surface-container-high/60 transition-all group cursor-pointer">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-headline-sm font-headline-sm text-white group-hover:text-primary transition-colors">#갓생</span>
+<span class="px-2 py-0.2 rounded bg-secondary/15 border border-secondary text-secondary font-label-sm text-[10px]">Lv.1 Canon</span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">[God-Saeng]</div>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold bg-surface-container-lowest px-2 py-0.5 rounded border border-primary/20">+94%</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
+              God (갓) + Life (인생). Leading a diligent, disciplined, highly-productive morning-routine life in Seoul.
+            </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volume_up</span> “새해엔 갓생 산다.”
+              </span>
+<span class="text-outline">Productivity</span>
+</div>
+</div>
+<!-- Card 4: #억까 -->
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-outline-variant/40 hover:border-primary/60 hover:bg-surface-container-high/60 transition-all group cursor-pointer">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-headline-sm font-headline-sm text-white group-hover:text-primary transition-colors">#억까</span>
+<span class="px-2 py-0.2 rounded bg-error/15 border border-error text-error font-label-sm text-[10px]">Lv.3 Slang</span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">[Eok-Kka]</div>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold bg-surface-container-lowest px-2 py-0.5 rounded border border-primary/20">+73%</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
+              Short for “억지로 까다” (Unjustified forced criticism) or the universe unfairly conspiring against you today.
+            </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volume_up</span> “오늘 출근길 지하철 연착 실화? 억까 당함.”
+              </span>
+<span class="text-outline">Urban Irony</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-xl border border-outline-variant/40 hover:border-primary text-on-surface text-label-md font-label-md hover:bg-surface-container-high transition-all flex items-center justify-center gap-1.5">
+<span>Explore All 240+ Live Neologisms</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<!-- COLUMN 2: WORKPLACE SCENARIO SIMULATOR (5 Cols) -->
+<div class="lg:col-span-5 rounded-2xl bg-surface-container-low/70 backdrop-blur-xl border border-primary/30 p-6 flex flex-col justify-between space-y-4 bioglow-teal" id="office">
+<!-- Header -->
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">forum</span>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">K-Office Battle Simulator</h2>
+<span class="text-label-sm font-label-sm text-outline">Scenario: The Friday 6:02 PM Paradox</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container/20 border border-secondary text-secondary text-label-sm font-label-sm font-bold animate-pulse">
+            LIVE CHOICE
+          </span>
+</div>
+<!-- Scenario Context Box -->
+<div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 relative">
+<div class="flex items-center gap-3 mb-2">
+<!-- Manager Profile Token -->
+<div class="w-10 h-10 rounded-full bg-surface-variant ring-1 ring-secondary/50 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic medium close-up of a middle-aged Korean senior director in a crisp midnight navy charcoal suit in a Seoul high-rise corporate office, moody neon city lights reflecting through floor-to-ceiling glass in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHaEd7PEw37jHxqhLP6Clj9mHwI7DXoyquoLqvpDKtHWgs1TfniR6MQQRM_FcEfD76qoDvSFyJ-KLKvFBjfhPe2pmauYwnXD6rvb97kwf-MlAE7DT6EjwluG0wmQmLrTEUh04st6Da1gs2qCfSLrhr22z_fvymcpIdC1wXv1CT48E14YmYiB45YHKrF5Qk2WDzQo5KacH0qjZdyN8cyKLPn1B2r0i_PhDJV27ZHoElpPDzoMAiCy1jb3ub7xDTuUOG4YEqHmjdChU"/>
+</div>
+<div>
+<div class="text-body-sm font-body-sm font-bold text-white flex items-center gap-2">
+<span>Senior Manager 김부장 (Kim Bu-jang)</span>
+<span class="text-[10px] bg-surface-container px-1.5 py-0.5 rounded text-secondary font-label-sm">Head of Strategy</span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">Time: Friday 18:02 KST (2 minutes past bell)</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container/60 border-l-4 border-secondary text-body-md font-body-md text-white italic">
+            “오늘 다들 끝나고 간단하게 치맥 콜? 빠지는 사람 없지?”
+          </div>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-1.5">
+            English: “Fried chicken &amp; beer tonight after work? Everyone's in, right?”
+          </div>
+</div>
+<!-- 3 Interactive Dialogue Options -->
+<div class="space-y-2.5">
+<div class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Select Response Matrix:</div>
+<!-- Option A: Textbook Polite -->
+<div class="p-3 rounded-xl bg-surface-container/50 border border-outline-variant/30 hover:border-outline-variant hover:bg-surface-container-high transition-all cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="text-label-sm font-label-sm text-outline font-bold">OPTION A · TEXTBOOK POLITE</span>
+<span class="text-label-sm font-label-sm text-outline font-mono">60% MZ Vibe</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface">
+              “네, 부장님. 기꺼이 참석하겠습니다.”
+            </p>
+<span class="text-[11px] text-outline italic">Analysis: Overly stiff / Joseon Dynasty textbook vibe. Sacrifice personal weekend without scoring charisma.</span>
+</div>
+<!-- Option B: Strategic MZ (Optimal) -->
+<div class="p-3.5 rounded-xl bg-primary/10 border-2 border-primary bioglow-teal relative cursor-pointer group">
+<div class="absolute -top-2.5 right-4 px-2 py-0.5 rounded bg-primary text-on-primary text-[10px] font-label-sm font-bold uppercase tracking-wider">
+              Optimal Defense (MZ 95%)
+            </div>
+<div class="flex items-center justify-between mb-1">
+<span class="text-label-sm font-label-sm text-primary font-bold">OPTION B · STRATEGIC MZ SHIELD</span>
+<span class="text-label-sm font-label-sm text-primary font-mono font-bold">95% Vibe</span>
+</div>
+<p class="text-body-sm font-body-sm text-white font-medium">
+              “부장님 죄송합니다, 오늘 필라테스 선약이 <span class="text-secondary font-bold">캘박</span>되어 있어서요! 다음엔 제가 먼저 치맥 모시겠습니다!”
+            </p>
+<span class="text-[11px] text-primary/80 italic mt-1 block">Analysis: Uses legitimate physical discipline barrier + '캘박' neologism + soft honorific promise for next week. Flawless survival.</span>
+</div>
+<!-- Option C: Danger Casual -->
+<div class="p-3 rounded-xl bg-surface-container/50 border border-error/30 hover:border-error hover:bg-surface-container-high transition-all cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="text-label-sm font-label-sm text-error font-bold">OPTION C · CASUAL RESISTANCE</span>
+<span class="text-label-sm font-label-sm text-error font-mono font-bold">20% Vibe (DANGER)</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface">
+              “아 오늘 피곤한데 다음에 가면 안 돼요?”
+            </p>
+<span class="text-[11px] text-error/80 italic">Analysis: Immediate hierarchical friction. High corporate fallout probability on Monday morning.</span>
+</div>
+</div>
+<!-- AI Reaction & Survival Score Meter -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="text-2xl">😎</span>
+<div>
+<div class="text-label-md font-label-md text-white font-bold">Manager Reaction: “알잘딱깔센이네, 주말 잘 보내게!”</div>
+<div class="text-label-sm font-label-sm text-primary">Corporate Survival Index: +350 Rep Points</div>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-variant text-label-sm font-label-sm text-secondary font-bold border border-secondary/30 transition-colors">
+            Next Round
+          </button>
+</div>
+</div>
+<!-- COLUMN 3: B2B CORPORATE HR KIT (3 Cols) -->
+<div class="lg:col-span-3 rounded-2xl bg-surface-container-low/70 backdrop-blur-xl border border-secondary-container/40 p-6 flex flex-col justify-between space-y-4 bioglow-amber relative overflow-hidden" id="b2b">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header -->
+<div class="pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-bold tracking-wider">Enterprise Intelligence</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-white">B2B Seoul HR &amp; Culture Kit</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+            Critical cross-cultural linguistic compliance for multinational leadership in Korea.
+          </p>
+</div>
+<!-- Feature List Artifacts -->
+<div class="space-y-3 flex-1">
+<div class="p-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">menu_book</span>
+<div>
+<div class="text-body-sm font-body-sm font-bold text-white">Expat Survival Lexicon 2025</div>
+<p class="text-label-sm font-label-sm text-outline">180+ decoded portmanteaus used by junior tech leads &amp; founders.</p>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">account_tree</span>
+<div>
+<div class="text-body-sm font-body-sm font-bold text-white">Hierarchical Honorifics Matrix</div>
+<p class="text-label-sm font-label-sm text-outline">존댓말 (Jondaetmal) vs 반말 (Banmal) boundary charts for direct reports.</p>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">mark_chat_read</span>
+<div>
+<div class="text-body-sm font-body-sm font-bold text-white">Slack &amp; KakaoTalk Protocol</div>
+<p class="text-label-sm font-label-sm text-outline">Deciphering '넵', '네!', '넵ㅎㅎ' micro-emotion nuances in text.</p>
+</div>
+</div>
+</div>
+<!-- Price CTA Block -->
+<div class="space-y-3 pt-3 border-t border-outline-variant/30">
+<div class="flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-outline">Enterprise Team Access</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-md font-headline-md font-bold text-white">$9.99</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+<!-- Luxury Gold Purchase CTA -->
+<button class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-secondary-container via-secondary to-secondary-fixed text-on-secondary-container font-label-lg font-bold flex items-center justify-center gap-2 hover:shadow-[0_0_24px_rgba(251,180,0,0.5)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span>Get Instant HR Team License</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-label-sm font-label-sm text-outline text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+<span>30-Day Money Back Guarantee · ISO Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3D ROLEPLAY THEATER AMBIENT LAUNCHER       -->
+<!-- ========================================== -->
+<section class="rounded-2xl bg-surface-container-low/50 backdrop-blur-2xl border border-outline-variant/30 p-6 md:p-8 relative overflow-hidden" id="roleplay">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-8 space-y-3">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-primary/20 border border-primary text-primary font-label-sm text-label-sm font-bold uppercase">
+              WebXR Joseon Engine
+            </span>
+<span class="text-label-sm font-label-sm text-outline">Spatial Audio Enabled</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg font-bold text-white">
+            Step Inside the 3D Roleplay Theater
+          </h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-2xl">
+            Simulate real-time conversations with virtual Seoulites in hyper-realistic 3D environments: from midnight Pocha (포장마차) tent bars in Jongno to high-stakes investment pitches in Teheran Valley, Gangnam.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<button class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-lg font-bold flex items-center gap-2 hover:shadow-[0_0_20px_#42dfb5] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">view_in_ar</span>
+<span>Launch 3D WebXR Studio</span>
+</button>
+<div class="flex items-center gap-2 text-label-md font-label-md text-outline">
+<span class="material-symbols-outlined text-primary text-[18px]">headset</span>
+<span>Binaural 3D Audio Compatible</span>
+</div>
+</div>
+</div>
+<!-- Theater Mini Preview Graphic -->
+<div class="md:col-span-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 p-4 relative overflow-hidden group">
+<div class="aspect-video rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic 3D virtual environment depicting a midnight Seoul neon alleyway pocha tent bar with bioluminescent teal and warm amber lanterns reflecting against rainy cybernetic cobblestones, cinematic sci-fi Korean atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkOtuzOSy7lOe_aoIjzuvi_Jn5qvBwYXaUYbtjSWsNIhciwEKLKh8a3uzj6J-otj8cwMQRQYo918yaRkb3JdI35591I_7HJyX3ORQSkCHZCLbHQMsnSeoP9Hnq18Rx2lRp8xTBxkmv9fkrq60T0N60tRFcdkuwFozvvhhkfvCsvyZ_8QLoppG-Li2NFk2Q6oL7bul_05Qfd_ICaihffaSnU_8dqur1k3QCK3zBdUKFGrs117uKlD8zzAmmqdkr2o2mhT_yqnsOYIs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1.5 text-label-sm font-label-sm text-white bg-surface-container-lowest/80 px-2 py-0.5 rounded backdrop-blur">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Session: Jongno 3-ga Pocha 02:00 AM</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- FOOTER & CULTURAL ANCHOR                   -->
+<!-- ========================================== -->
+<footer class="mt-space-xl border-t border-outline-variant/30 bg-surface-container-lowest/90 backdrop-blur-xl py-space-lg text-on-surface-variant">
+<div class="max-w-[1536px] mx-auto px-4 md:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Brand & Copyright -->
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-lg font-bold border border-primary/40">
+          말
+        </span>
+<div>
+<div class="text-body-sm font-body-sm font-bold text-white">말쌈 MALSSAM Cultural Intelligence Laboratory</div>
+<div class="text-label-sm font-label-sm text-outline">© 2025 MALSSAM Atelier Ltd. All Neologisms &amp; Audio Models Protected.</div>
+</div>
+</div>
+<!-- Links -->
+<div class="flex items-center gap-space-lg text-label-md font-label-md">
+<a class="hover:text-primary transition-colors" href="#">Digital Royal Archive</a>
+<a class="hover:text-primary transition-colors" href="#">API Docs (Hangul STT)</a>
+<a class="hover:text-primary transition-colors" href="#">Corporate Licensing</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy &amp; Telemetry</a>
+</div>
+<!-- Latency & Node -->
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Seoul-Central-1 Node (14ms)</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -167,15 +167,30 @@ function showQuizResult() {
 // 티어 선택 모달
 let selectedTier = 1; // 1: 개인용 1,000원, 2: 기업 B2B 9,900원
 
-function openTierModal() {
+function openTierModal(preset) {
+  if (preset === 'pro' || preset === 2) {
+    selectTier(2);
+  } else {
+    selectTier(1);
+  }
   const tm = document.getElementById('tierModal');
   if (tm) tm.classList.add('active');
 }
 
 function selectTier(tierNum) {
   selectedTier = tierNum;
-  document.getElementById('tierCard1').classList.toggle('active', tierNum === 1);
-  document.getElementById('tierCard2').classList.toggle('active', tierNum === 2);
+  const card1 = document.getElementById('tierCard1');
+  const card2 = document.getElementById('tierCard2');
+  if (card1) {
+    card1.classList.toggle('active', tierNum === 1);
+    card1.style.borderColor = tierNum === 1 ? '#00A896' : '#475569';
+    card1.style.background = tierNum === 1 ? 'rgba(0,168,150,0.1)' : 'rgba(15,23,42,0.6)';
+  }
+  if (card2) {
+    card2.classList.toggle('active', tierNum === 2);
+    card2.style.borderColor = tierNum === 2 ? '#F77F00' : '#475569';
+    card2.style.background = tierNum === 2 ? 'rgba(247,127,0,0.1)' : 'rgba(15,23,42,0.6)';
+  }
 }
 
 function closeTierModal() {
