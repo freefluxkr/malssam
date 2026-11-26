@@ -17,7 +17,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 
   <!-- 🎨 모듈화 CSS: 말쌈 디자인 시스템 & 3D 상황극 스타일 -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261126_v1">
   <link rel="stylesheet" href="css/roleplay.css">
 
   <!-- 포트원 (PortOne v2 브라우저 SDK) -->
@@ -120,6 +120,10 @@
       </nav>
 
       <div class="header-actions">
+        <button class="btn-koffice-nav" onclick="openKOfficeTab()" title="K-오피스 생존 연구소 (꼰대력 진단·넵 번역기·회식 탈출)">
+          <span>🏢</span>
+          <span>오피스 랩</span>
+        </button>
         <button class="btn-kakao-request" onclick="openKakaoModal()" title="카톡 맥락 판독 요청">
           <span>💬</span>
           <span>판독 요청</span>
@@ -247,25 +251,43 @@
           </button>
         </div>
       </div>
+
+      <!-- K-오피스 생존 연구소 특집 배너 -->
+      <div class="koffice-promo-card">
+        <div class="koffice-promo-left">
+          <div class="koffice-promo-badges">
+            <span class="koffice-promo-pill">🏢 NEW 공식 콘텐츠</span>
+            <span class="koffice-promo-book">Book 21746 연동</span>
+          </div>
+          <h3 class="koffice-promo-title">K-오피스 생존 연구소 (K-Office Survival Lab)</h3>
+          <p class="koffice-promo-desc">꼰대력 진단 · '넵(Nep)' 한 글자 감정 번역기 · 회식 틈새 탈출 타이머 — 직장인 말투와 오피스 생존술을 직접 체험해보세요!</p>
+        </div>
+        <div class="koffice-promo-actions">
+          <button type="button" class="btn-koffice-launch" onclick="openKOfficeTab()">
+            <span>🔥 지금 바로 체험하기 →</span>
+          </button>
+          <a href="k_office_lab.html" class="btn-koffice-standalone">↗ 전용 페이지</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ⏳ 3대 시대별 시간여행 탭 스위처 -->
   <section class="era-switcher-section">
     <div class="era-tabs-container">
-      <button class="era-tab-btn active" onclick="switchEra('all')">
+      <button class="era-tab-btn active" id="tabAllBtn" onclick="switchEra('all')">
         <span class="era-main">✨ 전체 보기</span>
         <span class="era-sub" id="countAll">100단어</span>
       </button>
-      <button class="era-tab-btn" onclick="switchEra('latte')">
+      <button class="era-tab-btn" id="tabLatteBtn" onclick="switchEra('latte')">
         <span class="era-main">📟 1. 라떼 추억</span>
         <span class="era-sub" id="countLatte">1990~2000s (27)</span>
       </button>
-      <button class="era-tab-btn" onclick="switchEra('smartphone')">
+      <button class="era-tab-btn" id="tabSmartBtn" onclick="switchEra('smartphone')">
         <span class="era-main">📱 2. 국민 유행어</span>
         <span class="era-sub" id="countSmartphone">2010s (31)</span>
       </button>
-      <button class="era-tab-btn" onclick="switchEra('shorts')">
+      <button class="era-tab-btn" id="tabShortsBtn" onclick="switchEra('shorts')">
         <span class="era-main">⚡ 3. 요즘 1020 밈</span>
         <span class="era-sub" id="countShorts">2020~2026 (42)</span>
       </button>
@@ -278,6 +300,11 @@
         <span class="tab-highlight-badge hot-badge">⚡ HOT 판독</span>
         <span class="era-main">💬 5. 카톡 판독소</span>
         <span class="era-sub" id="countKakao">BEST 10선 & 의뢰</span>
+      </button>
+      <button class="era-tab-btn" id="tabKofficeBtn" onclick="switchEra('koffice')">
+        <span class="tab-highlight-badge office-badge">🏢 NEW 랩</span>
+        <span class="era-main">🏢 6. K-오피스 랩</span>
+        <span class="era-sub" id="countKoffice">꼰대력·넵번역·탈출</span>
       </button>
     </div>
   </section>
@@ -793,14 +820,15 @@
 
   <!-- 2. 기능별 독립 JS 모듈 -->
   <script src="js/audio.js"></script>
-  <script src="js/render.js"></script>
+  <script src="js/render.js?v=20261126_v1"></script>
   <script src="js/battle.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/kakao.js"></script>
+  <script src="js/koffice.js?v=20261126_v1"></script>
   <script src="js/payments.js"></script>
   <script src="js/roleplay.js?v=20261113_v2"></script>
 
   <!-- 3. 메인 앱 초기화 모듈 -->
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=20261126_v1"></script>
 </body>
 </html>

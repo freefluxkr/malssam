@@ -100,6 +100,15 @@ function updateEraCounts() {
 
 // 시대 탭 전환 함수
 function switchEra(era) {
+  if (era !== 'koffice' && typeof stopKOfficeTimer === 'function') {
+    stopKOfficeTimer();
+  }
+
+  const filterTabsEl = document.querySelector('.filter-tabs');
+  if (filterTabsEl) {
+    filterTabsEl.style.display = (era === 'koffice') ? 'none' : '';
+  }
+
   const subcatSec = document.getElementById('soulSubcatSection');
   if (subcatSec) {
     subcatSec.style.display = (era === 'soul') ? 'block' : 'none';
@@ -120,6 +129,16 @@ function switchEra(era) {
   document.querySelectorAll('.era-tab-btn').forEach(b => b.classList.remove('active'));
 
   const infoBox = document.getElementById('eraInfoContent');
+
+  if (era === 'koffice') {
+    const kofficeTab = document.getElementById('tabKofficeBtn');
+    if (kofficeTab) kofficeTab.classList.add('active');
+    if (infoBox) {
+      infoBox.innerHTML = `<span>🏢 <strong>6. K-오피스 생존 연구소 (K-Office Survival Lab)</strong>: 꼰대력 진단, '넵' 한 글자 감정 번역기, 회식 1차 틈새 탈출 타이머까지 K-직장인 생존 필수 시뮬레이터 3종을 말쌈에서 바로 체험하세요.</span><a href="k_office_lab.html" style="font-size:0.75rem; padding:4px 12px; background:linear-gradient(135deg, #6366f1, #ec4899); color:#fff; font-weight:800; border-radius:8px; text-decoration:none; margin-left:8px; white-space:nowrap;">↗ 전용 페이지 열기</a>`;
+    }
+    if (typeof renderKOfficeLab === 'function') renderKOfficeLab();
+    return;
+  }
 
   if (era === 'kakao') {
     const kakaoTab = document.getElementById('tabKakaoBtn');
@@ -160,12 +179,17 @@ function switchEra(era) {
 // 정렬 필터 전환
 function setFilter(type, ev) {
   currentFilter = type;
-  document.querySelectorAll('.filter-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.filter-tab, .filter-tab-btn').forEach(b => b.classList.remove('active'));
   if (ev && ev.currentTarget) {
     ev.currentTarget.classList.add('active');
   } else if (ev && ev.target) {
-    const btn = ev.target.closest('.filter-tab-btn');
+    const btn = ev.target.closest('.filter-tab, .filter-tab-btn');
     if (btn) btn.classList.add('active');
+  }
+  if (currentEra === 'koffice') return;
+  if (currentEra === 'kakao' && typeof renderKakaoFeed === 'function') {
+    renderKakaoFeed();
+    return;
   }
   applyFilterAndRender();
 }
@@ -425,11 +449,28 @@ function handleSearch() {
   }
 
   if (!query) {
+    const filterTabsEl = document.querySelector('.filter-tabs');
+    if (filterTabsEl) {
+      filterTabsEl.style.display = (currentEra === 'koffice') ? 'none' : '';
+    }
+    if (currentEra === 'koffice' && typeof renderKOfficeLab === 'function') {
+      renderKOfficeLab();
+      return;
+    }
+    if (currentEra === 'kakao' && typeof renderKakaoFeed === 'function') {
+      renderKakaoFeed();
+      return;
+    }
     applyFilterAndRender();
     return;
   }
 
-  let pool = (currentEra === 'all') ? [...window.words] : window.words.filter(w => w.era === currentEra);
+  const filterTabsEl = document.querySelector('.filter-tabs');
+  if (filterTabsEl) filterTabsEl.style.display = '';
+
+  let pool = (currentEra === 'all' || currentEra === 'kakao' || currentEra === 'koffice')
+    ? [...window.words]
+    : window.words.filter(w => w.era === currentEra);
 
   const filtered = pool.filter(w => {
     const wordLower = (w.word || '').toLowerCase();

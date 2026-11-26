@@ -112,10 +112,20 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
         updateEraCounts();
-        applyFilterAndRender();
+        if (currentEra !== 'koffice' && currentEra !== 'kakao') {
+          applyFilterAndRender();
+        }
         const badge = document.getElementById('fbStatusBadge');
         if (badge) badge.innerText = `🟢 실시간 DB (${window.words.length})`;
       }
     }).catch(err => console.warn("Firestore load error:", err));
+  }
+
+  // 4. URL 해시/쿼리 기반 K-오피스 랩 딥링크 지원
+  const params = new URLSearchParams(window.location.search);
+  if (window.location.hash === '#k-office' || params.get('tab') === 'koffice') {
+    if (typeof switchEra === 'function') {
+      switchEra('koffice');
+    }
   }
 });

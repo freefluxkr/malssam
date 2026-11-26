@@ -716,21 +716,34 @@
       max-width: 900px;
       width: 100%;
       margin: 0 auto 12px;
-      padding: 0 16px;
+      padding: 10px 16px 0;
       box-sizing: border-box;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .era-tabs-container {
       background: rgba(17, 24, 39, 0.7);
       border: 1px solid var(--card-border);
       border-radius: 14px;
-      padding: 6px;
+      padding: 8px 6px;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 4px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 8px 6px;
       width: 100%;
       box-sizing: border-box;
+    }
+
+    #tabAllBtn,
+    #tabLatteBtn,
+    #tabSmartBtn,
+    #tabShortsBtn {
+      grid-column: span 3;
+    }
+
+    #tabSoulBtn,
+    #tabKakaoBtn,
+    #tabKofficeBtn {
+      grid-column: span 4;
     }
 
     .era-tab-btn {
@@ -756,7 +769,16 @@
     @media (max-width: 768px) {
       .era-tabs-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
+        gap: 8px 6px;
+      }
+      #tabAllBtn,
+      #tabLatteBtn,
+      #tabSmartBtn,
+      #tabShortsBtn,
+      #tabSoulBtn,
+      #tabKakaoBtn,
+      #tabKofficeBtn {
+        grid-column: auto;
       }
       .era-tab-btn:first-child {
         grid-column: span 2;
@@ -2246,4 +2268,556 @@
     .promo-floating-launcher:hover {
       transform: translateY(-2px) scale(1.05);
       box-shadow: 0 8px 25px rgba(255, 0, 127, 0.7);
+    }
+
+
+    /* ============================================================
+       🏢 [K-오피스 생존 연구소 (K-Office Survival Lab) 스타일]
+       ============================================================ */
+    .btn-koffice-nav {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(236, 72, 153, 0.22));
+      color: #e0e7ff;
+      border: 1px solid rgba(129, 140, 248, 0.45);
+      height: 32px;
+      padding: 0 10px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-koffice-nav:hover {
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+
+    .koffice-promo-card {
+      margin-top: 14px;
+      background: linear-gradient(135deg, rgba(30, 27, 75, 0.85) 0%, rgba(17, 24, 39, 0.9) 100%);
+      border: 1.5px solid rgba(99, 102, 241, 0.45);
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 6px 24px rgba(79, 70, 229, 0.18);
+    }
+    .koffice-promo-left {
+      flex: 1;
+      min-width: 0;
+    }
+    .koffice-promo-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .koffice-promo-pill {
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 900;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+    .koffice-promo-book {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #a5b4fc;
+    }
+    .koffice-promo-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+    .koffice-promo-desc {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+      margin: 0;
+    }
+    .koffice-promo-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    .btn-koffice-launch {
+      background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-koffice-launch:hover {
+      transform: translateY(-1px);
+      opacity: 0.94;
+    }
+    .btn-koffice-standalone {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-koffice-standalone:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #fff;
+    }
+
+    #tabKofficeBtn {
+      position: relative;
+      border: 1.5px solid rgba(99, 102, 241, 0.45) !important;
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.85) 0%, rgba(99, 102, 241, 0.14) 100%) !important;
+      box-shadow: 0 0 14px rgba(99, 102, 241, 0.2);
+    }
+    .office-badge {
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff;
+      border: 1px solid #c7d2fe;
+    }
+
+    /* Inline Lab Container */
+    .ko-lab-wrapper {
+      background: rgba(15, 23, 42, 0.78);
+      border: 1.5px solid rgba(99, 102, 241, 0.35);
+      border-radius: 20px;
+      padding: 24px 20px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    }
+    .ko-lab-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .ko-lab-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.18);
+      border: 1px solid rgba(129, 140, 248, 0.6);
+      color: #c7d2fe;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .ko-lab-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+    .ko-lab-subtitle {
+      font-size: 0.88rem;
+      color: #94a3b8;
+    }
+    .ko-lab-fullpage-link {
+      padding: 8px 13px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #e2e8f0;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .ko-lab-fullpage-link:hover {
+      background: rgba(99, 102, 241, 0.3);
+      color: #fff;
+    }
+
+    .ko-lab-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      background: rgba(9, 13, 22, 0.8);
+      padding: 6px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 20px;
+    }
+    .ko-lab-tab-btn {
+      padding: 11px 6px;
+      border: none;
+      background: transparent;
+      color: #94a3b8;
+      font-weight: 700;
+      font-size: 0.86rem;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+    .ko-lab-tab-btn .ko-lab-emoji {
+      font-size: 1.2rem;
+    }
+    .ko-lab-tab-btn.active {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(79, 70, 229, 0.45);
+    }
+
+    .ko-lab-panel {
+      display: none;
+      background: rgba(18, 24, 38, 0.72);
+      border: 1px solid rgba(99, 102, 241, 0.22);
+      border-radius: 16px;
+      padding: 20px 18px;
+    }
+    .ko-lab-panel.active {
+      display: block;
+    }
+    .ko-lab-panel-title {
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: #e0e7ff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .ko-lab-question {
+      margin-bottom: 16px;
+      padding: 14px;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+    }
+    .ko-lab-q-title {
+      font-weight: 700;
+      font-size: 0.94rem;
+      color: #f1f5f9;
+      margin-bottom: 10px;
+      line-height: 1.45;
+    }
+    .ko-lab-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .ko-lab-opt {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: rgba(30, 41, 59, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      transition: all 0.2s ease;
+    }
+    .ko-lab-opt:hover {
+      background: rgba(99, 102, 241, 0.16);
+      border-color: rgba(99, 102, 241, 0.35);
+    }
+    .ko-lab-opt input[type="radio"] {
+      accent-color: #6366f1;
+      transform: scale(1.12);
+    }
+
+    .ko-lab-btn {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.98rem;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+      transition: all 0.2s ease;
+    }
+    .ko-lab-btn:hover {
+      opacity: 0.93;
+      transform: translateY(-1px);
+    }
+    .ko-lab-btn.running {
+      background: #ef4444;
+    }
+    .ko-lab-btn-secondary {
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #e2e8f0;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .ko-lab-btn-secondary:hover {
+      background: #334155;
+    }
+    .ko-lab-btn-full {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .ko-lab-result {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(30, 27, 75, 0.85), rgba(15, 23, 42, 0.92));
+      border: 1.5px solid #6366f1;
+      text-align: center;
+    }
+    .ko-lab-score-circle {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #6366f1, #312e81);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      box-shadow: 0 0 22px rgba(99, 102, 241, 0.5);
+    }
+    .ko-lab-score-val {
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+    }
+    .ko-lab-score-unit {
+      font-size: 0.72rem;
+      color: #c7d2fe;
+    }
+    .ko-lab-result-grade {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #fbbf24;
+      margin-bottom: 6px;
+    }
+    .ko-lab-result-desc {
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .ko-lab-share-btn {
+      padding: 10px 18px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.86rem;
+      cursor: pointer;
+    }
+
+    .ko-lab-chat {
+      background: #0f172a;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 16px;
+    }
+    .ko-lab-bubble {
+      padding: 11px 14px;
+      border-radius: 14px;
+      max-width: 84%;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .ko-lab-bubble-boss {
+      background: #1e293b;
+      color: #f1f5f9;
+      border-top-left-radius: 2px;
+      margin-right: auto;
+    }
+    .ko-lab-bubble-reply {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      border-top-right-radius: 2px;
+      margin-left: auto;
+      margin-bottom: 0;
+      text-align: right;
+    }
+    .ko-lab-picker-label {
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 8px;
+      color: #a5b4fc;
+    }
+    .ko-lab-nep-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .ko-lab-nep-btn {
+      padding: 11px 6px;
+      background: #1e293b;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: 10px;
+      color: #e2e8f0;
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .ko-lab-nep-btn:hover,
+    .ko-lab-nep-btn.selected {
+      background: #6366f1;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+    }
+    .ko-lab-analysis {
+      background: rgba(15, 23, 42, 0.75);
+      border-radius: 12px;
+      padding: 14px;
+      border-left: 4px solid #6366f1;
+    }
+    .ko-lab-analysis-title {
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: #a5b4fc;
+      margin-bottom: 6px;
+    }
+    .ko-lab-analysis-text {
+      font-size: 0.86rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .ko-lab-timer-box {
+      text-align: center;
+      padding: 22px 14px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.2), transparent 72%);
+    }
+    .ko-lab-timer-sub {
+      font-size: 0.84rem;
+      color: #94a3b8;
+      margin-bottom: 6px;
+    }
+    .ko-lab-time {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 3.1rem;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: -2px;
+      text-shadow: 0 0 18px rgba(56, 189, 248, 0.5);
+    }
+    .ko-lab-timer-actions {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .ko-lab-timer-btn {
+      max-width: 180px;
+    }
+    .ko-lab-sms {
+      background: #000;
+      border-radius: 14px;
+      padding: 16px;
+      border: 1px solid #334155;
+      margin-top: 14px;
+    }
+    .ko-lab-sms-header {
+      font-size: 0.78rem;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 6px;
+    }
+    .ko-lab-sms-content {
+      font-size: 0.92rem;
+      color: #f8fafc;
+      line-height: 1.5;
+    }
+
+    .ko-lab-wikidocs {
+      margin-top: 22px;
+      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+      border: 1.5px solid #6366f1;
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .ko-lab-wb-text h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+    .ko-lab-wb-text p {
+      font-size: 0.84rem;
+      color: #94a3b8;
+    }
+    .ko-lab-wb-btn {
+      padding: 9px 16px;
+      background: #6366f1;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+    .ko-lab-wb-btn:hover {
+      background: #4f46e5;
+    }
+
+    @media (max-width: 640px) {
+      .koffice-promo-card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .koffice-promo-actions {
+        width: 100%;
+      }
+      .btn-koffice-launch {
+        flex: 1;
+      }
+      .ko-lab-wrapper {
+        padding: 18px 14px;
+      }
+      .ko-lab-time {
+        font-size: 2.5rem;
+      }
     }
