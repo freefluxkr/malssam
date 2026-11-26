@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "dmdg-malssam",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/.*",
+      "**/node_modules/**",
+      "scripts/**",
+      "*.md",
+      "index_monolithic_backup.html"
+    ]
+  }
+}
