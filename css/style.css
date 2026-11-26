@@ -2388,14 +2388,21 @@
 
     #tabKofficeBtn {
       position: relative;
-      border: 1.5px solid rgba(99, 102, 241, 0.45) !important;
-      background: linear-gradient(145deg, rgba(30, 41, 59, 0.85) 0%, rgba(99, 102, 241, 0.14) 100%) !important;
-      box-shadow: 0 0 14px rgba(99, 102, 241, 0.2);
+      border: 1.5px solid rgba(129, 140, 248, 0.7) !important;
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.88) 0%, rgba(99, 102, 241, 0.22) 100%) !important;
+      animation: officeTabGlow 2.4s infinite alternate ease-in-out;
+      box-shadow: 0 0 16px rgba(99, 102, 241, 0.35);
+    }
+    @keyframes officeTabGlow {
+      0% { box-shadow: 0 0 12px rgba(99, 102, 241, 0.3), inset 0 0 6px rgba(236, 72, 153, 0.12); }
+      100% { box-shadow: 0 0 22px rgba(236, 72, 153, 0.55), inset 0 0 10px rgba(99, 102, 241, 0.25); }
     }
     .office-badge {
-      background: linear-gradient(135deg, #6366f1, #ec4899);
+      background: linear-gradient(135deg, #ec4899, #6366f1);
       color: #fff;
-      border: 1px solid #c7d2fe;
+      border: 1px solid #ffd166;
+      box-shadow: 0 2px 10px rgba(236, 72, 153, 0.55);
+      animation: badgeBeat 1.8s infinite ease-in-out;
     }
 
     /* Inline Lab Container */
